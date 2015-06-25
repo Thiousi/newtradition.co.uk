@@ -37,11 +37,3 @@ Icon
 
 # Sass
 .sass-cache
-src/css/
-
-# Dist folder
-dist/
-
-# Bower components folder
-bower_components/
-src/css/styles.css
