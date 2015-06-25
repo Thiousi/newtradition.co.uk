@@ -1,0 +1,4 @@
+var gulp = require('gulp');
+
+gulp.task('build', ['lint','images','styles','scripts']);
+gulp.task('default', ['build','watch','connect']);
