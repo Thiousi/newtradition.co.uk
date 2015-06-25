@@ -1,20 +1,10 @@
-# Kirby CMS Starter kit with Gulp
-A template to kickstart a new project using Kirby CMS.
-Using Gulp for handling SCSS, Javascript and Bower packages.
+# Kirby based website for New Tradition
+The website for New Tradition with a grid based design built on Kirby CMS and utilising gulp.
 
-#### Contents
+#### Features
 - Takes Bower packages into account
 - Lints and uglifies Javascript
 - Compiles and autoprefixes SCSS
-- Generates a custom Modernizr build with gulp-modernizr
-
-## Installation
-- Download the Kirby CMS and place the contents in the folder named `public/`.
-- Add `define('ENV', 'development');` to `public/index.php`
-- Refer to CSS and JS files with `<?php echo FTMD::css('main'); ?>` (this would load: assets/styles/main.css in development)
-
-## Todo
-- Add a download task to download Kirby CMS' `core` and `panel` into the project. (Could also serve as updater).
 
 ## Usage
 ```bash
