@@ -1,17 +1,22 @@
-Title: Kirby Starterkit
+Title: New Tradition
 
 ----
 
-Author: Bastian Allgeier GmbH
+Author: Peter Tait (petertait.com)
 
 ----
 
-Description: This is Kirby's Starterkit.
+Description: We're an independent brand communications consultancy. We work directly with brands – and in collaboration with creative agencies – to help you define, design and activate strategies that fulfill your brand’s reputational potential.
 
 ----
 
-Keywords: Kirby, CMS, file-based
+Keywords: 
 
 ----
 
-Copyright: © 2009-(date: Year) (link: http://getkirby.com text: Kirby)
+Copyright: © New Tradition Limited (date: Year). New Tradition Limited (Company no. 01225468) is a company registered in England. Registered office: St John's House, 5 South Parade, Summertown, Oxford OX2 7JL.
+
+----
+
+Address: Bloxham Mill, Barford Road, Bloxham
+Oxfordshire, OX15 4FF

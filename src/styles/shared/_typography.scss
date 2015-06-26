@@ -1,0 +1,64 @@
+//================================================
+// TYPOGRAPHY
+//================================================
+h1, h2, h3, h4, h5, h6,
+p, ul, ol, dl, blockquote, pre, button {
+  margin: 0 0 18px 0;
+}
+
+// FONT SIZES
+.tera    { font-size: $tera; }
+.giga    { font-size: $giga; }
+.mega    { font-size: $mega; }
+.alpha   { font-size: $alpha; }
+.beta    { font-size: $beta; }
+.gamma   { font-size: $gamma; }
+.delta   { font-size: $delta; }
+.epsilon { font-size: $epsilon; }
+.zeta    { font-size: $zeta; }
+
+// HEADINGS
+h1, .h1 {
+  font-size: $tera;
+  font-family: $sans;
+  font-weight: $bold;
+  margin-bottom: 0;
+  line-height: 1;
+}
+
+h2, .h2 {
+  font-size: $giga;
+  font-family: $sans;
+  font-weight: $bold;
+  color: $primary;
+  letter-spacing: -1px;
+  line-height: 1;
+}
+
+h3, .h3 {
+  font-size: $beta;
+  font-weight: $bold;
+  line-height: 1.1;
+}
+
+h4, .h4 {
+  font-size: $gamma;
+}
+
+h5, .h5 {
+  font-size: $epsilon;
+  font-family: $sans;
+  font-weight: $regular;
+  color: $primary;
+  text-transform: uppercase;
+  line-height: 1;
+  margin-bottom: 8px;
+}
+
+h6, .h6 {
+  font-size: $zeta;
+}
+
+strong {
+  font-weight: $bold;
+}

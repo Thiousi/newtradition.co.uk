@@ -1,0 +1,19 @@
+//================================================
+// IMPORTS
+//================================================
+// Shared
+@import "shared/_variables.scss";
+@import "shared/_normalize.scss";
+@import "shared/_mixins.scss";
+@import "shared/_fonts.scss";
+@import "shared/_animations.scss";
+@import "shared/_layout.scss";
+@import "shared/_typography.scss";
+@import "shared/_elements.scss";
+
+// Snippets
+@import "snippets/_gbl-head.scss";
+@import "snippets/_gbl-foot.scss";
+
+// Pages
+@import "pages/_page-base.scss";

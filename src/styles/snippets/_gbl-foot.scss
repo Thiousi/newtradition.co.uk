@@ -1,0 +1,17 @@
+//================================================
+// GLOBAL FOOTER
+//================================================
+.gbl-foot {
+  background-color: white;
+  font-size: $epsilon;
+
+  .address {
+    padding: 15px 20px 0;
+    max-width: 700px;
+  }
+
+  .copyright {
+    padding: 0 20px 40px;
+    max-width: 700px;
+  }
+}

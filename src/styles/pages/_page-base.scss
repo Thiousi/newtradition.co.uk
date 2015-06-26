@@ -1,0 +1,39 @@
+//================================================
+// PAGE BASE STYLES
+//================================================
+.featured {
+  background-color: $slate;
+  padding-top: 50px;
+  padding-bottom: 50px;
+
+  h2 {
+    position: relative;
+    margin-bottom: -25px;
+    z-index: 1;
+  }
+}
+
+.post {
+  * {
+    transition: 0.2s;
+  }
+
+  h3 {
+    font-weight: $regular;
+    margin-bottom: 10px;
+  }
+
+  img {
+    margin-bottom: 15px;
+  }
+
+  &:hover {
+    h3 {
+      color: $primary;
+    }
+
+    img {
+      opacity: 0.9;
+    }
+  }
+}

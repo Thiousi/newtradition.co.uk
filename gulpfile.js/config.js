@@ -3,7 +3,7 @@
    --------------------------------------- */
 
 // Project paths
-var src     = './source/';
+var src     = './src/';
 var vendor  = './source/vendor/';
 var dist    = './public/';
 
@@ -41,17 +41,9 @@ module.exports = {
     dest: dist+'assets/scripts/'
   },
 
-  modernizr: {
-    parameters: {
-      options: ['setClasses','html5printshiv','fnBind']
-    },
-    source: dist+'assets/styles/*.css',
-    dest: vendor
-  },
-
   server: {
     base: dist,
-    port: 9000,
+    port: 4000,
     host: '0.0.0.0',
     open: true,
     livereload: true
