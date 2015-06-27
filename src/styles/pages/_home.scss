@@ -1,0 +1,8 @@
+.stream {
+  padding-top: 20px;
+  padding-bottom: 20px;
+
+  .post:nth-of-type(-n+2):after {
+    display: none;
+  }
+}

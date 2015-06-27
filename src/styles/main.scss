@@ -1,10 +1,8 @@
-//================================================
-// IMPORTS
-//================================================
 // Shared
 @import "shared/_variables.scss";
 @import "shared/_normalize.scss";
 @import "shared/_mixins.scss";
+@import "shared/_sprite.scss";
 @import "shared/_fonts.scss";
 @import "shared/_animations.scss";
 @import "shared/_layout.scss";
@@ -17,3 +15,4 @@
 
 // Pages
 @import "pages/_page-base.scss";
+@import "pages/_home.scss";

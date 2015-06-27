@@ -1,7 +1,3 @@
-//================================================
-// MIXINS
-//================================================
-// CLEAR FIX
 // @include clearfix;
 @mixin clearfix {
   clear: both;
@@ -13,7 +9,6 @@
   }
 }
 
-// HIDE TEXT
 // @include hide-text;
 @mixin hide-text {
   overflow: hidden;
@@ -26,9 +21,21 @@
   }
 }
 
-// MARGIN AUTO
-// @include margin-auto;
-@mixin margin-auto {
-  margin-left: auto;
-  margin-right: auto;
+// @include icon;
+@mixin icon {
+  color: transparent;
+  overflow: hidden;
+  display: block;
+
+  &:hover {
+    color: transparent;
+  }
+}
+
+// @include icon-pseudo
+@mixin icon-pseudo {
+  content: "";
+  overflow: hidden;
+  display: block;
+  position: absolute;
 }

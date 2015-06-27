@@ -1,7 +1,7 @@
   <footer class="gbl-foot" role="contentinfo">
     <div class="grid">
       <div class="address">
-        <?php echo $site->address()->kirbytext() ?>
+        <a><?php echo $site->address()->kirbytext() ?></a>
       </div>
       <div class="copyright">
         <?php echo $site->copyright()->kirbytext() ?>

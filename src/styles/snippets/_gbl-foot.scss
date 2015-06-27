@@ -1,9 +1,10 @@
-//================================================
-// GLOBAL FOOTER
-//================================================
 .gbl-foot {
   background-color: white;
   font-size: $epsilon;
+
+  a:hover {
+    color: $primary;
+  }
 
   .address {
     padding: 15px 20px 0;

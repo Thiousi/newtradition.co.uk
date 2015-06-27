@@ -1,11 +1,8 @@
-//================================================
-// VARIABLES
-//================================================
 // COLOURS
 $ink: #39333F;
 $light-ink: #67626B;
 $red: #E30613;
-$slate: #E8E8E8;
+$slate: #EAEAEA;
 $primary: $red;
 
 // TYPOGRAPHY
@@ -13,7 +10,7 @@ $tera: 86px;
 $giga: 60px;
 $mega: 48px;
 $alpha: 36px;
-$beta: 30px;
+$beta: 26px;
 $gamma: 22px;
 $delta: 16px;
 $epsilon: 14px;
@@ -31,4 +28,7 @@ $large: 1000px;
 $medium: 650px;
 $small: 500px;
 
-$gutter: 20px;
+$gutter: 10px;
+
+// Sprite
+$sprite: '../images/sprite.svg';

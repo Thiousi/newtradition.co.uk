@@ -1,25 +1,39 @@
-//================================================
-// GLOBAL HEAD
-//================================================
 .gbl-head {
   background-color: $primary;
   padding: 40px $gutter $gutter;
   color: white;
 
   .logo {
-    color: white;
-    font-size: $beta;
-    border-bottom: 3px solid transparent;
-    padding-bottom: 5px;
+    @media screen and ( max-width: $medium + 100px ) {
+      width: 100%;
+      padding: 0 0 10px 0;
+    }
 
-    &:hover {
-      border-bottom-color: rgba(white, 0.4);
+    a {
+      color: white;
+      font-size: $beta;
+      border-bottom: 3px solid transparent;
+      padding-bottom: 5px;
+      line-height: 1;
+
+      &:hover {
+        border-bottom-color: rgba(white, 0.4);
+      }
     }
   }
 
   .nav,
   .contact {
-    margin-top: 13px;
+    margin-top: 6px;
+
+    @media screen and ( max-width: $medium + 100px ) {
+      width: 50%;
+      padding-left: 0;
+
+      a:first-child {
+        padding-left: 0;
+      }
+    }
 
     a {
       color: white;
@@ -47,15 +61,24 @@
   .title {
     @include clearfix;
     padding: 40px 0 0;
-    margin-left: calc(25% + 35px);
+    margin-left: calc(25% + 25px);
 
     .home & {
-      font-size: $beta;
+      font-size: $beta + 4px;
       font-family: $serif;
       font-weight: $regular;
       padding: 40px 0 80px;
       line-height: 1.5;
       max-width: 700px;
+
+      @media screen and ( max-width: $medium + 100px ) {
+        padding: 20px 0 60px;
+        font-size: $beta;
+      }
+    }
+
+    @media screen and ( max-width: $medium + 100px ) {
+      margin-left: 0;
     }
   }
 }
