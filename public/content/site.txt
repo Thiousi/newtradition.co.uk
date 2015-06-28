@@ -6,19 +6,31 @@ Subtitle: Brand communications
 
 ----
 
-Author: Peter Tait (petertait.com)
-
-----
-
 Description: We're an independent brand communications consultancy. We work directly with brands – and in collaboration with creative agencies – to help you define, design and activate strategies that fulfill your brand’s reputational potential.
 
 ----
 
-Keywords: 
+Keywords: Brand, Communications, Consultancy, Independent, Reputation
 
 ----
 
 Copyright: © New Tradition Limited (date: Year). New Tradition Limited (Company no. 01225468) is a company registered in England. Registered office: St John's House, 5 South Parade, Summertown, Oxford OX2 7JL.
+
+----
+
+Email: hello@newtradition.co.uk
+
+----
+
+Phone: +441295724258
+
+----
+
+PrettyPhone: +44 (0)1295 724258
+
+----
+
+Twitter: _NewTradition
 
 ----
 

@@ -33,6 +33,7 @@ body {
   max-width: 1000px;
   padding-left: $gutter;
   padding-right: $gutter;
+  position: relative;
 }
 
 .padded {
@@ -53,6 +54,11 @@ body {
 .col-1-8 { width: 12.5%; }
 
 @media screen and ( max-width: $small ) {
+  .grid {
+    padding-right: $gutter / 2;
+    padding-left: $gutter / 2;
+  }
+
   [class*='col-'] { 
     width: 100%; 
     float: none;

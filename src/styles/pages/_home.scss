@@ -1,8 +1,29 @@
 .stream {
-  padding-top: 20px;
-  padding-bottom: 20px;
+  .post {
+    float: left;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
 
-  .post:nth-of-type(-n+2):after {
-    display: none;
+  @media screen and ( min-width: $small ) {
+    .post:nth-of-type(-n+2):after {
+      display: none;
+    }
+
+    .post:first-of-type,
+    .post:nth-of-type(2n) {
+      width: 50%;
+    }
+
+    .post:nth-of-type(3n),
+    .post:nth-of-type(4n),
+    .post:nth-of-type(5n), 
+    .post:nth-of-type(6n) {
+      width: 33.33%;
+    }
+
+    .post:nth-of-type(7n) {
+      width: 66.66%;
+    }
   }
 }

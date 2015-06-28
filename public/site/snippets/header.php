@@ -13,10 +13,10 @@
 
   <header class="gbl-head" role="banner">
     <div class="grid">
-      <div class="col-1-4 logo">
-      <a href="<?php echo url() ?>">New Tradition</a>
+      <div class="inner">
+        <div class="col-1-4 logo"><a href="<?php echo $site->url() ?>">New Tradition</a></div>
+        <?php snippet('menu') ?>
       </div>
-      <?php snippet('menu') ?>
       <?php if ($page->isHomePage()): ?>
         <h1 class="title col-3-4"><?php echo $site->description()->html() ?></h1>
       <?php else: ?>

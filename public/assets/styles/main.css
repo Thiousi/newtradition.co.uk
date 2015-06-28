@@ -143,13 +143,26 @@ table {
 td, th {
   padding: 0; }
 
-.i-share, .i-rarrow, .i-cam, .i-load, .btn-line:after {
-  height: 15px;
+.i-close, .gbl-head .show-menu:checked, .i-menu, .gbl-head .show-menu, .i-share, .i-rarrow, .i-cam, .i-load, .btn-line:after {
   background: url('../images/sprite.svg'); }
 
+.i-rarrow, .i-cam, .i-load, .btn-line:after {
+  height: 15px; }
+
+.i-close, .gbl-head .show-menu:checked, .i-share {
+  width: 16px;
+  height: 15px; }
+
+.i-close, .gbl-head .show-menu:checked {
+  background-position: -95px 0px; }
+
+.i-menu, .gbl-head .show-menu {
+  background-position: -70px 0px;
+  width: 23px;
+  height: 16px; }
+
 .i-share {
-  background-position: -52px 0px;
-  width: 16px; }
+  background-position: -52px 0px; }
 
 .i-rarrow {
   background-position: -40px 0px;
@@ -161,7 +174,7 @@ td, th {
 
 .i-load, .btn-line:after {
   background-position: 0px 0px;
-  width: 15px; }
+  width: 16px; }
 
 @font-face {
   font-family: 'meta';
@@ -283,7 +296,8 @@ body {
   margin: 0 auto;
   max-width: 1000px;
   padding-left: 10px;
-  padding-right: 10px; }
+  padding-right: 10px;
+  position: relative; }
   .grid:after {
     content: "";
     display: table;
@@ -315,7 +329,10 @@ body {
 .col-1-8 {
   width: 12.5%; }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 550px) {
+  .grid {
+    padding-right: 5px;
+    padding-left: 5px; }
   [class*='col-'] {
     width: 100%;
     float: none; }
@@ -408,9 +425,7 @@ strong {
 
 a {
   color: #39333F;
-  text-decoration: none;
-  -webkit-transition: 0.2s;
-  transition: 0.2s; }
+  text-decoration: none; }
   a:hover, a.hover {
     cursor: pointer;
     color: #534a5b; }
@@ -452,7 +467,7 @@ a {
 
 .btn-load {
   display: table;
-  margin: 0 auto 80px; }
+  margin: 20px auto 80px; }
 
 input, textarea {
   padding: 10px;
@@ -463,7 +478,8 @@ input, textarea {
     outline: none; }
 
 img {
-  max-width: 100%; }
+  max-width: 100%;
+  display: block; }
 
 ol {
   padding-left: 1.4em; }
@@ -486,42 +502,85 @@ dd {
   background-color: #E30613;
   padding: 40px 10px 10px;
   color: white; }
-  @media screen and (max-width: 750px) {
+  @media screen and (max-width: 800px) {
+    .gbl-head {
+      padding-top: 20px; } }
+  @media screen and (max-width: 800px) {
     .gbl-head .logo {
-      width: 100%;
-      padding: 0 0 10px 0; } }
+      width: calc(100% - 100px);
+      padding: 0 0 10px 0;
+      float: left; } }
   .gbl-head .logo a {
     color: white;
     font-size: 26px;
     border-bottom: 3px solid transparent;
     padding-bottom: 5px;
     line-height: 1; }
-    .gbl-head .logo a:hover {
+    @media screen and (max-width: 650px) {
+      .gbl-head .logo a {
+        padding-bottom: 0; } }
+    .gbl-head .logo a:hover, .home .gbl-head .logo a {
       border-bottom-color: rgba(255, 255, 255, 0.4); }
   .gbl-head .nav, .gbl-head .contact {
     margin-top: 6px; }
-    @media screen and (max-width: 750px) {
+    @media screen and (max-width: 800px) {
       .gbl-head .nav, .gbl-head .contact {
         width: 50%;
-        padding-left: 0; }
-        .gbl-head .nav a:first-child, .gbl-head .contact a:first-child {
-          padding-left: 0; } }
+        padding-left: 0; } }
+    @media screen and (max-width: 650px) {
+      .gbl-head .nav, .gbl-head .contact {
+        width: 100%;
+        margin-top: 0;
+        padding-right: 0;
+        padding-left: 20px; } }
     .gbl-head .nav a, .gbl-head .contact a {
       color: white;
       font-family: 'dagny', helvetica, sans-serif;
       padding: 10px 15px;
       color: rgba(255, 255, 255, 0.6); }
+      @media screen and (max-width: 800px) {
+        .gbl-head .nav a:first-child, .gbl-head .contact a:first-child {
+          padding-left: 0; } }
+      @media screen and (max-width: 650px) {
+        .gbl-head .nav a, .gbl-head .contact a {
+          border-bottom: 2px solid #342e39;
+          background-color: #39333F;
+          padding: 20px 20px 20px 0;
+          margin: 0;
+          font-size: 60px;
+          display: block;
+          font-weight: 600;
+          z-index: 2;
+          position: relative; } }
       .gbl-head .nav a:hover, .gbl-head .nav a.active, .gbl-head .contact a:hover, .gbl-head .contact a.active {
         color: white; }
   .gbl-head .contact {
     float: right;
     text-align: right;
     margin-bottom: 10px; }
+    @media screen and (max-width: 650px) {
+      .gbl-head .contact {
+        position: absolute;
+        padding: 10px 0 0 20px;
+        bottom: 0;
+        float: none;
+        display: block;
+        text-align: left;
+        width: 100%; } }
     .gbl-head .contact a {
       padding: 0; }
+      @media screen and (max-width: 650px) {
+        .gbl-head .contact a {
+          padding: 5px 0 0;
+          font-size: 16px;
+          font-weight: 400;
+          border-bottom: none;
+          z-index: 0; } }
+  .gbl-head .show-menu {
+    display: none; }
   .gbl-head .title {
     clear: both;
-    padding: 40px 0 0;
+    padding: 40px 0 10px;
     margin-left: calc(25% + 25px); }
     .gbl-head .title:after {
       content: "";
@@ -534,13 +593,72 @@ dd {
       padding: 40px 0 80px;
       line-height: 1.5;
       max-width: 700px; }
-      @media screen and (max-width: 750px) {
+      @media screen and (max-width: 800px) {
         .home .gbl-head .title {
           padding: 20px 0 60px;
           font-size: 26px; } }
-    @media screen and (max-width: 750px) {
+      @media screen and (max-width: 650px) {
+        .home .gbl-head .title {
+          padding: 30px 0;
+          font-size: 22px; } }
+    @media screen and (max-width: 800px) {
       .gbl-head .title {
         margin-left: 0; } }
+    @media screen and (max-width: 650px) {
+      .gbl-head .title {
+        padding: 35px 0 0; } }
+    @media screen and (max-width: 650px) {
+      .gbl-head .title {
+        margin-top: 50px; } }
+  @media screen and (max-width: 650px) {
+    .gbl-head .inner {
+      background-color: #E30613;
+      position: fixed;
+      top: 0;
+      left: 0;
+      padding: 30px 20px 0;
+      height: 70px;
+      width: 100%;
+      z-index: 10;
+      box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2); }
+      .gbl-head .inner .logo {
+        position: fixed;
+        z-index: 11; }
+    .gbl-head .menu {
+      border-top: 70px solid #342e39;
+      position: fixed;
+      height: 100%;
+      width: 100%;
+      top: -100%;
+      left: 0;
+      background-color: #39333F;
+      overflow: auto;
+      -webkit-transition: 0.4s;
+      transition: 0.4s; }
+    .gbl-head .show-menu {
+      color: transparent;
+      overflow: hidden;
+      display: block;
+      -webkit-transform: scale(1.2);
+      transform: scale(1.2);
+      font-size: 1px;
+      color: transparent;
+      border-radius: 0;
+      position: absolute;
+      right: 18px;
+      bottom: 15px;
+      z-index: 2;
+      display: block; }
+      .gbl-head .show-menu:hover {
+        color: transparent; }
+      .gbl-head .show-menu:hover {
+        cursor: pointer;
+        opacity: 0.8; }
+      .gbl-head .show-menu:checked {
+        -webkit-transform: scale(1.3);
+        transform: scale(1.3); }
+        .gbl-head .show-menu:checked + .menu {
+          top: 0; } }
 
 .gbl-foot {
   background-color: white;
@@ -556,7 +674,8 @@ dd {
 
 .featured {
   background-color: #EAEAEA;
-  padding-top: 40px; }
+  padding-top: 40px;
+  margin-bottom: 20px; }
   .featured h2 {
     display: table;
     position: relative;
@@ -567,7 +686,8 @@ dd {
 .post {
   padding-top: 15px;
   padding-bottom: 40px;
-  position: relative; }
+  position: relative;
+  display: block; }
   .post:after {
     content: "";
     position: absolute;
@@ -578,9 +698,6 @@ dd {
     width: calc(100% - 20px); }
     .featured .post:after {
       display: none; }
-  .post * {
-    -webkit-transition: 0.2s;
-    transition: 0.2s; }
   .post img {
     margin-bottom: 15px; }
   .post h3 {
@@ -598,8 +715,16 @@ dd {
   .post:hover p {
     color: #39333F; }
 
-.stream {
-  padding-top: 20px;
-  padding-bottom: 20px; }
+.stream .post {
+  float: left;
+  padding-left: 10px;
+  padding-right: 10px; }
+@media screen and (min-width: 550px) {
   .stream .post:nth-of-type(-n+2):after {
     display: none; }
+  .stream .post:first-of-type, .stream .post:nth-of-type(2n) {
+    width: 50%; }
+  .stream .post:nth-of-type(3n), .stream .post:nth-of-type(4n), .stream .post:nth-of-type(5n), .stream .post:nth-of-type(6n) {
+    width: 33.33%; }
+  .stream .post:nth-of-type(7n) {
+    width: 66.66%; } }
