@@ -17,7 +17,7 @@
     <?php foreach($site->find('work')->children()->filterBy('featured', 'true')->visible()->limit(1) as $f): ?>
       <a href="<?php echo $f->url() ?>" class="post col-1-3 <?php echo $f->template() ?>">
         <?php if($image = $f->image('hero.jpg')): ?>
-          <?php echo thumb($f->image('hero.jpg'), array('width' => 340, 'height' => 200, 'quality' => 75, 'crop' => true)); ?>
+          <?php echo thumb($f->image('hero.jpg'), array('width' => 570, 'height' => 260, 'quality' => 75, 'crop' => true)); ?>
         <?php endif ?>
         <h5>Case Study</h5>
         <h3><?php echo $f->title()->html() ?></h3>
@@ -27,55 +27,23 @@
     <?php endforeach ?>
   </div>
 </section>
-<section class="stream grid active">
-  <?php foreach($site->find('journal','work')->children()->visible()->limit(6) as $p): ?>
-    <a href="<?php echo $p->url() ?>" class="post <?php echo $p->template() ?>">
-      <?php if($image = $p->image('hero.jpg')): ?>
-        <?php echo thumb($p->image('hero.jpg'), array('width' => 470, 'height' => 210, 'quality' => 75, 'crop' => true)); ?>
+<section class="stream grid">
+  <?php foreach($site->find('journal','work')->children()->visible()->limit(7) as $article): ?>
+    <?php $count = 0 ?>
+    <a href="<?php echo $article->url() ?>" class="post <?php echo $article->template() ?>">
+      <?php if($image = $article->image('hero.jpg')): ?>
+        <?php echo thumb($article->image('hero.jpg'), array('width' => 650, 'height' => 230, 'quality' => 75, 'crop' => true)); ?>
       <?php endif ?>
-      <?php if($p->template() == 'longread'): ?><h5>Long Read</h5>
-      <?php elseif($p->template() == 'news'): ?><h5>News</h5>
-      <?php elseif($p->template() == 'comment'): ?><h5>Comment</h5>
-      <?php elseif($p->template() == 'casestudy'): ?><h5>Case Study</h5>
+      <?php if($article->template() == 'longread'): ?><h5>Long Read</h5>
+      <?php elseif($article->template() == 'news'): ?><h5>News</h5>
+      <?php elseif($article->template() == 'comment'): ?><h5>Comment</h5>
+      <?php elseif($article->template() == 'casestudy'): ?><h5>Case Study</h5>
       <?php endif ?>
-      <h3><?php echo $p->title()->html() ?></h3>
-      <p><?php echo $p->text()->excerpt(300) ?></p>
-      <?php if($p->template() == 'casestudy'): ?><span class="client">Client: <?php echo $p->client()->html() ?></span><?php endif ?>
+      <h3><?php echo $article->title()->html() ?></h3>
+      <p><?php echo $article->text()->excerpt(220) ?></p>
+      <?php if($article->template() == 'casestudy'): ?><span class="client">Client: <?php echo $article->client()->html() ?></span><?php endif ?>
     </a>
+    <?php $count++ ?>
   <?php endforeach ?>
+    <button class="btn btn-line btn-load">Load more</button>
 </section>
-<section class="stream stream-2 grid">
-  <?php foreach($site->find('journal','work')->children()->visible()->offset(6)->limit(6) as $p): ?>
-    <a href="<?php echo $p->url() ?>" class="post <?php echo $p->template() ?>">
-      <?php if($image = $p->image('hero.jpg')): ?>
-        <?php echo thumb($p->image('hero.jpg'), array('width' => 470, 'height' => 210, 'quality' => 75, 'crop' => true)); ?>
-      <?php endif ?>
-      <?php if($p->template() == 'longread'): ?><h5>Long Read</h5>
-      <?php elseif($p->template() == 'news'): ?><h5>News</h5>
-      <?php elseif($p->template() == 'comment'): ?><h5>Comment</h5>
-      <?php elseif($p->template() == 'casestudy'): ?><h5>Case Study</h5>
-      <?php endif ?>
-      <h3><?php echo $p->title()->html() ?></h3>
-      <p><?php echo $p->text()->excerpt(300) ?></p>
-      <?php if($p->template() == 'casestudy'): ?><span class="client">Client: <?php echo $p->client()->html() ?></span><?php endif ?>
-    </a>
-  <?php endforeach ?>
-</section>
-<section class="stream stream-3 grid">
-  <?php foreach($site->find('journal','work')->children()->visible()->offset(12)->limit(6) as $p): ?>
-    <a href="<?php echo $p->url() ?>" class="post <?php echo $p->template() ?>">
-      <?php if($image = $p->image('hero.jpg')): ?>
-        <?php echo thumb($p->image('hero.jpg'), array('width' => 470, 'height' => 210, 'quality' => 75, 'crop' => true)); ?>
-      <?php endif ?>
-      <?php if($p->template() == 'longread'): ?><h5>Long Read</h5>
-      <?php elseif($p->template() == 'news'): ?><h5>News</h5>
-      <?php elseif($p->template() == 'comment'): ?><h5>Comment</h5>
-      <?php elseif($p->template() == 'casestudy'): ?><h5>Case Study</h5>
-      <?php endif ?>
-      <h3><?php echo $p->title()->html() ?></h3>
-      <p><?php echo $p->text()->excerpt(300) ?></p>
-      <?php if($p->template() == 'casestudy'): ?><span class="client">Client: <?php echo $p->client()->html() ?></span><?php endif ?>
-    </a>
-  <?php endforeach ?>
-</section>
-<button class="btn btn-line btn-load">Load more</button>

@@ -294,7 +294,7 @@ body {
 .col-1-8 {
   width: 12.5%; }
 
-@media screen and (max-width: 550px) {
+@media screen and (max-width: 570px) {
   .grid {
     padding-right: 5px;
     padding-left: 5px; }
@@ -431,6 +431,7 @@ a {
     opacity: 0.5; }
 
 .btn-load {
+  clear: both;
   display: table;
   margin: 20px auto 80px; }
 
@@ -585,8 +586,7 @@ dd {
       padding: 30px 20px 0;
       height: 70px;
       width: 100%;
-      z-index: 10;
-      box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2); }
+      z-index: 10; }
       .gbl-head .inner .logo {
         position: fixed;
         z-index: 11; }
@@ -666,6 +666,12 @@ dd {
       display: none; }
   .post img {
     margin-bottom: 15px; }
+  .post .post-img {
+    width: 100%;
+    height: 170px;
+    margin-bottom: 15px;
+    background-size: cover;
+    background-position: center; }
   .post h3 {
     margin-bottom: 10px; }
   .post .client {
@@ -684,31 +690,31 @@ dd {
   .post:hover p {
     color: #39333F; }
 
-.stream {
-  opacity: 0;
-  height: 0;
-  overflow: hidden;
-  -webkit-transition: opacity 0.8s;
-  transition: opacity 0.8s; }
-  .stream.active {
-    opacity: 1;
-    height: 100%;
-    -webkit-transition: opacity 0.8s;
-    transition: opacity 0.8s; }
-  .stream .post {
-    float: left;
-    padding-left: 10px;
-    padding-right: 10px; }
-  @media screen and (min-width: 550px) {
-    .stream .post:nth-of-type(-n+2):after {
-      display: none; }
-    .stream .post:first-of-type, .stream .post:nth-of-type(2n) {
-      width: 50%; }
-    .stream .post:nth-of-type(3n), .stream .post:nth-of-type(4n), .stream .post:nth-of-type(5n), .stream .post:nth-of-type(6n) {
-      width: 33.33%; }
-      .stream .post:nth-of-type(3n) img, .stream .post:nth-of-type(4n) img, .stream .post:nth-of-type(5n) img, .stream .post:nth-of-type(6n) img {
-        display: none; }
-    .stream .post:nth-of-type(7n) {
-      width: 66.66%; } }
-  .stream.active + .btn-load {
+.stream .post {
+  float: left;
+  padding-left: 10px;
+  padding-right: 10px; }
+@media screen and (min-width: 570px) {
+  .stream .post:nth-of-type(-n+2):after {
     display: none; }
+  .stream .post {
+    width: 33.33%; }
+    .stream .post img, .stream .post .post-img {
+      display: none; }
+  .stream .post:nth-of-type(7), .stream .post:nth-of-type(14) {
+    width: 66.66%; }
+    .stream .post:nth-of-type(7) img, .stream .post:nth-of-type(7) .post-img, .stream .post:nth-of-type(14) img, .stream .post:nth-of-type(14) .post-img {
+      display: block; }
+  .stream .post:nth-of-type(8) {
+    width: 100%; }
+    .stream .post:nth-of-type(8) .post-img {
+      display: block;
+      height: 200px; }
+  .stream .post:first-of-type, .stream .post:nth-of-type(2), .stream .post:nth-of-type(12), .stream .post:nth-of-type(13) {
+    width: 50%; }
+    .stream .post:first-of-type img, .stream .post:first-of-type .post-img, .stream .post:nth-of-type(2) img, .stream .post:nth-of-type(2) .post-img, .stream .post:nth-of-type(12) img, .stream .post:nth-of-type(12) .post-img, .stream .post:nth-of-type(13) img, .stream .post:nth-of-type(13) .post-img {
+      display: block; }
+  .stream .post:nth-of-type(3), .stream .post:nth-of-type(12) {
+    clear: both; }
+  .stream .post:nth-of-type(6) img, .stream .post:nth-of-type(6) .post-img, .stream .post:nth-of-type(14) img, .stream .post:nth-of-type(14) .post-img {
+    display: block; } }

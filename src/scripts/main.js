@@ -1,16 +1,29 @@
-function hasClass(el, cls) {
-  return el.className && new RegExp("(\\s|^)" + cls + "(\\s|$)").test(el.className);
-}
+$(document).ready(function() {
+  var loader = function() {
+    loadMore();
+      return false;
+    };
+  
+  $('.btn-load').bind('click', loader);
+    var amount = 2;
+    var offset = (amount * 3) + 1;
 
-// Load more content
-[].forEach.call(document.querySelectorAll('.btn-load'), function(el) {
-  el.addEventListener('click', function() {
-    var stream2 = document.querySelector('.stream-2');
-    var stream3 = document.querySelector('.stream-3');
-    if (hasClass(stream2, 'active')) {
-      stream3.className += ' active';
-    } else {
-      stream2.className += ' active';
+    function loadMore(){
+    $.ajax({
+      url      : 'ajax',
+      type     : 'post',
+      dataType : 'json',
+      data : {
+        'amount' : amount,
+        'offset' : offset
     }
-  });
+    }).done(function(data){
+      $('.btn-load').before(data[0]);
+
+      if(!data[1]){
+        $('.btn-load').unbind('click', loader);
+      }
+    });
+    offset += (amount * 3) + 1;
+  }
 });

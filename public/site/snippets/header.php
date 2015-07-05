@@ -20,9 +20,13 @@
         <?php snippet('menu') ?>
       </div>
       <?php if ($page->isHomePage()): ?>
-        <h1 class="title col-3-4"><?php echo $site->description()->html() ?></h1>
+        <h1 class="title col-3-4"><?php echo html($site->description()) ?></h1>
+      <?php elseif ($page->hasChildren()): ?>
+        <h1 class="title col-3-4"><?php echo html($page->title()) ?></h1>
+      <?php elseif ($page->template('longread', 'news', 'comment', 'casestudy')): ?>
+        <h1 class="title col-3-4"><?php echo html($page->parent()->title()) ?></h1>
       <?php else: ?>
-        <h1 class="title col-3-4"><?php echo $page->title()->html() ?></h1>
+        <h1 class="title col-3-4"><?php echo html($page->title()) ?></h1>
       <?php endif ?>
     </div>
   </header>
