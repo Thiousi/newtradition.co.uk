@@ -7,6 +7,8 @@
   <title><?php echo $site->title()->html() ?> – <?php if ($page->isHomePage()): ?><?php echo $site->subtitle()->html() ?><?php else: ?><?php echo $page->title()->html() ?><?php endif ?></title>
   <meta name="description" content="<?php echo $site->description()->html() ?>">
   <meta name="keywords" content="<?php echo $site->keywords()->html() ?>">
+  <script src="//use.typekit.net/gjw4ybb.js"></script>
+  <script>try{Typekit.load();}catch(e){}</script>
   <?php echo FTMD::css('main'); ?>
 </head>
 <body class="<?php echo $page->template() ?>">

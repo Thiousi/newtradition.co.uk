@@ -20,6 +20,10 @@
     .post:nth-of-type(5n), 
     .post:nth-of-type(6n) {
       width: 33.33%;
+
+      img {
+        display: none;
+      }
     }
 
     .post:nth-of-type(7n) {

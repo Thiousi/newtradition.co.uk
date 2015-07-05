@@ -3,6 +3,7 @@
 *:after{
   box-sizing: border-box;
   font-family: $serif;
+  font-weight: $serif-regular;
   text-rendering: optimizeSpeed;
   box-sizing: border-box;
   padding: 0;
@@ -21,7 +22,6 @@ html {
 body {
   background-color: lighten($slate, 5);
   font-size: $body-size;
-  font-weight: $regular;
   line-height: 1.4;
   color: $ink;
 }

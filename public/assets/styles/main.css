@@ -32,7 +32,7 @@ abbr[title] {
   border-bottom: 1px dotted; }
 
 b, strong {
-  font-weight: 600; }
+  font-weight: 700; }
 
 dfn {
   font-style: italic; }
@@ -134,7 +134,7 @@ textarea {
   overflow: auto; }
 
 optgroup {
-  font-weight: 600; }
+  font-weight: 700; }
 
 table {
   border-collapse: collapse;
@@ -175,41 +175,6 @@ td, th {
 .i-load, .btn-line:after {
   background-position: 0px 0px;
   width: 16px; }
-
-@font-face {
-  font-family: 'meta';
-  src: url('../fonts/metaserif-reg/metaserif-reg.eot');
-  src: url('../fonts/metaserif-reg/metaserif-reg.eot?#iefix') format('embedded-opentype'), url('../fonts/metaserif-reg/metaserif-reg.woff') format('woff'), url('../fonts/metaserif-reg/metaserif-reg.ttf') format('truetype'), url('../fonts/metaserif-reg/metaserif-reg.svg#meta') format('svg');
-  font-weight: 400;
-  font-style: normal; }
-
-@font-face {
-  font-family: 'meta';
-  src: url('../fonts/metaserif-bold/metaserif-bold.eot');
-  src: url('../fonts/metaserif-bold/metaserif-bold.eot?#iefix') format('embedded-opentype'), url('../fonts/metaserif-bold/metaserif-bold.woff') format('woff'), url('../fonts/metaserif-bold/metaserif-bold.ttf') format('truetype'), url('../fonts/metaserif-bold/metaserif-bold.svg#meta') format('svg');
-  font-weight: 600;
-  font-style: normal; }
-
-@font-face {
-  font-family: 'dagny';
-  src: url('../fonts/dagny-reg/dagny-reg.eot');
-  src: url('../fonts/dagny-reg/dagny-reg.eot?#iefix') format('embedded-opentype'), url('../fonts/dagny-reg/dagny-reg.woff') format('woff'), url('../fonts/dagny-reg/dagny-reg.ttf') format('truetype'), url('../fonts/dagny-reg/dagny-reg.svg#dagny') format('svg');
-  font-weight: 400;
-  font-style: normal; }
-
-@font-face {
-  font-family: 'dagny';
-  src: url('../fonts/dagny-bold/dagny-bold.eot');
-  src: url('../fonts/dagny-bold/dagny-bold.eot?#iefix') format('embedded-opentype'), url('../fonts/dagny-bold/dagny-bold.woff') format('woff'), url('../fonts/dagny-bold/dagny-bold.ttf') format('truetype'), url('../fonts/dagny-bold/dagny-bold.svg#dagny') format('svg');
-  font-weight: 600;
-  font-style: normal; }
-
-@font-face {
-  font-family: 'dagny';
-  src: url('../fonts/dagny-black/dagny-black.eot');
-  src: url('../fonts/dagny-black/dagny-black.eot?#iefix') format('embedded-opentype'), url('../fonts/dagny-black/dagny-black.woff') format('woff'), url('../fonts/dagny-black/dagny-black.ttf') format('truetype'), url('../fonts/dagny-black/dagny-black.svg#dagny') format('svg');
-  font-weight: 900;
-  font-style: normal; }
 
 .fadein {
   -webkit-animation: fadein 1s;
@@ -271,7 +236,8 @@ td, th {
 
 *, *::before, *:after {
   box-sizing: border-box;
-  font-family: 'meta', georgia, serif;
+  font-family: 'ff-meta-serif-web-pro', georgia, serif;
+  font-weight: 500;
   text-rendering: optimizeSpeed;
   box-sizing: border-box;
   padding: 0;
@@ -287,7 +253,6 @@ body, html {
 body {
   background-color: #f7f7f7;
   font-size: 16px;
-  font-weight: 400;
   line-height: 1.4;
   color: #39333F; }
 
@@ -381,22 +346,22 @@ h1, h2, h3, h4, h5, h6, p, ul, ol, dl, blockquote, pre, button {
 
 h1, .h1 {
   font-size: 86px;
-  font-family: 'dagny', helvetica, sans-serif;
-  font-weight: 600;
+  font-family: 'ff-dagny-web-pro', helvetica, sans-serif;
+  font-weight: 700;
   margin-bottom: 0;
   line-height: 1; }
 
 h2, .h2 {
   font-size: 60px;
-  font-family: 'dagny', helvetica, sans-serif;
-  font-weight: 600;
+  font-family: 'ff-dagny-web-pro', helvetica, sans-serif;
+  font-weight: 700;
   color: #E30613;
   letter-spacing: -1px;
   line-height: 1; }
 
 h3, .h3 {
   font-size: 26px;
-  font-weight: 400;
+  font-weight: 500;
   line-height: 1.2; }
 
 h4, .h4 {
@@ -404,7 +369,7 @@ h4, .h4 {
 
 h5, .h5 {
   font-size: 14px;
-  font-family: 'dagny', helvetica, sans-serif;
+  font-family: 'ff-dagny-web-pro', helvetica, sans-serif;
   font-weight: 400;
   color: #E30613;
   text-transform: uppercase;
@@ -415,7 +380,7 @@ h6, .h6 {
   font-size: 12px; }
 
 strong {
-  font-weight: 600; }
+  font-weight: 700; }
 
 ::-moz-selection {
   background: rgba(57, 51, 63, 0.2); }
@@ -435,7 +400,7 @@ a {
     color: #131115; }
 
 .btn, button {
-  font-family: 'dagny', helvetica, sans-serif;
+  font-family: 'ff-dagny-web-pro', helvetica, sans-serif;
   margin-bottom: 0;
   border: none;
   border-radius: 25px;
@@ -493,7 +458,7 @@ ul {
     margin-bottom: 0; }
 
 dt {
-  font-weight: 600; }
+  font-weight: 700; }
 
 dd {
   margin-left: 1.4em; }
@@ -535,7 +500,8 @@ dd {
         padding-left: 20px; } }
     .gbl-head .nav a, .gbl-head .contact a {
       color: white;
-      font-family: 'dagny', helvetica, sans-serif;
+      font-family: 'ff-dagny-web-pro', helvetica, sans-serif;
+      font-weight: 400;
       padding: 10px 15px;
       color: rgba(255, 255, 255, 0.6); }
       @media screen and (max-width: 800px) {
@@ -549,7 +515,7 @@ dd {
           margin: 0;
           font-size: 60px;
           display: block;
-          font-weight: 600;
+          font-weight: 700;
           z-index: 2;
           position: relative; } }
       .gbl-head .nav a:hover, .gbl-head .nav a.active, .gbl-head .contact a:hover, .gbl-head .contact a.active {
@@ -573,7 +539,7 @@ dd {
         .gbl-head .contact a {
           padding: 5px 0 0;
           font-size: 16px;
-          font-weight: 400;
+          font-weight: 500;
           border-bottom: none;
           z-index: 0; } }
   .gbl-head .show-menu {
@@ -588,8 +554,8 @@ dd {
       clear: both; }
     .home .gbl-head .title {
       font-size: 30px;
-      font-family: 'meta', georgia, serif;
-      font-weight: 400;
+      font-family: 'ff-meta-serif-web-pro', georgia, serif;
+      font-weight: 500;
       padding: 40px 0 80px;
       line-height: 1.5;
       max-width: 700px; }
@@ -726,5 +692,7 @@ dd {
     width: 50%; }
   .stream .post:nth-of-type(3n), .stream .post:nth-of-type(4n), .stream .post:nth-of-type(5n), .stream .post:nth-of-type(6n) {
     width: 33.33%; }
+    .stream .post:nth-of-type(3n) img, .stream .post:nth-of-type(4n) img, .stream .post:nth-of-type(5n) img, .stream .post:nth-of-type(6n) img {
+      display: none; }
   .stream .post:nth-of-type(7n) {
     width: 66.66%; } }

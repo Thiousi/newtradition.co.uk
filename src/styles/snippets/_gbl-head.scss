@@ -51,6 +51,7 @@
     a {
       color: white;
       font-family: $sans;
+      font-weight: $sans-regular;
       padding: 10px 15px;
       color: rgba(white, 0.6);
 
@@ -67,7 +68,7 @@
         margin: 0;
         font-size: $giga;
         display: block;
-        font-weight: $bold;
+        font-weight: $sans-bold;
         z-index: 2;
         position: relative;
       }
@@ -100,7 +101,7 @@
       @media screen and ( max-width: $medium ) {
         padding: 5px 0 0;
         font-size: $delta;
-        font-weight: $regular;
+        font-weight: $serif-regular;
         border-bottom: none;
         z-index: 0;
       }
@@ -119,7 +120,7 @@
     .home & {
       font-size: $beta + 4px;
       font-family: $serif;
-      font-weight: $regular;
+      font-weight: $serif-regular;
       padding: 40px 0 80px;
       line-height: 1.5;
       max-width: 700px;

@@ -17,11 +17,12 @@ $epsilon: 14px;
 $zeta: 12px; 
 $body-size: $delta;
 
-$serif: 'meta', georgia, serif;
-$sans: 'dagny', helvetica, sans-serif; 
-$regular: 400;
-$bold: 600;
-$black: 900;
+$serif: 'ff-meta-serif-web-pro', georgia, serif;
+$serif-regular: 500;
+$serif-bold: 700;
+$sans: 'ff-dagny-web-pro', helvetica, sans-serif; 
+$sans-regular: 400;
+$sans-bold: 700;
 
 // SPACING: Grid, Viewports etc
 $large: 1000px;
