@@ -1,4 +1,15 @@
 .stream {
+  opacity: 0;
+  height: 0;
+  overflow: hidden;
+  transition: opacity 0.8s;
+
+  &.active {
+    opacity: 1;
+    height: 100%;
+    transition: opacity 0.8s;
+  }
+
   .post {
     float: left;
     padding-left: 10px;
@@ -29,5 +40,9 @@
     .post:nth-of-type(7n) {
       width: 66.66%;
     }
+  }
+
+  &.active + .btn-load {
+    display: none;
   }
 }

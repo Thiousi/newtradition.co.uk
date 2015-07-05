@@ -40,6 +40,11 @@
     margin-bottom: 10px;
   }
 
+  .client {
+    color: lighten($light-ink, 20);
+    margin-top: 5px;
+  }
+
   &.col-2-3 h3 {
     font-size: $beta + 6px;
   }

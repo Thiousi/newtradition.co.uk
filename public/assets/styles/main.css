@@ -668,6 +668,9 @@ dd {
     margin-bottom: 15px; }
   .post h3 {
     margin-bottom: 10px; }
+  .post .client {
+    color: #9a959e;
+    margin-top: 5px; }
   .post.col-2-3 h3 {
     font-size: 32px; }
   .post p {
@@ -681,18 +684,31 @@ dd {
   .post:hover p {
     color: #39333F; }
 
-.stream .post {
-  float: left;
-  padding-left: 10px;
-  padding-right: 10px; }
-@media screen and (min-width: 550px) {
-  .stream .post:nth-of-type(-n+2):after {
-    display: none; }
-  .stream .post:first-of-type, .stream .post:nth-of-type(2n) {
-    width: 50%; }
-  .stream .post:nth-of-type(3n), .stream .post:nth-of-type(4n), .stream .post:nth-of-type(5n), .stream .post:nth-of-type(6n) {
-    width: 33.33%; }
-    .stream .post:nth-of-type(3n) img, .stream .post:nth-of-type(4n) img, .stream .post:nth-of-type(5n) img, .stream .post:nth-of-type(6n) img {
+.stream {
+  opacity: 0;
+  height: 0;
+  overflow: hidden;
+  -webkit-transition: opacity 0.8s;
+  transition: opacity 0.8s; }
+  .stream.active {
+    opacity: 1;
+    height: 100%;
+    -webkit-transition: opacity 0.8s;
+    transition: opacity 0.8s; }
+  .stream .post {
+    float: left;
+    padding-left: 10px;
+    padding-right: 10px; }
+  @media screen and (min-width: 550px) {
+    .stream .post:nth-of-type(-n+2):after {
       display: none; }
-  .stream .post:nth-of-type(7n) {
-    width: 66.66%; } }
+    .stream .post:first-of-type, .stream .post:nth-of-type(2n) {
+      width: 50%; }
+    .stream .post:nth-of-type(3n), .stream .post:nth-of-type(4n), .stream .post:nth-of-type(5n), .stream .post:nth-of-type(6n) {
+      width: 33.33%; }
+      .stream .post:nth-of-type(3n) img, .stream .post:nth-of-type(4n) img, .stream .post:nth-of-type(5n) img, .stream .post:nth-of-type(6n) img {
+        display: none; }
+    .stream .post:nth-of-type(7n) {
+      width: 66.66%; } }
+  .stream.active + .btn-load {
+    display: none; }

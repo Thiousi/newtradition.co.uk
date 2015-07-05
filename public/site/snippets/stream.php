@@ -21,13 +21,13 @@
         <?php endif ?>
         <h5>Case Study</h5>
         <h3><?php echo $f->title()->html() ?></h3>
-        <h4><?php echo $f->client()->html() ?></h4>
         <p><?php echo $f->text()->excerpt(300) ?></p>
+        <span class="client">Client: <?php echo $f->client()->html() ?></span>
       </a>
     <?php endforeach ?>
   </div>
 </section>
-<section class="stream grid">
+<section class="stream grid active">
   <?php foreach($site->find('journal','work')->children()->visible()->limit(6) as $p): ?>
     <a href="<?php echo $p->url() ?>" class="post <?php echo $p->template() ?>">
       <?php if($image = $p->image('hero.jpg')): ?>
@@ -39,12 +39,12 @@
       <?php elseif($p->template() == 'casestudy'): ?><h5>Case Study</h5>
       <?php endif ?>
       <h3><?php echo $p->title()->html() ?></h3>
-      <?php if($p->template() == 'casestudy'): ?><h4><?php echo $p->client()->html() ?></h4><?php endif ?>
       <p><?php echo $p->text()->excerpt(300) ?></p>
+      <?php if($p->template() == 'casestudy'): ?><span class="client">Client: <?php echo $p->client()->html() ?></span><?php endif ?>
     </a>
   <?php endforeach ?>
 </section>
-<section class="stream grid">
+<section class="stream stream-2 grid">
   <?php foreach($site->find('journal','work')->children()->visible()->offset(6)->limit(6) as $p): ?>
     <a href="<?php echo $p->url() ?>" class="post <?php echo $p->template() ?>">
       <?php if($image = $p->image('hero.jpg')): ?>
@@ -56,12 +56,12 @@
       <?php elseif($p->template() == 'casestudy'): ?><h5>Case Study</h5>
       <?php endif ?>
       <h3><?php echo $p->title()->html() ?></h3>
-      <?php if($p->template() == 'casestudy'): ?><h4><?php echo $p->client()->html() ?></h4><?php endif ?>
       <p><?php echo $p->text()->excerpt(300) ?></p>
+      <?php if($p->template() == 'casestudy'): ?><span class="client">Client: <?php echo $p->client()->html() ?></span><?php endif ?>
     </a>
   <?php endforeach ?>
 </section>
-<section class="stream grid">
+<section class="stream stream-3 grid">
   <?php foreach($site->find('journal','work')->children()->visible()->offset(12)->limit(6) as $p): ?>
     <a href="<?php echo $p->url() ?>" class="post <?php echo $p->template() ?>">
       <?php if($image = $p->image('hero.jpg')): ?>
@@ -73,8 +73,8 @@
       <?php elseif($p->template() == 'casestudy'): ?><h5>Case Study</h5>
       <?php endif ?>
       <h3><?php echo $p->title()->html() ?></h3>
-      <?php if($p->template() == 'casestudy'): ?><h4><?php echo $p->client()->html() ?></h4><?php endif ?>
       <p><?php echo $p->text()->excerpt(300) ?></p>
+      <?php if($p->template() == 'casestudy'): ?><span class="client">Client: <?php echo $p->client()->html() ?></span><?php endif ?>
     </a>
   <?php endforeach ?>
 </section>
