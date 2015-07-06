@@ -1,33 +1,20 @@
 <?php snippet('header') ?>
 
-  <main class="main" role="main">
-
-    <h1><?php echo $page->title()->html() ?></h1>
-
-    <ul class="meta cf">
-      <li><b>Year:</b> <time datetime="<?php echo $page->date('c') ?>"><?php echo $page->date('Y', 'year') ?></time></li>
-      <li><b>Tags:</b> <?php echo $page->tags() ?></li>
-    </ul>
-
-    <div class="text">
-      <?php echo $page->text()->kirbytext() ?>
-
-      <?php foreach($page->images()->sortBy('sort', 'asc') as $image): ?>
-      <figure>
-        <img src="<?php echo $image->url() ?>" alt="<?php echo $page->title()->html() ?>">
-      </figure>
-      <?php endforeach ?>
+<?php foreach($site->find('journal')->children()->filterBy('featured', 'true')->visible()->sortBy('date', 'desc')->limit(1) as $featured): ?>
+  <a href="<?php echo $featured->url() ?>" title="<?php echo html($featured->title()) ?>" class="featured">
+    <div class="grid">
+      <h5 class="col-1-4">Featured <br>
+        <?php if($featured->template() == 'longread'): ?>Long Read
+        <?php elseif($featured->template() == 'news'): ?>News
+        <?php elseif($featured->template() == 'comment'): ?>Comment
+        <?php endif ?>
+      </h5>
+      <div class="col-3-4">
+        <h2><?php echo html($featured->title()) ?></h2>
+        <p class="excerpt-lrg"><?php echo $featured->text()->excerpt(150) ?></p>
+      </div>
     </div>
-
-    <nav class="nextprev cf" role="navigation">
-      <?php if($prev = $page->prevVisible()): ?>
-      <a class="prev" href="<?php echo $prev->url() ?>">&larr; previous</a>
-      <?php endif ?>
-      <?php if($next = $page->nextVisible()): ?>
-      <a class="next" href="<?php echo $next->url() ?>">next &rarr;</a>
-      <?php endif ?>
-    </nav>
-
-  </main>
+  </a>
+<?php endforeach ?>
 
 <?php snippet('footer') ?>

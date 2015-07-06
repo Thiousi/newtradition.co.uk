@@ -1,15 +1,31 @@
 .featured {
   background-color: $slate;
   padding-top: 40px;
+  padding-bottom: 30px;
   margin-bottom: 20px;
+  display: block;
 
   h2 {
     display: table;
     position: relative;
-    margin-bottom: -40px;
-    margin-left: $gutter - 3px;
+    margin-left: $gutter;
     z-index: 1;
   }
+
+  h5 {
+    line-height: 1.4;
+  }
+
+  .excerpt-lrg {
+    margin-left: $gutter;
+  }
+}
+
+.excerpt-lrg {
+  color: $primary;
+  font-size: $beta;
+  font-family: $sans;
+  font-weight: $sans-regular;
 }
 
 .post {

@@ -1,3 +1,14 @@
+.home {
+
+  .featured {
+    padding-bottom: 0;
+  }
+  
+  h2 {
+    margin-bottom: -40px;
+    margin-left: $gutter - 3px;
+  }
+}
 .stream {
   .post {
     float: left;
@@ -51,7 +62,8 @@
     }
 
     .post:nth-of-type(3),
-    .post:nth-of-type(12) {
+    .post:nth-of-type(12),
+    .post:nth-of-type(16) {
       clear: both;
     }
 
