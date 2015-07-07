@@ -7,10 +7,9 @@ $(document).ready(function() {
   $('.btn-load').bind('click', loader);
     var amount = 2;
     var offset = (amount * 3) + 1;
-
     function loadMore(){
     $.ajax({
-      url      : 'ajax',
+      url      : 'ajax-journal',
       type     : 'post',
       dataType : 'json',
       data : {

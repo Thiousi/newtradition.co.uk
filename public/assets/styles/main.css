@@ -708,6 +708,8 @@ dd {
 
 .home .featured {
   padding-bottom: 0; }
+  .home .featured .col-2-3 .post-img {
+    height: 280px; }
 .home h2 {
   margin-bottom: -40px;
   margin-left: 7px; }
@@ -725,8 +727,13 @@ dd {
       display: none; }
   .stream .post:nth-of-type(7), .stream .post:nth-of-type(14) {
     width: 66.66%; }
-    .stream .post:nth-of-type(7) img, .stream .post:nth-of-type(7) .post-img, .stream .post:nth-of-type(14) img, .stream .post:nth-of-type(14) .post-img {
+    .stream .post:nth-of-type(7) img, .stream .post:nth-of-type(7) .post-img, .stream .post:nth-of-type(7) + .post .post-img, .stream .post:nth-of-type(14) img, .stream .post:nth-of-type(14) .post-img, .stream .post:nth-of-type(14) + .post .post-img {
+      height: 240px;
       display: block; }
+    .stream .post:nth-of-type(7) + .post .post-img, .stream .post:nth-of-type(14) + .post .post-img {
+      height: 200px; }
+    .stream .post:nth-of-type(7) + .post + .post .post-img, .stream .post:nth-of-type(14) + .post + .post .post-img {
+      display: none; }
   .stream .post:nth-of-type(8) {
     width: 100%; }
     .stream .post:nth-of-type(8) .post-img {
@@ -734,9 +741,18 @@ dd {
       height: 200px; }
   .stream .post:first-of-type, .stream .post:nth-of-type(2), .stream .post:nth-of-type(12), .stream .post:nth-of-type(13) {
     width: 50%; }
-    .stream .post:first-of-type img, .stream .post:first-of-type .post-img, .stream .post:nth-of-type(2) img, .stream .post:nth-of-type(2) .post-img, .stream .post:nth-of-type(12) img, .stream .post:nth-of-type(12) .post-img, .stream .post:nth-of-type(13) img, .stream .post:nth-of-type(13) .post-img {
-      display: block; }
+    .stream .post:first-of-type .post-img, .stream .post:nth-of-type(2) .post-img, .stream .post:nth-of-type(12) .post-img, .stream .post:nth-of-type(13) .post-img {
+      display: block;
+      height: 240px; }
   .stream .post:nth-of-type(3), .stream .post:nth-of-type(12), .stream .post:nth-of-type(16) {
     clear: both; }
   .stream .post:nth-of-type(6) img, .stream .post:nth-of-type(6) .post-img, .stream .post:nth-of-type(14) img, .stream .post:nth-of-type(14) .post-img {
     display: block; } }
+
+.journal-stream .post.casestudy {
+  display: none; }
+.journal-stream .col-3-4 {
+  float: right; }
+.journal-stream .col-1-4 {
+  float: left;
+  margin-left: 10px; }

@@ -27,8 +27,8 @@ module.exports = {
 
   javascript: {
     name: 'main',
-    source: src+'scripts/**/*.js',
-    dest: dist+'assets/scripts/'
+    source: src+'js/**/*.js',
+    dest: dist+'assets/js/'
   },
 
   images: {
@@ -38,7 +38,7 @@ module.exports = {
 
   wiredep: {
     source: vendor+'**/*.js',
-    dest: dist+'assets/scripts/'
+    dest: dist+'assets/js/'
   },
 
   server: {
@@ -53,7 +53,7 @@ module.exports = {
     all: [
       './.sass-cache',
       dist+'assets/images/*',
-      dist+'assets/scripts/*',
+      dist+'assets/js/*',
       dist+'assets/styles/*',
     ]
   },
@@ -61,7 +61,7 @@ module.exports = {
   watch: {
     livereload: dist+'**/*.{css,js,html,php}',
     styles: src + 'styles/**/*.scss',
-    javascript: src+'scripts/**/*.js',
+    javascript: src+'js/**/*.js',
     vendor_javascript: vendor+'**/*.js',
     images: src+'images/**/*.*',
     bower: './bower.json'

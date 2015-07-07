@@ -2,6 +2,12 @@
 
   .featured {
     padding-bottom: 0;
+
+    .col-2-3 {
+      .post-img {
+        height: 280px;
+      }
+    }
   }
   
   h2 {
@@ -35,8 +41,18 @@
       width: 66.66%;
 
       img,
-      .post-img {
+      .post-img,
+      & + .post .post-img {
+        height: 240px;
         display: block;
+      }
+
+      & + .post .post-img {
+        height: 200px;
+      }
+
+      & + .post + .post .post-img {
+        display: none;
       }
     }
 
@@ -55,9 +71,9 @@
     .post:nth-of-type(13) {
       width: 50%;
 
-      img,
       .post-img {
         display: block;
+        height: 240px;
       }
     }
 

@@ -1,0 +1,15 @@
+.journal-stream {
+
+  .post.casestudy {
+    display: none;
+  }
+
+  .col-3-4 {
+    float: right;
+  }
+
+  .col-1-4 {
+    float: left;
+    margin-left: $gutter;
+  }
+}
