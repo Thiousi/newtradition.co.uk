@@ -38,7 +38,25 @@
     <?php endforeach ?>
     <button class="btn btn-line btn-load">Load more</button>
   </div>
-  <aside class="col-1-4"></aside>
+  <aside class="col-1-4 sidebar">
+    <div class="sidebar-list">
+      <h5>Categories</h5>
+      <ul class="cat-list">
+        <li><a href="#longread" class="cat">Long Read</a></li>
+        <li><a href="#news" class="cat">News</a></li>
+        <li><a href="#comment" class="cat">Comment</a></li>
+      </ul>
+    </div>
+    <div class="sidebar-list">
+      <h5>Tags</h5>
+      <?php $tags = $page->children()->visible()->pluck('tags', ',', true);?>
+      <ul class="cat-list">
+        <?php foreach($tags as $tag): ?>
+          <li class="cat"><a href="<?php echo url('#' . $tag)?>"><?php echo html($tag) ?></a></li>
+        <?php endforeach ?>
+      </ul>
+    </div>
+  </aside>
 </section>
 
 <?php snippet('footer') ?>

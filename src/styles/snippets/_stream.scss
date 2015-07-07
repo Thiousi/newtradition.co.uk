@@ -1,0 +1,82 @@
+.stream {
+  .post {
+    float: left;
+    padding-left: 10px;
+    padding-right: 10px;
+
+    &:before {
+      width: calc(100% - 20px);
+      left: 10px;
+    }
+  }
+
+  @media screen and ( min-width: $small ) {
+    .post:nth-of-type(-n+2):after {
+      display: none;
+    }
+
+    .post {
+      width: 33.33%;
+
+      img,
+      .post-img {
+        display: none;
+      }
+    }
+
+    .post:nth-of-type(7),
+    .post:nth-of-type(14) {
+      width: 66.66%;
+
+      img,
+      .post-img,
+      & + .post .post-img {
+        height: 240px;
+        display: block;
+      }
+
+      & + .post .post-img {
+        height: 200px;
+      }
+
+      & + .post + .post .post-img {
+        display: none;
+      }
+    }
+
+    .post:nth-of-type(8) {
+      width: 100%;
+
+      .post-img {
+        display: block;
+        height: 200px;
+      }
+    }
+
+    .post:first-of-type,
+    .post:nth-of-type(2),
+    .post:nth-of-type(12),
+    .post:nth-of-type(13) {
+      width: 50%;
+
+      .post-img {
+        display: block;
+        height: 240px;
+      }
+    }
+
+    .post:nth-of-type(3),
+    .post:nth-of-type(12),
+    .post:nth-of-type(16) {
+      clear: both;
+    }
+
+    .post:nth-of-type(6),
+    .post:nth-of-type(14) {
+      img,
+      .post-img {
+        display: block;
+      }
+    }
+  }
+}

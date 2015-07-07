@@ -108,3 +108,25 @@ dt {
 dd {
   margin-left: 1.4em;
 }
+
+// Categories
+.cat {
+  padding: 9px 12px;
+  border: 1px solid rgba($primary, 0.1);
+  color: rgba($primary, 0.6);
+  font-family: $sans;
+  display: table;
+  margin-top: 6px;
+  margin-bottom: 2px;
+  border-radius: 2px;
+  text-transform: capitalize;
+  font-size: $epsilon;
+  line-height: 1;
+
+  &:hover {
+    color: $primary;
+    border: 1px solid rgba($primary, 0.4);
+  }
+}
+
+// Tags

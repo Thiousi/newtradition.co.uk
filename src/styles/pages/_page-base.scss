@@ -5,6 +5,10 @@
   margin-bottom: 20px;
   display: block;
 
+  &:hover {
+    background-color: darken($slate, 4);
+  }
+
   h2 {
     display: table;
     position: relative;
@@ -34,14 +38,14 @@
   position: relative;
   display: block;
 
-  &:after {
+  &:before {
     content: "";
     position: absolute;
     top: 0;
-    left: 10px;
+    left: 0;
     background-color: darken($slate, 3);
     height: 1px;
-    width: calc(100% - 20px);
+    width: 100%;
 
     .featured & {
       display: none;
@@ -58,6 +62,8 @@
     margin-bottom: 15px;
     background-size: cover;
     background-position: center;
+    color: transparent;
+    font-size: 1px;
   }
 
   h3 {
@@ -93,5 +99,16 @@
     p {
       color: $ink;
     }
+  }
+}
+
+// Sidebar
+.sidebar-list {
+  border-top: 1px solid darken($slate, 3);
+  padding-top: 15px;
+  padding-bottom: 40px;
+
+  h5 {
+    margin-bottom: 12px;
   }
 }
