@@ -55,11 +55,9 @@
       padding: 10px 15px;
       color: rgba(white, 0.6);
 
-      @media screen and ( max-width: $medium + 150px ) {
         &:first-child {
-          padding-left: 0;
+          padding-left: 10px;
         }
-      }
 
       @media screen and ( max-width: $medium ) {
         border-bottom: 2px solid darken($ink, 2);
@@ -78,6 +76,10 @@
         color: white;
       }
     }
+  }
+
+  .nav {
+    padding-left: 0;
   }
 
   .contact {
@@ -115,7 +117,7 @@
   .title {
     @include clearfix;
     padding: 40px 0 10px;
-    margin-left: calc(25% + 25px);
+    margin-left: calc(25% + 10px);
 
     .home & {
       font-size: $beta + 4px;
@@ -126,7 +128,7 @@
       max-width: 700px;
 
       @media screen and ( max-width: $medium + 150px ) {
-        padding: 20px 0 60px;
+        padding: 20px inherit 60px;
         font-size: $beta;
       }
 
@@ -187,7 +189,7 @@
       border-radius: 0;
       position: absolute;
       right: 18px;
-      bottom: 15px;
+      bottom: 20px;
       z-index: 2;
       display: block;
 

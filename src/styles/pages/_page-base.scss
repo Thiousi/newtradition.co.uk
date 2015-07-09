@@ -12,16 +12,17 @@
   h2 {
     display: table;
     position: relative;
-    margin-left: $gutter;
     z-index: 1;
   }
 
   h5 {
     line-height: 1.4;
-  }
 
-  .excerpt-lrg {
-    margin-left: $gutter;
+    strong {
+      display: block;
+      font-family: $sans;
+      font-weight: $sans-bold;
+    }
   }
 }
 
@@ -34,9 +35,13 @@
 
 .post {
   padding-top: 15px;
-  padding-bottom: 40px;
+  padding-bottom: 30px;
   position: relative;
   display: block;
+
+  @media screen and ( max-width: $small ) {
+    padding-bottom: 20px;
+  }
 
   &:before {
     content: "";
@@ -108,7 +113,17 @@
   padding-top: 15px;
   padding-bottom: 40px;
 
+  @media screen and ( max-width: $small ) {
+    border-top: none;
+    padding-top: 0;
+    padding-bottom: 10px;
+  }
+
   h5 {
     margin-bottom: 12px;
+
+    @media screen and ( max-width: $small ) {
+      margin-bottom: 0;
+    }
   }
 }

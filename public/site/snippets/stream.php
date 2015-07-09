@@ -40,7 +40,7 @@
       <?php elseif ($article->template() == 'casestudy'): ?><h5>Case Study</h5>
       <?php endif ?>
       <h3><?php echo html($article->title()) ?></h3>
-      <p><?php echo $article->text()->excerpt(220) ?></p>
+      <p><?php echo $article->text()->excerpt(200) ?></p>
       <?php if($article->template() == 'casestudy'): ?><span class="client">Client: <?php echo html($article->client()) ?></span><?php endif ?>
     </a>
     <?php $count++ ?>

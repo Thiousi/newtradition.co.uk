@@ -110,6 +110,14 @@ dd {
 }
 
 // Categories
+.cat-list {
+  li {
+    @media screen and ( max-width: $small ) {
+      display: inline-block;
+    }
+  }
+}
+
 .cat {
   padding: 9px 12px;
   border: 1px solid rgba($primary, 0.1);
@@ -129,4 +137,12 @@ dd {
   }
 }
 
-// Tags
+.tag {
+  color: rgba($light-ink, 0.8);
+  border-color: rgba($light-ink, 0.2);
+
+  &:hover {
+    color: $ink;
+    border-color: rgba($light-ink, 0.6);
+  }
+}

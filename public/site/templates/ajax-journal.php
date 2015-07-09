@@ -18,14 +18,9 @@
         $html .= '<h5>News</h5>';
       } elseif ($article->template() == 'comment') {
         $html .= '<h5>Comment</h5>';
-      } else {
-        $html .= '<h5>Case Study</h5>';
       }
       $html .= '<h3>' . html($article->title()) . '</h3>';
       $html .= '<p>' . $article->text()->excerpt(300) . '</p>';
-      if ($article->template() == 'casestudy') {
-       $html .= '<span class="client">Client: ' . $article->client()->html() . '</span';
-      }
       $html .= '</a>';
       $count++;
     }

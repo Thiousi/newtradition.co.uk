@@ -9,7 +9,7 @@
   <meta name="keywords" content="<?php echo $site->keywords()->html() ?>">
   <script src="//use.typekit.net/gjw4ybb.js"></script>
   <script>try{Typekit.load();}catch(e){}</script>
-  <?php echo FTMD::css('main'); ?>
+  <?php echo FTMD::css('main.min'); ?>
 </head>
 <body class="<?php echo $page->template() ?>">
 
@@ -22,6 +22,8 @@
       <?php if ($page->isHomePage()): ?>
         <h1 class="title col-3-4"><?php echo html($site->description()) ?></h1>
       <?php elseif ($page->hasChildren()): ?>
+        <h1 class="title col-3-4"><?php echo html($page->title()) ?></h1>
+      <?php elseif($page->template() == 'who'): ?>
         <h1 class="title col-3-4"><?php echo html($page->title()) ?></h1>
       <?php else: ?>
         <h1 class="title col-3-4"><?php echo html($page->parent()->title()) ?></h1>
