@@ -80,6 +80,10 @@
 
   .nav {
     padding-left: 0;
+
+    @media screen and ( max-width: $medium ) {
+      padding-left: $gutter * 2;
+    }
   }
 
   .contact {
@@ -89,7 +93,7 @@
 
     @media screen and ( max-width: $medium ) {
       position: absolute;
-      padding: 10px 0 0 20px;
+      padding: 10px 0 $gutter $gutter;
       bottom: 0;
       float: none;
       display: block;

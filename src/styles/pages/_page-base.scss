@@ -5,10 +5,6 @@
   margin-bottom: 20px;
   display: block;
 
-  &:hover {
-    background-color: darken($slate, 4);
-  }
-
   h2 {
     display: table;
     position: relative;
@@ -24,6 +20,10 @@
       font-weight: $sans-bold;
     }
   }
+}
+
+a.featured:hover {
+  background-color: darken($slate, 4);
 }
 
 .excerpt-lrg {

@@ -555,6 +555,9 @@ dd {
         color: white; }
   .gbl-head .nav {
     padding-left: 0; }
+    @media screen and (max-width: 650px) {
+      .gbl-head .nav {
+        padding-left: 20px; } }
   .gbl-head .contact {
     float: right;
     text-align: right;
@@ -562,7 +565,7 @@ dd {
     @media screen and (max-width: 650px) {
       .gbl-head .contact {
         position: absolute;
-        padding: 10px 0 0 20px;
+        padding: 10px 0 10px 10px;
         bottom: 0;
         float: none;
         display: block;
@@ -718,8 +721,6 @@ dd {
   padding-bottom: 30px;
   margin-bottom: 20px;
   display: block; }
-  .featured:hover {
-    background-color: #e0e0e0; }
   .featured h2 {
     display: table;
     position: relative;
@@ -730,6 +731,9 @@ dd {
       display: block;
       font-family: 'ff-dagny-web-pro', helvetica, sans-serif;
       font-weight: 700; }
+
+a.featured:hover {
+  background-color: #e0e0e0; }
 
 .excerpt-lrg {
   color: #E30613;
