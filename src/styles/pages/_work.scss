@@ -1,0 +1,71 @@
+.work {
+  h3 {
+    font-size: $beta + 6px;
+    color: darken($slate, 20);
+    line-height: 1;
+
+    strong {
+      color: $ink;
+      font-weight: $serif-regular;
+      margin-right: 10px;
+
+      @media screen and ( max-width: $small ) {
+        display: block;
+      }
+    }
+  }
+
+  h5 {
+    margin-bottom: 30px;
+  }
+
+  .featured {
+    h2 {
+      margin-bottom: 15px;
+    }
+
+    h3 {
+      margin-bottom: 10px;
+    }
+  }
+}
+
+.work-stream {
+  padding-top: 20px;
+
+  &:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: darken($slate, 3);
+    height: 1px;
+    width: calc(100% - 40px);
+    left: 20px;
+  }
+
+  .post {
+    padding: 0;
+    margin-top: -5px;
+    margin-bottom: 25px;
+
+    &:before {
+      display: none;
+    }
+
+    &:last-child {
+      margin-bottom: 60px;
+    }
+
+    &:hover {
+
+      h3 {
+        color: rgba($primary, 0.3);
+
+        strong {
+          color: $primary;
+        }
+      }
+    }
+  }
+}
