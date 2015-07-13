@@ -1,4 +1,3 @@
-<input type="checkbox" class="show-menu">
 <div class="menu">
   <nav class="nav col-2-4" role="navigation">
     <?php foreach($pages->visible() as $p): ?>

@@ -22,12 +22,12 @@
         <h5>Case Study</h5>
         <h3><?php echo html($featured->title()) ?></h3>
         <p><?php echo $featured->text()->excerpt(300) ?></p>
-        <span class="client">Client: <?php echo html($featured->client()) ?></span>
+        <h6>Client: <?php echo html($featured->client()) ?></h6>
       </a>
     <?php endforeach ?>
   </div>
 </section>
-<section class="stream grid">
+<section class="stream grid" role="main">
   <?php foreach ($site->find('journal','work')->children()->visible()->sortBy('date', 'desc')->limit(7) as $article): ?>
     <?php $count = 0 ?>
     <a href="<?php echo $article->url() ?>" class="post <?php echo $article->template() ?>">
@@ -41,7 +41,7 @@
       <?php endif ?>
       <h3><?php echo html($article->title()) ?></h3>
       <p><?php echo $article->text()->excerpt(200) ?></p>
-      <?php if($article->template() == 'casestudy'): ?><span class="client">Client: <?php echo html($article->client()) ?></span><?php endif ?>
+      <?php if($article->template() == 'casestudy'): ?><h6>Client: <?php echo html($article->client()) ?></h6><?php endif ?>
     </a>
     <?php $count++ ?>
   <?php endforeach ?>

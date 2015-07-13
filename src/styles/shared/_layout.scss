@@ -5,7 +5,6 @@
   font-family: $serif;
   font-weight: $serif-regular;
   text-rendering: optimizeSpeed;
-  box-sizing: border-box;
   padding: 0;
   margin: 0;
 }
@@ -17,7 +16,6 @@ html {
   position: relative;
   margin: 0;
   padding: 0;
-  overflow-x: hidden;
 }
 
 body {

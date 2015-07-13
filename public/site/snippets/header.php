@@ -12,21 +12,23 @@
   <?php echo FTMD::css('main.min'); ?>
 </head>
 <body class="<?php echo $page->template() ?>">
-
   <header class="gbl-head" role="banner">
     <div class="grid">
-      <div class="inner">
+      <div class="head">
         <div class="col-1-4 logo"><a href="<?php echo $site->url() ?>">New Tradition</a></div>
+        <input type="checkbox" class="show-menu">
         <?php snippet('menu') ?>
       </div>
-      <?php if ($page->isHomePage()): ?>
-        <h1 class="title col-3-4"><?php echo html($site->description()) ?></h1>
-      <?php elseif ($page->hasChildren()): ?>
-        <h1 class="title col-3-4"><?php echo html($page->title()) ?></h1>
-      <?php elseif($page->template() == 'who'): ?>
-        <h1 class="title col-3-4"><?php echo html($page->title()) ?></h1>
-      <?php else: ?>
-        <h1 class="title col-3-4"><?php echo html($page->parent()->title()) ?></h1>
-      <?php endif ?>
+      <h1 class="title col-3-4">
+        <?php if ($page->isHomePage()): ?>
+          <?php echo html($site->description()) ?>
+        <?php elseif ($page->hasChildren()): ?>
+          <?php echo html($page->title()) ?>
+        <?php elseif($page->template() == 'who'): ?>
+          <?php echo html($page->title()) ?>
+        <?php else: ?>
+          <?php echo html($page->parent()->title()) ?>
+        <?php endif ?>
+      </h1>
     </div>
   </header>

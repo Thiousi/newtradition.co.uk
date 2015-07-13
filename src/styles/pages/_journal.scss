@@ -9,5 +9,30 @@
         display: none;
       }
     }
+
+    .post:last-of-type {
+      padding-bottom: 0;
+    }
+  }
+
+  h3 {
+    font-size: $beta + 6px;
+
+    @media screen and ( max-width: $small ) {
+      font-size: $beta + 2px;
+    }
+  }
+
+  p {
+    font-size: $delta + 2px;
+  }
+
+  h5 {
+    span {
+      color: rgba($primary, 0.5);
+      padding-left: 10px;
+      font-family: $sans;
+      font-weight: $sans-regular;
+    }
   }
 }

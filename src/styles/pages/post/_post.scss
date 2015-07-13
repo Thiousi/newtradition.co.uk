@@ -1,0 +1,77 @@
+.post-head {
+  background-color: darken($primary, 4);
+  padding-top: 35px;
+  padding-bottom: 35px;
+
+  @media screen and ( max-width: $medium ) {
+    padding-bottom: 15px;
+
+    [class*="col-"] {
+      width: 100%;
+    }
+    
+    h5 {
+      margin-bottom: 30px;
+    }
+  }
+
+  h2 {
+    line-height: 1.15;
+  }
+
+  h2, h5 {
+    color: white;
+  }
+}
+
+.post-hero {
+  margin: 0;
+  width: 100%;
+  
+  figcaption {
+    margin-left: 25%;
+
+    @media screen and ( max-width: $small ) {
+      margin-left: 0;
+    }
+  } 
+}
+
+.post-hero-img {
+  height: 400px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.post-main {
+  margin-top: 30px;
+  margin-bottom: 60px;
+
+  .post {
+    padding-top: 0;
+  }
+
+  h3 {
+    font-size: $beta + 4px;
+    color: $primary;
+    line-height: 1.4;
+    margin-bottom: 25px;
+
+    @media screen and ( max-width: $medium ) {
+      font-size: $beta - 2px;
+    }
+  }
+
+  h4 {
+    font-size: $gamma + 2px;
+    margin: 40px 0 20px;
+    font-weight: $sans-bold;
+    font-family: $sans;
+    line-height: 1.1;
+  }
+
+  p, li {
+    font-size: $delta + 2px;
+  }
+}

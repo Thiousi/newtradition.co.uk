@@ -17,9 +17,9 @@
   </a>
 <?php endforeach ?>
 
-<section class="grid journal-stream">
+<section class="grid journal-stream" role="main">
   <aside class="col-1-4 sidebar">
-    <div class="sidebar-list">
+    <div class="sidebar-item">
       <h5>Categories</h5>
       <ul class="cat-list">
         <li><a href="#longread" class="cat">Long Read</a></li>
@@ -27,12 +27,12 @@
         <li><a href="#comment" class="cat">Comment</a></li>
       </ul>
     </div>
-    <div class="sidebar-list">
+    <div class="sidebar-item">
       <h5>Tags</h5>
       <?php $tags = $page->children()->visible()->pluck('tags', ',', true);?>
-      <ul class="cat-list">
+      <ul class="tag-list">
         <?php foreach($tags as $tag): ?>
-          <li><a href="<?php echo url('#' . $tag)?>" class="cat tag"><?php echo html($tag) ?></a></li>
+          <li><a href="<?php echo url('#' . $tag)?>" class="tag"><?php echo html($tag) ?></a></li>
         <?php endforeach ?>
       </ul>
     </div>
@@ -44,10 +44,10 @@
         <?php if($image = $article->image('hero.jpg')): ?>
           <div class="post-img" style="background-image: url(<?php echo thumb($image, array('width' => 715, 'height' => 180, 'quality' => 75, 'crop' => true))->url() ?>);"><?php html($article->title()) ?></div>
         <?php endif ?>
-        <?php if ($article->template() == 'longread'): ?><h5>Long Read</h5>
-        <?php elseif ($article->template() == 'news'): ?><h5>News</h5>
-        <?php elseif ($article->template() == 'comment'): ?><h5>Comment</h5>
-        <?php endif ?>
+        <h5><?php if ($article->template() == 'longread'): ?>Long Read
+        <?php elseif ($article->template() == 'news'): ?>News
+        <?php elseif ($article->template() == 'comment'): ?>Comment
+        <?php endif ?><span><?php echo html($article->date('j F')) ?></span></h5>
         <h3><?php echo html($article->title()) ?></h3>
         <p><?php echo $article->text()->excerpt(200) ?></p>
       </a>

@@ -1,7 +1,12 @@
 .gbl-foot {
+  color: lighten($light-ink, 20);
   background-color: white;
   font-size: $epsilon;
 
+  a {
+    color: lighten($light-ink, 20);
+  }
+  
   a:hover {
     color: $primary;
   }

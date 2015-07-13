@@ -62,7 +62,7 @@ a {
 .btn-load {
   clear: both;
   display: table;
-  margin: 20px auto 80px;
+  margin: 50px auto;
 }
 
 // Fields
@@ -109,8 +109,23 @@ dd {
   margin-left: 1.4em;
 }
 
+
+// Article
+figcaption {
+  padding: 10px 0;
+  color: lighten($light-ink, 20);
+  font-size: $epsilon;
+  font-family: $sans;
+
+  img + &,
+  .post-hero & {
+    padding-left: 30px;
+  }
+}
+
 // Categories
-.cat-list {
+.cat-list,
+.tag-list {
   li {
     @media screen and ( max-width: $small ) {
       display: inline-block;
@@ -118,7 +133,8 @@ dd {
   }
 }
 
-.cat {
+.cat,
+.tag {
   padding: 9px 12px;
   border: 1px solid rgba($primary, 0.1);
   color: rgba($primary, 0.6);

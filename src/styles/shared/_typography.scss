@@ -21,6 +21,10 @@ h1, .h1 {
   font-weight: $sans-bold;
   margin-bottom: 0;
   line-height: 1;
+
+  @media screen and ( max-width: $small ) {
+    font-size: $giga;
+  }
 }
 
 h2, .h2 {
@@ -30,6 +34,10 @@ h2, .h2 {
   color: $primary;
   letter-spacing: -1px;
   line-height: 1;
+
+  @media screen and ( max-width: $small ) {
+    font-size: $mega;
+  }
 }
 
 h3, .h3 {
@@ -49,11 +57,14 @@ h5, .h5 {
   color: $primary;
   text-transform: uppercase;
   line-height: 1;
-  margin-bottom: 8px;
+  margin-bottom: 10px;
 }
 
 h6, .h6 {
-  font-size: $zeta;
+  font-size: $delta - 1px;
+  font-family: $sans;
+  font-weight: $sans-regular;
+  color: lighten($light-ink, 20);
 }
 
 strong {

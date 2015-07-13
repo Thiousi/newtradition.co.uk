@@ -1,12 +1,22 @@
-Title: eight
+Title: The Great British brand identity crisis
 
 ----
 
-Tags: Recent work
+Date: 02-08-2016
+
+----
+
+Tags: Recent work, cool
+
+----
+
+Author: Ian Thomas
 
 ----
 
 Text: 
+
+### Symbols are significant. And few symbols carry more significance for those who encounter it than a nation’s flag. So the unveiling of the dove-inspired design by British Airways earlier this week
 
 An appeal by the Wildfowl and Wetlands Trust (WWT) to save the world’s rarest wading bird – the spoon-billed sandpiper (or ‘spoonie’) – from extinction is our latest project to go live.
 
@@ -18,7 +28,7 @@ A direct mail appeal is also due to land in June 2015.
 
 Ian was responsible for project coordination and copywriting, and Claire led creative direction and design.
 
-### What’s the communication problem we’re trying to solve?
+#### What’s the communication problem we’re trying to solve?
 
 The main communication challenge facing WWT is that – as well as keeping regular donors in touch with its conservation efforts – how does it pique the interest of UK wetlands centres’ annual pass holders whose principal motive may not be an interest in species and conservation but family day-trips instead?
 
