@@ -7,6 +7,7 @@
 a {
   color: $ink;
   text-decoration: none;
+  transition: 0.2s;
 
   &:hover, &.hover {
     cursor: pointer;
@@ -40,7 +41,7 @@ a {
 }
 
 .btn-line {
-  padding: 12px 25px 12px 48px;
+  padding: 12px 25px;
   border: 1px solid $ink;
   color: $ink;
   opacity: 0.3;
@@ -49,6 +50,13 @@ a {
   &:hover {
     opacity: 0.7;
   }
+}
+
+.btn-load {
+  clear: both;
+  display: table;
+  padding-left: 48px;
+  margin: 50px auto;
 
   &:after {
     @include icon-pseudo;
@@ -59,10 +67,80 @@ a {
   }
 }
 
-.btn-load {
-  clear: both;
-  display: table;
-  margin: 50px auto;
+.btn-next {
+  padding-right: 35px;
+
+  @media screen and ( max-width: $small ) {
+    padding-right: 30px;
+    padding-left: 15px;
+  }
+
+  &:after {
+    @include icon-pseudo;
+    @extend .i-rarrow;
+    top: 12px;
+    right: 14px;
+    opacity: 0.5;
+  }
+}
+
+.btn-share {
+  padding-right: 20px;
+  padding-left: 42px;
+  position: relative;
+  z-index: 2;
+
+  &:after {
+    @include icon-pseudo;
+    @extend .i-share;
+    top: 12px;
+    left: 17px;
+    opacity: 0.5;
+  }
+}
+
+.btn-email,
+.btn-twitter {
+  font-size: 1px;
+  color: transparent;
+  width: 41px;
+  height: 41px;
+  padding: 0;
+  position: absolute;
+  top: 0;
+  transform: 2s;
+}
+
+.btn-email {
+  left: 108px;
+
+  @media screen and ( max-width: $small ) {
+    left: 0;
+  }
+
+  &:after {
+    @include icon-pseudo;
+    @extend .i-email;
+    top: 11px;
+    left: 8px;
+    opacity: 0.5;
+  }
+}
+
+.btn-twitter {
+  left: 156px;
+
+  @media screen and ( max-width: $small ) {
+    left: 48px;
+  }
+
+  &:after {
+    @include icon-pseudo;
+    @extend .i-twitter;
+    top: 11px;
+    left: 7px;
+    opacity: 0.5;
+  }
 }
 
 // Fields
@@ -146,6 +224,7 @@ figcaption {
   text-transform: capitalize;
   font-size: $epsilon;
   line-height: 1;
+  transition: 0.2s;
 
   &:hover {
     color: $primary;

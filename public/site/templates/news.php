@@ -9,7 +9,7 @@
 
 <?php if($image = $page->image('hero.jpg')): ?>
   <figure class="post-hero">
-    <div class="post-hero-img" style="background-image: url(<?php echo thumb($image, array('width' => 1200, 'height' => 400, 'quality' => 85, 'crop' => true))->url() ?>);"></div>
+    <div class="post-hero-img" style="background-image: url(<?php echo thumb($image, array('width' => 1200, 'height' => 600, 'quality' => 85, 'crop' => true))->url() ?>);"></div>
     <div class="grid">
       <figcaption class="col-3-4"><?php html($image->caption()) ?> This is caption</figcaption>
     </div>
@@ -17,6 +17,17 @@
 <?php endif ?>
 
 <section class="post-main grid" role="main">
+  <article class="col-3-4 post">
+    <?php echo $page->text()->kirbytext() ?>
+    <aside class="post-actions">
+      <div class="post-share">
+        <button class="btn-line btn-share">Share</button>
+        <a href="mailto:?subject=<?php echo html($page->title()) ?>&amp;body=<?php echo html($page->title()) ?>: <?php echo html($page->url()) ?>" class="btn btn-line btn-email">Email</a>
+        <a href="http://twitter.com/share?url=<?php echo html($page->url()) ?>&text=<?php echo html($page->title()) ?> via @<?php echo html($site->twitter()) ?>:" target="_blank" class="btn btn-line btn-twitter">Twitter</a>
+      </div>
+      <a href="<?php html($site->url()) ?>/journal" class="btn btn-line btn-next">Read more posts</a>
+    </aside>
+  </article>
   <aside class="sidebar col-1-4">
     <time class="sidebar-item" datetime="<?php echo $page->date('c') ?>">Published on <?php echo $page->date('d F Y') ?></time>
     <div class="sidebar-item">
@@ -33,9 +44,6 @@
       </ul>
     </div>
   </aside>
-  <article class="col-3-4 post">
-    <?php echo $page->text()->kirbytext() ?>
-  </article>
 </section>
 
 <?php snippet('next-post') ?>

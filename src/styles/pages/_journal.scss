@@ -1,6 +1,10 @@
 .journal-stream {
   padding-top: 20px;
 
+  @media screen and ( max-width: $small ) {
+    padding-top: 10px;
+  }
+
   .col-3-4 {
     .post:first-child {
       padding-top: 0;

@@ -1,55 +1,67 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!-- Generator: Adobe Illustrator 19.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
-<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
-<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="114px"
-	 height="16.6px" viewBox="0 0 114 16.6" style="enable-background:new 0 0 114 16.6;" xml:space="preserve">
+<!-- Generator: Adobe Illustrator 19.0.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 width="159.5px" height="18.9px" viewBox="-454 377.4 159.5 18.9" style="enable-background:new -454 377.4 159.5 18.9;"
+	 xml:space="preserve">
 <style type="text/css">
 	.st0{fill:#FFFFFF;}
 </style>
 <symbol  id="_x2E_i-cam" viewBox="-20.5 -16 41 32">
-	<path id="XMLID_103_" d="M11.5-4.5C11.5,1.8,6.3,7,0,7S-11.5,1.8-11.5-4.5S-6.3-16,0-16S11.5-10.8,11.5-4.5z M0-11.9
-		c-4.1,0-7.4,3.3-7.4,7.4S-4.1,2.9,0,2.9c4.1,0,7.4-3.3,7.4-7.4S4.1-11.9,0-11.9z"/>
-	<path id="XMLID_102_" d="M14.5,11.5h-3.3L8.7,16H-8.5l-2.6-4.5h-3.4c-3.3,0-6-2.7-6-6V-9.9c0-3.4,2.7-6.1,6-6.1h6.8l-0.9,0.5
+	<path id="XMLID_3_" d="M11.5-4.5C11.5,1.8,6.3,7,0,7S-11.5,1.8-11.5-4.5S-6.3-16,0-16S11.5-10.8,11.5-4.5z M0-11.9
+		c-4.1,0-7.4,3.3-7.4,7.4S-4.1,2.9,0,2.9s7.4-3.3,7.4-7.4S4.1-11.9,0-11.9z"/>
+	<path id="XMLID_2_" d="M14.5,11.5h-3.3L8.7,16H-8.5l-2.6-4.5h-3.4c-3.3,0-6-2.7-6-6V-9.9c0-3.4,2.7-6.1,6-6.1h6.8l-0.9,0.5
 		c-1.1,0.6-2.2,1.8-3.3,3.7l-0.1,0.1h-2.6c-0.9,0-1.7,0.8-1.7,1.8V5.5c0,1,0.7,1.7,1.7,1.7h5.8l2.6,4.5H6.2l2.6-4.5h5.7
 		c0.9,0,1.7-0.8,1.7-1.7V-9.9c0-1-0.8-1.8-1.7-1.8h-2.6l-0.1-0.1c-1.1-1.8-2.2-3-3.3-3.7L7.7-16h6.8c3.3,0,6,2.7,6,6.1V5.5
 		C20.5,8.8,17.8,11.5,14.5,11.5z"/>
 </symbol>
 <symbol  id="_x2E_i-close" viewBox="-7.4 -7.4 14.8 14.8">
-	<path id="XMLID_216_" class="st0" d="M1.5,0l5.9-5.9L5.9-7.4L0-1.5l-5.9-5.9l-1.5,1.5L-1.5,0l-5.9,5.9l1.5,1.5L0,1.5l5.9,5.9
-		l1.5-1.5L1.5,0z"/>
+	<path id="XMLID_7_" class="st0" d="M1.5,0l5.9-5.9L5.9-7.4L0-1.5l-5.9-5.9l-1.5,1.5L-1.5,0l-5.9,5.9l1.5,1.5L0,1.5l5.9,5.9l1.5-1.5
+		L1.5,0z"/>
+</symbol>
+<symbol  id="_x2E_i-email" viewBox="-9.6 -7.5 19.1 15">
+	<path d="M9.6,7.5V5.6L2-0.2C1.5-0.6,0.9-0.7,0.2-0.7c-0.6,0-1.3,0.2-1.8,0.5l-8.1,6.1v1.6H9.6z M7.7,2l1.9,1.6V-7.5H-9.6V4l1.9-1.6
+		v-7l3.6,4.5l1.5-1.1L-6-5.6H6.1L2.8-1.5l1.5,1.1l3.4-4.3V2z M6.8,5.6h-13l5.9-4.3c0.3-0.2,1-0.2,1.3,0L6.8,5.6z"/>
 </symbol>
 <symbol  id="_x2E_i-load" viewBox="-16 -16 32 32">
-	<path id="XMLID_96_" d="M0,16c-8.8,0-16-7.2-16-16s7.2-16,16-16c6.5,0,12.2,3.9,14.6,9.6l-4.4,1.8C8.5-8.5,4.6-11.2,0-11.2
+	<path id="XMLID_1_" d="M0,16c-8.8,0-16-7.2-16-16s7.2-16,16-16c6.5,0,12.2,3.9,14.6,9.6l-4.4,1.8C8.5-8.5,4.6-11.2,0-11.2
 		c-6.2,0-11.3,5-11.3,11.2s5,11.2,11.3,11.2c3.1,0,6-1.2,8-3.2L3.4,3.4H16V16l-4.7-4.7C8.4,14.2,4.4,16,0,16z"/>
 </symbol>
 <symbol  id="_x2E_i-menu" viewBox="-11.2 -7.5 22.5 15">
-	<path id="XMLID_199_" class="st0" d="M-11.2-7.5h22.5V-5h-22.5V-7.5z M-11.2-1.2h22.5v2.5h-22.5V-1.2z M-11.2,7.5V5h22.5v2.5H-11.2
-		z"/>
+	<path id="XMLID_6_" class="st0" d="M-11.2-7.5h22.5V-5h-22.5V-7.5z M-11.2-1.2h22.5v2.5h-22.5V-1.2z M-11.2,7.5V5h22.5v2.5H-11.2z"
+		/>
 </symbol>
 <symbol  id="_x2E_i-rarrow" viewBox="-10 -16 20 32">
-	<polygon id="XMLID_98_" points="-10,13.2 4,0 -10,-13.2 -7,-16 10,0 -7,16 	"/>
+	<polygon id="XMLID_4_" points="-10,13.2 4,0 -10,-13.2 -7,-16 10,0 -7,16 	"/>
 </symbol>
-<symbol  id="_x2E_i-share" viewBox="-16.5 -16 33 32">
-	<path id="XMLID_111_" d="M9.7-2.7C8.4-2.7,7.1-3,6-3.8L1.7-0.5v3.3c3,0.7,5.1,3.4,5.1,6.5C6.8,13,3.7,16,0,16s-6.8-3-6.8-6.7
+<symbol  id="_x2E_i-share" viewBox="-16.5 -16.1 33 32.1">
+	<path id="XMLID_5_" d="M9.7-2.7C8.4-2.7,7.1-3,6-3.8L1.7-0.5v3.3c3,0.7,5.1,3.4,5.1,6.5C6.8,13,3.7,16,0,16s-6.8-3-6.8-6.7
 		c0-3.1,2.1-5.7,5.1-6.5v-3.3L-6-3.8C-7.1-3-8.4-2.7-9.7-2.7c-3.7,0-6.8-3-6.8-6.7s3-6.7,6.8-6.7C-6-16-3-13-3-9.3
-		c0,1.1-0.3,2.2-0.8,3.2L0-3.3l3.8-2.9C3.2-7.1,3-8.2,3-9.3C3-13,6-16,9.7-16c3.7,0,6.8,3,6.8,6.7S13.5-2.7,9.7-2.7z M-6.2-9.3
+		c0,1.1-0.3,2.2-0.8,3.2L0-3.3l3.8-2.9C3.2-7.1,3-8.2,3-9.3C3-13,6-16,9.7-16s6.8,3,6.8,6.7S13.5-2.7,9.7-2.7z M-6.2-9.3
 		c0-1.9-1.6-3.4-3.5-3.4s-3.5,1.5-3.5,3.4s1.6,3.4,3.5,3.4S-6.2-7.4-6.2-9.3z M0,12.8c1.9,0,3.5-1.5,3.5-3.4S1.9,5.9,0,5.9
 		s-3.5,1.5-3.5,3.4S-1.9,12.8,0,12.8z M13.2-9.3c0-1.9-1.6-3.4-3.5-3.4s-3.5,1.5-3.5,3.4s1.6,3.4,3.5,3.4S13.2-7.4,13.2-9.3z"/>
 </symbol>
-<g id="Layer_1">
+<symbol  id="_x2E_i-twitter" viewBox="-9.8 -11.9 19.7 16">
+	<path d="M7.8,0.2c0-0.2,0-0.3,0-0.5c0-5.3-4.1-11.5-11.5-11.5c-2.3,0-4.4,0.5-6.2,1.6c0.3,0,0.6-0.1,1-0.1c1.9,0,3.6,0.8,5,1.9
+		c-1.8,0-3.3,1.2-3.8,2.8c0.2,0,0.5-0.1,0.8-0.1c0.4,0,0.7,0,1.1,0.1c-1.8,0.4-3.2,2-3.2,4c0,0,0,0,0,0C-8.5-1.8-7.9-2-7.2-2
+		C-8.3-1.2-9,0-9,1.4c0,0.8,0.2,1.4,0.5,2c2-2.4,5-4,8.3-4.1c-0.1,0.3-0.1,0.6-0.1,0.9c0,2.2,1.8,4,4,4c1.2,0,2.2-0.5,3-1.3
+		c0.9,0.2,1.8,0.5,2.5,1C9,2.9,8.4,2.1,7.5,1.6c0.8,0.1,1.6,0.3,2.3,0.6C9.3,1.4,8.6,0.7,7.8,0.2z"/>
+</symbol>
+<g id="Layer_1_1_">
 </g>
 <g id="Layer_2">
 	
-		<use xlink:href="#_x2E_i-load"  width="32" height="32" id="XMLID_60_" x="-16" y="-16" transform="matrix(0.4688 0 0 -0.4688 7.5 7.4999)" style="overflow:visible;"/>
+		<use xlink:href="#_x2E_i-load"  width="32" height="32" id="XMLID_60_" x="-16" y="-16" transform="matrix(0.4688 0 0 -0.4688 -446.5 384.8999)" style="overflow:visible;"/>
 	
-		<use xlink:href="#_x2E_i-cam"  width="41" height="32" id="XMLID_105_" x="-20.5" y="-16" transform="matrix(0.4635 0 0 -0.4688 27.5 7.5001)" style="overflow:visible;"/>
+		<use xlink:href="#_x2E_i-cam"  width="41" height="32" id="XMLID_105_" x="-20.5" y="-16" transform="matrix(0.4635 0 0 -0.4688 -426.5 384.9001)" style="overflow:visible;"/>
 	
-		<use xlink:href="#_x2E_i-rarrow"  width="20" height="32" id="XMLID_99_" x="-10" y="-16" transform="matrix(0.45 0 0 -0.4688 44.5 7.5001)" style="overflow:visible;"/>
+		<use xlink:href="#_x2E_i-rarrow"  width="20" height="32" id="XMLID_99_" x="-10" y="-16" transform="matrix(0.45 0 0 -0.4688 -409.5 384.9001)" style="overflow:visible;"/>
 	
-		<use xlink:href="#_x2E_i-share"  width="33" height="32" id="XMLID_113_" x="-16.5" y="-16" transform="matrix(0.4688 0 0 -0.4688 59.7344 7.5001)" style="overflow:visible;"/>
+		<use xlink:href="#_x2E_i-share"  width="33" height="32.1" id="XMLID_113_" x="-16.5" y="-16.1" transform="matrix(0.4673 0 0 -0.4673 -394.2656 384.9002)" style="overflow:visible;"/>
 	
-		<use xlink:href="#_x2E_i-menu"  width="22.5" height="15" id="XMLID_177_" x="-11.2" y="-7.5" transform="matrix(0.9778 0 0 -1 81.4688 7.5001)" style="overflow:visible;"/>
+		<use xlink:href="#_x2E_i-menu"  width="22.5" height="15" id="XMLID_177_" x="-11.2" y="-7.5" transform="matrix(0.9778 0 0 -1 -372.4825 384.9001)" style="overflow:visible;"/>
 	
-		<use xlink:href="#_x2E_i-close"  width="14.8" height="14.8" id="XMLID_178_" x="-7.4" y="-7.4" transform="matrix(1 0 0 -1 103.133 7.5922)" style="overflow:visible;"/>
+		<use xlink:href="#_x2E_i-close"  width="14.8" height="14.8" id="XMLID_178_" x="-7.4" y="-7.4" transform="matrix(1 0 0 -1 -350.867 384.9922)" style="overflow:visible;"/>
 </g>
+<use xlink:href="#_x2E_i-twitter"  width="19.7" height="16" id="XMLID_8_" x="-9.8" y="-11.9" transform="matrix(1.0791 0 0 -1.0625 -330.768 381.6077)" style="overflow:visible;"/>
+<use xlink:href="#_x2E_i-email"  width="19.1" height="15" id="XMLID_9_" x="-9.6" y="-7.5" transform="matrix(1.0597 0 0 -1.0667 -306.8139 385.2001)" style="overflow:visible;"/>
 </svg>
