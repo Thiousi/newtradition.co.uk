@@ -78,7 +78,7 @@
     }
   }
 
-  .show-menu {
+  .btn-menu {
     display: none;
     transition: 0.2s;
   }
@@ -150,7 +150,7 @@
       }
     }
 
-    .show-menu {
+    .btn-menu {
       @include icon;
       @extend .i-menu;
       transform: scale(1.2);
@@ -169,7 +169,7 @@
         opacity: 0.8;
       }
 
-      &:checked {
+      &.active {
         @extend .i-close;
         transform: scale(1.3);
 

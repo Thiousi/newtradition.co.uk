@@ -143,20 +143,20 @@ table {
 td, th {
   padding: 0; }
 
-.i-close, .gbl-head .show-menu:checked, .i-menu, .gbl-head .show-menu, .i-share, .btn-share:after, .i-rarrow, .btn-next:after, .i-cam, .post-hero figcaption:after, .i-load, .btn-load:after, .i-email, .btn-email:after, .i-twitter, .btn-twitter:after {
+.i-close, .gbl-head .btn-menu.active, .i-menu, .gbl-head .btn-menu, .i-share, .btn-share:after, .i-rarrow, .btn-next:after, .i-cam, .post-hero figcaption:after, .i-load, .btn-load:after, .i-email, .btn-email:after, .i-twitter, .btn-twitter:after {
   background: url('../images/sprite.svg'); }
 
 .i-rarrow, .btn-next:after, .i-cam, .post-hero figcaption:after, .i-load, .btn-load:after {
   height: 15px; }
 
-.i-close, .gbl-head .show-menu:checked, .i-share, .btn-share:after {
+.i-close, .gbl-head .btn-menu.active, .i-share, .btn-share:after {
   width: 16px;
   height: 15px; }
 
-.i-close, .gbl-head .show-menu:checked {
+.i-close, .gbl-head .btn-menu.active {
   background-position: -95px 0px; }
 
-.i-menu, .gbl-head .show-menu {
+.i-menu, .gbl-head .btn-menu {
   background-position: -70px 0px;
   width: 23px;
   height: 16px; }
@@ -656,7 +656,7 @@ figcaption {
           content: "";
           display: table;
           clear: both; } }
-  .gbl-head .show-menu {
+  .gbl-head .btn-menu {
     display: none;
     -webkit-transition: 0.2s;
     transition: 0.2s; }
@@ -716,7 +716,7 @@ figcaption {
         margin-bottom: 0;
         z-index: 3;
         position: relative; }
-    .gbl-head .show-menu {
+    .gbl-head .btn-menu {
       color: transparent;
       overflow: hidden;
       display: block;
@@ -731,15 +731,15 @@ figcaption {
       z-index: 3;
       display: block;
       border: none; }
-      .gbl-head .show-menu:hover {
+      .gbl-head .btn-menu:hover {
         color: transparent; }
-      .gbl-head .show-menu:hover {
+      .gbl-head .btn-menu:hover {
         cursor: pointer;
         opacity: 0.8; }
-      .gbl-head .show-menu:checked {
+      .gbl-head .btn-menu.active {
         -webkit-transform: scale(1.3);
         transform: scale(1.3); }
-        .gbl-head .show-menu:checked + .menu {
+        .gbl-head .btn-menu.active + .menu {
           top: 62px; }
     .gbl-head .menu {
       width: calc(100% + 20px);
@@ -1145,7 +1145,7 @@ a.featured:hover {
   float: right; }
 
 .longread .gbl-head {
-  background-color: rgba(227, 6, 19, 0.9);
+  background-color: rgba(227, 6, 19, 0.85);
   position: absolute;
   width: 100%; }
 .longread .post-head {

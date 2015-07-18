@@ -16,7 +16,7 @@
     <div class="grid">
       <div class="head">
         <div class="col-1-4 logo"><a href="<?php echo $site->url() ?>">New Tradition</a></div>
-        <input type="checkbox" class="show-menu">
+        <button class="btn-menu">Menu</button>
         <?php snippet('menu') ?>
       </div>
       <h1 class="title col-3-4">
