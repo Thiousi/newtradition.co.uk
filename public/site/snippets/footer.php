@@ -12,6 +12,7 @@
   <?php if ($page->jquery() == 'true' ): ?>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
   <?php endif ?>
+  <?php echo js('assets/js/main.js') ?>
   <?php echo js('@auto') ?>
 </body>
 </html>

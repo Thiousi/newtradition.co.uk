@@ -25,6 +25,10 @@ body {
   color: $ink;
 }
 
+.preload * {
+  transition: none !important;
+}
+
 // Grid
 .grid {
   @include clearfix;

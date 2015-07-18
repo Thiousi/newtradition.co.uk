@@ -11,7 +11,7 @@
   <script>try{Typekit.load();}catch(e){}</script>
   <?php echo FTMD::css('main.min'); ?>
 </head>
-<body class="<?php echo $page->template() ?>">
+<body class="preload <?php echo $page->template() ?>">
   <header class="gbl-head" role="banner">
     <div class="grid">
       <div class="head">

@@ -1,28 +1,23 @@
 .gbl-head {
   background-color: $primary;
-  padding: 40px $gutter $gutter;
+  padding: 40px inherit $gutter;
   color: white;
 
-  @media screen and ( max-width: $medium + 150px ) {
+  @media screen and ( max-width: $medium ) {
     padding-top: 20px;
   }
 
   .logo {
-    @media screen and ( max-width: $medium + 150px ) {
-      width: calc(100% - 100px);
-      padding: 0 0 10px 0;
-      float: left;
-    }
-
     @media screen and ( max-width: $medium ) {
+      width: calc(100% - 100px);
       margin-bottom: 10px;
+      float: left;
     }
 
     a {
       color: white;
       font-size: $beta;
       border-bottom: 3px solid transparent;
-      padding-bottom: 5px;
       line-height: 1;
 
       &:hover,
@@ -38,10 +33,6 @@
     padding-left: 0;
 
     @media screen and ( max-width: $medium ) {
-      width: 50%;
-    }
-
-    @media screen and ( max-width: $medium - 150px ) {
       width: 100%;
       padding-right: 0;
     }
@@ -56,7 +47,7 @@
       &:first-child {
         padding-left: 10px;
 
-        @media screen and ( max-width: $medium + 150px ) {
+        @media screen and ( max-width: $medium ) {
           padding-left: 0;
         }
       }
@@ -72,7 +63,6 @@
     float: right;
     text-align: right;
     margin-bottom: 10px;
-    padding-right: 0;
 
     a {
       padding-right: 0;
@@ -95,8 +85,23 @@
 
   .title {
     @include clearfix;
-    padding: 40px 0 10px;
+    padding-top: 40px;
+    padding-left: 0;
+    padding-bottom: 10px;
     margin-left: calc(25% + 10px);
+
+    @media screen and ( max-width: $medium ) {
+      padding-left: $gutter;
+      margin-left: 0;
+    }
+
+    @media screen and ( max-width: $medium - 150px ) {
+      padding-top: 35px;
+    }
+
+    @media screen and ( max-width: $medium ) {
+      padding-top: 80px;
+    }
 
     .home & {
       font-size: $beta + 4px;
@@ -116,18 +121,6 @@
         font-size: $gamma;
       }
     }
-
-    @media screen and ( max-width: $medium ) {
-      margin-left: 0;
-    }
-
-    @media screen and ( max-width: $medium - 150px ) {
-      padding: 35px 0 0;
-    }
-
-    @media screen and ( max-width: $medium ) {
-      margin-top: 50px;
-    }
   }
 
   @media screen and ( max-width: $medium ) {
@@ -136,7 +129,7 @@
       left: 0;
       position: fixed;
       width: 100%;
-      padding: $gutter * 2 $gutter * 2 5px;
+      padding: $gutter * 2 $gutter 5px;
       z-index: 10;
 
       &:after {

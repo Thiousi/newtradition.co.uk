@@ -9,8 +9,8 @@
 @import "shared/elements";
 
 // Snippets
-@import "snippets/gbl-head";
-@import "snippets/gbl-foot";
+@import "snippets/header";
+@import "snippets/footer";
 @import "snippets/stream";
 
 // Pages
@@ -22,3 +22,4 @@
 // Posts
 @import "pages/post/post";
 @import "pages/post/news";
+@import "pages/post/longread";
