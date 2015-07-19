@@ -100,7 +100,8 @@ a {
 }
 
 .btn-email,
-.btn-twitter {
+.btn-twitter,
+.btn-facebook {
   font-size: 1px;
   color: transparent;
   width: 41px;
@@ -112,10 +113,12 @@ a {
 }
 
 .btn-email {
-  left: 108px;
+  .post-share & {
+    left: 108px;
 
-  @media screen and ( max-width: $small ) {
-    left: 0;
+    @media screen and ( max-width: $small ) {
+      left: 0;
+    }
   }
 
   &:after {
@@ -128,10 +131,30 @@ a {
 }
 
 .btn-twitter {
-  left: 156px;
+  .post-share & {
+    left: 156px;
 
-  @media screen and ( max-width: $small ) {
-    left: 48px;
+    @media screen and ( max-width: $small ) {
+      left: 48px;
+    }
+  }
+
+  &:after {
+    @include icon-pseudo;
+    @extend .i-twitter;
+    top: 11px;
+    left: 7px;
+    opacity: 0.5;
+  }
+}
+
+.btn-facebook {
+  .post-share & {
+    left: 204px;
+
+    @media screen and ( max-width: $small ) {
+      left: 96px;
+    }
   }
 
   &:after {

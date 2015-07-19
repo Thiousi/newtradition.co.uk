@@ -19,6 +19,7 @@
       font-size: $beta;
       border-bottom: 3px solid transparent;
       line-height: 1;
+      padding-bottom: 3px;
 
       &:hover,
       .home & {
@@ -29,7 +30,7 @@
 
   .nav,
   .contact {
-    margin-top: 6px;
+    margin-top: 5px;
     padding-left: 0;
 
     @media screen and ( max-width: $medium ) {
@@ -91,16 +92,9 @@
     margin-left: calc(25% + 10px);
 
     @media screen and ( max-width: $medium ) {
+      padding-top: 80px;
       padding-left: $gutter;
       margin-left: 0;
-    }
-
-    @media screen and ( max-width: $medium - 150px ) {
-      padding-top: 35px;
-    }
-
-    @media screen and ( max-width: $medium ) {
-      padding-top: 80px;
     }
 
     .home & {
@@ -112,13 +106,12 @@
       max-width: 700px;
 
       @media screen and ( max-width: $medium ) {
-        padding: 20px 0 60px;
+        padding: 70px $gutter 40px;
         font-size: $beta;
       }
 
-      @media screen and ( max-width: $medium - 150px ) {
-        padding: 30px 0;
-        font-size: $gamma;
+      @media screen and ( max-width: $small ) {
+        font-size: $beta - 4px;
       }
     }
   }

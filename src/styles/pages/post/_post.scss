@@ -101,6 +101,16 @@
   }
 }
 
+.post-aside {
+  @media screen and ( min-width: $medium ) {
+     margin-left: 25%;
+
+    .post-actions {
+      padding: 0 0 60px;
+    }
+  }
+}
+
 .post-actions {
   padding: 40px 0;
 
@@ -140,8 +150,7 @@
         }
       }
 
-      .btn-email,
-      .btn-twitter {
+      .btn {
         opacity: 0;
       }
 
@@ -151,6 +160,10 @@
 
       .btn-twitter {
         left: 100px;
+      }
+
+      .btn-facebook {
+        left: 150px;
       }
     }
   }

@@ -57,7 +57,7 @@ body {
 .col-3-4 { width: 75%; }
 .col-1-8 { width: 12.5%; }
 
-@media screen and ( max-width: $small ) {
+@media screen and ( max-width: $medium ) {
   .grid {
     padding-right: $gutter;
     padding-left: $gutter;

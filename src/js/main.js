@@ -2,6 +2,7 @@
 function hasClass(elem, className) {
   return new RegExp(' ' + className + ' ').test(' ' + elem.className + ' ');
 }
+
 // Toggle Class
 function toggleClass(elem, className) {
   var newClass = ' ' + elem.className.replace( /[\t\r\n]/g, " " ) + ' ';
@@ -17,15 +18,19 @@ function toggleClass(elem, className) {
 
 // Menu Toggle
 var btnMenu = document.querySelector(".btn-menu");
-btnMenu.addEventListener("click", function(event) {
-  toggleClass(this, 'active');
-});
+if (btnMenu !== null) {
+  btnMenu.addEventListener("click", function(event) {
+    toggleClass(this, 'active');
+  });
+}
 
 // Share Buttons
 var btnShare = document.querySelector(".btn-share");
-btnShare.addEventListener("click", function(event) {
-  toggleClass(this.parentNode, 'active');
-});
+if (btnShare !== null) {
+  btnShare.addEventListener("click", function(event) {
+    toggleClass(this.parentNode, 'active');
+  });
+}
 
 // Detect touch device
 if ("ontouchstart" in document.documentElement) {
@@ -36,5 +41,5 @@ if ("ontouchstart" in document.documentElement) {
 window.onload = function(){
   // Remove preload class from body
   document.getElementsByTagName("body")[0].className =
-    document.getElementsByTagName("body")[0].className.replace(/\preload\b/,'');
+    document.getElementsByTagName("body")[0].className.replace( /(?:^|\s)preload(?!\S)/ , '' );
 };

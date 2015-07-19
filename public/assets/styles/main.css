@@ -143,10 +143,10 @@ table {
 td, th {
   padding: 0; }
 
-.i-close, .gbl-head .btn-menu.active, .i-menu, .gbl-head .btn-menu, .i-share, .btn-share:after, .i-rarrow, .btn-next:after, .i-cam, .post-hero figcaption:after, .i-load, .btn-load:after, .i-email, .btn-email:after, .i-twitter, .btn-twitter:after {
+.i-close, .gbl-head .btn-menu.active, .i-menu, .gbl-head .btn-menu, .i-share, .btn-share:after, .i-rarrow, .btn-next:after, .i-cam, .post-hero figcaption:after, .longread .post-subhead figcaption:after, .i-load, .btn-load:after, .i-email, .btn-email:after, .i-twitter, .btn-twitter:after, .btn-facebook:after {
   background: url('../images/sprite.svg'); }
 
-.i-rarrow, .btn-next:after, .i-cam, .post-hero figcaption:after, .i-load, .btn-load:after {
+.i-rarrow, .btn-next:after, .i-cam, .post-hero figcaption:after, .longread .post-subhead figcaption:after, .i-load, .btn-load:after {
   height: 15px; }
 
 .i-close, .gbl-head .btn-menu.active, .i-share, .btn-share:after {
@@ -168,7 +168,7 @@ td, th {
   background-position: -40px 0px;
   width: 9px; }
 
-.i-cam, .post-hero figcaption:after {
+.i-cam, .post-hero figcaption:after, .longread .post-subhead figcaption:after {
   background-position: -18px 0px;
   width: 21px; }
 
@@ -181,7 +181,7 @@ td, th {
   width: 22px;
   height: 17px; }
 
-.i-twitter, .btn-twitter:after {
+.i-twitter, .btn-twitter:after, .btn-facebook:after {
   background-position: -108px 0px;
   height: 17px;
   width: 22px; }
@@ -310,7 +310,7 @@ body {
 .col-1-8 {
   width: 12.5%; }
 
-@media screen and (max-width: 570px) {
+@media screen and (max-width: 800px) {
   .grid {
     padding-right: 10px;
     padding-left: 10px; }
@@ -494,7 +494,7 @@ a {
     left: 17px;
     opacity: 0.5; }
 
-.btn-email, .btn-twitter {
+.btn-email, .btn-twitter, .btn-facebook {
   font-size: 1px;
   color: transparent;
   width: 41px;
@@ -505,33 +505,47 @@ a {
   -webkit-transform: 2s;
   transform: 2s; }
 
-.btn-email {
+.post-share .btn-email {
   left: 108px; }
   @media screen and (max-width: 570px) {
-    .btn-email {
+    .post-share .btn-email {
       left: 0; } }
-  .btn-email:after {
-    content: "";
-    overflow: hidden;
-    display: block;
-    position: absolute;
-    top: 11px;
-    left: 8px;
-    opacity: 0.5; }
+.btn-email:after {
+  content: "";
+  overflow: hidden;
+  display: block;
+  position: absolute;
+  top: 11px;
+  left: 8px;
+  opacity: 0.5; }
 
-.btn-twitter {
+.post-share .btn-twitter {
   left: 156px; }
   @media screen and (max-width: 570px) {
-    .btn-twitter {
+    .post-share .btn-twitter {
       left: 48px; } }
-  .btn-twitter:after {
-    content: "";
-    overflow: hidden;
-    display: block;
-    position: absolute;
-    top: 11px;
-    left: 7px;
-    opacity: 0.5; }
+.btn-twitter:after {
+  content: "";
+  overflow: hidden;
+  display: block;
+  position: absolute;
+  top: 11px;
+  left: 7px;
+  opacity: 0.5; }
+
+.post-share .btn-facebook {
+  left: 204px; }
+  @media screen and (max-width: 570px) {
+    .post-share .btn-facebook {
+      left: 96px; } }
+.btn-facebook:after {
+  content: "";
+  overflow: hidden;
+  display: block;
+  position: absolute;
+  top: 11px;
+  left: 7px;
+  opacity: 0.5; }
 
 input, textarea {
   padding: 10px;
@@ -615,11 +629,12 @@ figcaption {
     color: white;
     font-size: 26px;
     border-bottom: 3px solid transparent;
-    line-height: 1; }
+    line-height: 1;
+    padding-bottom: 3px; }
     .gbl-head .logo a:hover, .home .gbl-head .logo a {
       border-bottom-color: rgba(255, 255, 255, 0.4); }
   .gbl-head .nav, .gbl-head .contact {
-    margin-top: 6px;
+    margin-top: 5px;
     padding-left: 0; }
     @media screen and (max-width: 800px) {
       .gbl-head .nav, .gbl-head .contact {
@@ -672,14 +687,9 @@ figcaption {
       clear: both; }
     @media screen and (max-width: 800px) {
       .gbl-head .title {
+        padding-top: 80px;
         padding-left: 10px;
         margin-left: 0; } }
-    @media screen and (max-width: 650px) {
-      .gbl-head .title {
-        padding-top: 35px; } }
-    @media screen and (max-width: 800px) {
-      .gbl-head .title {
-        padding-top: 80px; } }
     .home .gbl-head .title {
       font-size: 30px;
       font-family: 'ff-meta-serif-web-pro', georgia, serif;
@@ -689,11 +699,10 @@ figcaption {
       max-width: 700px; }
       @media screen and (max-width: 800px) {
         .home .gbl-head .title {
-          padding: 20px 0 60px;
+          padding: 70px 10px 40px;
           font-size: 26px; } }
-      @media screen and (max-width: 650px) {
+      @media screen and (max-width: 570px) {
         .home .gbl-head .title {
-          padding: 30px 0;
           font-size: 22px; } }
   @media screen and (max-width: 800px) {
     .gbl-head .head {
@@ -954,7 +963,7 @@ a.featured:hover {
     .post-next h5 {
       margin-top: 10px;
       margin-bottom: 10px; } }
-  @media screen and (min-width: 570px) {
+  @media screen and (min-width: 800px) {
     .post-next .col-3-4 {
       margin-left: 25%; } }
 
@@ -1111,6 +1120,12 @@ a.featured:hover {
   .post-main p, .post-main li {
     font-size: 18px; }
 
+@media screen and (min-width: 800px) {
+  .post-aside {
+    margin-left: 25%; }
+    .post-aside .post-actions {
+      padding: 0 0 60px; } }
+
 .post-actions {
   padding: 40px 0; }
   @media screen and (max-width: 570px) {
@@ -1134,12 +1149,14 @@ a.featured:hover {
       opacity: 0.3; }
       .post-share:not(.active) .btn-share:hover {
         opacity: 0.7; }
-    .post-share:not(.active) .btn-email, .post-share:not(.active) .btn-twitter {
+    .post-share:not(.active) .btn {
       opacity: 0; }
     .post-share:not(.active) .btn-email {
       left: 50px; }
     .post-share:not(.active) .btn-twitter {
-      left: 100px; } }
+      left: 100px; }
+    .post-share:not(.active) .btn-facebook {
+      left: 150px; } }
 
 .news .post {
   float: right; }
@@ -1153,5 +1170,77 @@ a.featured:hover {
   background-position: center;
   background-size: cover;
   background-attachment: fixed;
-  padding-top: 500px;
-  padding-bottom: 10px; }
+  padding-top: 450px;
+  padding-bottom: 0;
+  position: relative;
+  z-index: -1; }
+  .touch-device .longread .post-head {
+    background-attachment: scroll; }
+  @media screen and (max-width: 800px) {
+    .longread .post-head {
+      padding-top: 250px; } }
+  .longread .post-head:after {
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    background: -webkit-linear-gradient(top, transparent 0%, rgba(0, 0, 0, 0.3) 25%, rgba(0, 0, 0, 0.6) 50%, rgba(0, 0, 0, 0.8) 100%);
+    background: linear-gradient(to bottom, transparent 0%, rgba(0, 0, 0, 0.3) 25%, rgba(0, 0, 0, 0.6) 50%, rgba(0, 0, 0, 0.8) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', endColorstr='#bf000000',GradientType=0 );
+    -webkit-filter: none\9;
+    filter: none\9; }
+  .longread .post-head * {
+    position: relative;
+    z-index: 2; }
+  .longread .post-head h2 {
+    padding-bottom: 20px; }
+  .longread .post-head h5 {
+    padding-top: 10px; }
+    @media screen and (max-width: 800px) {
+      .longread .post-head h5 {
+        margin-bottom: 0; } }
+  .longread .post-head .col-1-4 {
+    padding-right: 20px; }
+  .longread .post-head .sidebar-item {
+    border-top-color: rgba(255, 255, 255, 0.2);
+    color: rgba(255, 255, 255, 0.6); }
+    .longread .post-head .sidebar-item:first-of-type {
+      margin-top: 20px;
+      padding-top: 20px; }
+.longread .post-subhead {
+  clear: both;
+  background-color: rgba(234, 234, 234, 0.97);
+  color: #E30613;
+  padding-top: 5px;
+  padding-bottom: 20px; }
+  .longread .post-subhead:after {
+    content: "";
+    display: table;
+    clear: both; }
+  .longread .post-subhead h3 {
+    font-size: 30px;
+    font-family: 'ff-dagny-web-pro', helvetica, sans-serif;
+    font-weight: 400;
+    color: #E30613;
+    line-height: 1.3;
+    margin-top: 25px; }
+    @media screen and (max-width: 800px) {
+      .longread .post-subhead h3 {
+        font-size: 26px; } }
+  .longread .post-subhead figcaption {
+    padding-left: 32px; }
+    .longread .post-subhead figcaption:after {
+      content: "";
+      overflow: hidden;
+      display: block;
+      position: absolute;
+      left: 5px;
+      top: 11px;
+      opacity: 0.15; }
+.longread .post-subhead .col-3-4, .longread .post {
+  margin-left: 25%; }
+  @media screen and (max-width: 800px) {
+    .longread .post-subhead .col-3-4, .longread .post {
+      margin-left: 0; } }
