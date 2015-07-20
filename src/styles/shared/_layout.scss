@@ -57,6 +57,8 @@ body {
 .col-3-4 { width: 75%; }
 .col-1-8 { width: 12.5%; }
 
+.col-3-4-offset { margin-left: 25%; }
+
 @media screen and ( max-width: $medium ) {
   .grid {
     padding-right: $gutter;
@@ -83,4 +85,6 @@ body {
   .mobile-col-1-4 { width: 25%; }
   .mobile-col-3-4 { width: 75%; }
   .mobile-col-1-8 { width: 12.5%; }
+
+  .col-3-4-offset { margin-left: 0; }
 }

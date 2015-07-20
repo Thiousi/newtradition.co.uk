@@ -113,7 +113,7 @@ a {
 }
 
 .btn-email {
-  .post-share & {
+  .share & {
     left: 108px;
 
     @media screen and ( max-width: $small ) {
@@ -131,7 +131,7 @@ a {
 }
 
 .btn-twitter {
-  .post-share & {
+  .share & {
     left: 156px;
 
     @media screen and ( max-width: $small ) {
@@ -149,7 +149,7 @@ a {
 }
 
 .btn-facebook {
-  .post-share & {
+  .share & {
     left: 204px;
 
     @media screen and ( max-width: $small ) {
@@ -159,9 +159,9 @@ a {
 
   &:after {
     @include icon-pseudo;
-    @extend .i-twitter;
-    top: 11px;
-    left: 7px;
+    @extend .i-facebook;
+    top: 10px;
+    left: 15px;
     opacity: 0.5;
   }
 }
@@ -262,5 +262,47 @@ figcaption {
   &:hover {
     color: $ink;
     border-color: rgba($light-ink, 0.6);
+  }
+}
+
+// Share page
+.share {
+  position: relative;
+
+  .btn-share {
+    opacity: 0.7;
+    display: none;
+  }
+
+  @media screen and ( min-width: $small ) {
+    .btn-share {
+      display: block;
+    }
+
+    &:not(.active) {
+      .btn-share {
+        opacity: 0.3;
+
+        &:hover {
+          opacity: 0.7;
+        }
+      }
+
+      .btn {
+        opacity: 0;
+      }
+
+      .btn-email {
+        left: 50px;
+      }
+
+      .btn-twitter {
+        left: 100px;
+      }
+
+      .btn-facebook {
+        left: 150px;
+      }
+    }
   }
 }

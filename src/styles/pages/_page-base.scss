@@ -13,10 +13,6 @@
     [class*="col-"] {
       width: 100%;
     }
-    
-    h5 {
-      margin-bottom: 30px;
-    }
   }
   
   h2 {
@@ -224,12 +220,6 @@ a.featured:hover {
     h5 {
       margin-top: 10px;
       margin-bottom: 10px;
-    }
-  }
-
-  @media screen and ( min-width: $medium ) {
-    .col-3-4 {
-      margin-left: 25%;
     }
   }
 }

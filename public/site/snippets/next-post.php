@@ -4,7 +4,7 @@
   <a href="<?php echo $next->url() ?>" class="featured post-next">
     <div class="grid">
       <h2>Next post</h2>
-      <div class="col-3-4">
+      <div class="col-3-4 col-3-4-offset">
         <h5>
           <?php if ($next->template() == 'longread'): ?>Long Read
           <?php elseif ($next->template() == 'news'): ?>News

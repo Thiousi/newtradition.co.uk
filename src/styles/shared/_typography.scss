@@ -70,3 +70,35 @@ h6, .h6 {
 strong {
   font-weight: $serif-bold;
 }
+
+// Blockquote
+blockquote, 
+blockquote p, 
+.post blockquote p {
+  color: $primary;
+  font-size: $beta;
+  position: relative;
+  margin: 0;
+}
+
+blockquote {
+  margin-top: 35px;
+  margin-bottom: 35px;
+  padding: 35px 60px 35px 0;
+
+  &:before, &:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 7px;
+    width: 150px;
+    background-color: rgba($primary, 0.1);
+    display: block;
+  }
+
+  &:after {
+    top: auto;
+    bottom: 0;
+  }
+}

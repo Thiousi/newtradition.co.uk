@@ -34,7 +34,18 @@ if (btnShare !== null) {
 
 // Detect touch device
 if ("ontouchstart" in document.documentElement) {
-  document.getElementsByTagName("body")[0].className+=" touch-device"
+  document.getElementsByTagName("body")[0].className+=" touch-device";
+}
+
+// Disqus
+var disqusThread = document.getElementById("disqus_thread");
+var disqusShortname = 'newtraditiontest';
+if (disqusThread !== null) {
+  (function() {
+    var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+    dsq.src = '//' + disqusShortname + '.disqus.com/embed.js';
+    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+  })();
 }
 
 // Window Load

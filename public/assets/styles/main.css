@@ -143,7 +143,7 @@ table {
 td, th {
   padding: 0; }
 
-.i-close, .gbl-head .btn-menu.active, .i-menu, .gbl-head .btn-menu, .i-share, .btn-share:after, .i-rarrow, .btn-next:after, .i-cam, .post-hero figcaption:after, .longread .post-subhead figcaption:after, .i-load, .btn-load:after, .i-email, .btn-email:after, .i-twitter, .btn-twitter:after, .btn-facebook:after {
+.i-close, .gbl-head .btn-menu.active, .i-menu, .gbl-head .btn-menu, .i-share, .btn-share:after, .i-rarrow, .btn-next:after, .i-cam, .post-hero figcaption:after, .longread .post-subhead figcaption:after, .i-load, .btn-load:after, .i-email, .btn-email:after, .i-twitter, .btn-twitter:after, .i-facebook, .btn-facebook:after {
   background: url('../images/sprite.svg'); }
 
 .i-rarrow, .btn-next:after, .i-cam, .post-hero figcaption:after, .longread .post-subhead figcaption:after, .i-load, .btn-load:after {
@@ -177,14 +177,19 @@ td, th {
   width: 16px; }
 
 .i-email, .btn-email:after {
-  background-position: -132px 0px;
-  width: 22px;
+  background-position: -135px 0px;
+  width: 23px;
   height: 17px; }
 
-.i-twitter, .btn-twitter:after, .btn-facebook:after {
-  background-position: -108px 0px;
+.i-twitter, .btn-twitter:after {
+  background-position: -109px 0px;
   height: 17px;
-  width: 22px; }
+  width: 24px; }
+
+.i-facebook, .btn-facebook:after {
+  background-position: -159px 0px;
+  width: 12px;
+  height: 20px; }
 
 .fadein {
   -webkit-animation: fadein 1s;
@@ -310,6 +315,9 @@ body {
 .col-1-8 {
   width: 12.5%; }
 
+.col-3-4-offset {
+  margin-left: 25%; }
+
 @media screen and (max-width: 800px) {
   .grid {
     padding-right: 10px;
@@ -330,7 +338,9 @@ body {
   .mobile-col-3-4 {
     width: 75%; }
   .mobile-col-1-8 {
-    width: 12.5%; } }
+    width: 12.5%; }
+  .col-3-4-offset {
+    margin-left: 0; } }
 
 h1, h2, h3, h4, h5, h6, p, ul, ol, dl, blockquote, pre, button {
   margin: 0 0 18px 0; }
@@ -408,6 +418,29 @@ h6, .h6 {
 
 strong {
   font-weight: 700; }
+
+blockquote, blockquote p, .post blockquote p {
+  color: #E30613;
+  font-size: 26px;
+  position: relative;
+  margin: 0; }
+
+blockquote {
+  margin-top: 35px;
+  margin-bottom: 35px;
+  padding: 35px 60px 35px 0; }
+  blockquote:before, blockquote:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 7px;
+    width: 150px;
+    background-color: rgba(227, 6, 19, 0.1);
+    display: block; }
+  blockquote:after {
+    top: auto;
+    bottom: 0; }
 
 ::-moz-selection {
   background: rgba(57, 51, 63, 0.2); }
@@ -505,10 +538,10 @@ a {
   -webkit-transform: 2s;
   transform: 2s; }
 
-.post-share .btn-email {
+.share .btn-email {
   left: 108px; }
   @media screen and (max-width: 570px) {
-    .post-share .btn-email {
+    .share .btn-email {
       left: 0; } }
 .btn-email:after {
   content: "";
@@ -519,10 +552,10 @@ a {
   left: 8px;
   opacity: 0.5; }
 
-.post-share .btn-twitter {
+.share .btn-twitter {
   left: 156px; }
   @media screen and (max-width: 570px) {
-    .post-share .btn-twitter {
+    .share .btn-twitter {
       left: 48px; } }
 .btn-twitter:after {
   content: "";
@@ -533,18 +566,18 @@ a {
   left: 7px;
   opacity: 0.5; }
 
-.post-share .btn-facebook {
+.share .btn-facebook {
   left: 204px; }
   @media screen and (max-width: 570px) {
-    .post-share .btn-facebook {
+    .share .btn-facebook {
       left: 96px; } }
 .btn-facebook:after {
   content: "";
   overflow: hidden;
   display: block;
   position: absolute;
-  top: 11px;
-  left: 7px;
+  top: 10px;
+  left: 15px;
   opacity: 0.5; }
 
 input, textarea {
@@ -612,6 +645,27 @@ figcaption {
   .tag:hover {
     color: #39333F;
     border-color: rgba(103, 98, 107, 0.6); }
+
+.share {
+  position: relative; }
+  .share .btn-share {
+    opacity: 0.7;
+    display: none; }
+  @media screen and (min-width: 570px) {
+    .share .btn-share {
+      display: block; }
+    .share:not(.active) .btn-share {
+      opacity: 0.3; }
+      .share:not(.active) .btn-share:hover {
+        opacity: 0.7; }
+    .share:not(.active) .btn {
+      opacity: 0; }
+    .share:not(.active) .btn-email {
+      left: 50px; }
+    .share:not(.active) .btn-twitter {
+      left: 100px; }
+    .share:not(.active) .btn-facebook {
+      left: 150px; } }
 
 .gbl-head {
   background-color: #E30613;
@@ -829,9 +883,7 @@ figcaption {
     transition: 0.2s; }
   @media screen and (max-width: 800px) {
     .featured [class*="col-"] {
-      width: 100%; }
-    .featured h5 {
-      margin-bottom: 30px; } }
+      width: 100%; } }
   .featured h2 {
     display: table;
     position: relative;
@@ -963,9 +1015,6 @@ a.featured:hover {
     .post-next h5 {
       margin-top: 10px;
       margin-bottom: 10px; } }
-  @media screen and (min-width: 800px) {
-    .post-next .col-3-4 {
-      margin-left: 25%; } }
 
 .home .featured {
   padding-bottom: 0; }
@@ -1066,7 +1115,6 @@ a.featured:hover {
   margin: 0;
   width: 100%; }
   .post-hero figcaption {
-    margin-left: 25%;
     position: relative;
     padding-left: 32px; }
     .post-hero figcaption:after {
@@ -1077,9 +1125,6 @@ a.featured:hover {
       left: 5px;
       top: 11px;
       opacity: 0.15; }
-    @media screen and (max-width: 570px) {
-      .post-hero figcaption {
-        margin-left: 0; } }
 
 .post-hero-img {
   height: 400px;
@@ -1119,6 +1164,13 @@ a.featured:hover {
     line-height: 1.1; }
   .post-main p, .post-main li {
     font-size: 18px; }
+  @media screen and (min-width: 800px) {
+    .post-main blockquote {
+      margin-left: -25%;
+      max-width: 500px;
+      float: left;
+      margin-top: 20px;
+      margin-bottom: 20px; } }
 
 @media screen and (min-width: 800px) {
   .post-aside {
@@ -1132,34 +1184,21 @@ a.featured:hover {
     .post-actions {
       padding: 20px 0 80px;
       border-bottom: 1px solid #e2e2e2; } }
-  .post-actions .post-share {
+  .post-actions .share {
     float: left; }
   .post-actions .btn-next {
     float: right; }
 
-.post-share {
-  position: relative; }
-  .post-share .btn-share {
-    opacity: 0.7;
-    display: none; }
-  @media screen and (min-width: 570px) {
-    .post-share .btn-share {
-      display: block; }
-    .post-share:not(.active) .btn-share {
-      opacity: 0.3; }
-      .post-share:not(.active) .btn-share:hover {
-        opacity: 0.7; }
-    .post-share:not(.active) .btn {
-      opacity: 0; }
-    .post-share:not(.active) .btn-email {
-      left: 50px; }
-    .post-share:not(.active) .btn-twitter {
-      left: 100px; }
-    .post-share:not(.active) .btn-facebook {
-      left: 150px; } }
+.comments {
+  margin-top: 50px;
+  margin-bottom: 40px; }
 
 .news .post {
   float: right; }
+@media screen and (max-width: 800px) {
+  .news .comments {
+    margin-top: 0;
+    margin-bottom: 20px; } }
 
 .longread .gbl-head {
   background-color: rgba(227, 6, 19, 0.85);
@@ -1203,15 +1242,30 @@ a.featured:hover {
         margin-bottom: 0; } }
   .longread .post-head .col-1-4 {
     padding-right: 20px; }
+    @media screen and (max-width: 800px) {
+      .longread .post-head .col-1-4 {
+        padding-right: 10px; } }
   .longread .post-head .sidebar-item {
     border-top-color: rgba(255, 255, 255, 0.2);
-    color: rgba(255, 255, 255, 0.6); }
+    color: rgba(255, 255, 255, 0.6);
+    padding-bottom: 0;
+    line-height: 1; }
     .longread .post-head .sidebar-item:first-of-type {
       margin-top: 20px;
       padding-top: 20px; }
+      @media screen and (max-width: 800px) {
+        .longread .post-head .sidebar-item:first-of-type {
+          margin-top: 10px;
+          padding-top: 10px; } }
+    .longread .post-head .sidebar-item:last-child {
+      padding-bottom: 20px; }
+      @media screen and (max-width: 800px) {
+        .longread .post-head .sidebar-item:last-child {
+          padding-top: 10px;
+          padding-bottom: 10px; } }
 .longread .post-subhead {
   clear: both;
-  background-color: rgba(234, 234, 234, 0.97);
+  background-color: rgba(234, 234, 234, 0.95);
   color: #E30613;
   padding-top: 5px;
   padding-bottom: 20px; }
@@ -1239,8 +1293,3 @@ a.featured:hover {
       left: 5px;
       top: 11px;
       opacity: 0.15; }
-.longread .post-subhead .col-3-4, .longread .post {
-  margin-left: 25%; }
-  @media screen and (max-width: 800px) {
-    .longread .post-subhead .col-3-4, .longread .post {
-      margin-left: 0; } }

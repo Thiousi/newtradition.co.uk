@@ -11,7 +11,7 @@
   <figure class="post-hero">
     <div class="post-hero-img" style="background-image: url(<?php echo thumb($image, array('width' => 1200, 'height' => 600, 'quality' => 85, 'crop' => true))->url() ?>);"></div>
     <div class="grid">
-      <figcaption class="col-3-4"><?php html($image->caption()) ?> This is caption</figcaption>
+      <figcaption class="col-3-4 col-3-4-offset"><?php html($image->caption()) ?> This is caption</figcaption>
     </div>
   </figure>
 <?php endif ?>
@@ -20,11 +20,7 @@
   <article class="col-3-4 post">
     <?php echo $page->text()->kirbytext() ?>
     <aside class="post-actions">
-      <div class="post-share">
-        <button class="btn-line btn-share">Share</button>
-        <a href="mailto:?subject=<?php echo html($page->title()) ?>&amp;body=<?php echo html($page->title()) ?>: <?php echo html($page->url()) ?>" class="btn btn-line btn-email">Email</a>
-        <a href="http://twitter.com/share?url=<?php echo html($page->url()) ?>&text=<?php echo html($page->title()) ?> via @<?php echo html($site->twitter()) ?>:" target="_blank" class="btn btn-line btn-twitter">Twitter</a>
-      </div>
+      <?php snippet('share') ?>
       <a href="<?php html($site->url()) ?>/journal" class="btn btn-line btn-next">Read more posts</a>
     </aside>
   </article>
@@ -44,6 +40,9 @@
       </ul>
     </div>
   </aside>
+  <?php if ($page->comments() == 'on' ): ?>
+    <div id="disqus_thread" class="col-3-4 col-3-4-offset comments"></div>
+  <?php endif ?>
 </section>
 
 <?php snippet('next-post') ?>

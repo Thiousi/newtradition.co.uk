@@ -2,4 +2,11 @@
   .post {
     float: right;
   }
+
+  @media screen and ( max-width: $medium ) {
+    .comments {
+      margin-top: 0;
+      margin-bottom: 20px;
+    }
+  }
 }

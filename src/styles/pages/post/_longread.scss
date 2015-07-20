@@ -1,5 +1,4 @@
 .longread {
-
   .gbl-head {
     background-color: rgba($primary, 0.85);
     position: absolute;
@@ -55,22 +54,42 @@
 
     .col-1-4 {
       padding-right: 20px;
+
+      @media screen and ( max-width: $medium ) {
+        padding-right: $gutter;
+      }
     }
 
     .sidebar-item {
       border-top-color: rgba(white, 0.2);
       color: rgba(white, 0.6);
+      padding-bottom: 0;
+      line-height: 1;
 
       &:first-of-type {
         margin-top: 20px;
         padding-top: 20px;
+
+        @media screen and ( max-width: $medium ) {
+          margin-top: 10px;
+          padding-top: 10px;
+        }
+      }
+
+      &:last-child {
+        padding-bottom: 20px;
+
+        @media screen and ( max-width: $medium ) {
+          padding-top: 10px;
+          padding-bottom: 10px;
+        }
       }
     }
   }
 
   .post-subhead {
     @include clearfix;
-    background-color: rgba($slate, 0.97);
+    background-color: rgba($slate, 0.95);
     color: $primary;
     padding-top: 5px;
     padding-bottom: 20px;
@@ -98,15 +117,6 @@
         top: 11px;
         opacity: 0.15;
       }
-    }
-  }
-
-  .post-subhead .col-3-4, 
-  .post {
-    margin-left: 25%;
-
-    @media screen and ( max-width: $medium ) {
-      margin-left: 0;
     }
   }
 }

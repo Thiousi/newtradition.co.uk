@@ -1,4 +1,4 @@
-.i-close, .i-menu, .i-share, .i-rarrow, .i-cam, .i-load, .i-email, .i-twitter { background: url($sprite); }
+.i-close, .i-menu, .i-share, .i-rarrow, .i-cam, .i-load, .i-email, .i-twitter, .i-facebook { background: url($sprite); }
 
 .i-rarrow, .i-cam, .i-load { height: 15px; }
 
@@ -10,5 +10,6 @@
 .i-rarrow { background-position: -40px 0px; width: 9px; }
 .i-cam { background-position: -18px 0px; width: 21px; }
 .i-load { background-position: 0px 0px; width: 16px; }
-.i-email { background-position: -132px 0px; width: 22px; height: 17px; }
-.i-twitter { background-position: -108px 0px; height: 17px; width: 22px; }
+.i-email { background-position: -135px 0px; width: 23px; height: 17px; }
+.i-twitter { background-position: -109px 0px; height: 17px; width: 24px; }
+.i-facebook { background-position: -159px 0px; width: 12px; height: 20px; }
