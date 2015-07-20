@@ -154,7 +154,7 @@ a.featured:hover {
   color: $light-ink;
 
   @media screen and ( min-width: $small ) {
-    padding-right: $gutter * 2;
+    padding-right: $gutter;
   }
 }
 
@@ -222,4 +222,40 @@ a.featured:hover {
       margin-bottom: 10px;
     }
   }
+}
+
+// Short Bio
+.bio-short, 
+.longread .post-meta {
+  position: relative;
+  border-top: 1px solid darken($slate, 3);
+  margin-top: 30px;
+  margin-bottom: 50px;
+  padding-top: 15px;
+
+  h5 {
+    margin-bottom: 10px;
+  }
+}
+
+.bio-avatar {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  position: absolute;
+  top: 50px;
+  left: 0;
+  background-position: center;
+  background-size: cover;
+}
+
+.bio-name {
+  padding-top: 10px;
+  padding-left: 100px;
+  margin-bottom: 5px;
+}
+
+.bio-excerpt {
+  padding-left: 100px;
+  color: lighten($light-ink, 10);
 }

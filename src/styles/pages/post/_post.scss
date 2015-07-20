@@ -68,60 +68,64 @@
 
   .post {
     padding-top: 0;
-  }
 
-  h3 {
-    font-size: $beta + 4px;
-    font-family: $sans;
-    font-weight: $sans-regular;
-    color: $primary;
-    line-height: 1.3;
-    margin-bottom: 25px;
+    h3 {
+      font-size: $beta + 4px;
+      font-family: $sans;
+      font-weight: $sans-regular;
+      color: $primary;
+      line-height: 1.3;
+      margin-bottom: 25px;
 
-    @media screen and ( max-width: $medium ) {
-      font-size: $beta;
+      @media screen and ( max-width: $medium ) {
+        font-size: $beta;
+      }
     }
-  }
 
-  h4 {
-    font-size: $gamma + 2px;
-    margin: 40px 0 20px;
-    font-weight: $sans-bold;
-    font-family: $sans;
-    line-height: 1.1;
-  }
+    h4 {
+      font-size: $gamma + 2px;
+      margin: 40px 0 20px;
+      font-weight: $sans-bold;
+      font-family: $sans;
+      line-height: 1.1;
+    }
 
-  p, li {
-    font-size: $delta + 2px;
-  }
+    p, li {
+      font-size: $delta + 2px;
+    }
 
-  @media screen and ( min-width: $medium ) {
-    blockquote {
-      margin-left: -25%;
-      max-width: 500px;
-      float: left;
-      margin-top: 20px;
-      margin-bottom: 20px;
+    @media screen and ( min-width: $medium ) {
+      blockquote {
+        margin-left: -25%;
+        max-width: 500px;
+        float: left;
+        margin-top: 20px;
+        margin-bottom: 20px;
+      }
     }
   }
 }
 
 .post-aside {
   @media screen and ( min-width: $medium ) {
-     margin-left: 25%;
-
     .post-actions {
-      padding: 0 0 60px;
+      padding: 10px 0 30px;
     }
   }
 }
 
 .post-actions {
+  @include clearfix;
   padding: 40px 0;
 
-  @media screen and ( max-width: $small ) {
-    padding: 20px 0 80px;
-    border-bottom: 1px solid darken($slate, 3);
+  @media screen and ( max-width: $medium ) {
+    padding: 0 0 20px;
+
+    .news & {
+      padding: 25px 0 50px;
+      margin-bottom: 0;
+      border-bottom: 1px solid darken($slate, 3);
+    }
   }
 
   .share {
@@ -136,4 +140,8 @@
 .comments {
   margin-top: 50px;
   margin-bottom: 40px;
+
+  .news & {
+    margin-top: 0;
+  }
 }

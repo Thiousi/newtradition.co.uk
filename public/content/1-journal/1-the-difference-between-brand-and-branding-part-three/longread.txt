@@ -18,7 +18,7 @@ Comments: off
 
 ----
 
-Bio: off
+Bio: on
 
 ----
 
@@ -32,7 +32,7 @@ Subtitle: For many years I settled with a Lamy Safari but, even though the Lamy 
 
 Text: 
 
-I like fountain pens.
+#### I like fountain pens.
 
 I’ve always preferred to write in real ink and I’ve tried out plenty of makes and models.
 
@@ -75,7 +75,7 @@ b) I realise that I’ve just been unlucky and feel sure that Montblanc will be 
 
 But, at the moment, I’m too disappointed with my experience of the brand to seek another encounter with them anytime soon.
 
-### It’s not the branding that’ll kill you
+#### It’s not the branding that’ll kill you
 
 I’ll admit that Montblanc are unlucky to be the subject of this post but my purpose is to illustrate the distinction between brand and branding, and not to vent frustration at Montblanc.
 
@@ -97,7 +97,7 @@ So Montblanc’s branding is brilliant (in fact, it’s a meticulous, scrupulous
 
 It’s just that — well — my pen doesn’t work properly.
 
-### Brand = (Perception + Expectation) — Experience
+#### Brand = (Perception + Expectation) — Experience
 
 In the second post in this series, I argued that part of the confusion between the distinction between brand and branding probably lay in the fact that businesses lean so heavily on branding to do the legwork.
 

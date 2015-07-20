@@ -419,7 +419,7 @@ h6, .h6 {
 strong {
   font-weight: 700; }
 
-blockquote, blockquote p, .post blockquote p {
+blockquote, blockquote p, .post-main .post blockquote p {
   color: #E30613;
   font-size: 26px;
   position: relative;
@@ -617,7 +617,7 @@ figcaption {
   img + figcaption, .post-hero figcaption {
     padding-left: 30px; }
 
-@media screen and (max-width: 570px) {
+@media screen and (max-width: 800px) {
   .cat-list li, .tag-list li {
     display: inline-block; } }
 
@@ -972,7 +972,7 @@ a.featured:hover {
   color: #67626B; }
   @media screen and (min-width: 570px) {
     .sidebar {
-      padding-right: 20px; } }
+      padding-right: 10px; } }
 
 .sidebar-item {
   border-top: 1px solid #e2e2e2;
@@ -1015,6 +1015,34 @@ a.featured:hover {
     .post-next h5 {
       margin-top: 10px;
       margin-bottom: 10px; } }
+
+.bio-short, .longread .post-meta {
+  position: relative;
+  border-top: 1px solid #e2e2e2;
+  margin-top: 30px;
+  margin-bottom: 50px;
+  padding-top: 15px; }
+  .bio-short h5, .longread .post-meta h5 {
+    margin-bottom: 10px; }
+
+.bio-avatar {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  position: absolute;
+  top: 50px;
+  left: 0;
+  background-position: center;
+  background-size: cover; }
+
+.bio-name {
+  padding-top: 10px;
+  padding-left: 100px;
+  margin-bottom: 5px; }
+
+.bio-excerpt {
+  padding-left: 100px;
+  color: #817a86; }
 
 .home .featured {
   padding-bottom: 0; }
@@ -1146,44 +1174,50 @@ a.featured:hover {
       margin-bottom: 30px; } }
   .post-main .post {
     padding-top: 0; }
-  .post-main h3 {
-    font-size: 30px;
-    font-family: 'ff-dagny-web-pro', helvetica, sans-serif;
-    font-weight: 400;
-    color: #E30613;
-    line-height: 1.3;
-    margin-bottom: 25px; }
-    @media screen and (max-width: 800px) {
-      .post-main h3 {
-        font-size: 26px; } }
-  .post-main h4 {
-    font-size: 24px;
-    margin: 40px 0 20px;
-    font-weight: 700;
-    font-family: 'ff-dagny-web-pro', helvetica, sans-serif;
-    line-height: 1.1; }
-  .post-main p, .post-main li {
-    font-size: 18px; }
-  @media screen and (min-width: 800px) {
-    .post-main blockquote {
-      margin-left: -25%;
-      max-width: 500px;
-      float: left;
-      margin-top: 20px;
-      margin-bottom: 20px; } }
+    .post-main .post h3 {
+      font-size: 30px;
+      font-family: 'ff-dagny-web-pro', helvetica, sans-serif;
+      font-weight: 400;
+      color: #E30613;
+      line-height: 1.3;
+      margin-bottom: 25px; }
+      @media screen and (max-width: 800px) {
+        .post-main .post h3 {
+          font-size: 26px; } }
+    .post-main .post h4 {
+      font-size: 24px;
+      margin: 40px 0 20px;
+      font-weight: 700;
+      font-family: 'ff-dagny-web-pro', helvetica, sans-serif;
+      line-height: 1.1; }
+    .post-main .post p, .post-main .post li {
+      font-size: 18px; }
+    @media screen and (min-width: 800px) {
+      .post-main .post blockquote {
+        margin-left: -25%;
+        max-width: 500px;
+        float: left;
+        margin-top: 20px;
+        margin-bottom: 20px; } }
 
 @media screen and (min-width: 800px) {
-  .post-aside {
-    margin-left: 25%; }
-    .post-aside .post-actions {
-      padding: 0 0 60px; } }
+  .post-aside .post-actions {
+    padding: 10px 0 30px; } }
 
 .post-actions {
+  clear: both;
   padding: 40px 0; }
-  @media screen and (max-width: 570px) {
+  .post-actions:after {
+    content: "";
+    display: table;
+    clear: both; }
+  @media screen and (max-width: 800px) {
     .post-actions {
-      padding: 20px 0 80px;
-      border-bottom: 1px solid #e2e2e2; } }
+      padding: 0 0 20px; }
+      .news .post-actions {
+        padding: 25px 0 50px;
+        margin-bottom: 0;
+        border-bottom: 1px solid #e2e2e2; } }
   .post-actions .share {
     float: left; }
   .post-actions .btn-next {
@@ -1192,9 +1226,14 @@ a.featured:hover {
 .comments {
   margin-top: 50px;
   margin-bottom: 40px; }
+  .news .comments {
+    margin-top: 0; }
 
 .news .post {
   float: right; }
+  @media screen and (max-width: 800px) {
+    .news .post {
+      padding-bottom: 15px; } }
 @media screen and (max-width: 800px) {
   .news .comments {
     margin-top: 0;

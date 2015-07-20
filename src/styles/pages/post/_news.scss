@@ -1,6 +1,10 @@
 .news {
   .post {
     float: right;
+
+    @media screen and ( max-width: $medium ) {
+      padding-bottom: 15px;
+    }
   }
 
   @media screen and ( max-width: $medium ) {

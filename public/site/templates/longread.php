@@ -31,12 +31,21 @@
       <a href="<?php html($site->url()) ?>/journal" class="btn btn-line btn-next">Read more posts</a>
     </div>
     <?php if ($page->bio() == 'on' ): ?>
-      <div class="post-author">
-
+      <div class="bio-short">
+        <h5>Author</h5>
+        <span class="bio-avatar" style="background-image: url(<?php echo thumb($image, array('width' => 1200, 'quality' => 85))->url() ?>);"></span>
+        <h4 class="bio-name">Ian Thomas</h4>
+        <p class="bio-excerpt">Ian has helped bring brands to life in B2B, B2C and voluntary sectors for 20 years. In that time Ian's honed a style which combines the crisp articulation of brand strategies with the practical nuts-and-bolts implementation nouse to build brand reputations that drive commercial performance.</p>
       </div>
     <?php endif ?>
     <div class="post-meta">
-
+      <h5>Tags</h5>
+      <?php $tags = $page->tags();?>
+      <ul class="tag-list">
+        <?php foreach($tags as $tag): ?>
+          <li><a href="<?php echo url('#' . $tag)?>" class="tag"><?php echo html($tag) ?></a></li>
+        <?php endforeach ?>
+      </ul>
     </div>
   </aside>
   <?php if ($page->comments() == 'on' ): ?>

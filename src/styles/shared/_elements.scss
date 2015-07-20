@@ -228,7 +228,7 @@ figcaption {
 .cat-list,
 .tag-list {
   li {
-    @media screen and ( max-width: $small ) {
+    @media screen and ( max-width: $medium ) {
       display: inline-block;
     }
   }
