@@ -32,12 +32,22 @@
     </div>
     <div class="sidebar-item">
       <h5>Tags</h5>
-      <?php $tags = $page->tags();?>
-      <ul class="tag-list">
-        <?php foreach($tags as $tag): ?>
-          <li><a href="<?php echo url('#' . $tag)?>" class="tag"><?php echo html($tag) ?></a></li>
-        <?php endforeach ?>
-      </ul>
+      <?php 
+        $tags=($page->tags());
+        $tags=explode(',',$tags);
+        $tags=array_map('trim',$tags);
+      ?> 
+      <?php if($page->tags()):?>
+        <ul class="tag-list">
+          <?php foreach($tags as $tag):?>
+            <li>
+              <a href="<?php echo $page->parent()->url() . '/tag:' . $tag ?>" class="tag">
+                <?php echo $tag ?>
+              </a>
+            </li>
+            <?php endforeach ?>
+        </ul>
+      <?php endif ?>
     </div>
   </aside>
   <?php if ($page->comments() == 'on' ): ?>

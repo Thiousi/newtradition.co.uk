@@ -9,7 +9,8 @@
     <aside class="col-1-4">
       <h5>Long Read</h5>
       <time class="sidebar-item" datetime="<?php echo $page->date('c') ?>">Published on <?php echo $page->date('d F Y') ?></time>
-        <span class="sidebar-item">Written by <?php echo html($page->author()) ?></span>
+        <?php $author = $pages->find('authors/' . $page->author()) ?>
+        <span class="sidebar-item">Written by <?php echo $author->name() ?></span>
     </aside>
     <h2 class="col-3-4"><?php echo html($page->title()) ?></h2>
   </div>
@@ -33,19 +34,29 @@
     <?php if ($page->bio() == 'on' ): ?>
       <div class="bio-short">
         <h5>Author</h5>
-        <span class="bio-avatar" style="background-image: url(<?php echo thumb($image, array('width' => 1200, 'quality' => 85))->url() ?>);"></span>
-        <h4 class="bio-name">Ian Thomas</h4>
-        <p class="bio-excerpt">Ian has helped bring brands to life in B2B, B2C and voluntary sectors for 20 years. In that time Ian's honed a style which combines the crisp articulation of brand strategies with the practical nuts-and-bolts implementation nouse to build brand reputations that drive commercial performance.</p>
+        <span class="bio-avatar" style="background-image: url(<?php echo $author->images()->first()->url() ?>);"></span>
+        <h4 class="bio-name"><?php echo $author->name() ?></h4>
+        <p class="bio-excerpt"><?php echo $author->bio() ?></p>
       </div>
     <?php endif ?>
     <div class="post-meta">
       <h5>Tags</h5>
-      <?php $tags = $page->tags();?>
-      <ul class="tag-list">
-        <?php foreach($tags as $tag): ?>
-          <li><a href="<?php echo url('#' . $tag)?>" class="tag"><?php echo html($tag) ?></a></li>
-        <?php endforeach ?>
-      </ul>
+      <?php 
+        $tags=($page->tags());
+        $tags=explode(',',$tags);
+        $tags=array_map('trim',$tags);
+      ?> 
+      <?php if($page->tags()):?>
+        <ul class="tag-list">
+          <?php foreach($tags as $tag):?>
+            <li>
+              <a href="<?php echo $page->parent()->url() . '/tag:' . $tag ?>" class="tag">
+                <?php echo $tag ?>
+              </a>
+            </li>
+            <?php endforeach ?>
+        </ul>
+      <?php endif ?>
     </div>
   </aside>
   <?php if ($page->comments() == 'on' ): ?>

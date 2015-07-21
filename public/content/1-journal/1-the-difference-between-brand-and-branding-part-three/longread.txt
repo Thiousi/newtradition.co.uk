@@ -22,7 +22,7 @@ Bio: on
 
 ----
 
-Author: Ian Thomas
+Author: ian-thomas
 
 ----
 
@@ -107,7 +107,7 @@ So, while a brand’s visual identity and branding can contribute to a positive 
 
 And, wherever people are involved, there’s a risk to the equilibrium between your expectations of a brand and your experience of it (which is why, in general, creating a great service brand experience is arguably a good deal tougher than a product one).
 
-
+(image: bottles.jpg caption: Example of a caption)
 
 That’s because branding is simply a component of one of the four elements that comprise a brand — its communication. And only alongside what the brand offers (its product), how it enables you to obtain it (its environment) and the way you go about doing what you do (its culture) can a business successfully convey a core idea which makes its brand’s goods and services distinct from another brand’s.
 

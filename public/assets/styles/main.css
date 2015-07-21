@@ -143,10 +143,10 @@ table {
 td, th {
   padding: 0; }
 
-.i-close, .gbl-head .btn-menu.active, .i-menu, .gbl-head .btn-menu, .i-share, .btn-share:after, .i-rarrow, .btn-next:after, .i-cam, .post-hero figcaption:after, .longread .post-subhead figcaption:after, .i-load, .btn-load:after, .i-email, .btn-email:after, .i-twitter, .btn-twitter:after, .i-facebook, .btn-facebook:after {
+.i-close, .gbl-head .btn-menu.active, .i-menu, .gbl-head .btn-menu, .i-share, .btn-share:after, .i-rarrow, .btn-next:after, .i-cam, .post-hero figcaption:after, .post-main .post figure img + figcaption:after, .longread .post-subhead figcaption:after, .i-load, .btn-load:after, .i-email, .btn-email:after, .i-twitter, .btn-twitter:after, .i-facebook, .btn-facebook:after {
   background: url('../images/sprite.svg'); }
 
-.i-rarrow, .btn-next:after, .i-cam, .post-hero figcaption:after, .longread .post-subhead figcaption:after, .i-load, .btn-load:after {
+.i-rarrow, .btn-next:after, .i-cam, .post-hero figcaption:after, .post-main .post figure img + figcaption:after, .longread .post-subhead figcaption:after, .i-load, .btn-load:after {
   height: 15px; }
 
 .i-close, .gbl-head .btn-menu.active, .i-share, .btn-share:after {
@@ -168,7 +168,7 @@ td, th {
   background-position: -40px 0px;
   width: 9px; }
 
-.i-cam, .post-hero figcaption:after, .longread .post-subhead figcaption:after {
+.i-cam, .post-hero figcaption:after, .post-main .post figure img + figcaption:after, .longread .post-subhead figcaption:after {
   background-position: -18px 0px;
   width: 21px; }
 
@@ -609,6 +609,9 @@ dt {
 dd {
   margin-left: 1.4em; }
 
+figure {
+  margin: 30px 0; }
+
 figcaption {
   padding: 10px 0;
   color: #9a959e;
@@ -616,10 +619,6 @@ figcaption {
   font-family: 'ff-dagny-web-pro', helvetica, sans-serif; }
   img + figcaption, .post-hero figcaption {
     padding-left: 30px; }
-
-@media screen and (max-width: 800px) {
-  .cat-list li, .tag-list li {
-    display: inline-block; } }
 
 .cat, .tag {
   padding: 9px 12px;
@@ -1032,17 +1031,55 @@ a.featured:hover {
   position: absolute;
   top: 50px;
   left: 0;
+  display: block;
   background-position: center;
   background-size: cover; }
+  @media screen and (max-width: 570px) {
+    .bio-avatar {
+      top: 0;
+      margin: 20px 0 10px;
+      position: relative; } }
 
 .bio-name {
   padding-top: 10px;
   padding-left: 100px;
   margin-bottom: 5px; }
+  @media screen and (max-width: 570px) {
+    .bio-name {
+      padding-left: 0; } }
 
 .bio-excerpt {
   padding-left: 100px;
   color: #817a86; }
+  @media screen and (max-width: 570px) {
+    .bio-excerpt {
+      padding-left: 0; } }
+
+.error {
+  background-color: #E30613;
+  color: white; }
+  .error .title {
+    display: none; }
+  .error .gbl-foot {
+    background-color: transparent;
+    color: rgba(255, 255, 255, 0.5); }
+    .error .gbl-foot a {
+      color: rgba(255, 255, 255, 0.5); }
+      .error .gbl-foot a:hover {
+        color: white; }
+    .error .gbl-foot .copyright {
+      padding-bottom: 20px; }
+
+.error-main {
+  padding-top: 100px;
+  padding-bottom: 100px;
+  display: block;
+  min-height: calc(100vh - 280px); }
+  @media screen and (max-width: 800px) {
+    .error-main {
+      min-height: calc(100vh - 220px); } }
+  .error-main * {
+    color: white; }
 
 .home .featured {
   padding-bottom: 0; }
@@ -1192,6 +1229,21 @@ a.featured:hover {
       line-height: 1.1; }
     .post-main .post p, .post-main .post li {
       font-size: 18px; }
+    .post-main .post figure {
+      margin: 30px 0; }
+      .post-main .post figure figcaption {
+        padding-top: 0;
+        padding-bottom: 0;
+        position: relative; }
+        .post-main .post figure figcaption:after {
+          content: "";
+          overflow: hidden;
+          display: block;
+          position: absolute;
+          top: 0;
+          left: 0; }
+      .post-main .post figure img + figcaption:after {
+        opacity: 0.15; }
     @media screen and (min-width: 800px) {
       .post-main .post blockquote {
         margin-left: -25%;
@@ -1332,3 +1384,5 @@ a.featured:hover {
       left: 5px;
       top: 11px;
       opacity: 0.15; }
+.longread .cat-list li, .longread .tag-list li {
+  display: inline-block; }

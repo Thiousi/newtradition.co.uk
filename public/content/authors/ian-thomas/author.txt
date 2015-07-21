@@ -1,0 +1,7 @@
+name: Ian Thomas
+----
+bio: Ian has helped bring brands to life in B2B, B2C and voluntary sectors for 20 years. In that time Ian's honed a style which combines the crisp articulation of brand strategies with the practical nuts-and-bolts implementation nouse to build brand reputations that drive commercial performance.
+----
+email: ian.thomas@newtradition.co.uk
+----
+twitter: mrianthomas

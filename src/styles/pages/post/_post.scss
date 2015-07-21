@@ -94,6 +94,27 @@
       font-size: $delta + 2px;
     }
 
+    figure {
+      margin: 30px 0;
+
+      figcaption {
+        padding-top: 0;
+        padding-bottom: 0;
+        position: relative;
+
+        &:after {
+          @include icon-pseudo;
+          top: 0;
+          left: 0;
+        }
+      }
+
+      img + figcaption:after {
+        @extend .i-cam;
+        opacity: 0.15;
+      }
+    }
+
     @media screen and ( min-width: $medium ) {
       blockquote {
         margin-left: -25%;

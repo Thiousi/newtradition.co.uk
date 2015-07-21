@@ -245,17 +245,32 @@ a.featured:hover {
   position: absolute;
   top: 50px;
   left: 0;
+  display: block;
   background-position: center;
   background-size: cover;
+
+  @media screen and ( max-width: $small ) {
+    top: 0;
+    margin: 20px 0 10px;
+    position: relative;
+  }
 }
 
 .bio-name {
   padding-top: 10px;
   padding-left: 100px;
   margin-bottom: 5px;
+
+  @media screen and ( max-width: $small ) {
+    padding-left: 0;
+  }
 }
 
 .bio-excerpt {
   padding-left: 100px;
   color: lighten($light-ink, 10);
+
+  @media screen and ( max-width: $small ) {
+    padding-left: 0;
+  }
 }
