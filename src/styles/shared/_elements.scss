@@ -257,9 +257,14 @@ figcaption {
     color: $primary;
     border: 1px solid rgba($primary, 0.4);
   }
+
+  &.active {
+    color: white;
+    background-color: $primary;
+  }
 }
 
-.tag {
+.cat {
   color: rgba($light-ink, 0.8);
   border-color: rgba($light-ink, 0.2);
 
@@ -267,6 +272,17 @@ figcaption {
     color: $ink;
     border-color: rgba($light-ink, 0.6);
   }
+
+  &.active {
+    color: white;
+    background-color: $ink;
+  }
+}
+
+.tag-title {
+  text-transform: capitalize;
+  margin-bottom: 30px;
+  display: none;
 }
 
 // Share page

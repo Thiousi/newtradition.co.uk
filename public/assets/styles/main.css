@@ -561,13 +561,24 @@ figcaption {
   .cat:hover, .tag:hover {
     color: #E30613;
     border: 1px solid rgba(227, 6, 19, 0.4); }
+  .cat.active, .tag.active {
+    color: white;
+    background-color: #E30613; }
 
-.tag {
+.cat {
   color: rgba(103, 98, 107, 0.8);
   border-color: rgba(103, 98, 107, 0.2); }
-  .tag:hover {
+  .cat:hover {
     color: #39333F;
     border-color: rgba(103, 98, 107, 0.6); }
+  .cat.active {
+    color: white;
+    background-color: #39333F; }
+
+.tag-title {
+  text-transform: capitalize;
+  margin-bottom: 30px;
+  display: none; }
 
 .share {
   position: relative; }
@@ -1024,13 +1035,13 @@ a.featured:hover {
   margin-left: 7px; }
 
 .journal-stream {
-  padding-top: 20px; }
+  padding-top: 40px; }
   @media screen and (max-width: 570px) {
     .journal-stream {
-      padding-top: 10px; } }
-  .journal-stream .col-3-4 .post:first-child {
+      padding-top: 30px; } }
+  .journal-stream .col-3-4 .post:first-of-type {
     padding-top: 0; }
-    .journal-stream .col-3-4 .post:first-child:before {
+    .journal-stream .col-3-4 .post:first-of-type:before {
       display: none; }
   .journal-stream .col-3-4 .post:last-of-type {
     padding-bottom: 0; }
