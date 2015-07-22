@@ -112,7 +112,7 @@
 
       &:after {
         @include icon-pseudo;
-        @extend .i-cam;
+        @include sprite($cam-dark);
         left: 5px;
         top: 11px;
         opacity: 0.15;

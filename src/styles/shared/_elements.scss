@@ -60,7 +60,7 @@ a {
 
   &:after {
     @include icon-pseudo;
-    @extend .i-load;
+    @include sprite($reload-dark);
     top: 12px;
     left: 22px;
     opacity: 0.5;
@@ -77,7 +77,7 @@ a {
 
   &:after {
     @include icon-pseudo;
-    @extend .i-rarrow;
+    @include sprite($arrow-right-dark);
     top: 12px;
     right: 14px;
     opacity: 0.5;
@@ -92,7 +92,7 @@ a {
 
   &:after {
     @include icon-pseudo;
-    @extend .i-share;
+    @include sprite($share-dark);
     top: 12px;
     left: 17px;
     opacity: 0.5;
@@ -123,9 +123,9 @@ a {
 
   &:after {
     @include icon-pseudo;
-    @extend .i-email;
+    @include sprite($email-dark);
     top: 11px;
-    left: 8px;
+    left: 9px;
     opacity: 0.5;
   }
 }
@@ -141,9 +141,9 @@ a {
 
   &:after {
     @include icon-pseudo;
-    @extend .i-twitter;
+    @include sprite($twitter-dark);
     top: 11px;
-    left: 7px;
+    left: 10px;
     opacity: 0.5;
   }
 }
@@ -159,9 +159,9 @@ a {
 
   &:after {
     @include icon-pseudo;
-    @extend .i-facebook;
+    @include sprite($facebook-dark);
     top: 10px;
-    left: 15px;
+    left: 14px;
     opacity: 0.5;
   }
 }

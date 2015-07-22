@@ -1,15 +1,18 @@
-.i-close, .i-menu, .i-share, .i-rarrow, .i-cam, .i-load, .i-email, .i-twitter, .i-facebook { background: url($sprite); }
+@mixin sprite( $spriteVals ) {
+  width: nth( $spriteVals, 1 );
+  height: nth( $spriteVals, 2 );
+  background-repeat: no-repeat;
+  background-image: url( #{ nth( $spriteVals, 3 ) } );
+  background-position: nth( $spriteVals, 4 ) nth( $spriteVals, 5 );
+}
 
-.i-rarrow, .i-cam, .i-load { height: 15px; }
-
-.i-close, .i-share { width: 16px; height: 15px; }
-
-.i-close { background-position: -95px 0px; }
-.i-menu { background-position: -70px 0px; width: 23px; height: 16px; }
-.i-share { background-position: -52px 0px; }
-.i-rarrow { background-position: -40px 0px; width: 9px; }
-.i-cam { background-position: -18px 0px; width: 21px; }
-.i-load { background-position: 0px 0px; width: 16px; }
-.i-email { background-position: -135px 0px; width: 23px; height: 17px; }
-.i-twitter { background-position: -109px 0px; height: 17px; width: 24px; }
-.i-facebook { background-position: -159px 0px; width: 12px; height: 20px; }
+$sprite-path: '../images/sprite.svg';
+$facebook-dark: 11px 19px $sprite-path -122px 0px;
+$email-dark: 20px 16px $sprite-path -100px 0px;
+$twitter-dark: 21px 17px $sprite-path -75px 0px;
+$close-white: 15px 15px $sprite-path -25px -20px;
+$menu-white: 22px 15px $sprite-path 0px -20px;
+$share-dark: 18px 17px $sprite-path -54px 0px;
+$arrow-right-dark: 9px 15px $sprite-path -42px 0px;
+$cam-dark: 21px 16px $sprite-path -17px 0px;
+$reload-dark: 15px 15px $sprite-path 0px 0px;
