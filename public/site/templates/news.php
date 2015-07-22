@@ -1,12 +1,10 @@
 <?php snippet('header') ?>
-  
 <hgroup class="post-head">
   <div class="grid">
     <h5 class="col-1-4">News</h5>
     <h2 class="col-3-4"><?php echo html($page->title()) ?></h2>
   </div>
 </hgroup>
-
 <?php if($image = $page->image('hero.jpg')): ?>
   <figure class="post-hero">
     <div class="post-hero-img" style="background-image: url(<?php echo thumb($image, array('width' => 1200, 'height' => 600, 'quality' => 85, 'crop' => true))->url() ?>);"></div>
@@ -15,7 +13,6 @@
     </div>
   </figure>
 <?php endif ?>
-
 <section class="post-main grid" role="main">
   <article class="col-3-4 post">
     <?php echo $page->text()->kirbytext() ?>
@@ -54,7 +51,5 @@
     <div id="disqus_thread" class="col-3-4 col-3-4-offset comments"></div>
   <?php endif ?>
 </section>
-
 <?php snippet('next-post') ?>
-
 <?php snippet('footer') ?>

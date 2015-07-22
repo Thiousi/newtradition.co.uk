@@ -1,5 +1,4 @@
 <?php snippet('header') ?>
-
 <?php foreach($site->find('journal')->children()->filterBy('featured', 'true')->visible()->sortBy('date', 'desc')->limit(1) as $featured): ?>
   <a href="<?php echo $featured->url() ?>" title="<?php echo html($featured->title()) ?>" class="featured">
     <div class="grid">
@@ -16,7 +15,6 @@
     </div>
   </a>
 <?php endforeach ?>
-
 <section class="grid journal-stream" role="main">
   <div class="col-3-4">
     <h2 class="tag-title"><?php echo $tag ?></h2>
@@ -57,5 +55,4 @@
     </div>
   </aside>
 </section>
-
 <?php snippet('footer') ?>

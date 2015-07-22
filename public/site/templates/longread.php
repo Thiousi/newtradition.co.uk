@@ -1,5 +1,4 @@
 <?php snippet('header') ?>
-
 <?php if($image = $page->image('hero.jpg')): ?>
 <header class="post-head" style="background-image: url(<?php echo thumb($image, array('width' => 1200, 'quality' => 85))->url() ?>);">
 <?php else: ?>
@@ -21,7 +20,6 @@
     </div>
   </div>
 </header>
-
 <section class="post-main grid" role="main">
   <article class="col-3-4 col-3-4-offset post">
     <?php echo $page->text()->kirbytext() ?>
@@ -63,7 +61,5 @@
     <div id="disqus_thread" class="col-3-4 col-3-4-offset comments"></div>
   <?php endif ?>
 </section>
-
 <?php snippet('next-post') ?>
-
 <?php snippet('footer') ?>

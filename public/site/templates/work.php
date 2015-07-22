@@ -1,5 +1,4 @@
 <?php snippet('header') ?>
-
 <?php foreach($site->find('work')->children()->filterBy('featured', 'true')->visible()->sortBy('date', 'desc')->limit(1) as $featured): ?>
   <a href="<?php echo $featured->url() ?>" title="<?php echo html($featured->title()) ?>" class="featured">
     <div class="grid">
@@ -14,7 +13,6 @@
     </div>
   </a>
 <?php endforeach ?>
-
 <?php $postUris = pagesByDate($site->find('work')->children()->visible(), array('group'=>'year')); ?>
 <?php if ($postUris): ?>
   <?php foreach($postUris as $year => $uris): ?>
@@ -31,5 +29,4 @@
     </section>
   <?php endforeach; ?>
 <?php endif; ?>
-
 <?php snippet('footer') ?>
