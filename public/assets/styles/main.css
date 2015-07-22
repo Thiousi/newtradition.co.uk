@@ -544,6 +544,10 @@ figcaption {
   img + figcaption, .post-hero figcaption {
     padding-left: 30px; }
 
+@media screen and (max-width: 800px) {
+  .cat-list li, .tag-list li {
+    display: inline-block; } }
+
 .cat, .tag {
   padding: 9px 12px;
   border: 1px solid rgba(227, 6, 19, 0.1);
@@ -1039,6 +1043,9 @@ a.featured:hover {
   @media screen and (max-width: 570px) {
     .journal-stream {
       padding-top: 30px; } }
+  @media screen and (min-width: 570px) {
+    .journal-stream .col-3-4 {
+      float: right; } }
   .journal-stream .col-3-4 .post:first-of-type {
     padding-top: 0; }
     .journal-stream .col-3-4 .post:first-of-type:before {

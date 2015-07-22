@@ -6,6 +6,11 @@
   }
 
   .col-3-4 {
+
+    @media screen and ( min-width: $small ) {
+      float: right;
+    }
+
     .post:first-of-type {
       padding-top: 0;
 

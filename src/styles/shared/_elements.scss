@@ -233,7 +233,7 @@ figcaption {
 .tag-list {
   li {
     @media screen and ( max-width: $medium ) {
-      float: 
+      display: inline-block;
     }
   }
 }

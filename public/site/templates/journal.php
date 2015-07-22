@@ -18,25 +18,6 @@
 <?php endforeach ?>
 
 <section class="grid journal-stream" role="main">
-  <aside class="col-1-4 sidebar">
-    <div class="sidebar-item">
-      <h5>Tags</h5>
-      <?php $tags = $page->children()->visible()->pluck('tags', ',', true);?>
-      <ul class="tag-list">
-        <?php foreach($tags as $tag): ?>
-          <li><a href="<?php echo $page->url() . '/tag:' . $tag ?>" class="tag"><?php echo html($tag) ?></a></li>
-        <?php endforeach ?>
-      </ul>
-    </div>
-    <div class="sidebar-item">
-      <h5>Categories</h5>
-      <ul class="cat-list">
-        <li><a href="#longread" class="cat">Long Read</a></li>
-        <li><a href="#news" class="cat">News</a></li>
-        <li><a href="#comment" class="cat">Comment</a></li>
-      </ul>
-    </div>
-  </aside>
   <div class="col-3-4">
     <h2 class="tag-title"><?php echo $tag ?></h2>
     <?php foreach ($articles as $article): ?>
@@ -56,6 +37,25 @@
     <?php endforeach ?>
     <button class="btn btn-line btn-load">Load more</button>
   </div>
+  <aside class="col-1-4 sidebar">
+    <div class="sidebar-item">
+      <h5>Tags</h5>
+      <?php $tags = $page->children()->visible()->pluck('tags', ',', true);?>
+      <ul class="tag-list">
+        <?php foreach($tags as $tag): ?>
+          <li><a href="<?php echo $page->url() . '/tag:' . $tag ?>" class="tag"><?php echo html($tag) ?></a></li>
+        <?php endforeach ?>
+      </ul>
+    </div>
+    <div class="sidebar-item">
+      <h5>Categories</h5>
+      <ul class="cat-list">
+        <li><a href="#longread" class="cat">Long Read</a></li>
+        <li><a href="#news" class="cat">News</a></li>
+        <li><a href="#comment" class="cat">Comment</a></li>
+      </ul>
+    </div>
+  </aside>
 </section>
 
 <?php snippet('footer') ?>

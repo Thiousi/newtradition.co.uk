@@ -62,32 +62,35 @@ var loader = function() {
 loadMore();
   return false;
 };
-    
-$('.btn-load').bind('click', loader);
-  var amount = 2;
-  var offset = (amount * 3) + 1;
-  if (journal !== null) {
-    var ajaxURL = '../ajax-journal';
-  } else if (home !== null) {
-    var ajaxURL = '../ajax-home';
-  }
-  function loadMore(){
-  $.ajax({
-    url      : ajaxURL,
-    type     : 'post',
-    dataType : 'json',
-    data : {
-      'amount' : amount,
-      'offset' : offset
-  }
-  }).done(function(data){
-    $('.btn-load').before(data[0]);
-
-    if(!data[1]){
-      $('.btn-load').unbind('click', loader);
+   
+var btnLoad = document.querySelector(".btn-load");
+if (btnLoad !== null) { 
+  $(btnLoad).bind('click', loader);
+    var amount = 2;
+    var offset = (amount * 3) + 1;
+    if (journal !== null) {
+      var ajaxURL = '../ajax-journal';
+    } else if (home !== null) {
+      var ajaxURL = '../ajax-home';
     }
-  });
-  offset += (amount * 3) + 1;
+    function loadMore(){
+      $.ajax({
+        url      : ajaxURL,
+        type     : 'post',
+        dataType : 'json',
+        data : {
+          'amount' : amount,
+          'offset' : offset
+      }
+    }).done(function(data){
+      $('.btn-load').before(data[0]);
+
+      if(!data[1]){
+        $('.btn-load').unbind('click', loader);
+      }
+    });
+    offset += (amount * 3) + 1;
+  }
 }
 
 // Hide features on tag specific layouts
