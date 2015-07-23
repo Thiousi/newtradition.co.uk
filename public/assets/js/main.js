@@ -25,9 +25,11 @@ function toggleClass(elem, className) {
 
 // Menu Toggle
 var btnMenu = document.querySelector(".btn-menu");
+var navMenu = document.querySelector(".menu");
 if (btnMenu !== null) {
   btnMenu.addEventListener("click", function(event) {
     toggleClass(this, 'active');
+    toggleClass(navMenu, 'active')
   });
 }
 

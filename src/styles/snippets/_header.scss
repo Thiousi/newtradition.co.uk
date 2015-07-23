@@ -111,7 +111,8 @@
       }
 
       @media screen and ( max-width: $small ) {
-        font-size: $beta - 4px;
+        font-size: $beta - 2px;
+        line-height: 1.3;
       }
     }
   }

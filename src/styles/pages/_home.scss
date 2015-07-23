@@ -5,6 +5,10 @@
     .col-2-3 {
       .post-img {
         height: 280px;
+
+        @media screen and ( max-width: $medium ) {
+          height: 170px;
+        }
       }
     }
   }

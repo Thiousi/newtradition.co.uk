@@ -17,6 +17,11 @@
 
   h2 {
     line-height: 1.15;
+
+    @media screen and ( max-width: $medium ) {
+      line-height: 1;
+      font-size: $mega - 4px;
+    }
   }
 
   h2, h5 {
@@ -48,10 +53,6 @@
   background-repeat: no-repeat;
   background-position: center;
   background-attachment: fixed;
-
-  .touch-device & {
-    background-attachment: scroll;
-  }
 
   @media screen and ( max-width: $small ) {
     height: 300px;
@@ -155,6 +156,10 @@
 
   .btn-next {
     float: right;
+
+    @media screen and ( min-width: $small ) {
+      display: none;
+    }
   }
 }
 

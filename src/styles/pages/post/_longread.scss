@@ -15,10 +15,6 @@
     position: relative;
     z-index: -1;
 
-    .touch-device & {
-      background-attachment: scroll;
-    }
-
     @media screen and ( max-width: $medium ) {
       padding-top: 250px;
     }
@@ -81,7 +77,6 @@
 
         @media screen and ( max-width: $medium ) {
           padding-top: 10px;
-          padding-bottom: 10px;
         }
       }
     }

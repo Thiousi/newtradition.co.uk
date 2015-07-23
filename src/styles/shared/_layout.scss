@@ -29,6 +29,10 @@ body {
   transition: none !important;
 }
 
+.touch-device * {
+  background-attachment: scroll!important;
+}
+
 // Grid
 .grid {
   @include clearfix;
