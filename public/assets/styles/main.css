@@ -614,7 +614,7 @@ figcaption {
 
 .gbl-head {
   background-color: #E30613;
-  padding: 40px inherit 10px;
+  padding: 40px 0 10px;
   color: white; }
   @media screen and (max-width: 800px) {
     .gbl-head {
