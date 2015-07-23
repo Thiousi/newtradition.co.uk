@@ -1251,9 +1251,12 @@ a.featured:hover {
         border-bottom: 1px solid #e2e2e2; } }
   .post-actions .share {
     float: left; }
+    @media screen and (max-width: 570px) {
+      .post-actions .share {
+        height: 41px; } }
   .post-actions .btn-next {
     float: right; }
-    @media screen and (min-width: 570px) {
+    @media screen and (max-width: 570px) {
       .post-actions .btn-next {
         display: none; } }
 

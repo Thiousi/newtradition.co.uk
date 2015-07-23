@@ -152,12 +152,16 @@
 
   .share {
     float: left;
+
+    @media screen and ( max-width: $small ) {
+      height: 41px;
+    }
   }
 
   .btn-next {
     float: right;
 
-    @media screen and ( min-width: $small ) {
+    @media screen and ( max-width: $small ) {
       display: none;
     }
   }
