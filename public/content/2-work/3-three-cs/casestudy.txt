@@ -10,7 +10,7 @@ Client: Paraplanners Powwow
 
 ----
 
-Featured: true
+Featured: false
 
 ----
 

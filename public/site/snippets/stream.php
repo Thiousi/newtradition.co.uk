@@ -1,32 +1,3 @@
-<section class="featured">
-  <div class="grid">
-    <h2>Featured</h2>
-    <?php foreach ($site->find('journal')->children()->filterBy('featured', 'true')->visible()->limit(1) as $featured): ?>
-      <a href="<?php echo $featured->url() ?>" class="post col-2-3 <?php echo $featured->template() ?>"> 
-        <?php if($image = $featured->image('hero.jpg')): ?>
-          <div class="post-img" style="background-image: url(<?php echo thumb($image, array('width' => 720, 'height' => 280, 'quality' => 75, 'crop' => true))->url() ?>);"></div>
-        <?php endif ?>
-        <?php if ($featured->template() == 'longread'): ?><h5>Long Read</h5>
-        <?php elseif ($featured->template() == 'news'): ?><h5>News</h5>
-        <?php elseif ($featured->template() == 'comment'): ?><h5>Comment</h5>
-        <?php endif ?>
-        <h3><?php echo html($featured->title()) ?></h3>
-        <p><?php echo $featured->text()->excerpt(300) ?></p>
-      </a>
-    <?php endforeach ?>
-    <?php foreach ($site->find('work')->children()->filterBy('featured', 'true')->visible()->limit(1) as $featured): ?>
-      <a href="<?php echo $featured->url() ?>" class="post col-1-3 <?php echo $featured->template() ?>">
-        <?php if($image = $featured->image('hero.jpg')): ?>
-          <div class="post-img" style="background-image: url(<?php echo thumb($image, array('width' => 570, 'height' => 260, 'quality' => 75, 'crop' => true))->url() ?>);"></div>
-        <?php endif ?>
-        <h5>Case Study</h5>
-        <h3><?php echo html($featured->title()) ?></h3>
-        <p><?php echo $featured->text()->excerpt(300) ?></p>
-        <h6>Client: <?php echo html($featured->client()) ?></h6>
-      </a>
-    <?php endforeach ?>
-  </div>
-</section>
 <section class="stream grid" role="main">
   <?php foreach ($site->find('journal','work')->children()->visible()->sortBy('date', 'desc')->limit(7) as $article): ?>
     <?php $count = 0 ?>
@@ -34,14 +5,21 @@
       <?php if($image = $article->image('hero.jpg')): ?>
         <div class="post-img" style="background-image: url(<?php echo thumb($image, array('width' => 650, 'height' => 230, 'quality' => 75, 'crop' => true))->url() ?>);"></div>
       <?php endif ?>
-      <?php if ($article->template() == 'longread'): ?><h5>Long Read</h5>
-      <?php elseif ($article->template() == 'news'): ?><h5>News</h5>
-      <?php elseif ($article->template() == 'comment'): ?><h5>Comment</h5>
-      <?php elseif ($article->template() == 'casestudy'): ?><h5>Case Study</h5>
-      <?php endif ?>
+      <div class="meta">
+        <span class="meta-cat h5">
+        <?php if ($article->template() == 'longread'): ?>Long Read
+          <?php elseif ($article->template() == 'news'): ?>News
+          <?php elseif ($article->template() == 'comment'): ?>Comment
+          <?php elseif ($article->template() == 'casestudy'): ?>Case Study
+        <?php endif ?></span>
+        <?php if(!$article->featured() == 'true' ):?>
+          <span class="meta-feat">Featured</span>
+        <?php endif ?>
+      </div>
       <h3><?php echo html($article->title()) ?></h3>
       <p><?php echo $article->text()->excerpt(200) ?></p>
       <?php if($article->template() == 'casestudy'): ?><h6>Client: <?php echo html($article->client()) ?></h6><?php endif ?>
+      <button class="btn-more btn-line btn-small">Read more</button>
     </a>
     <?php $count++ ?>
   <?php endforeach ?>

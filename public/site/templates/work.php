@@ -2,9 +2,10 @@
 <?php foreach($site->find('work')->children()->filterBy('featured', 'true')->visible()->sortBy('date', 'desc')->limit(1) as $featured): ?>
   <a href="<?php echo $featured->url() ?>" title="<?php echo html($featured->title()) ?>" class="featured">
     <div class="grid">
-      <h5 class="col-1-4">Featured
-        <strong>Case Study</strong>
-      </h5>
+      <div class="meta col-1-4">
+        <span class="meta-feat">Featured</span>
+        <span class="meta-cat h5">Case Study</span>
+      </div>
       <div class="col-3-4">
         <h2><?php echo html($featured->title()) ?></h2>
         <h3><strong><?php echo html($featured->date('F Y')) ?></strong></h3>

@@ -27,14 +27,14 @@
       <h5>Written by</h5>
       <?php echo html($page->author()) ?>
     </div>
-    <div class="sidebar-item">
+    <?php 
+      $tags = ($page->tags());
+      $tags = explode(',',$tags);
+      $tags = array_map('trim',$tags);
+    ?> 
+    <?php if(!$page->tags()->empty()):?>
+    <div class="post-meta">
       <h5>Tags</h5>
-      <?php 
-        $tags=($page->tags());
-        $tags=explode(',',$tags);
-        $tags=array_map('trim',$tags);
-      ?> 
-      <?php if($page->tags()):?>
         <ul class="tag-list">
           <?php foreach($tags as $tag):?>
             <li>
@@ -44,8 +44,8 @@
             </li>
             <?php endforeach ?>
         </ul>
-      <?php endif ?>
     </div>
+    <?php endif ?>
   </aside>
   <?php if ($page->comments() == 'on' ): ?>
     <div id="disqus_thread" class="col-3-4 col-3-4-offset comments"></div>

@@ -30,9 +30,6 @@
 
   .nav,
   .contact {
-    margin-top: 5px;
-    padding-left: 0;
-
     @media screen and ( max-width: $medium ) {
       width: 100%;
       padding-right: 0;
@@ -45,14 +42,6 @@
       padding: 10px 15px;
       color: rgba(white, 0.6);
 
-      &:first-child {
-        padding-left: 10px;
-
-        @media screen and ( max-width: $medium ) {
-          padding-left: 0;
-        }
-      }
-
       &:hover,
       &.active {
         color: white;
@@ -60,22 +49,151 @@
     }
   }
 
+  .nav {
+    margin-top: 5px;
+    padding-left: 0;
+
+    @media screen and ( max-width: $medium ) {
+      width: auto;
+      float: left;
+    }
+
+    a {
+      &:first-child {
+        padding-left: 10px;
+
+        @media screen and ( max-width: $medium ) {
+          padding-left: 0;
+        }
+      }
+    }
+  }
+
   .contact {
     float: right;
     text-align: right;
+    margin-top: 0;
     margin-bottom: 10px;
-
-    a {
-      padding-right: 0;
-    }
+    position: relative;
 
     @media screen and ( max-width: $medium ) {
+      width: auto;
+      right: -15px;
+    }
+
+    @media screen and ( max-width: $small ) {
       @include clearfix;
       padding: $gutter 0;
       float: none;
-      display: block;
+      right: auto;
       text-align: left;
       width: 100%;
+    }
+
+    a {
+      vertical-align: top;
+      display: inline-block;
+      padding-right: 0;
+      width: 42px;
+      height: 42px;
+      overflow: hidden;
+      position: absolute;
+
+      @media screen and ( max-width: $small ) {
+        position: relative;
+        margin: 10px 7px 0 0;
+      }
+
+      span {
+        font-family: $sans;
+        font-weight: $sans-regular;
+        color: rgba(white, 0.6);
+        position: absolute;
+        top: 45px;
+        opacity: 0;
+        right: 0;
+        width: 200px;
+        transition: 0.2s;
+
+        @media screen and ( max-width: $medium ) {
+          top: auto;
+          bottom: -25px;
+          font-size: $zeta + 2px;
+        }
+
+        @media screen and ( max-width: $small ) {
+          display: none;
+        }
+      }
+
+      &:before {
+        @include icon-pseudo;
+        border: 1px solid rgba(white, 0.3);
+        border-radius: 50%;
+        width: 41px;
+        height: 41px;
+        top: 0;
+        left: 0;
+        transition: 0.2s;
+      }
+
+      &:hover {
+        overflow: visible;
+
+        span {
+          opacity: 1;
+        }
+
+        &:before {
+          border: 1px solid rgba(white, 0.6);
+        }
+      }
+
+      &:after {
+        @include icon-pseudo;
+      }
+    }
+
+    .contact-email { 
+      right: 106px;
+
+      @media screen and ( max-width: $small ) {
+        right: auto;
+      }
+
+      &:after {
+        @include sprite($email-white);
+        top: 13px;
+        left: 11px;
+      }
+    }
+
+    .contact-phone {
+      right: 58px;
+
+      @media screen and ( max-width: $small ) {
+        right: auto;
+      }
+
+      &:after  {
+        @include sprite($phone-white);
+        top: 12px;
+        left: 12px;
+      }
+    }
+
+    .contact-twitter {
+      right: 10px;
+
+      @media screen and ( max-width: $small ) {
+        right: auto;
+      }
+
+      &:after  {
+        @include sprite($twitter-white);
+        top: 13px;
+        left: 12px;
+      }
     }
   }
 
@@ -86,9 +204,7 @@
 
   .title {
     @include clearfix;
-    padding-top: 40px;
-    padding-left: 0;
-    padding-bottom: 10px;
+    padding: 90px $gutter 10px 0;
     margin-left: calc(25% + 10px);
 
     @media screen and ( max-width: $medium ) {
@@ -101,18 +217,18 @@
       font-size: $beta + 4px;
       font-family: $serif;
       font-weight: $serif-regular;
-      padding: 40px 0 80px;
-      line-height: 1.5;
+      padding: 80px $gutter 80px 0;
+      line-height: 1.4;
       max-width: 700px;
 
       @media screen and ( max-width: $medium ) {
-        padding: 70px $gutter 40px;
+        padding: 80px $gutter 40px;
         font-size: $beta;
       }
 
       @media screen and ( max-width: $small ) {
-        font-size: $beta - 2px;
-        line-height: 1.3;
+        font-size: $beta - 6px;
+        line-height: 1.4;
       }
     }
   }
@@ -174,13 +290,14 @@
     }
 
     .menu {
+      min-height: 90px;
       width: calc(100% + 20px);
       top: -300px;
       left: -10px;
       transition: 0.4s;
       position: absolute;
       padding: 15px 30px 0;
-      background-color: darken($primary, 7);
+      background-color: rgba(darken($primary, 7), 0.95);
       z-index: 1;
     }
   }

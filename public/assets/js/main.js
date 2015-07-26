@@ -29,7 +29,7 @@ var navMenu = document.querySelector(".menu");
 if (btnMenu !== null) {
   btnMenu.addEventListener("click", function(event) {
     toggleClass(this, 'active');
-    toggleClass(navMenu, 'active')
+    toggleClass(navMenu, 'active');
   });
 }
 
@@ -85,10 +85,9 @@ if (btnLoad !== null) {
           'offset' : offset
       }
     }).done(function(data){
-      $('.btn-load').before(data[0]);
-
+      $(btnLoad).before(data[0]);
       if(!data[1]){
-        $('.btn-load').unbind('click', loader);
+        $(btnLoad).unbind('click', loader).text("All posts have been loaded").removeClass("btn-load").addClass("btn-load-complete");
       }
     });
     offset += (amount * 3) + 1;

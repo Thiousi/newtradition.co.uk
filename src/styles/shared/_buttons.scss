@@ -1,0 +1,161 @@
+.btn, 
+button {
+  font-family: $sans;
+  margin-bottom: 0;
+  border: none;
+  border-radius: 25px;
+  background: none;
+  -webkit-appearance: none;
+  line-height: 1;
+  transition: 0.2s;
+  font-size: $body-size - 1px;
+
+  &:focus {
+    outline: none;
+  }
+}
+
+.btn-line {
+  padding: 12px 25px;
+  border: 1px solid $ink;
+  color: $ink;
+  opacity: 0.3;
+  position: relative;
+
+  &:hover {
+    opacity: 0.7;
+  }
+
+  &.btn-small {
+    padding: 10px 17px;
+    font-size: $body-size - 2px;
+  }
+}
+
+.btn-load {
+  @include clearfix;
+  display: table;
+  padding-left: 48px;
+  margin: 50px auto;
+
+  &:after {
+    @include icon-pseudo;
+    @include sprite($reload-dark);
+    top: 12px;
+    left: 22px;
+    opacity: 0.5;
+  }
+}
+
+.btn-load-complete {
+  @extend .btn-load;
+  padding: 12px 25px;
+  cursor: default;
+    
+  &:hover {
+    opacity: 0.3;
+  }
+
+  &:after {
+    display: none;
+  }
+}
+
+.btn-next {
+  padding-right: 35px;
+
+  @media screen and ( max-width: $small ) {
+    padding-right: 30px;
+    padding-left: 15px;
+  }
+
+  &:after {
+    @include icon-pseudo;
+    @include sprite($arrow-right-dark);
+    top: 12px;
+    right: 14px;
+    opacity: 0.5;
+  }
+}
+
+.btn-share {
+  padding-right: 20px;
+  padding-left: 42px;
+  position: relative;
+  z-index: 2;
+
+  &:after {
+    @include icon-pseudo;
+    @include sprite($share-dark);
+    top: 12px;
+    left: 17px;
+    opacity: 0.5;
+  }
+}
+
+.btn-email,
+.btn-twitter,
+.btn-facebook {
+  font-size: 1px;
+  color: transparent;
+  width: 41px;
+  height: 41px;
+  padding: 0;
+  position: absolute;
+  top: 0;
+  transform: 2s;
+}
+
+.btn-email {
+  .share & {
+    left: 114px;
+
+    @media screen and ( max-width: $small ) {
+      left: 0;
+    }
+  }
+
+  &:after {
+    @include icon-pseudo;
+    @include sprite($email-dark);
+    top: 11px;
+    left: 9px;
+    opacity: 0.5;
+  }
+}
+
+.btn-twitter {
+  .share & {
+    left: 162px;
+
+    @media screen and ( max-width: $small ) {
+      left: 48px;
+    }
+  }
+
+  &:after {
+    @include icon-pseudo;
+    @include sprite($twitter-dark);
+    top: 11px;
+    left: 10px;
+    opacity: 0.5;
+  }
+}
+
+.btn-facebook {
+  .share & {
+    left: 210px;
+
+    @media screen and ( max-width: $small ) {
+      left: 96px;
+    }
+  }
+
+  &:after {
+    @include icon-pseudo;
+    @include sprite($facebook-dark);
+    top: 10px;
+    left: 14px;
+    opacity: 0.5;
+  }
+}

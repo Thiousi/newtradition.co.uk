@@ -7,9 +7,10 @@
     }
   }
 
-  @media screen and ( max-width: $medium ) {
-    .comments {
-      margin-top: 0;
+  .comments {
+    margin-top: 0;
+
+    @media screen and ( max-width: $medium ) {
       margin-bottom: 20px;
     }
   }

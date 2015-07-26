@@ -6,7 +6,6 @@
   }
 
   .col-3-4 {
-
     @media screen and ( min-width: $small ) {
       float: right;
     }
@@ -34,14 +33,5 @@
 
   p {
     font-size: $delta + 2px;
-  }
-
-  h5 {
-    span {
-      color: rgba($primary, 0.5);
-      padding-left: 10px;
-      font-family: $sans;
-      font-weight: $sans-regular;
-    }
   }
 }

@@ -1,0 +1,10 @@
+input, textarea {
+  padding: 10px;
+  display: block;
+  -webkit-appearance: none;
+  border-radius: 0;
+
+  &:focus{
+    outline: none;
+  }
+}

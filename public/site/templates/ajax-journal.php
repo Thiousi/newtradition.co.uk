@@ -21,6 +21,7 @@
       }
       $html .= '<h3>' . html($article->title()) . '</h3>';
       $html .= '<p>' . $article->text()->excerpt(300) . '</p>';
+      $html .= '<button class="btn-more btn-line btn-small">Read more</button>';
       $html .= '</a>';
       $count++;
     }

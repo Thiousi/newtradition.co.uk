@@ -27,6 +27,7 @@
        $html .= '<span class="client">Client: ' . $article->client()->html() . '</span';
       }
       $html .= '</a>';
+      $html .= '<button class="btn-more btn-line btn-small">Read more</button>';
       $count++;
     }
     $data[0] = $html;
