@@ -1,0 +1,151 @@
+a {
+  color: $ink;
+  text-decoration: none;
+  transition: 0.2s;
+
+  &:hover, &.hover {
+    cursor: pointer;
+    color: lighten($ink, 10);
+  }
+
+  &:active, &.active {
+    color: darken($ink, 10);
+  }
+
+  &.visited {
+    color: darken($ink, 15);
+  }
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+.meta-cat {
+  @extend .h5;
+}
+
+.meta-date {
+  @extend .h5;
+  color: rgba($primary, 0.5);
+  font-family: $sans;
+  font-weight: $sans-regular;
+}
+
+.meta-feat {
+  @extend .h5;
+  font-weight: $sans-regular;
+  font-family: $sans;
+  font-size: $zeta;
+  background-color: $primary;
+  color: white;
+  padding: 6px 8px 5px;
+  margin-bottom: 7px;
+  line-height: 1;
+  display: table;
+  border-radius: 2px;
+
+  .post & {
+    position: relative;
+    float: right;
+    top: -5px;
+  }
+}
+
+.cat-list,
+.tag-list {
+  li {
+    @media screen and ( max-width: $medium ) {
+      display: inline-block;
+    }
+  }
+}
+
+.cat,
+.tag {
+  padding: 9px 12px;
+  border: 1px solid rgba($primary, 0.1);
+  color: rgba($primary, 0.6);
+  font-family: $sans;
+  display: table;
+  margin-top: 6px;
+  margin-bottom: 2px;
+  border-radius: 2px;
+  text-transform: capitalize;
+  font-size: $epsilon;
+  line-height: 1;
+  transition: 0.2s;
+
+  &:hover {
+    color: $primary;
+    border: 1px solid rgba($primary, 0.4);
+  }
+
+  &.active {
+    color: white;
+    background-color: $primary;
+  }
+}
+
+.cat {
+  color: rgba($light-ink, 0.8);
+  border-color: rgba($light-ink, 0.2);
+
+  &:hover {
+    color: $ink;
+    border-color: rgba($light-ink, 0.6);
+  }
+
+  &.active {
+    color: white;
+    background-color: $ink;
+  }
+}
+
+.tag-title {
+  text-transform: capitalize;
+  margin-bottom: 30px;
+  display: none;
+}
+
+.share {
+  position: relative;
+
+  .btn-share {
+    opacity: 0.7;
+    display: none;
+  }
+
+  @media screen and ( min-width: $small ) {
+    .btn-share {
+      display: block;
+    }
+
+    &:not(.active) {
+      .btn-share {
+        opacity: 0.3;
+
+        &:hover {
+          opacity: 0.7;
+        }
+      }
+
+      .btn {
+        opacity: 0;
+      }
+
+      .btn-email {
+        left: 50px;
+      }
+
+      .btn-twitter {
+        left: 100px;
+      }
+
+      .btn-facebook {
+        left: 150px;
+      }
+    }
+  }
+}
