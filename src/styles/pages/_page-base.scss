@@ -30,9 +30,13 @@
       font-weight: $sans-bold;
     }
   }
+
+  .btn-more {
+    transform: scale(0.95);
+    opacity: 0;
+  }
 }
   
-
 a.featured:hover {
   background-color: darken($slate, 4);
 
@@ -42,6 +46,15 @@ a.featured:hover {
 
   p:not(.excerpt-lrg) {
     color: $ink;
+  }
+
+  .btn-more {
+    opacity: 0.3;
+    transform: scale(1);
+
+    &:hover {
+      opacity: 1;
+    }
   }
 }
 
@@ -54,7 +67,7 @@ a.featured:hover {
 
 .post {
   padding-top: 15px;
-  padding-bottom: 20px;
+  padding-bottom: 15px;
   position: relative;
   display: block;
 
@@ -64,10 +77,6 @@ a.featured:hover {
 
   @media screen and ( max-width: $small ) {
     padding-bottom: 20px;
-  }
-
-  .home & {
-    padding-bottom: 0;
   }
 
   .home &,
@@ -85,7 +94,6 @@ a.featured:hover {
     }
 
     .btn-more {
-      transition: 0.2s;
       transform: scale(0.95);
       opacity: 0;
     }
@@ -174,10 +182,12 @@ a.featured:hover {
     font-weight: $sans-regular;
     color: lighten($light-ink, 20);
     margin-top: 5px;
+    margin-bottom: 15px;
   }
 
   p {
     color: $light-ink;
+    margin-bottom: 15px;
   }
 }
 

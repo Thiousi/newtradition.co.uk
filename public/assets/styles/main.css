@@ -221,7 +221,7 @@ body {
 .col-3-4-offset {
   margin-left: 25%; }
 
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 800px) {
   .grid {
     padding-right: 10px;
     padding-left: 10px; }
@@ -415,7 +415,7 @@ img {
     float: right;
     top: -5px; }
 
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 800px) {
   .cat-list li, .tag-list li {
     display: inline-block; } }
 
@@ -652,23 +652,22 @@ input, textarea {
   background-color: #E30613;
   padding: 40px 0 10px;
   color: white; }
-  @media screen and (max-width: 900px) {
+  @media screen and (max-width: 800px) {
     .gbl-head {
       padding-top: 20px; } }
-  @media screen and (max-width: 900px) {
+  @media screen and (max-width: 800px) {
     .gbl-head .logo {
       width: calc(100% - 100px);
       margin-bottom: 10px;
       float: left; } }
   .gbl-head .logo a {
     color: white;
-    font-size: 32px;
+    font-size: 28px;
     border-bottom: 3px solid transparent;
-    line-height: 1;
-    padding-bottom: 3px; }
+    line-height: 1; }
     .gbl-head .logo a:hover, .home .gbl-head .logo a {
       border-bottom-color: rgba(255, 255, 255, 0.4); }
-  @media screen and (max-width: 900px) {
+  @media screen and (max-width: 800px) {
     .gbl-head .nav, .gbl-head .contact {
       width: 100%;
       padding-right: 0; } }
@@ -681,26 +680,27 @@ input, textarea {
     .gbl-head .nav a:hover, .gbl-head .nav a.active, .gbl-head .contact a:hover, .gbl-head .contact a.active {
       color: white; }
   .gbl-head .nav {
-    margin-top: 5px;
+    margin-top: 3px;
     padding-left: 0; }
-    @media screen and (max-width: 900px) {
+    @media screen and (max-width: 800px) {
       .gbl-head .nav {
         width: auto;
         float: left; } }
     .gbl-head .nav a:first-child {
       padding-left: 10px; }
-      @media screen and (max-width: 900px) {
+      @media screen and (max-width: 800px) {
         .gbl-head .nav a:first-child {
           padding-left: 0; } }
   .gbl-head .contact {
     float: right;
     text-align: right;
-    margin-top: 0;
+    top: -10px;
     margin-bottom: 10px;
     position: relative; }
-    @media screen and (max-width: 900px) {
+    @media screen and (max-width: 800px) {
       .gbl-head .contact {
         width: auto;
+        top: auto;
         right: -15px; } }
     @media screen and (max-width: 570px) {
       .gbl-head .contact {
@@ -737,7 +737,7 @@ input, textarea {
         width: 200px;
         -webkit-transition: 0.2s;
         transition: 0.2s; }
-        @media screen and (max-width: 900px) {
+        @media screen and (max-width: 800px) {
           .gbl-head .contact a span {
             top: auto;
             bottom: -25px;
@@ -820,7 +820,7 @@ input, textarea {
       content: "";
       display: table;
       clear: both; }
-    @media screen and (max-width: 900px) {
+    @media screen and (max-width: 800px) {
       .gbl-head .title {
         padding-top: 80px;
         padding-left: 10px;
@@ -832,7 +832,7 @@ input, textarea {
       padding: 80px 10px 80px 0;
       line-height: 1.4;
       max-width: 700px; }
-      @media screen and (max-width: 900px) {
+      @media screen and (max-width: 800px) {
         .home .gbl-head .title {
           padding: 80px 10px 40px;
           font-size: 32px; } }
@@ -840,7 +840,7 @@ input, textarea {
         .home .gbl-head .title {
           font-size: 26px;
           line-height: 1.4; } }
-  @media screen and (max-width: 900px) {
+  @media screen and (max-width: 800px) {
     .gbl-head .head {
       top: 0;
       left: 0;
@@ -974,7 +974,7 @@ input, textarea {
   .featured * {
     -webkit-transition: 0.2s;
     transition: 0.2s; }
-  @media screen and (max-width: 900px) {
+  @media screen and (max-width: 800px) {
     .featured [class*="col-"] {
       width: 100%; } }
   .featured h2 {
@@ -987,6 +987,10 @@ input, textarea {
       display: block;
       font-family: 'ff-dagny-web-pro', helvetica, sans-serif;
       font-weight: 700; }
+  .featured .btn-more {
+    -webkit-transform: scale(0.95);
+    transform: scale(0.95);
+    opacity: 0; }
 
 a.featured:hover {
   background-color: #e0e0e0; }
@@ -994,6 +998,12 @@ a.featured:hover {
     color: #E30613; }
   a.featured:hover p:not(.excerpt-lrg) {
     color: #39333F; }
+  a.featured:hover .btn-more {
+    opacity: 0.3;
+    -webkit-transform: scale(1);
+    transform: scale(1); }
+    a.featured:hover .btn-more:hover {
+      opacity: 1; }
 
 .excerpt-lrg {
   color: #E30613;
@@ -1003,7 +1013,7 @@ a.featured:hover {
 
 .post {
   padding-top: 15px;
-  padding-bottom: 20px;
+  padding-bottom: 15px;
   position: relative;
   display: block; }
   .post * {
@@ -1012,8 +1022,6 @@ a.featured:hover {
   @media screen and (max-width: 570px) {
     .post {
       padding-bottom: 20px; } }
-  .home .post {
-    padding-bottom: 0; }
   .home .post, .journal .post {
     overflow: hidden; }
     .home .post:before, .journal .post:before {
@@ -1025,8 +1033,6 @@ a.featured:hover {
       height: 1px;
       width: 100%; }
     .home .post .btn-more, .journal .post .btn-more {
-      -webkit-transition: 0.2s;
-      transition: 0.2s;
       -webkit-transform: scale(0.95);
       transform: scale(0.95);
       opacity: 0; }
@@ -1046,7 +1052,7 @@ a.featured:hover {
     padding-bottom: 20px; }
     .home .featured .post:before, .journal .featured .post:before {
       display: none; }
-  @media screen and (max-width: 900px) {
+  @media screen and (max-width: 800px) {
     .home .featured .post.col-1-3:before {
       background-color: #d8d8d8;
       display: block;
@@ -1079,9 +1085,11 @@ a.featured:hover {
     font-family: 'ff-dagny-web-pro', helvetica, sans-serif;
     font-weight: 400;
     color: #9a959e;
-    margin-top: 5px; }
+    margin-top: 5px;
+    margin-bottom: 15px; }
   .post p {
-    color: #67626B; }
+    color: #67626B;
+    margin-bottom: 15px; }
 
 .sidebar {
   color: #67626B; }
@@ -1124,7 +1132,7 @@ a.featured:hover {
   .post-next p {
     font-size: 20px;
     color: #67626B; }
-  @media screen and (max-width: 900px) {
+  @media screen and (max-width: 800px) {
     .post-next [class*="col-"] {
       width: auto; }
     .post-next h5 {
@@ -1191,7 +1199,7 @@ a.featured:hover {
   padding-bottom: 100px;
   display: block;
   min-height: calc(100vh - 280px); }
-  @media screen and (max-width: 900px) {
+  @media screen and (max-width: 800px) {
     .error-main {
       min-height: calc(100vh - 220px); } }
   @media screen and (max-width: 570px) {
@@ -1205,7 +1213,7 @@ a.featured:hover {
   padding-bottom: 0; }
   .home .featured .col-2-3 .post-img {
     height: 280px; }
-    @media screen and (max-width: 900px) {
+    @media screen and (max-width: 800px) {
       .home .featured .col-2-3 .post-img {
         height: 170px; } }
 
@@ -1229,7 +1237,8 @@ a.featured:hover {
       .journal-stream h3 {
         font-size: 34px; } }
   .journal-stream p {
-    font-size: 20px; }
+    font-size: 20px;
+    margin-bottom: 10px; }
 
 .work h3 {
   font-size: 38px;
@@ -1282,7 +1291,7 @@ a.featured:hover {
   background-color: #cf0511;
   padding-top: 35px;
   padding-bottom: 35px; }
-  @media screen and (max-width: 900px) {
+  @media screen and (max-width: 800px) {
     .post-head {
       padding-bottom: 15px; }
       .post-head [class*="col-"] {
@@ -1291,7 +1300,7 @@ a.featured:hover {
         margin-bottom: 30px; } }
   .post-head h2 {
     line-height: 1.1; }
-    @media screen and (max-width: 900px) {
+    @media screen and (max-width: 800px) {
       .post-head h2 {
         line-height: 1;
         font-size: 44px; } }
@@ -1343,7 +1352,7 @@ a.featured:hover {
       color: #E30613;
       line-height: 1.3;
       margin-bottom: 25px; }
-      @media screen and (max-width: 900px) {
+      @media screen and (max-width: 800px) {
         .post-main .post h3 {
           font-size: 32px; } }
     .post-main .post h4 {
@@ -1374,7 +1383,7 @@ a.featured:hover {
         background-image: url(../images/sprite.svg);
         background-position: -17px 0px;
         opacity: 0.15; }
-    @media screen and (min-width: 900px) {
+    @media screen and (min-width: 800px) {
       .post-main .post blockquote {
         margin-left: -25%;
         max-width: 500px;
@@ -1382,7 +1391,7 @@ a.featured:hover {
         margin-top: 20px;
         margin-bottom: 20px; } }
 
-@media screen and (min-width: 900px) {
+@media screen and (min-width: 800px) {
   .post-aside .post-actions {
     padding: 10px 0 30px; } }
 
@@ -1393,7 +1402,7 @@ a.featured:hover {
     content: "";
     display: table;
     clear: both; }
-  @media screen and (max-width: 900px) {
+  @media screen and (max-width: 800px) {
     .post-actions {
       padding: 0 0 20px; }
       .news .post-actions {
@@ -1417,12 +1426,12 @@ a.featured:hover {
 
 .news .post {
   float: right; }
-  @media screen and (max-width: 900px) {
+  @media screen and (max-width: 800px) {
     .news .post {
       padding-bottom: 15px; } }
 .news .comments {
   margin-top: 0; }
-  @media screen and (max-width: 900px) {
+  @media screen and (max-width: 800px) {
     .news .comments {
       margin-bottom: 20px; } }
 
@@ -1439,7 +1448,7 @@ a.featured:hover {
   padding-bottom: 0;
   position: relative;
   z-index: -1; }
-  @media screen and (max-width: 900px) {
+  @media screen and (max-width: 800px) {
     .longread .post-head {
       padding-top: 250px; } }
   .longread .post-head:after {
@@ -1454,7 +1463,7 @@ a.featured:hover {
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', endColorstr='#bf000000',GradientType=0 );
     -webkit-filter: none\9;
     filter: none\9; }
-    @media screen and (max-width: 900px) {
+    @media screen and (max-width: 800px) {
       .longread .post-head:after {
         background: -webkit-linear-gradient(top, transparent 0%, rgba(0, 0, 0, 0.3) 25%, rgba(0, 0, 0, 0.7) 50%, rgba(0, 0, 0, 0.8) 100%);
         background: linear-gradient(to bottom, transparent 0%, rgba(0, 0, 0, 0.3) 25%, rgba(0, 0, 0, 0.7) 50%, rgba(0, 0, 0, 0.8) 100%); } }
@@ -1463,7 +1472,7 @@ a.featured:hover {
     z-index: 2; }
   .longread .post-head h2 {
     padding-bottom: 20px; }
-    @media screen and (max-width: 900px) {
+    @media screen and (max-width: 800px) {
       .longread .post-head h2 {
         clear: both;
         padding-top: 20px;
@@ -1475,14 +1484,14 @@ a.featured:hover {
           clear: both; } }
   .longread .post-head h5 {
     padding-top: 10px; }
-    @media screen and (max-width: 900px) {
+    @media screen and (max-width: 800px) {
       .longread .post-head h5 {
         margin-bottom: 10px;
         padding-bottom: 10px;
         border-bottom: 1px solid rgba(255, 255, 255, 0.2); } }
   .longread .post-head .col-1-4 {
     padding-right: 20px; }
-    @media screen and (max-width: 900px) {
+    @media screen and (max-width: 800px) {
       .longread .post-head .col-1-4 {
         padding-right: 10px; } }
   .longread .post-head .sidebar-item {
@@ -1493,11 +1502,11 @@ a.featured:hover {
     .longread .post-head .sidebar-item:first-of-type {
       margin-top: 20px;
       padding-top: 20px; }
-      @media screen and (max-width: 900px) {
+      @media screen and (max-width: 800px) {
         .longread .post-head .sidebar-item:first-of-type {
           margin-top: 0;
           padding-top: 0; } }
-    @media screen and (max-width: 900px) {
+    @media screen and (max-width: 800px) {
       .longread .post-head .sidebar-item {
         padding-right: 20px;
         padding-bottom: 5px;
@@ -1522,12 +1531,12 @@ a.featured:hover {
     color: #E30613;
     line-height: 1.3;
     margin-top: 25px; }
-    @media screen and (max-width: 900px) {
+    @media screen and (max-width: 800px) {
       .longread .post-subhead h3 {
         font-size: 32px; } }
   .longread .post-subhead figcaption {
     padding-left: 32px; }
-    @media screen and (max-width: 900px) {
+    @media screen and (max-width: 800px) {
       .longread .post-subhead figcaption {
         margin-left: 5px; } }
     .longread .post-subhead figcaption:after {

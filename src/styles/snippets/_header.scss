@@ -16,10 +16,9 @@
 
     a {
       color: white;
-      font-size: $beta;
+      font-size: $beta - 4px;
       border-bottom: 3px solid transparent;
       line-height: 1;
-      padding-bottom: 3px;
 
       &:hover,
       .home & {
@@ -50,7 +49,7 @@
   }
 
   .nav {
-    margin-top: 5px;
+    margin-top: 3px;
     padding-left: 0;
 
     @media screen and ( max-width: $medium ) {
@@ -72,12 +71,13 @@
   .contact {
     float: right;
     text-align: right;
-    margin-top: 0;
+    top: -10px;
     margin-bottom: 10px;
     position: relative;
 
     @media screen and ( max-width: $medium ) {
       width: auto;
+      top: auto;
       right: -15px;
     }
 
