@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=Edge">
   <meta name="viewport" content="width=device-width,initial-scale=1.0">
-  <title><?php echo html($site->title()) ?> – <?php echo $page->title()->html() ?></title>
+  <title><?php echo html($site->title()) ?> – <?php if ($page->isHomePage()): ?><?php echo html($site->subtitle()) ?><?php else: ?><?php echo $page->title()->html() ?><?php endif ?></title>
   <meta name="description" content="<?php echo $site->description()->html() ?>">
   <meta name="keywords" content="<?php echo html($site->keywords()) ?>">
   <script src="//use.typekit.net/gjw4ybb.js"></script>
