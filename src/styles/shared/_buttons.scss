@@ -72,7 +72,7 @@ button {
   &:after {
     @include icon-pseudo;
     @include sprite($arrow-right-dark);
-    top: 12px;
+    top: 13px;
     right: 14px;
     opacity: 0.5;
   }
