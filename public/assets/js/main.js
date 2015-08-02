@@ -3,6 +3,21 @@ window.onload = function(){
   // Remove preload class from body
   document.getElementsByTagName("body")[0].className =
     document.getElementsByTagName("body")[0].className.replace( /(?:^|\s)preload(?!\S)/ , '' );
+
+  // Pagination
+  var pagination = document.querySelector(".pagination"); 
+  if (pagination !== null) {
+    var paginationLinks = pagination.getElementsByTagName("a"),
+      i=0, len=paginationLinks.length,
+      fullPath = location.href.split('#')[0];
+
+    // Loop through each link.
+    for (; i<len; i++) {
+      if (paginationLinks[i].href.split("#")[0] == fullPath) {
+        paginationLinks[i].className += " active";
+      }
+    }
+  }
 };
 
 // Has Class
@@ -104,6 +119,20 @@ if (window.location.href.indexOf("tag:") != -1) {
   tagTitle.style.display = 'block';
   var url = document.URL;
   var tagBtn = document.querySelectorAll(".tag");
+  for ( var i = 0; i < tagBtn.length; i++) {
+    if(tagBtn[i].getAttribute('href') === url){
+        tagBtn[i].className+=" active";
+    }
+  }
+} else if (window.location.href.indexOf("category:") != -1) {
+  var feature = document.querySelector(".featured");
+  feature.style.display = 'none';
+  var tagTitle = document.querySelector(".tag-title");
+  var tagTitleText = window.location.pathname.split(":");
+  tagTitle.innerHTML = tagTitleText[tagTitleText.length - 1];
+  tagTitle.style.display = 'block';
+  var url = document.URL;
+  var tagBtn = document.querySelectorAll(".cat");
   for ( var i = 0; i < tagBtn.length; i++) {
     if(tagBtn[i].getAttribute('href') === url){
         tagBtn[i].className+=" active";

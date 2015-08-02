@@ -93,6 +93,21 @@ button {
   }
 }
 
+.btn-circle {
+  display: table;
+  width: 43px;
+  height: 43px;
+  padding: 11px 0;
+  text-align: center;
+}
+
+.btn-circle-sm {
+  @extend .btn-circle;
+  width: 35px;
+  height: 35px;
+  padding: 7px 0;
+}
+
 .btn-email,
 .btn-twitter,
 .btn-facebook {

@@ -13,6 +13,10 @@
     [class*="col-"] {
       width: 100%;
     }
+
+    .meta {
+      margin-bottom: 20px;
+    }
   }
   
   h2 {
@@ -32,6 +36,7 @@
   }
 
   .btn-more {
+    display: table;
     transform: scale(0.95);
     opacity: 0;
   }
@@ -51,6 +56,7 @@ a.featured:hover {
   .btn-more {
     opacity: 0.3;
     transform: scale(1);
+    display: table;
 
     &:hover {
       opacity: 1;
@@ -63,6 +69,10 @@ a.featured:hover {
   font-size: $beta;
   font-family: $sans;
   font-weight: $sans-regular;
+
+  @media screen and ( max-width: $medium ) {
+    font-size: $gamma;
+  }
 }
 
 .post {

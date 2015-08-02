@@ -38,9 +38,14 @@
         <p><?php echo $article->text()->excerpt(200) ?></p>
         <button class="btn-more btn-line btn-small">Read more</button>
       </a>
-      <?php $count++ ?>
     <?php endforeach ?>
-    <button class="btn btn-line btn-load">Load more</button>
+    <? if ($articles->pagination()->hasPages()): ?>
+      <ul class="pagination">  
+        <? foreach($articles->pagination()->range(6) as $paging): ?>
+        <li><a class="btn btn-line btn-circle-sm" href="<?= $articles->pagination()->pageURL($paging); ?>"><?= $paging; ?></a></li>
+        <? endforeach ?>
+      </ul>
+    <? endif; ?>
   </div>
   <aside class="col-1-4 sidebar">
     <div class="sidebar-item">
@@ -55,9 +60,9 @@
     <div class="sidebar-item">
       <h5>Categories</h5>
       <ul class="cat-list">
-        <li><a href="#longread" class="cat">Long Read</a></li>
-        <li><a href="#news" class="cat">News</a></li>
-        <li><a href="#comment" class="cat">Comment</a></li>
+        <li><a href="<?php echo $page->url() . '/category:longread' ?>" class="cat">Long Read</a></li>
+        <li><a href="<?php echo $page->url() . '/category:news' ?>" class="cat">News</a></li>
+        <li><a href="<?php echo $page->url() . '/category:comment' ?>" class="cat">Comment</a></li>
       </ul>
     </div>
   </aside>

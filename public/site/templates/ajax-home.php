@@ -24,10 +24,10 @@
       $html .= '<h3>' . html($article->title()) . '</h3>';
       $html .= '<p>' . $article->text()->excerpt(300) . '</p>';
       if ($article->template() == 'casestudy') {
-       $html .= '<span class="client">Client: ' . $article->client()->html() . '</span';
+       $html .= '<span class="client">Client: ' . $article->client()->html() . '</span>';
       }
-      $html .= '</a>';
       $html .= '<button class="btn-more btn-line btn-small">Read more</button>';
+      $html .= '</a>';
       $count++;
     }
     $data[0] = $html;

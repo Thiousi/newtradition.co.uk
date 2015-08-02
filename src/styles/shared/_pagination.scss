@@ -1,0 +1,18 @@
+.pagination {
+  padding-top: 30px;
+  text-align: center;
+  position: relative;
+
+  li {
+    display: inline-block;
+    vertical-align: middle;
+    padding: 2px;
+
+    a.active {
+      opacity: 1;
+      color: white;
+      background-color: $primary;
+      border-color: $primary;
+    }
+  }
+}
