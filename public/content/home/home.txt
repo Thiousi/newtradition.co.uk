@@ -1,7 +1,5 @@
-Title: Home
+Title: Brand communications
 
 ----
 
-jQuery: true
-
-----
+Text:

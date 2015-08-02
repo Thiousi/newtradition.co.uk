@@ -9,7 +9,7 @@
       <span><?php echo html($site->email()) ?></span>
     </a>
     <a href="tel:<?php echo html($site->phone()) ?>" title="Call New Tradition" class="contact-phone">
-      <span><?php echo html($site->prettyphone()) ?></span>
+      <span><?php echo html($site->phone()) ?></span>
     </a>
     <a href="http://twitter.com/<?php echo html($site->twitter()) ?>" title="Follow New Tradition on Twitter" target="_blank" class="contact-twitter">
       <span>Follow us</span>

@@ -1,7 +1,7 @@
 <?php if(!defined('KIRBY')) exit ?>
 
-title: News
-pages: false
+title: Work
+pages: casestudy
 files: false
 deletable: false
 fields:
@@ -10,6 +10,5 @@ fields:
     type:  text
     required: true
   text:
-    label: Content
+    label: Description
     type:  textarea
-    required: true

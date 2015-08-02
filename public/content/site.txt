@@ -2,15 +2,11 @@ Title: New Tradition
 
 ----
 
-Subtitle: Brand communications
-
-----
-
 Description: We're an independent brand communications consultancy. We work directly with brands – and in collaboration with creative agencies – to help you define, design and activate strategies that fulfill your brand’s reputational potential.
 
 ----
 
-Keywords: Brand, Communications, Consultancy, Independent, Reputation
+Keywords: Brand,Communications,Consultancy,Independent,Reputation
 
 ----
 
@@ -26,13 +22,16 @@ Phone: +441295724258
 
 ----
 
-PrettyPhone: +44 (0)1295 724258
-
-----
-
 Twitter: _NewTradition
 
 ----
 
-Address: Bloxham Mill, Barford Road, Bloxham
-Oxfordshire, OX15 4FF
+Address: Bloxham Mill, Barford Road, Bloxham, Oxfordshire,
+
+----
+
+Postcode: OX15 4FF
+
+----
+
+Googlemaps: https://www.google.co.uk/maps/place/Bloxham+Mill/@52.0117946,-1.371062,15z/data=!4m2!3m1!1s0x0:0xcc7054fc69110eee?sa=X&ved=0CGoQ_BIwDWoVChMIgrnprKuLxwIVBavbCh105AED

@@ -1,12 +1,14 @@
 <?php if(!defined('KIRBY')) exit ?>
 
-title: News
+title: Who
+files: false
+deletable: false
 pages: false
-files: true
 fields:
   title:
     label: Title
     type:  text
+    required: true
   text:
-    label: Text
+    label: Description
     type:  textarea

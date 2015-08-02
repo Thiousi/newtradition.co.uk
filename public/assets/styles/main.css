@@ -943,8 +943,8 @@ input, textarea {
   .gbl-foot a:hover {
     color: #E30613; }
   .gbl-foot .address {
-    padding: 15px 10px 0;
-    max-width: 700px;
+    padding: 15px 10px 25px;
+    max-width: 350px;
     display: table; }
   .gbl-foot .copyright {
     padding: 0 10px 40px;

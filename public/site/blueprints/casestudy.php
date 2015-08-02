@@ -1,6 +1,6 @@
 <?php if(!defined('KIRBY')) exit ?>
 
-title: Comment
+title: Case Study
 pages: false
 files:
   sortable: true
@@ -8,32 +8,23 @@ fields:
   title:
     label: Title
     type:  text
-    required: true
   date:
     label: Date
     type:  date
-    width: 1/4
-  author:
-    label: Author
-    type: user
     width: 1/2
   toggle:
-    label: Feature Post
+    label: Feature Case Study
     type: checkbox
     text: Featured
-    width: 1/4
+    width: 1/2
   line-a:
     type: line
   excerpt:
     label: Excerpt
     type: textarea
-  link:
-    label: Link
-    type: text
   text:
-    label: Article
+    label: Text
     type:  textarea
-    required: true
   line-b:
     type: line
   tags:
