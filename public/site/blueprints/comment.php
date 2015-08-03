@@ -22,20 +22,24 @@ fields:
     type: checkbox
     text: Featured
     width: 1/4
-  line-a:
-    type: line
   excerpt:
     label: Excerpt
-    type: textarea
-  link:
-    label: Link
-    type: text
+    type:  textarea
+  line-a:
+    type: line
+  url:
+    label: Title URL
+    type:  url
   text:
-    label: Article
+    label: Comment
     type:  textarea
     required: true
+    size: large
   line-b:
     type: line
+  relatedlinks:
+    label: Related Links
+    type:  tags
   tags:
     label: Tags
     type:  tags

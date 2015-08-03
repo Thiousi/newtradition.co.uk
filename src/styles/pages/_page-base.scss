@@ -199,6 +199,10 @@ a.featured:hover {
     color: $light-ink;
     margin-bottom: 15px;
   }
+
+  .client {
+    display: table;
+  }
 }
 
 .sidebar {
