@@ -20,8 +20,8 @@
   <a href="<?php echo $prev->url() ?>" class="featured post-next">
     <div class="grid">
       <h2>Previous post</h2>
-      <div class="grid-3-4">
-        <h5 class="col-1-4">
+      <div class="col-3-4 col-3-4-offset">
+        <h5>
           <?php if ($prev->template() == 'longread'): ?>Long Read
           <?php elseif ($prev->template() == 'news'): ?>News
           <?php elseif ($prev->template() == 'comment'): ?>Comment

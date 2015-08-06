@@ -7,6 +7,7 @@ password: >
 language: en
 role: admin
 history:
+  - journal/test
   - home
   - journal
   - error

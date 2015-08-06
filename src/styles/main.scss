@@ -10,19 +10,17 @@
 @import "shared/buttons";
 @import "shared/pagination";
 
-// Snippets
 @import "snippets/header";
 @import "snippets/footer";
 @import "snippets/stream";
 
-// Pages
 @import "pages/page-base";
 @import "pages/error";
 @import "pages/home";
 @import "pages/journal";
 @import "pages/work";
 
-// Posts
 @import "pages/post/post";
 @import "pages/post/news";
 @import "pages/post/longread";
+@import "pages/post/comment";

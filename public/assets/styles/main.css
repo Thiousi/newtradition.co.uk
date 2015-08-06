@@ -1589,3 +1589,44 @@ a.featured:hover {
       opacity: 0.15; }
 .longread .cat-list li, .longread .tag-list li {
   display: inline-block; }
+
+.comment .post {
+  float: right; }
+  @media screen and (max-width: 800px) {
+    .comment .post {
+      padding-bottom: 15px; } }
+  .comment .post p, .comment .post li {
+    font-size: 22px;
+    line-height: 1.5; }
+.comment .post-title {
+  display: block;
+  margin: 60px 0;
+  padding-bottom: 70px;
+  position: relative; }
+  .comment .post-title h2 {
+    display: inline;
+    font-size: 66px;
+    line-height: 1.1; }
+  .comment .post-title:before, .comment .post-title:after {
+    content: "";
+    overflow: hidden;
+    display: block;
+    position: absolute; }
+  .comment .post-title:before {
+    top: 8px;
+    left: -140px;
+    width: 100px;
+    height: 100px;
+    background-color: red; }
+  .comment .post-title:after {
+    bottom: 0;
+    left: 0;
+    height: 7px;
+    width: 150px;
+    background-color: rgba(227, 6, 19, 0.1);
+    display: block; }
+.comment .comments {
+  margin-top: 0; }
+  @media screen and (max-width: 800px) {
+    .comment .comments {
+      margin-bottom: 20px; } }
