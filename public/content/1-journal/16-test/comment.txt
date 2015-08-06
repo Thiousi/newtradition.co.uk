@@ -27,3 +27,9 @@ Toggle:
 ----
 
 Link: 
+Url: http://blogs.reuters.com/great-debate/2013/11/15/swiss-outrage-over-executive-pay-sparks-a-movement-in-europe/
+
+----
+
+Relatedlinks: 
+>>>>>>> origin/master

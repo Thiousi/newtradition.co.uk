@@ -1123,6 +1123,8 @@ a.featured:hover {
   .post p {
     color: #67626B;
     margin-bottom: 15px; }
+  .post .client {
+    display: table; }
 
 .sidebar {
   color: #67626B; }

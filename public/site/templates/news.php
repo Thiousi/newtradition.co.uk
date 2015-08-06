@@ -35,16 +35,16 @@
     <?php if(!$page->tags()->empty()):?>
     <div class="post-meta">
       <h5>Tags</h5>
-        <ul class="tag-list">
-          <?php foreach($tags as $tag):?>
-            <li>
-              <a href="<?php echo $page->parent()->url() . '/tag:' . $tag ?>" class="tag">
-                <?php echo $tag ?>
-              </a>
-            </li>
-            <?php endforeach ?>
-        </ul>
-    </div>
+      <ul class="tag-list">
+        <?php foreach($tags as $tag):?>
+          <li>
+            <a href="<?php echo $page->parent()->url() . '/tag:' . $tag ?>" class="tag">
+              <?php echo $tag ?>
+            </a>
+          </li>
+        <?php endforeach ?>
+      </ul>
+  </div>
     <?php endif ?>
   </aside>
   <?php if ($page->comments() == 'on' ): ?>

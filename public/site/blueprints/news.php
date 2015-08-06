@@ -22,11 +22,11 @@ fields:
     type: checkbox
     text: Featured
     width: 1/4
-  line-a:
-    type: line
-  text:
+  excerpt:
     label: Excerpt
     type:  textarea
+  line-a:
+    type: line
   text:
     label: Article
     type:  textarea
