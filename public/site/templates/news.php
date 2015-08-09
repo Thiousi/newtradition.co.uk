@@ -28,7 +28,10 @@
     </div>
     <div class="sidebar-item">
       <h5>Written by</h5>
-      <?php echo html($page->author()) ?>
+      <?php if(!$page->author()->empty()): ?>
+        <?php $author = $page->author();
+        echo  $site->user($author)->firstname() . " " .  $site->user($author)->lastname(); ?>
+      <?php endif ?>
     </div>
     <?php 
       $tags = ($page->tags());

@@ -7,12 +7,14 @@ password: >
 language: en
 role: admin
 history:
-  - authors
-  - work/paraplanners-powwow
+  - >
+    journal/the-difference-between-brand-and-branding-part-three
+  - >
+    journal/the-difference-between-brand-and-branding-part-two
   - >
     journal/executive-pay-excesses-spark-swiss-movementst
   - >
-    journal/the-difference-between-brand-and-branding-part-three
-  - home
-firstname: Ian
-lastname: Thomas
+    journal/the-great-british-brand-identity-crisis
+  - work/paraplanners-powwow
+firstname: Peter
+lastname: Tait

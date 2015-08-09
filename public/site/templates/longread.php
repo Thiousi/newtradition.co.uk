@@ -1,21 +1,21 @@
 <?php snippet('header') ?>
-<?php if($image = $page->image('hero.jpg')): ?>
-<header class="post-head" style="background-image: url(<?php echo thumb($image, array('width' => 1200, 'quality' => 85))->url() ?>);">
-<?php else: ?>
-<header class="post-head">
-<?php endif ?>
+<?php $file = $page->hero()->toFile() ?>
+  <header class="post-head" style="background-image: url(<?php echo thumb($file, array('width' => 1200, 'quality' => 85))->url() ?>);">
   <div class="grid">
     <aside class="col-1-4">
       <h5>Long Read</h5>
       <time class="sidebar-item" datetime="<?php echo $page->date('c') ?>"><?php echo $page->date('d F Y') ?></time>
-        <?php $author = $pages->find('authors/' . $page->author()) ?>
+      <?php if(!$page->author()->empty()): ?>
+        <span class="sidebar-item">
+        <?php $author = $page->author();
+        echo  $site->user($author)->firstname() . " " .  $site->user($author)->lastname(); ?></span>
+      <?php endif ?>
     </aside>
     <h2 class="col-3-4"><?php echo html($page->title()) ?></h2>
   </div>
   <div class="post-subhead">
     <div class="grid">
-      <figcaption class="col-3-4 col-3-4-offset"><?php html($image->caption()) ?> This is caption</figcaption>
-      <h3 class="col-3-4 col-3-4-offset"><?php echo html($page->subtitle()) ?></h3>
+      <h3 class="col-3-4 col-3-4-offset"><?php echo html($page->summary()) ?></h3>
     </div>
   </div>
 </header>
@@ -46,14 +46,6 @@
             <?php endforeach ?>
         </ul>
     </div>
-    <?php endif ?>
-    <?php if ($page->bio() == '1'): ?>
-      <div class="bio-short">
-        <h5>Author</h5>
-        <span class="bio-avatar" style="background-image: url(<?php echo $author->images()->first()->url() ?>);"></span>
-        <h4 class="bio-name"><?php echo $author->name() ?></h4>
-        <p class="bio-excerpt"><?php echo $author->bio() ?></p>
-      </div>
     <?php endif ?>
     <?php 
       $links = ($page->relatedlinks());

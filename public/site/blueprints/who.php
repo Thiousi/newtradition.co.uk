@@ -12,3 +12,8 @@ fields:
   text:
     label: Description
     type:  textarea
+  line-a:
+    type: line
+  location:
+    label: Location
+    type: geolocation

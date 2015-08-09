@@ -21,13 +21,13 @@
       <h5>Date</h5>
       <time datetime="<?php echo $page->date('c') ?>"><?php echo $page->date('d F Y') ?></time>
     </div>
+    <?php if(!$page->author()->empty()): ?>
     <div class="sidebar-item col-1-2">
       <h5>Written by</h5>
-      <?php
-        $author = $page->author();
-         echo  $site->user($author)->firstname() . " " .  $site->user($author)->lastname();
-      ?>
+      <?php $author = $page->author();
+      echo  $site->user($author)->firstname() . " " .  $site->user($author)->lastname(); ?>
     </div>
+    <?php endif ?>
     <?php 
       $links = ($page->relatedlinks());
       $links = explode(',',$links);

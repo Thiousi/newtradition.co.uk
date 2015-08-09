@@ -14,10 +14,6 @@ Comments:
 
 ----
 
-Bio: 1
-
-----
-
 Author: ian
 
 ----
@@ -134,3 +130,7 @@ Summary: For many years I settled with a Lamy Safari but, even though the Lamy i
 ----
 
 Featured: 1
+
+----
+
+Hero: bottles.jpg

@@ -12,12 +12,12 @@ fields:
   date:
     label: Date
     type:  date
-    width: 1/4
+    width: 1/2
   author:
     label: Author
     type: user
-    default: user
-    width: 1/2
+    default: ian
+    width: 1/4
   featured:
     label: Feature Post
     type: checkbox
@@ -26,6 +26,12 @@ fields:
   excerpt:
     label: Excerpt
     type:  textarea
+  hero:
+    label: Hero Image
+    type:  selector
+    mode:  single
+    types:
+        - image
   line-a:
     type: line
   url:
@@ -33,9 +39,7 @@ fields:
     type:  url
   text:
     label: Comment
-    type:  textarea
-    required: true
-    size: large
+    type:  markdown
   line-b:
     type: line
   comments:
