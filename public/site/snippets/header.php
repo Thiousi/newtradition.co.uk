@@ -15,7 +15,7 @@
   <header class="gbl-head" role="banner">
     <div class="grid">
       <div class="head">
-        <div class="col-1-4 logo"><a href="<?php echo $site->url() ?>">New Tradition</a></div>
+        <div class="col-1-4 logo"><a href="<?php echo $site->url() ?>" title="Visit the New Tradition home page">New Tradition</a></div>
         <button class="btn-menu">Menu</button>
         <?php snippet('menu') ?>
       </div>
@@ -23,11 +23,16 @@
         <?php if ($page->isHomePage()): ?>
           <?php echo html($site->description()) ?>
         <?php elseif ($page->hasChildren()): ?>
-          <?php echo html($page->title()) ?>
+          <a href="<?php echo $page->url() ?>" title="Visit this page">
+            <?php echo html($page->title()) ?>
+          </a>
         <?php elseif($page->template() == 'who'): ?>
-          <?php echo html($page->title()) ?>
+          <a href="<?php echo $page->url() ?>" title="Visit this page"><?php echo html($page->title()) ?>
+          </a>
         <?php else: ?>
-          <?php echo html($page->parent()->title()) ?>
+          <a href="<?php echo $page->parent()->url() ?>" title="Back to the parent page">
+            <?php echo html($page->parent()->title()) ?>
+          </a>
         <?php endif ?>
       </h1>
     </div>

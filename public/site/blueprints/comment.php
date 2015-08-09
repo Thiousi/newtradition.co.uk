@@ -16,8 +16,9 @@ fields:
   author:
     label: Author
     type: user
+    default: user
     width: 1/2
-  toggle:
+  featured:
     label: Feature Post
     type: checkbox
     text: Featured
@@ -37,9 +38,14 @@ fields:
     size: large
   line-b:
     type: line
+  comments:
+    label: Comments
+    type: checkbox
+    text: show
   relatedlinks:
-    label: Related Links
+    label: Related Links (without http://)
     type:  tags
+    lower: true
   tags:
     label: Tags
     type:  tags

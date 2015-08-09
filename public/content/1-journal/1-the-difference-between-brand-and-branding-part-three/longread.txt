@@ -2,31 +2,23 @@ Title: The difference between brand and branding: Part Three
 
 ----
 
-Date: 12-12-2015
+Date: 2015-12-12
 
 ----
 
-Tags: brand, branding, strategy
+Tags: brand,branding,strategy
 
 ----
 
-Featured: true
+Comments: 
 
 ----
 
-Comments: off
+Bio: 1
 
 ----
 
-Bio: on
-
-----
-
-Author: ian-thomas
-
-----
-
-Subtitle: For many years I settled with a Lamy Safari but, even though the Lamy is an exquisite writer, I was in the market for a family heirloom to hand down to one of my sons.
+Author: ian
 
 ----
 
@@ -126,3 +118,19 @@ No matter how many hands my pen passed through, it was faulty.
 In my case, Montblanc’s branding made promises that its brand was unable to fulfil.
 
 And that’s the difference between brand and branding
+
+----
+
+Excerpt: excerpt
+
+----
+
+Relatedlinks: 
+
+----
+
+Summary: For many years I settled with a Lamy Safari but, even though the Lamy is an exquisite writer, I was in the market for a family heirloom to hand down to one of my sons.
+
+----
+
+Featured: 1

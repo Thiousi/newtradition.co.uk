@@ -9,7 +9,6 @@
       <h5>Long Read</h5>
       <time class="sidebar-item" datetime="<?php echo $page->date('c') ?>"><?php echo $page->date('d F Y') ?></time>
         <?php $author = $pages->find('authors/' . $page->author()) ?>
-        <span class="sidebar-item">Written by <?php echo $author->name() ?></span>
     </aside>
     <h2 class="col-3-4"><?php echo html($page->title()) ?></h2>
   </div>
@@ -48,13 +47,32 @@
         </ul>
     </div>
     <?php endif ?>
-    <?php if ($page->bio() == 'on' ): ?>
+    <?php if ($page->bio() == '1'): ?>
       <div class="bio-short">
         <h5>Author</h5>
         <span class="bio-avatar" style="background-image: url(<?php echo $author->images()->first()->url() ?>);"></span>
         <h4 class="bio-name"><?php echo $author->name() ?></h4>
         <p class="bio-excerpt"><?php echo $author->bio() ?></p>
       </div>
+    <?php endif ?>
+    <?php 
+      $links = ($page->relatedlinks());
+      $links = explode(',',$links);
+      $links = array_map('trim',$links);
+    ?> 
+    <?php if(!$page->relatedlinks()->empty()):?>
+    <div class="post-meta sidebar-item">
+      <h5>Related Links</h5>
+        <ul class="links-list tag-list">
+          <?php foreach($links as $link):?>
+            <li>
+              <a href="" class="tag">
+                <?php echo $link ?>
+              </a>
+            </li>
+            <?php endforeach ?>
+        </ul>
+    </div>
     <?php endif ?>
     <?php 
       $tags = ($page->tags());
@@ -76,7 +94,7 @@
     </div>
     <?php endif ?>
   </aside>
-  <?php if ($page->comments() == 'on' ): ?>
+  <?php if ($page->comments() == '1'): ?>
     <div id="disqus_thread" class="col-3-4 col-3-4-offset comments"></div>
   <?php endif ?>
 </section>

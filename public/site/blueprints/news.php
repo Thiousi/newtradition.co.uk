@@ -16,8 +16,9 @@ fields:
   author:
     label: Author
     type: user
+    default: user
     width: 1/2
-  toggle:
+  featured:
     label: Feature Post
     type: checkbox
     text: Featured

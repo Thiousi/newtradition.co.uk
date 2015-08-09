@@ -10,7 +10,7 @@
     foreach($results as $article){
       $html .= '<a href="'. $article->url() . '" class="post ' . $article->template() . '">';
       if ($image = $article->image('hero.jpg')) {
-       $html .= '<div class="post-img" style="background-image: url('. $image->url() . ')" title="' . $article->title()->html() . '"></div>';
+       $html .= '<div class="post-img" style="background-image: url('. $image->url() . ')" title="' . html($article->title()) . '"></div>';
       }
       if ($article->template() == 'longread') {
         $html .= '<h5>Long Read</h5>';
@@ -22,9 +22,13 @@
         $html .= '<h5>Case Study</h5>';
       }
       $html .= '<h3>' . html($article->title()) . '</h3>';
-      $html .= '<p>' . $article->text()->excerpt(300) . '</p>';
-      if ($article->template() == 'casestudy') {
-       $html .= '<span class="client">Client: ' . $article->client()->html() . '</span>';
+      if (!$article->excerpt()->empty()) {
+        $html .= '<p>' . $article->excerpt() . '</p>';
+      } else {
+        $html .= '<p>' . $article->text()->excerpt(300) . '</p>';
+      }
+      if ($article->client() != '') {
+       $html .= '<span class="client">Client: ' . html($article->client()) . '</span>';
       }
       $html .= '<button class="btn-more btn-line btn-small">Read more</button>';
       $html .= '</a>';

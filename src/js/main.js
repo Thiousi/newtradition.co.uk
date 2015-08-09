@@ -85,14 +85,9 @@ if (btnLoad !== null) {
   $(btnLoad).bind('click', loader);
     var amount = 2;
     var offset = (amount * 3) + 1;
-    if (journal !== null) {
-      var ajaxURL = 'ajax-journal';
-    } else if (home !== null) {
-      var ajaxURL = 'ajax-home';
-    }
     function loadMore(){
       $.ajax({
-        url      : ajaxURL,
+        url      : 'stream',
         type     : 'post',
         dataType : 'json',
         data : {

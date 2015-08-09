@@ -7,7 +7,12 @@ password: >
 language: en
 role: admin
 history:
-  - journal/test
+  - authors
+  - work/paraplanners-powwow
+  - >
+    journal/executive-pay-excesses-spark-swiss-movementst
+  - >
+    journal/the-difference-between-brand-and-branding-part-three
   - home
-  - journal
-  - error
+firstname: Ian
+lastname: Thomas

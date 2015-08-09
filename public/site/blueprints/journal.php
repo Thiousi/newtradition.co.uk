@@ -13,6 +13,3 @@ fields:
     label: Title
     type:  text
     required: true
-  text:
-    label: Description
-    type:  textarea

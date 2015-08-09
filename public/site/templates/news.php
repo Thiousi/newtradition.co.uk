@@ -22,7 +22,10 @@
     </aside>
   </article>
   <aside class="sidebar col-1-4">
-    <time class="sidebar-item" datetime="<?php echo $page->date('c') ?>">Published on <?php echo $page->date('d F Y') ?></time>
+    <div class="post-meta sidebar-item">
+      <h5>Date</h5>
+      <time datetime="<?php echo $page->date('c') ?>"><?php echo $page->date('d F Y') ?></time>
+    </div>
     <div class="sidebar-item">
       <h5>Written by</h5>
       <?php echo html($page->author()) ?>
@@ -33,7 +36,7 @@
       $tags = array_map('trim',$tags);
     ?> 
     <?php if(!$page->tags()->empty()):?>
-    <div class="post-meta">
+    <div class="post-meta sidebar-item">
       <h5>Tags</h5>
       <ul class="tag-list">
         <?php foreach($tags as $tag):?>
@@ -44,10 +47,29 @@
           </li>
         <?php endforeach ?>
       </ul>
-  </div>
+    </div>
     <?php endif ?>
   </aside>
-  <?php if ($page->comments() == 'on' ): ?>
+  <?php 
+      $links = ($page->relatedlinks());
+      $links = explode(',',$links);
+      $links = array_map('trim',$links);
+    ?> 
+    <?php if(!$page->relatedlinks()->empty()):?>
+    <div class="col-3-4 col-3-4-offset post-meta sidebar-item">
+      <h5>Related Links</h5>
+        <ul class="links-list tag-list">
+          <?php foreach($links as $link):?>
+            <li>
+              <a href="<?php echo $link ?>" class="tag" target="_blank">
+                <?php echo $link ?>
+              </a>
+            </li>
+            <?php endforeach ?>
+        </ul>
+    </div>
+    <?php endif ?>
+  <?php if ($page->comments() == '1'): ?>
     <div id="disqus_thread" class="col-3-4 col-3-4-offset comments"></div>
   <?php endif ?>
 </section>

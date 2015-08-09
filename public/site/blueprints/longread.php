@@ -16,8 +16,10 @@ fields:
   author:
     label: Author
     type: user
+    default: user
     width: 1/2
-  toggle:
+    required: true
+  featured:
     label: Feature Post
     type: checkbox
     text: Featured
@@ -25,9 +27,12 @@ fields:
   excerpt:
     label: Excerpt
     type: textarea
-    required: true
   line-a:
     type: line
+  summary:
+    label: Summary
+    type: textarea
+    required: true
   text:
     label: Article
     type:  textarea
@@ -45,8 +50,9 @@ fields:
     text: Show
     width: 1/2
   relatedlinks:
-    label: Related Links
+    label: Related Links (without http://)
     type:  tags
+    lower: true
   tags:
     label: Tags
     type:  tags

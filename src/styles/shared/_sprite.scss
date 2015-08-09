@@ -7,6 +7,7 @@
 }
 
 $sprite-path: '../images/sprite.svg';
+$link-red-lrg: 100px 100px $sprite-path -42px -20px;
 $phone-white: 21px 20px $sprite-path -183px 0px;
 $facebook-dark: 11px 19px $sprite-path -122px 0px;
 $email-white: 20px 16px $sprite-path -160px 0px;
@@ -14,7 +15,7 @@ $email-dark: 20px 16px $sprite-path -100px 0px;
 $twitter-white: 21px 17px $sprite-path -135px 0px;
 $twitter-dark: 21px 17px $sprite-path -75px 0px;
 $close-white: 15px 15px $sprite-path -25px -20px;
-$menu-white: 22.001px 15px $sprite-path 0px -20px;
+$menu-white: 22px 15px $sprite-path 0px -20px;
 $share-dark: 18px 17px $sprite-path -54px 0px;
 $arrow-right-dark: 9px 15px $sprite-path -42px 0px;
 $cam-dark: 21px 16px $sprite-path -17px 0px;

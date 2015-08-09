@@ -17,6 +17,7 @@
     a {
       color: white;
       font-size: $beta - 4px;
+      padding-bottom: 3px;
       border-bottom: 3px solid transparent;
       line-height: 1;
 
@@ -211,6 +212,16 @@
       padding-top: 80px;
       padding-left: $gutter;
       margin-left: 0;
+    }
+
+    a {
+      color: white;
+      font-family: $sans;
+      font-weight: $sans-bold;
+
+      &:hover {
+        color: rgba(white, 0.9);
+      }
     }
 
     .home & {

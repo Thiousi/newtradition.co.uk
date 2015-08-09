@@ -109,6 +109,14 @@ img {
   display: none;
 }
 
+.links-list {
+
+  .tag {
+    @extend .cat;
+    text-transform: none;
+  }
+}
+
 .share {
   position: relative;
 

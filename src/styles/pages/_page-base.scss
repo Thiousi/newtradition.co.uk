@@ -187,9 +187,10 @@ a.featured:hover {
     margin-bottom: 10px;
   }
 
-  h6 {
+  .client {
     font-family: $sans;
     font-weight: $sans-regular;
+    font-size: $epsilon;
     color: lighten($light-ink, 20);
     margin-top: 5px;
     margin-bottom: 15px;
