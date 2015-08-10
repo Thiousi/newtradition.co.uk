@@ -14,15 +14,15 @@ Text: Interesting movement emerging in Switzerland — according to this report 
 
 ----
 
-Tags: Society
+Tags: 
 
 ----
 
-Author: 
+Author: peter
 
 ----
 
-Url: 
+Url: http://blogs.reuters.com/great-debate/2013/11/15/swiss-outrage-over-executive-pay-sparks-a-movement-in-europe/
 
 ----
 
@@ -35,3 +35,11 @@ Relatedlinks:
 ----
 
 Featured: 1
+
+----
+
+Hero: 
+
+----
+
+Nextpost: 

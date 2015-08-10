@@ -7,11 +7,16 @@ files:
 fields:
   title:
     label: Title
-    type:  text
+    type: text
+    required: true
+  url:
+    label: Title URL
+    type: url
     required: true
   date:
     label: Date
     type:  date
+    default: today
     width: 1/2
   author:
     label: Author
@@ -26,6 +31,7 @@ fields:
   excerpt:
     label: Excerpt
     type:  textarea
+    buttons:
   hero:
     label: Hero Image
     type:  selector
@@ -34,9 +40,6 @@ fields:
         - image
   line-a:
     type: line
-  url:
-    label: Title URL
-    type:  url
   text:
     label: Comment
     type:  markdown
@@ -45,10 +48,21 @@ fields:
   comments:
     label: Comments
     type: checkbox
-    text: show
+    text: Show Comments
+    icon: comments
+    width: 1/2
+  nextpost:
+    label: Next Post
+    type: checkbox
+    default: 1
+    text: Show Next Post
+    icon: hand-o-right
+    width: 1/2
   relatedlinks:
-    label: Related Links (without http://)
+    label: Related Links
+    help: Do not include the 'http://'
     type:  tags
+    icon: link
     lower: true
   tags:
     label: Tags

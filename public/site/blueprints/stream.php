@@ -1,9 +1,9 @@
 <?php if(!defined('KIRBY')) exit ?>
 
-title: AJAX Home
+title: Stream
+pages: false
 files: false
 deletable: false
-pages: false
 preview: false
 fields:
   title:

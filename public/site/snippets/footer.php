@@ -1,7 +1,7 @@
   <footer class="gbl-foot" role="contentinfo">
     <div class="grid">
       <div class="address">
-        <a href="<?php echo $site->googlemaps()->url() ?>" title="<?php echo html($site->address()) ?>"><?php echo html($site->address()) ?> <?php echo html($site->postcode()) ?></a>
+        <a href="https://www.google.co.uk/maps/place/<?php echo $site->location() ?>" title="<?php echo html($site->address()) ?> <?php echo html($site->postcode()) ?>" target="_blank"><?php echo html($site->address()) ?> <?php echo html($site->postcode()) ?></a>
       </div>
       <div class="copyright">
         <?php echo $site->copyright()->kirbytext() ?>

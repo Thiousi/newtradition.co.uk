@@ -2,19 +2,19 @@
 <section class="post-main grid" role="main">
   <article class="col-3-4 post">
     <h5>Comment</h5>
-    <a href="" title="<?php echo html($page->title()) ?>" class="post-title"><h2><?php echo html($page->title()) ?></h2></a>
+    <a href="" title="<?php echo $page->title()->html() ?>" class="post-title"><h2><?php echo $page->title()->html() ?></h2></a>
     <?php if($image = $page->image('hero.jpg')): ?>
       <figure class="post-hero">
         <div class="post-hero-img" style="background-image: url(<?php echo thumb($image, array('width' => 1200, 'height' => 600, 'quality' => 85, 'crop' => true))->url() ?>);"></div>
         <div class="grid">
-          <figcaption class="col-3-4 col-3-4-offset"><?php html($image->caption()) ?> This is caption</figcaption>
+          <figcaption class="col-3-4 col-3-4-offset"><?php $image->caption()->html() ?> This is caption</figcaption>
         </div>
       </figure>
     <?php endif ?>
     <?php echo $page->text()->kirbytext() ?>
     <aside class="post-actions">
       <?php snippet('share') ?>
-      <a href="<?php html($site->url()) ?>/journal" class="btn btn-line btn-next">Read more posts</a>
+      <a href="<?php echo $page->parent()->url() ?>" class="btn btn-line btn-next">Read more posts</a>
     </aside>
     <aside class="sidebar">
     <div class="sidebar-item col-1-2">
@@ -72,5 +72,7 @@
     <div id="disqus_thread" class="col-3-4 col-3-4-offset comments"></div>
   <?php endif ?>
 </section>
-<?php snippet('next-post') ?>
+<?php if ($page->nextpost() == '1'): ?>
+  <?php snippet('next-post') ?>
+<?php endif ?>
 <?php snippet('footer') ?>

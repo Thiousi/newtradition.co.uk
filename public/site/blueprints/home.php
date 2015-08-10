@@ -2,9 +2,13 @@
 
 title: Home
 pages: false
-deletable: false
 files: false
+deletable: false
 fields:
   title:
     label: Title
     type: text
+  Description:
+    label: Description
+    type: textarea
+    buttons:

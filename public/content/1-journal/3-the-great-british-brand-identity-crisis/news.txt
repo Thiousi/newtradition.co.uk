@@ -6,11 +6,11 @@ Date: 2016-08-02
 
 ----
 
-Tags: Work
+Tags: 
 
 ----
 
-Author: peter
+Author: maxine
 
 ----
 
@@ -57,3 +57,11 @@ Excerpt:
 ----
 
 Relatedlinks: 
+
+----
+
+Hero: hero.jpg
+
+----
+
+Nextpost: 1

@@ -1,6 +1,6 @@
 <?php if(!defined('KIRBY')) exit ?>
 
-title: News
+title: Error
 pages: false
 files: false
 deletable: false
@@ -11,5 +11,5 @@ fields:
     required: true
   text:
     label: Content
-    type:  textarea
+    type:  markdown
     required: true

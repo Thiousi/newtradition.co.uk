@@ -1,0 +1,28 @@
+.who-profile {
+  @include clearfix;
+  padding-top: 80px;
+  padding-bottom: 50px;
+  border-bottom: 1px solid darken($slate, 3);
+
+  @media screen and ( max-width: $medium ) {
+    padding-top: 50px;
+    padding-bottom: 30px;
+  }
+
+  .btn {
+    position: relative;
+    display: inline-block;
+    margin-right: 5px;
+  }
+}
+
+.who-avatar {
+  border-radius: 50%;
+  margin-right: 20px;
+  margin-bottom: 30px;
+
+  @media screen and ( max-width: $medium ) {
+    max-width: 150px;
+  }
+}
+

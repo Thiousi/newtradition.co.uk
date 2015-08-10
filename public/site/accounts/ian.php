@@ -8,3 +8,7 @@ password: >
   $2a$10$WOEPPwLfpdO48ayHPcFWAejkJmu.E5tICQd6JHsejAFjFPCp0NO3a
 language: en
 role: admin
+history:
+  - >
+    journal/the-great-british-brand-identity-crisis
+  - who

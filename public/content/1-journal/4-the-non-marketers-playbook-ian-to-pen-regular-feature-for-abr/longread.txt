@@ -2,11 +2,11 @@ Title: The Non-Marketers Playbook: Ian to pen regular feature for ABR
 
 ----
 
-Tags: brand, branding, strategy
+Tags: brand,branding,strategy
 
 ----
 
-Featured: true
+Featured: 1
 
 ----
 
@@ -106,3 +106,35 @@ No matter how many hands my pen passed through, it was faulty.
 In my case, Montblanc’s branding made promises that its brand was unable to fulfil.
 
 And that’s the difference between brand and branding
+
+----
+
+Date: 2015-08-09
+
+----
+
+Author: ian
+
+----
+
+Excerpt: 
+
+----
+
+Hero: hero.jpg
+
+----
+
+Summary: This is a summary
+
+----
+
+Comments: 1
+
+----
+
+Nextpost: 1
+
+----
+
+Relatedlinks: google.com,petertait.com

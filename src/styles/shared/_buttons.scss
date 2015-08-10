@@ -110,7 +110,9 @@ button {
 
 .btn-email,
 .btn-twitter,
-.btn-facebook {
+.btn-facebook,
+.btn-quora,
+.btn-linkedin {
   font-size: 1px;
   color: transparent;
   width: 41px;
@@ -134,7 +136,7 @@ button {
     @include icon-pseudo;
     @include sprite($email-dark);
     top: 11px;
-    left: 9px;
+    left: 10px;
     opacity: 0.5;
   }
 }
@@ -171,6 +173,26 @@ button {
     @include sprite($facebook-dark);
     top: 10px;
     left: 14px;
+    opacity: 0.5;
+  }
+}
+
+.btn-quora {
+  &:after {
+    @include icon-pseudo;
+    @include sprite($quora-dark);
+    top: 11px;
+    left: 11px;
+    opacity: 0.5;
+  }
+}
+
+.btn-linkedin {
+  &:after {
+    @include icon-pseudo;
+    @include sprite($linkedin-dark);
+    top: 10px;
+    left: 11px;
     opacity: 0.5;
   }
 }

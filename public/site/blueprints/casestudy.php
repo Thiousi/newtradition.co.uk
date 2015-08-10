@@ -14,6 +14,7 @@ fields:
   date:
     label: Date
     type:  date
+    default: today
     width: 1/2
   featured:
     label: Feature Case Study

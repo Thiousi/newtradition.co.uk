@@ -1,15 +1,15 @@
 <?php snippet('header') ?>
-<?php foreach($site->find('work')->children()->filterBy('featured', 'true')->visible()->sortBy('date', 'desc')->limit(1) as $featured): ?>
-  <a href="<?php echo $featured->url() ?>" title="<?php echo html($featured->title()) ?>" class="featured">
+<?php foreach($site->find('work')->children()->filterBy('featured', '1')->visible()->sortBy('date', 'desc')->limit(1) as $featured): ?>
+  <a href="<?php echo $featured->url() ?>" title="<?php echo $featured->title()->html() ?>" class="featured">
     <div class="grid">
       <div class="meta col-1-4">
         <span class="meta-feat">Featured</span>
         <span class="meta-cat h5">Case Study</span>
       </div>
       <div class="col-3-4">
-        <h2><?php echo html($featured->title()) ?></h2>
-        <h3><strong><?php echo html($featured->date('F Y')) ?></strong></h3>
-        <h3><?php echo html($featured->title()) ?></h3>
+        <h2><?php echo $featured->title()->html() ?></h2>
+        <h3><strong><?php echo $featured->date('F Y') ?></strong></h3>
+        <h3><?php echo $featured->title()->html() ?></h3>
       </div>
     </div>
   </a>
@@ -23,7 +23,7 @@
         <?php foreach($uris as $uri): ?>
         <?php $post = $pages->find($uri); ?>
           <a href="<?php echo $post->url() ?>" class="post <?php echo $post->template() ?>">
-            <h3><strong><?php echo $post->client() ?></strong><?php echo html($post->title()) ?></h3>
+            <h3><strong><?php echo $post->client() ?></strong><?php echo $post->title()->html() ?></h3>
           </a>
         <?php endforeach; ?>
       </div>

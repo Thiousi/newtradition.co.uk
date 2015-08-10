@@ -1,3 +1,77 @@
 Title: Who
 
 ----
+
+Location: 52.01180723478897,-1.3710422116089376
+
+----
+
+1: peter
+
+----
+
+2: 
+
+----
+
+3: 
+
+----
+
+4: 
+
+----
+
+5: 
+
+----
+
+Name: maxine
+
+----
+
+Bio: 
+
+With more than a decade’s experience, Max is able to mine a rich seam of marketing operations expertise that’s been gained in aerospace and financial services industries.
+
+Max has a rare ability to apply insight and translate the demands of strategic ambition into an implementable plan of activity that encompasses the full spectrum of the marketing mix.
+
+It’s how Max has helped brands like Messier-Dowty, AXA, Sesame and Cofunds bring their ideas to life.
+
+----
+
+Twitter: MlleCameron
+
+----
+
+Linkedin: https://www.linkedin.com/pub/maxine-cameron/8/169/77
+
+----
+
+Quora: 
+
+----
+
+Name2: ian
+
+----
+
+Bio2: 
+
+For 20 years, Ian has helped bring brands to life in B2B, B2C and voluntary sectors.
+
+In that time Ian’s honed a style which combines the crisp articulation of brand strategy alongside practical implementation nous that helps grow brand reputation and commercial performance.
+
+A senior marketer with agency and client experience, he’s led agency account teams for brands including Audi, AXA, Jewson, TGI Fridays and Tissot and an in-house team at Sesame.
+
+----
+
+Twitter2: mrianthomas
+
+----
+
+Linkedin2: 
+
+----
+
+Quora2: Ian-Thomas

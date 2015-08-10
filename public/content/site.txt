@@ -34,8 +34,8 @@ Postcode: OX15 4FF
 
 ----
 
-Googlemaps: https://www.google.co.uk/maps/place/Bloxham+Mill/@52.0117946,-1.371062,15z/data=!4m2!3m1!1s0x0:0xcc7054fc69110eee?sa=X&ved=0CGoQ_BIwDWoVChMIgrnprKuLxwIVBavbCh105AED
+Subtitle: Brand Communications
 
 ----
 
-Subtitle: Brand Communications
+Location: 52.01173771662873,-1.3710672693115384

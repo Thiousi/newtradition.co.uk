@@ -1,6 +1,6 @@
 <?php snippet('header') ?>
 <?php $file = $page->hero()->toFile() ?>
-  <header class="post-head" style="background-image: url(<?php echo thumb($file, array('width' => 1200, 'quality' => 85))->url() ?>);">
+<header class="post-head" style="background-image: url(<?php echo thumb($file, array('width' => 1200, 'quality' => 85))->url() ?>);">
   <div class="grid">
     <aside class="col-1-4">
       <h5>Long Read</h5>
@@ -11,11 +11,11 @@
         echo  $site->user($author)->firstname() . " " .  $site->user($author)->lastname(); ?></span>
       <?php endif ?>
     </aside>
-    <h2 class="col-3-4"><?php echo html($page->title()) ?></h2>
+    <h2 class="col-3-4"><?php echo $page->title()->html() ?></h2>
   </div>
   <div class="post-subhead">
     <div class="grid">
-      <h3 class="col-3-4 col-3-4-offset"><?php echo html($page->summary()) ?></h3>
+      <h3 class="col-3-4 col-3-4-offset"><?php echo $page->summary()->html() ?></h3>
     </div>
   </div>
 </header>
@@ -26,7 +26,7 @@
   <aside class="col-3-4 col-3-4-offset post-aside">
     <div class="post-actions">
       <?php snippet('share') ?>
-      <a href="<?php html($site->url()) ?>/journal" class="btn btn-line btn-next">Read more posts</a>
+      <a href="<?php echo $page->parent()->url() ?>" class="btn btn-line btn-next">Read more posts</a>
     </div>
     <?php 
         $links = ($page->links());
@@ -36,15 +36,15 @@
     <?php if(!$page->links()->empty()):?>
     <div class="post-meta">
       <h5>Related Links</h5>
-        <ul class="link-list">
-          <?php foreach($links as $link):?>
-            <li>
-              <a href="<?php echo $page->$link()->url() ?>" class="link">
-                <?php echo $link ?>
-              </a>
-            </li>
-            <?php endforeach ?>
-        </ul>
+      <ul class="link-list">
+        <?php foreach($links as $link):?>
+        <li>
+          <a href="<?php echo $page->$link()->url() ?>" class="link">
+            <?php echo $link ?>
+          </a>
+        </li>
+        <?php endforeach ?>
+      </ul>
     </div>
     <?php endif ?>
     <?php 
@@ -55,15 +55,15 @@
     <?php if(!$page->relatedlinks()->empty()):?>
     <div class="post-meta sidebar-item">
       <h5>Related Links</h5>
-        <ul class="links-list tag-list">
-          <?php foreach($links as $link):?>
-            <li>
-              <a href="" class="tag">
-                <?php echo $link ?>
-              </a>
-            </li>
-            <?php endforeach ?>
-        </ul>
+      <ul class="links-list tag-list">
+        <?php foreach($links as $link):?>
+        <li>
+          <a href="http://<?php echo $link ?>" class="tag" target="_blank">
+            <?php echo $link ?>
+          </a>
+        </li>
+        <?php endforeach ?>
+      </ul>
     </div>
     <?php endif ?>
     <?php 
@@ -74,15 +74,15 @@
     <?php if(!$page->tags()->empty()):?>
     <div class="post-meta">
       <h5>Tags</h5>
-        <ul class="tag-list">
-          <?php foreach($tags as $tag):?>
-            <li>
-              <a href="<?php echo $page->parent()->url() . '/tag:' . $tag ?>" class="tag">
-                <?php echo $tag ?>
-              </a>
-            </li>
-            <?php endforeach ?>
-        </ul>
+      <ul class="tag-list">
+        <?php foreach($tags as $tag):?>
+        <li>
+          <a href="<?php echo $page->parent()->url() . '/tag:' . $tag ?>" class="tag">
+            <?php echo $tag ?>
+          </a>
+        </li>
+        <?php endforeach ?>
+      </ul>
     </div>
     <?php endif ?>
   </aside>
@@ -90,5 +90,7 @@
     <div id="disqus_thread" class="col-3-4 col-3-4-offset comments"></div>
   <?php endif ?>
 </section>
-<?php snippet('next-post') ?>
+<?php if ($page->nextpost() == '1'): ?>
+  <?php snippet('next-post') ?>
+<?php endif ?>
 <?php snippet('footer') ?>

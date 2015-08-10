@@ -595,7 +595,7 @@ input, textarea {
   height: 35px;
   padding: 7px 0; }
 
-.btn-email, .btn-twitter, .btn-facebook {
+.btn-email, .btn-twitter, .btn-facebook, .btn-quora, .btn-linkedin {
   font-size: 1px;
   color: transparent;
   width: 41px;
@@ -622,7 +622,7 @@ input, textarea {
   background-image: url(../images/sprite.svg);
   background-position: -100px 0px;
   top: 11px;
-  left: 9px;
+  left: 10px;
   opacity: 0.5; }
 
 .share .btn-twitter {
@@ -661,6 +661,34 @@ input, textarea {
   background-position: -122px 0px;
   top: 10px;
   left: 14px;
+  opacity: 0.5; }
+
+.btn-quora:after {
+  content: "";
+  overflow: hidden;
+  display: block;
+  position: absolute;
+  width: 18px;
+  height: 19px;
+  background-repeat: no-repeat;
+  background-image: url(../images/sprite.svg);
+  background-position: -136px 0px;
+  top: 11px;
+  left: 11px;
+  opacity: 0.5; }
+
+.btn-linkedin:after {
+  content: "";
+  overflow: hidden;
+  display: block;
+  position: absolute;
+  width: 18px;
+  height: 18px;
+  background-repeat: no-repeat;
+  background-image: url(../images/sprite.svg);
+  background-position: -154px 0px;
+  top: 10px;
+  left: 11px;
   opacity: 0.5; }
 
 .pagination {
@@ -809,7 +837,7 @@ input, textarea {
         height: 16px;
         background-repeat: no-repeat;
         background-image: url(../images/sprite.svg);
-        background-position: -160px 0px;
+        background-position: -67px -20px;
         top: 13px;
         left: 11px; }
     .gbl-head .contact .contact-phone {
@@ -822,7 +850,7 @@ input, textarea {
         height: 20px;
         background-repeat: no-repeat;
         background-image: url(../images/sprite.svg);
-        background-position: -183px 0px;
+        background-position: -90px -20px;
         top: 12px;
         left: 12px; }
     .gbl-head .contact .contact-twitter {
@@ -835,7 +863,7 @@ input, textarea {
         height: 17px;
         background-repeat: no-repeat;
         background-image: url(../images/sprite.svg);
-        background-position: -135px 0px;
+        background-position: -42px -20px;
         top: 13px;
         left: 12px; }
   .gbl-head .btn-menu {
@@ -1185,46 +1213,6 @@ a.featured:hover {
       margin-top: 10px;
       margin-bottom: 10px; } }
 
-.bio-short, .longread .post-meta {
-  position: relative;
-  border-top: 1px solid #e2e2e2;
-  margin-top: 30px;
-  margin-bottom: 50px;
-  padding-top: 15px; }
-  .bio-short h5, .longread .post-meta h5 {
-    margin-bottom: 10px; }
-
-.bio-avatar {
-  width: 80px;
-  height: 80px;
-  border-radius: 50%;
-  position: absolute;
-  top: 50px;
-  left: 0;
-  display: block;
-  background-position: center;
-  background-size: cover; }
-  @media screen and (max-width: 570px) {
-    .bio-avatar {
-      top: 0;
-      margin: 20px 0 10px;
-      position: relative; } }
-
-.bio-name {
-  padding-top: 10px;
-  padding-left: 100px;
-  margin-bottom: 5px; }
-  @media screen and (max-width: 570px) {
-    .bio-name {
-      padding-left: 0; } }
-
-.bio-excerpt {
-  padding-left: 100px;
-  color: #817a86; }
-  @media screen and (max-width: 570px) {
-    .bio-excerpt {
-      padding-left: 0; } }
-
 .error {
   background-color: #E30613;
   color: white; }
@@ -1322,6 +1310,10 @@ a.featured:hover {
     height: 1px;
     width: calc(100% - 40px);
     left: 20px; }
+  .work-stream:first-of-type {
+    padding-top: 5px; }
+    .work-stream:first-of-type:before {
+      display: none; }
   .work-stream .post {
     padding: 0;
     margin-top: -5px;
@@ -1334,6 +1326,32 @@ a.featured:hover {
       color: rgba(227, 6, 19, 0.3); }
       .work-stream .post:hover h3 strong {
         color: #E30613; }
+
+.who-profile {
+  clear: both;
+  padding-top: 80px;
+  padding-bottom: 50px;
+  border-bottom: 1px solid #e2e2e2; }
+  .who-profile:after {
+    content: "";
+    display: table;
+    clear: both; }
+  @media screen and (max-width: 800px) {
+    .who-profile {
+      padding-top: 50px;
+      padding-bottom: 30px; } }
+  .who-profile .btn {
+    position: relative;
+    display: inline-block;
+    margin-right: 5px; }
+
+.who-avatar {
+  border-radius: 50%;
+  margin-right: 20px;
+  margin-bottom: 30px; }
+  @media screen and (max-width: 800px) {
+    .who-avatar {
+      max-width: 150px; } }
 
 .post-head {
   background-color: #cf0511;
@@ -1600,6 +1618,12 @@ a.featured:hover {
       left: 5px;
       top: 12px;
       opacity: 0.15; }
+.longread .post-meta {
+  border-top: 1px solid #e2e2e2;
+  margin: 30px 0 0;
+  padding: 15px 0 0; }
+  .longread .post-meta h5 {
+    margin-bottom: 10px; }
 .longread .cat-list li, .longread .tag-list li {
   display: inline-block; }
 
@@ -1647,7 +1671,7 @@ a.featured:hover {
     height: 100px;
     background-repeat: no-repeat;
     background-image: url(../images/sprite.svg);
-    background-position: -42px -20px;
+    background-position: -113px -20px;
     top: 12px;
     left: -130px;
     width: 100px;

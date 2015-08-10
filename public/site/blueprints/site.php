@@ -11,8 +11,10 @@ fields:
     label: Subtitle
     type:  text
   description:
-    label: Description
+    label: Site Description
     type:  textarea
+    help: This is used to describe the website within Google results.
+    buttons:
   keywords:
     label: Keywords
     type:  tags
@@ -24,11 +26,13 @@ fields:
   postcode:
     label: Postcode
     type: text
-    width: 1/4
-  googlemaps:
-    label: Google Maps
-    type: url
-    width: 3/4
+    width: 1/2
+  twitter:
+    label: Twitter
+    type: text
+    placeholder: @
+    icon: twitter
+    width: 1/2
   email:
     label: Email
     type: email
@@ -37,15 +41,13 @@ fields:
     label: Phone
     type: tel
     width: 1/2
-  twitter:
-    label: Twitter
-    type: text
-    placeholder: @
-    icon: twitter
-    width: 1/2
+  location:
+    label: Google Map Location
+    type: geolocation
   line-b:
     type: line
   copyright:
     label: Copyright
     type:  textarea
     required: true
+    buttons:
