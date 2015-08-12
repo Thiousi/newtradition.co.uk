@@ -10,5 +10,9 @@ language: en
 role: admin
 history:
   - >
-    journal/the-great-british-brand-identity-crisis
+    journal/the-difference-between-brand-and-branding-part-three
   - who
+  - >
+    journal/executive-pay-excesses-spark-swiss-movementst
+  - >
+    journal/the-great-british-brand-identity-crisis

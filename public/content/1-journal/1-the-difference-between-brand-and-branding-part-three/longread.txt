@@ -134,3 +134,7 @@ Featured: 1
 ----
 
 Hero: bottles.jpg
+
+----
+
+Nextpost: 1

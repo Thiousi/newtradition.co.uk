@@ -47,11 +47,13 @@
   <?php endif ?>
 </section>
 
-<section class="who-location">
+<section class="map-wrap">
   <div class="grid">
-    <h2 class="col-3-4 col-3-4-offset">Find us</h2>
+    <h2 class="col-3-4 col-3-4-offset"><a href="https://www.google.co.uk/maps/place/<?php echo $site->location() ?>" title="<?php echo html($site->address()) ?> <?php echo html($site->postcode()) ?>" target="_blank">Find us</a></h2>
   </div>
-  <?php echo $page->location(); ?>
+  <span id="map-lat"><?php echo $site->location()->lat() ?></span>
+  <span id="map-lng"><?php echo $site->location()->lng() ?></span>
+  <div id="map-canvas"></div>
 </section>
 
 <?php snippet('footer') ?>

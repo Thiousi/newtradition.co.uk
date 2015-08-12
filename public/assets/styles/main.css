@@ -285,7 +285,7 @@ h1, .h1 {
     h1, .h1 {
       font-size: 60px; } }
 
-h2, .h2 {
+h2, .h2, .map-wrap h2 a {
   font-size: 60px;
   font-family: 'ff-dagny-web-pro', helvetica, sans-serif;
   font-weight: 700;
@@ -293,7 +293,7 @@ h2, .h2 {
   letter-spacing: -1px;
   line-height: 1; }
   @media screen and (max-width: 570px) {
-    h2, .h2 {
+    h2, .h2, .map-wrap h2 a {
       font-size: 48px; } }
 
 h3, .h3 {
@@ -1321,7 +1321,7 @@ a.featured:hover {
     .work-stream .post:before {
       display: none; }
     .work-stream .post:last-child {
-      margin-bottom: 60px; }
+      margin-bottom: 80px; }
     .work-stream .post:hover h3 {
       color: rgba(227, 6, 19, 0.3); }
       .work-stream .post:hover h3 strong {
@@ -1330,7 +1330,7 @@ a.featured:hover {
 .who-profile {
   clear: both;
   padding-top: 80px;
-  padding-bottom: 50px;
+  padding-bottom: 60px;
   border-bottom: 1px solid #e2e2e2; }
   .who-profile:after {
     content: "";
@@ -1352,6 +1352,27 @@ a.featured:hover {
   @media screen and (max-width: 800px) {
     .who-avatar {
       max-width: 150px; } }
+
+.map-wrap {
+  padding-top: 70px;
+  position: relative; }
+  .map-wrap h2 {
+    padding-left: 0;
+    position: relative;
+    margin-bottom: 15px; }
+    .map-wrap h2 a {
+      border-bottom: 5px solid transparent; }
+      .map-wrap h2 a:hover {
+        border-bottom-color: rgba(227, 6, 19, 0.1); }
+
+#map-canvas {
+  height: 450px; }
+  @media screen and (max-width: 800px) {
+    #map-canvas {
+      height: 300px; } }
+
+#map-lat, #map-lng {
+  display: none; }
 
 .post-head {
   background-color: #cf0511;

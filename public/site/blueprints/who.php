@@ -9,13 +9,9 @@ fields:
     label: Title
     type:  text
     required: true
-  line-a:
-    type: line
   name:
-    label: User
-    type: user
-    default maxine
-    help: Full name and avatars are taken from the Users section within the site menu.
+    label: Maxine Cameron
+    type: headline
   bio:
     label: Bio
     type: markdown
@@ -38,14 +34,9 @@ fields:
     placeholder: 
     icon: link
     width: 1/2
-  line-b:
-    type: line
   name2:
-    label: User
-    type: user
-    default ian
-    required: true
-    help: Full name and avatars are taken from the Users section within the site menu.
+    label: Ian Thomas
+    type: headline
   bio2:
     label: Bio
     type: markdown

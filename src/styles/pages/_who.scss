@@ -1,8 +1,12 @@
 .who-profile {
   @include clearfix;
   padding-top: 80px;
-  padding-bottom: 50px;
+  padding-bottom: 60px;
   border-bottom: 1px solid darken($slate, 3);
+
+  // &:last-of-type {
+  //   border-bottom: none;
+  // }
 
   @media screen and ( max-width: $medium ) {
     padding-top: 50px;
@@ -24,5 +28,38 @@
   @media screen and ( max-width: $medium ) {
     max-width: 150px;
   }
+}
+
+.map-wrap {
+  padding-top: 70px;
+  position: relative;
+
+  h2 {
+    padding-left: 0;
+    position: relative;
+    margin-bottom: 15px;
+
+    a {
+      @extend .h2;
+      border-bottom: 5px solid transparent;
+
+      &:hover {
+        border-bottom-color: rgba($primary, 0.1);
+      }
+    }
+  }
+}
+
+#map-canvas {
+  height: 450px;
+
+  @media screen and ( max-width: $medium ) {
+    height: 300px;
+  }
+}
+
+#map-lat,
+#map-lng {
+  display: none;
 }
 
