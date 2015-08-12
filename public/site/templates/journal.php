@@ -39,13 +39,13 @@
         <button class="btn-more btn-line btn-small">Read more</button>
       </a>
     <?php endforeach ?>
-    <? if ($articles->pagination()->hasPages()): ?>
+    <?php if($articles->pagination()->hasPages()): ?>
       <ul class="pagination">  
-        <? foreach($articles->pagination()->range(6) as $paging): ?>
+        <?php foreach($articles->pagination()->range(6) as $paging): ?>
         <li><a class="btn btn-line btn-circle-sm" href="<?= $articles->pagination()->pageURL($paging); ?>"><?= $paging; ?></a></li>
-        <? endforeach ?>
+        <?php endforeach ?>
       </ul>
-    <? endif; ?>
+    <?php endif; ?>
   </div>
   <aside class="col-1-4 sidebar">
     <div class="sidebar-item">
