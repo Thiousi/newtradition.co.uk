@@ -117,22 +117,6 @@
         font-size: $beta;
       }
     }
-
-    figcaption {
-      padding-left: 32px;
-
-      @media screen and ( max-width: $medium ) {
-        margin-left: 5px;
-      }
-
-      &:after {
-        @include icon-pseudo;
-        @include sprite($cam-dark);
-        left: 5px;
-        top: 12px;
-        opacity: 0.15;
-      }
-    }
   }
 
   .post-meta {

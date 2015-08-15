@@ -371,7 +371,7 @@ figure {
 
 figcaption {
   padding: 10px 0;
-  color: #9a959e;
+  color: #c0bdc3;
   font-size: 16px;
   font-family: 'ff-dagny-web-pro', helvetica, sans-serif; }
   img + figcaption, .post-hero figcaption {
@@ -1400,19 +1400,6 @@ a.featured:hover {
   .post-hero figcaption {
     position: relative;
     padding-left: 32px; }
-    .post-hero figcaption:after {
-      content: "";
-      overflow: hidden;
-      display: block;
-      position: absolute;
-      width: 21px;
-      height: 16px;
-      background-repeat: no-repeat;
-      background-image: url(../images/sprite.svg);
-      background-position: -17px 0px;
-      left: 5px;
-      top: 12px;
-      opacity: 0.15; }
 
 .post-hero-img {
   height: 400px;
@@ -1453,16 +1440,21 @@ a.featured:hover {
     .post-main .post figure {
       margin: 30px 0; }
       .post-main .post figure figcaption {
-        padding-top: 0;
-        padding-bottom: 0;
+        padding: 0 0 0 24px;
         position: relative; }
+        @media screen and (max-width: 800px) {
+          .post-main .post figure figcaption {
+            margin-left: 5px; } }
         .post-main .post figure figcaption:after {
           content: "";
           overflow: hidden;
           display: block;
           position: absolute;
+          opacity: 0.15;
           top: 2px;
-          left: 0; }
+          left: -2px; }
+      .post-main .post figure img {
+        margin-bottom: 8px; }
       .post-main .post figure img + figcaption:after {
         width: 21px;
         height: 16px;
@@ -1621,24 +1613,6 @@ a.featured:hover {
     @media screen and (max-width: 800px) {
       .longread .post-subhead h3 {
         font-size: 32px; } }
-  .longread .post-subhead figcaption {
-    padding-left: 32px; }
-    @media screen and (max-width: 800px) {
-      .longread .post-subhead figcaption {
-        margin-left: 5px; } }
-    .longread .post-subhead figcaption:after {
-      content: "";
-      overflow: hidden;
-      display: block;
-      position: absolute;
-      width: 21px;
-      height: 16px;
-      background-repeat: no-repeat;
-      background-image: url(../images/sprite.svg);
-      background-position: -17px 0px;
-      left: 5px;
-      top: 12px;
-      opacity: 0.15; }
 .longread .post-meta {
   border-top: 1px solid #e2e2e2;
   margin: 30px 0 0;
