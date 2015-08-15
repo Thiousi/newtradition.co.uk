@@ -9,4 +9,6 @@ password: >
 language: en
 role: admin
 history:
+  - >
+    journal/the-difference-between-brand-and-branding-part-three
   - who

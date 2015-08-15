@@ -31,8 +31,8 @@ fields:
   hero:
     label: Hero Image
     type:  selector
+    autoselect: first
     mode:  single
-    required: true
     types:
         - image
   line-a:
