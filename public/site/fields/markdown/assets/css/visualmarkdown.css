@@ -102,13 +102,11 @@
      */
     .cm-s-visualmarkdown .cm-kirbytext-open,
     .cm-s-visualmarkdown .cm-kirbytext-close {
-        font-weight: bold;
-        color: #FF4136;
+        color: #8dae28;
     }
 
     .cm-s-visualmarkdown .cm-kirbytext-attribute {
-        font-weight: bold;
-        color: #7d868c;
+        color: #8dae28;
     }
 
     .cm-s-visualmarkdown .cm-kirbytext-value {}

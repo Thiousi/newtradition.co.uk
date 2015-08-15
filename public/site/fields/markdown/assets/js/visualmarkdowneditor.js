@@ -133,7 +133,7 @@ var VisualMarkdownEditor = function($, $element, options) {
         },
         image: function() {
             if(self.options.kirbytext) {
-                self.insert('(image: filename.jpg)');
+                self.insertAround('(image: filename.jpg caption: ', ')');
             } else {
                 self.insert('![alt text](http://)');
             }
