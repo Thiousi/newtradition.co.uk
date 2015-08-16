@@ -23,13 +23,11 @@
   .post-title {
     display: block;
     margin: 60px 0;
-    padding-bottom: 70px;
     position: relative;
     border-bottom: none;
 
     @media screen and ( max-width: $medium ) {
       margin: 30px 0 35px;
-      padding-bottom: 0;
     }
 
     h2 {
@@ -48,8 +46,7 @@
       }
     }
 
-    &:before,
-    &:after {
+    &:before {
       @include icon-pseudo;
     }
 
@@ -70,19 +67,6 @@
 
       &:before {
         opacity: 0.3;
-      }
-    }
- 
-    &:after {
-      bottom: 0;
-      left: 0;
-      height: 7px;
-      width: 150px;
-      background-color: rgba($primary, 0.1);
-      display: block;
-
-      @media screen and ( max-width: $medium ) {
-        display: none;
       }
     }
   }

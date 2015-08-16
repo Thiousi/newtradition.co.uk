@@ -36,7 +36,6 @@ fields:
     label: Hero Image
     type:  selector
     autoselect: first
-    required: true
     help: Only use .jpg images
     mode:  single
     types:

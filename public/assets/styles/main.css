@@ -402,6 +402,8 @@ figcaption, figcaption[class*="col-"] {
       background-position: -147px 0px; }
   .post-head figcaption, .post-hero figcaption, .post-head figcaption[class*="col-"], .post-hero figcaption[class*="col-"] {
     padding-left: 35px; }
+  .comment figcaption, .comment figcaption[class*="col-"] {
+    padding-left: 25px; }
   video + figcaption, video + figcaption[class*="col-"] {
     padding-left: 25px; }
     video + figcaption:after, video + figcaption[class*="col-"]:after {
@@ -591,7 +593,7 @@ input, textarea {
     display: block;
     position: absolute;
     width: 9px;
-    height: 15.002px;
+    height: 15px;
     background-repeat: no-repeat;
     background-image: url(../images/sprite.svg);
     background-position: -17px 0px;
@@ -613,7 +615,7 @@ input, textarea {
     height: 17px;
     background-repeat: no-repeat;
     background-image: url(../images/sprite.svg);
-    background-position: -30px 0px;
+    background-position: -29px 0px;
     top: 12px;
     left: 17px;
     opacity: 0.5; }
@@ -814,7 +816,8 @@ input, textarea {
       width: 42px;
       height: 42px;
       overflow: hidden;
-      position: absolute; }
+      position: absolute;
+      border-bottom: none; }
       @media screen and (max-width: 570px) {
         .gbl-head .contact a {
           position: relative;
@@ -965,7 +968,7 @@ input, textarea {
       color: transparent;
       overflow: hidden;
       display: block;
-      width: 22.001px;
+      width: 22px;
       height: 15px;
       background-repeat: no-repeat;
       background-image: url(../images/sprite.svg);
@@ -1560,7 +1563,7 @@ a.featured:hover {
   position: absolute;
   width: 100%; }
 .longread .post-head {
-  background-color: transparent;
+  background-color: #67626B;
   background-position: center;
   background-size: cover;
   background-attachment: fixed;
@@ -1679,13 +1682,11 @@ a.featured:hover {
 .comment .post-title {
   display: block;
   margin: 60px 0;
-  padding-bottom: 70px;
   position: relative;
   border-bottom: none; }
   @media screen and (max-width: 800px) {
     .comment .post-title {
-      margin: 30px 0 35px;
-      padding-bottom: 0; } }
+      margin: 30px 0 35px; } }
   .comment .post-title h2 {
     display: inline;
     font-size: 66px;
@@ -1698,7 +1699,7 @@ a.featured:hover {
     @media screen and (max-width: 570px) {
       .comment .post-title h2 {
         font-size: 48px; } }
-  .comment .post-title:before, .comment .post-title:after {
+  .comment .post-title:before {
     content: "";
     overflow: hidden;
     display: block;
@@ -1720,16 +1721,6 @@ a.featured:hover {
     border-bottom-color: rgba(227, 6, 19, 0.2); }
   .comment .post-title:hover:before {
     opacity: 0.3; }
-  .comment .post-title:after {
-    bottom: 0;
-    left: 0;
-    height: 7px;
-    width: 150px;
-    background-color: rgba(227, 6, 19, 0.1);
-    display: block; }
-    @media screen and (max-width: 800px) {
-      .comment .post-title:after {
-        display: none; } }
 .comment .comments {
   margin-top: 0; }
   @media screen and (max-width: 800px) {

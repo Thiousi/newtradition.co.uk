@@ -6,10 +6,10 @@
     <?php if(!$page->hero()->empty()): ?>
       <?php $file = $page->hero()->toFile() ?>
       <figure class="post-hero">
-        <div class="post-hero-img" style="background-image: url(<?php echo thumb($file, array('width' => 1200, 'height' => 600, 'quality' => 85, 'crop' => true))->url() ?>);"></div>
-        <div class="grid">
-          <figcaption class="col-3-4 col-3-4-offset"><?php echo $file->caption() ?></figcaption>
-        </div>
+        <img class="post-img" src="<?php echo thumb($file, array('width' => 715, 'quality' => 90))->url() ?>" alt="<?php $page->title()->html() ?>">
+        <?php if(!$file->caption()->empty()): ?>
+        <figcaption><?php echo $file->caption() ?></figcaption>
+        <?php endif ?>
       </figure>
     <?php endif ?>
     <?php echo $page->text()->kirbytext() ?>

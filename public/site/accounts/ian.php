@@ -9,11 +9,12 @@ password: >
 language: en
 role: admin
 history:
+  - >
+    journal/executive-pay-excesses-spark-swiss-movement
+  - >
+    journal/apples-tim-cook-and-the-distinction-between-brand-and-branding
+  - >
+    journal/the-bebanking-talk-i-nearly-gave-at-tedxcheltenham
+  - >
+    journal/the-kind-of-unspun-papal-spin-that-couldnt-be-spun-by-pr-spinners
   - journal/monocles-soft-power-survey-2013
-  - >
-    journal/to-create-an-online-financial-advice-brand-become-a-follower-of-fashion
-  - >
-    journal/the-non-marketers-playbook-ian-to-pen-regular-feature-for-abr
-  - >
-    journal/spoonievision-our-latest-appeal-project-for-wwt-lands-in-uk
-  - who

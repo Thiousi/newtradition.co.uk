@@ -99,6 +99,7 @@
       height: 42px;
       overflow: hidden;
       position: absolute;
+      border-bottom: none;
 
       @media screen and ( max-width: $small ) {
         position: relative;
