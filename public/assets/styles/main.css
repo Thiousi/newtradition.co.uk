@@ -1325,15 +1325,17 @@ a.featured:hover {
         display: block; } }
 .work h5 {
   margin-bottom: 30px; }
-.work .featured h2 {
-  margin-bottom: 15px; }
-.work .featured h3 {
-  margin-bottom: 10px; }
-.work .featured h5 {
-  margin-bottom: 30px; }
+.work .featured {
+  padding-bottom: 60px; }
+  .work .featured h2 {
+    margin-bottom: 15px; }
+  .work .featured h3 {
+    margin-bottom: 10px; }
+  .work .featured h5 {
+    margin-bottom: 30px; }
 
 .work-stream {
-  padding-top: 20px; }
+  padding-top: 30px; }
   .work-stream:before {
     content: "";
     position: absolute;
@@ -1344,12 +1346,12 @@ a.featured:hover {
     width: calc(100% - 40px);
     left: 20px; }
   .work-stream:first-of-type {
-    padding-top: 5px; }
+    padding-top: 10px; }
     .work-stream:first-of-type:before {
       display: none; }
   .work-stream .post {
     padding: 0;
-    margin-top: -5px;
+    margin-top: 0;
     margin-bottom: 25px; }
     .work-stream .post:before {
       display: none; }

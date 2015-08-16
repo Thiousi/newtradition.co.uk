@@ -24,6 +24,8 @@
   }
 
   .featured {
+    padding-bottom: 60px;
+
     h2 {
       margin-bottom: 15px;
     }
@@ -39,7 +41,7 @@
 }
 
 .work-stream {
-  padding-top: 20px;
+  padding-top: 30px;
 
   &:before {
     content: "";
@@ -53,7 +55,7 @@
   }
 
   &:first-of-type {
-    padding-top: 5px;
+    padding-top: 10px;
 
     &:before {
       display: none;
@@ -62,7 +64,7 @@
 
   .post {
     padding: 0;
-    margin-top: -5px;
+    margin-top: 0;
     margin-bottom: 25px;
 
     &:before {

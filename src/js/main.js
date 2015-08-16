@@ -105,24 +105,27 @@ if (btnLoad !== null) {
 }
 
 // Hide features on tag specific layouts
-if ((window.location.href.indexOf("tag:") != -1) || (window.location.href.indexOf("category:"))) {
-  if (window.location.href.indexOf("tag:") != -1) {
-    var tagBtn = document.querySelectorAll(".tag");
-  } else {
-    var tagBtn = document.querySelectorAll(".cat");
-  }
-  var url = document.URL;
-  for ( var i = 0; i < tagBtn.length; i++) {
-    if(tagBtn[i].getAttribute('href') === url) {
-      tagBtn[i].className+=" active";
+var journalStream = document.querySelector(".journal-stream");
+if (journalStream !== null) {
+  if ((window.location.href.indexOf("tag:") != -1) || (window.location.href.indexOf("category:"))) {
+    if (window.location.href.indexOf("tag:") != -1) {
+      var tagBtn = document.querySelectorAll(".tag");
+    } else {
+      var tagBtn = document.querySelectorAll(".cat");
     }
-  }
-  var tagTitle = document.querySelector(".tag-title");
-  var activeTag = document.querySelector(".sidebar .active");
-  tagTitle.textContent = activeTag.textContent;
-  tagTitle.style.display = 'block';
-  if (activeTag !== null) {
-    var feature = document.querySelector(".featured");
-    feature.style.display = 'none';
+    var url = document.URL;
+    for ( var i = 0; i < tagBtn.length; i++) {
+      if(tagBtn[i].getAttribute('href') === url) {
+        tagBtn[i].className+=" active";
+      }
+    }
+    var tagTitle = document.querySelector(".tag-title");
+    var activeTag = document.querySelector(".sidebar .active");
+    tagTitle.textContent = activeTag.textContent;
+    tagTitle.style.display = 'block';
+    if (activeTag !== null) {
+      var feature = document.querySelector(".featured");
+      feature.style.display = 'none';
+    }
   }
 }
