@@ -105,32 +105,22 @@ if (btnLoad !== null) {
 }
 
 // Hide features on tag specific layouts
-if (window.location.href.indexOf("tag:") != -1) {
+if ((window.location.href.indexOf("tag:") != -1) || (window.location.href.indexOf("category:"))) {
+  if (window.location.href.indexOf("tag:") != -1) {
+    var tagBtn = document.querySelectorAll(".tag");
+  } else {
+    var tagBtn = document.querySelectorAll(".cat");
+  }
   var feature = document.querySelector(".featured");
   feature.style.display = 'none';
-  var tagTitle = document.querySelector(".tag-title");
-  var tagTitleText = window.location.pathname.split(":");
-  tagTitle.innerHTML = tagTitleText[tagTitleText.length - 1];
-  tagTitle.style.display = 'block';
   var url = document.URL;
-  var tagBtn = document.querySelectorAll(".tag");
   for ( var i = 0; i < tagBtn.length; i++) {
-    if(tagBtn[i].getAttribute('href') === url){
-        tagBtn[i].className+=" active";
+    if(tagBtn[i].getAttribute('href') === url) {
+      tagBtn[i].className+=" active";
     }
   }
-} else if (window.location.href.indexOf("category:") != -1) {
-  var feature = document.querySelector(".featured");
-  feature.style.display = 'none';
   var tagTitle = document.querySelector(".tag-title");
-  var tagTitleText = window.location.pathname.split(":");
-  tagTitle.innerHTML = tagTitleText[tagTitleText.length - 1];
+  var activeTag = document.querySelector(".sidebar .active").textContent;
+  tagTitle.textContent = activeTag;
   tagTitle.style.display = 'block';
-  var url = document.URL;
-  var tagBtn = document.querySelectorAll(".cat");
-  for ( var i = 0; i < tagBtn.length; i++) {
-    if(tagBtn[i].getAttribute('href') === url){
-        tagBtn[i].className+=" active";
-    }
-  }
 }

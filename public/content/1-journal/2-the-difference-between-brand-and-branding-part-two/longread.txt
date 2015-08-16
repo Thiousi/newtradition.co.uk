@@ -20,6 +20,8 @@ I like fountain pens.
 
 I’ve always preferred to write in real ink and I’ve tried out plenty of makes and models.
 
+(image: hero.jpg caption:Meanwhile, whenever I found myself close by a jewellers which stocked Montblanc, I would take a couple of minutes to gaze wistfully at the distinctive Meisterstück’s black resin class: left)
+
 For many years I settled with a Lamy Safari but, even though the Lamy is an exquisite writer, I was in the market for a family heirloom to hand down to one of my sons.
 
 Lamy’s top-of-the-range pens didn’t strike me as sufficiently ‘heirloomy’ and, having tried out a Montblanc Meisterstück (picture, right, by Freimut) once or twice, I’d set my heart on it.
@@ -134,3 +136,7 @@ Summary: Summary
 ----
 
 Relatedlinks: 
+
+----
+
+Nextpost: 1

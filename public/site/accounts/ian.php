@@ -10,5 +10,7 @@ language: en
 role: admin
 history:
   - >
+    journal/the-difference-between-brand-and-branding-part-two
+  - >
     journal/the-difference-between-brand-and-branding-part-three
   - who

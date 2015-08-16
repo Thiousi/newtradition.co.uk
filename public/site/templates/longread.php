@@ -15,6 +15,9 @@
   </div>
   <div class="post-subhead">
     <div class="grid">
+      <?php if(!$file->caption()->empty()): ?>
+        <figcaption class="col-3-4 col-3-4-offset"> <?php echo $file->caption() ?></figcaption>
+      <?php endif ?>
       <h3 class="col-3-4 col-3-4-offset"><?php echo $page->summary()->html() ?></h3>
     </div>
   </div>

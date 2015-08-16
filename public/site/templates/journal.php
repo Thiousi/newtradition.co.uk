@@ -60,9 +60,9 @@
     <div class="sidebar-item">
       <h5>Categories</h5>
       <ul class="cat-list">
-        <li><a href="<?php echo $page->url() . '/category:longread' ?>" class="cat">Long Read</a></li>
-        <li><a href="<?php echo $page->url() . '/category:news' ?>" class="cat">News</a></li>
-        <li><a href="<?php echo $page->url() . '/category:comment' ?>" class="cat">Comment</a></li>
+        <li><a href="<?php echo $page->url() . '/category:longread' ?>" class="cat longread">Long Read</a></li>
+        <li><a href="<?php echo $page->url() . '/category:news' ?>" class="cat news">News</a></li>
+        <li><a href="<?php echo $page->url() . '/category:comment' ?>" class="cat comment">Comment</a></li>
       </ul>
     </div>
   </aside>

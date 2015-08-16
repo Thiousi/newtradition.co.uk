@@ -368,14 +368,35 @@ blockquote {
 
 figure {
   margin: 30px 0; }
+  figure img {
+    margin-bottom: 8px;
+    width: 100%; }
 
-figcaption {
-  padding: 10px 0;
+figcaption, figcaption[class*="col-"] {
   color: #c0bdc3;
   font-size: 16px;
-  font-family: 'ff-dagny-web-pro', helvetica, sans-serif; }
-  img + figcaption, .post-hero figcaption {
-    padding-left: 30px; }
+  font-family: 'ff-dagny-web-pro', helvetica, sans-serif;
+  line-height: 1.35;
+  padding: 0 0 0 25px;
+  position: relative; }
+  @media screen and (max-width: 800px) {
+    figcaption, figcaption[class*="col-"] {
+      margin-left: 5px; } }
+  figcaption:after, figcaption[class*="col-"]:after {
+    content: "";
+    overflow: hidden;
+    display: block;
+    position: absolute;
+    opacity: 0.15;
+    top: 2px;
+    left: -2px; }
+  img + figcaption:after, .post-head figcaption:after, .post-hero figcaption:after, img + figcaption[class*="col-"]:after, .post-head figcaption[class*="col-"]:after, .post-hero figcaption[class*="col-"]:after {
+    width: 21px;
+    height: 16px;
+    background-repeat: no-repeat;
+    background-image: url(../images/sprite.svg);
+    background-position: -147px 0px;
+    opacity: 0.15; }
 
 a {
   color: #39333F;
@@ -556,10 +577,10 @@ input, textarea {
     display: block;
     position: absolute;
     width: 9px;
-    height: 15px;
+    height: 15.002px;
     background-repeat: no-repeat;
     background-image: url(../images/sprite.svg);
-    background-position: -42px 0px;
+    background-position: -17px 0px;
     top: 13px;
     right: 14px;
     opacity: 0.5; }
@@ -578,7 +599,7 @@ input, textarea {
     height: 17px;
     background-repeat: no-repeat;
     background-image: url(../images/sprite.svg);
-    background-position: -54px 0px;
+    background-position: -30px 0px;
     top: 12px;
     left: 17px;
     opacity: 0.5; }
@@ -620,7 +641,7 @@ input, textarea {
   height: 16px;
   background-repeat: no-repeat;
   background-image: url(../images/sprite.svg);
-  background-position: -100px 0px;
+  background-position: -75px 0px;
   top: 11px;
   left: 10px;
   opacity: 0.5; }
@@ -639,7 +660,7 @@ input, textarea {
   height: 17px;
   background-repeat: no-repeat;
   background-image: url(../images/sprite.svg);
-  background-position: -75px 0px;
+  background-position: -50px 0px;
   top: 11px;
   left: 10px;
   opacity: 0.5; }
@@ -658,7 +679,7 @@ input, textarea {
   height: 19px;
   background-repeat: no-repeat;
   background-image: url(../images/sprite.svg);
-  background-position: -122px 0px;
+  background-position: -97px 0px;
   top: 10px;
   left: 14px;
   opacity: 0.5; }
@@ -669,11 +690,11 @@ input, textarea {
   display: block;
   position: absolute;
   width: 18px;
-  height: 19px;
+  height: 20px;
   background-repeat: no-repeat;
   background-image: url(../images/sprite.svg);
-  background-position: -136px 0px;
-  top: 11px;
+  background-position: -109px 0px;
+  top: 10px;
   left: 11px;
   opacity: 0.5; }
 
@@ -686,7 +707,7 @@ input, textarea {
   height: 18px;
   background-repeat: no-repeat;
   background-image: url(../images/sprite.svg);
-  background-position: -154px 0px;
+  background-position: -127px 0px;
   top: 10px;
   left: 11px;
   opacity: 0.5; }
@@ -929,7 +950,7 @@ input, textarea {
       color: transparent;
       overflow: hidden;
       display: block;
-      width: 22px;
+      width: 22.001px;
       height: 15px;
       background-repeat: no-repeat;
       background-image: url(../images/sprite.svg);
@@ -1393,13 +1414,17 @@ a.featured:hover {
         font-size: 44px; } }
   .post-head h2, .post-head h5 {
     color: white; }
+  .post-head figcaption {
+    margin-top: 5px;
+    margin-bottom: 5px;
+    padding-left: 35px;
+    color: #b3b0b6; }
+    .post-head figcaption:after {
+      left: 8px; }
 
 .post-hero {
   margin: 0;
   width: 100%; }
-  .post-hero figcaption {
-    position: relative;
-    padding-left: 32px; }
 
 .post-hero-img {
   height: 400px;
@@ -1439,36 +1464,11 @@ a.featured:hover {
       font-size: 20px; }
     .post-main .post figure {
       margin: 30px 0; }
-      .post-main .post figure figcaption {
-        padding: 0 0 0 24px;
-        position: relative; }
-        @media screen and (max-width: 800px) {
-          .post-main .post figure figcaption {
-            margin-left: 5px; } }
-        .post-main .post figure figcaption:after {
-          content: "";
-          overflow: hidden;
-          display: block;
-          position: absolute;
-          opacity: 0.15;
-          top: 2px;
-          left: -2px; }
-      .post-main .post figure img {
-        margin-bottom: 8px; }
-      .post-main .post figure img + figcaption:after {
-        width: 21px;
-        height: 16px;
-        background-repeat: no-repeat;
-        background-image: url(../images/sprite.svg);
-        background-position: -17px 0px;
-        opacity: 0.15; }
     @media screen and (min-width: 800px) {
-      .post-main .post blockquote {
-        margin-left: -25%;
-        max-width: 500px;
+      .post-main .post blockquote, .post-main .post figure.left {
+        max-width: calc(75% - 30px);
         float: left;
-        margin-top: 20px;
-        margin-bottom: 20px; } }
+        margin: 20px 30px 20px -25%; } }
 
 @media screen and (min-width: 800px) {
   .post-aside .post-actions {
@@ -1513,6 +1513,9 @@ a.featured:hover {
   @media screen and (max-width: 800px) {
     .news .comments {
       margin-bottom: 20px; } }
+.news .post-hero-img {
+  margin-bottom: 10px;
+  display: block; }
 
 .longread .gbl-head {
   background-color: rgba(227, 6, 19, 0.85);
@@ -1666,7 +1669,7 @@ a.featured:hover {
     height: 100px;
     background-repeat: no-repeat;
     background-image: url(../images/sprite.svg);
-    background-position: -113px -20px;
+    background-position: -110px -20px;
     top: 12px;
     left: -130px;
     width: 100px;

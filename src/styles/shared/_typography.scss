@@ -135,16 +135,37 @@ blockquote {
 
 figure {
   margin: 30px 0;
+
+  img {
+    margin-bottom: 8px;
+    width: 100%;
+  }
 }
 
-figcaption {
-  padding: 10px 0;
+figcaption,
+figcaption[class*="col-"] {
   color: lighten($light-ink, 35);
   font-size: $epsilon;
   font-family: $sans;
+  line-height: 1.35;
+  padding: 0 0 0 25px;
+  position: relative;
 
-  img + &,
-  .post-hero & {
-    padding-left: 30px;
+  @media screen and ( max-width: $medium ) {
+    margin-left: 5px;
+  }
+
+  &:after {
+    @include icon-pseudo;
+    opacity: 0.15;
+    top: 2px;
+    left: -2px;
+  }
+
+  img + &:after,
+  .post-head &:after,
+  .post-hero &:after {
+    @include sprite($cam-dark);
+    opacity: 0.15;
   }
 }
