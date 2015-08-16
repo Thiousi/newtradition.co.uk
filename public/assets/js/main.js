@@ -111,8 +111,6 @@ if ((window.location.href.indexOf("tag:") != -1) || (window.location.href.indexO
   } else {
     var tagBtn = document.querySelectorAll(".cat");
   }
-  var feature = document.querySelector(".featured");
-  feature.style.display = 'none';
   var url = document.URL;
   for ( var i = 0; i < tagBtn.length; i++) {
     if(tagBtn[i].getAttribute('href') === url) {
@@ -120,7 +118,11 @@ if ((window.location.href.indexOf("tag:") != -1) || (window.location.href.indexO
     }
   }
   var tagTitle = document.querySelector(".tag-title");
-  var activeTag = document.querySelector(".sidebar .active").textContent;
-  tagTitle.textContent = activeTag;
+  var activeTag = document.querySelector(".sidebar .active");
+  tagTitle.textContent = activeTag.textContent;
   tagTitle.style.display = 'block';
+  if (activeTag !== null) {
+    var feature = document.querySelector(".featured");
+    feature.style.display = 'none';
+  }
 }
