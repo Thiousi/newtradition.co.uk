@@ -377,7 +377,7 @@ figcaption, figcaption[class*="col-"] {
   font-size: 16px;
   font-family: 'ff-dagny-web-pro', helvetica, sans-serif;
   line-height: 1.35;
-  padding: 0 0 0 25px;
+  padding: 0;
   position: relative; }
   @media screen and (max-width: 800px) {
     figcaption, figcaption[class*="col-"] {
@@ -390,13 +390,24 @@ figcaption, figcaption[class*="col-"] {
     opacity: 0.15;
     top: 2px;
     left: -2px; }
-  img + figcaption:after, .post-head figcaption:after, .post-hero figcaption:after, img + figcaption[class*="col-"]:after, .post-head figcaption[class*="col-"]:after, .post-hero figcaption[class*="col-"]:after {
-    width: 21px;
-    height: 16px;
-    background-repeat: no-repeat;
-    background-image: url(../images/sprite.svg);
-    background-position: -147px 0px;
-    opacity: 0.15; }
+  img + figcaption, .post-head figcaption, .post-hero figcaption, img + figcaption[class*="col-"], .post-head figcaption[class*="col-"], .post-hero figcaption[class*="col-"] {
+    padding-left: 25px; }
+    img + figcaption:after, .post-head figcaption:after, .post-hero figcaption:after, img + figcaption[class*="col-"]:after, .post-head figcaption[class*="col-"]:after, .post-hero figcaption[class*="col-"]:after {
+      width: 21px;
+      height: 16px;
+      background-repeat: no-repeat;
+      background-image: url(../images/sprite.svg);
+      background-position: -147px 0px; }
+  .post-head figcaption, .post-hero figcaption, .post-head figcaption[class*="col-"], .post-hero figcaption[class*="col-"] {
+    padding-left: 35px; }
+  video + figcaption, video + figcaption[class*="col-"] {
+    padding-left: 25px; }
+    video + figcaption:after, video + figcaption[class*="col-"]:after {
+      width: 19px;
+      height: 15px;
+      background-repeat: no-repeat;
+      background-image: url(../images/sprite.svg);
+      background-position: -169px 0px; }
 
 a {
   color: #39333F;
@@ -1417,7 +1428,6 @@ a.featured:hover {
   .post-head figcaption {
     margin-top: 5px;
     margin-bottom: 5px;
-    padding-left: 35px;
     color: #b3b0b6; }
     .post-head figcaption:after {
       left: 8px; }
