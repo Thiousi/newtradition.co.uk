@@ -19,4 +19,8 @@
     margin-bottom: 10px;
     display: block;
   }
+
+  figcaption[class*="col-"]:after {
+    left: 6px;
+  }
 }

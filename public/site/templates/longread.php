@@ -50,23 +50,19 @@
       </ul>
     </div>
     <?php endif ?>
-    <?php 
-      $links = ($page->relatedlinks());
-      $links = explode(',',$links);
-      $links = array_map('trim',$links);
-    ?> 
     <?php if(!$page->relatedlinks()->empty()):?>
-    <div class="post-meta sidebar-item">
+    <?php $links = yaml($page->relatedlinks()) ?>
+    <div class="col-3-4 col-3-4-offset post-meta sidebar-item">
       <h5>Related Links</h5>
-      <ul class="links-list tag-list">
-        <?php foreach($links as $link):?>
-        <li>
-          <a href="http://<?php echo $link ?>" class="tag" target="_blank">
-            <?php echo $link ?>
-          </a>
-        </li>
-        <?php endforeach ?>
-      </ul>
+        <ul class="links-list tag-list">
+          <?php foreach($links as $link):?>
+          <li>
+            <a href="<?php echo $link['link'] ?>" class="tag" target="_blank" title="<?php echo $link['title'] ?>">
+              <?php echo $link['title'] ?>
+            </a>
+          </li>
+          <?php endforeach ?>
+        </ul>
     </div>
     <?php endif ?>
     <?php 

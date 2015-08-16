@@ -40,6 +40,7 @@ fields:
     label: Hero Image
     type:  selector
     mode:  single
+    help: Only use .jpg images
     types:
         - image
   line-a:
@@ -49,6 +50,21 @@ fields:
     type:  markdown
   line-b:
     type: line
+  relatedlinks:
+    label: Related Links
+    type: structure
+    fields:
+      title:
+        label: Link Title
+        type: text
+        required: true
+      link:
+        label: URL
+        type: url
+        required: true
+  tags:
+    label: Tags
+    type:  tags
   comments:
     label: Comments
     type: checkbox
@@ -62,12 +78,3 @@ fields:
     text: Show Next Post
     icon: hand-o-right
     width: 1/2
-  relatedlinks:
-    label: Related Links
-    help: Do not include the 'http://'
-    type:  tags
-    icon: link
-    lower: true
-  tags:
-    label: Tags
-    type:  tags

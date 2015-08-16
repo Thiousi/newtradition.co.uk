@@ -86,6 +86,10 @@
       a {
         color: $primary;
         border-bottom: 3px solid rgba($primary, 0.1);
+
+        &:hover {
+          border-bottom-color: rgba($primary, 0.3); 
+        }
       }
 
       @media screen and ( max-width: $medium ) {
@@ -131,6 +135,10 @@
 .post-actions {
   @include clearfix;
   padding: 40px 0;
+
+  a:hover {
+    border-bottom-color: $ink;
+  }
 
   @media screen and ( max-width: $medium ) {
     padding: 0 0 20px;

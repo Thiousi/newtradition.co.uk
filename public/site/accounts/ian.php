@@ -11,8 +11,4 @@ role: admin
 history:
   - >
     journal/spoonievision-our-latest-appeal-project-for-wwt-lands-in-uk
-  - >
-    journal/the-difference-between-brand-and-branding-part-two
-  - >
-    journal/the-difference-between-brand-and-branding-part-three
   - who

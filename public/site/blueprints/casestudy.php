@@ -24,6 +24,12 @@ fields:
   excerpt:
     label: Excerpt
     type: textarea
+  hero:
+    label: Hero Image
+    type:  selector
+    mode:  single
+    types:
+        - image
   line-a:
     type: line
   text:

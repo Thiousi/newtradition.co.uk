@@ -12,7 +12,11 @@
       </div>
       <div class="col-3-4">
         <h2><?php echo html($featured->title()) ?></h2>
-        <p class="excerpt-lrg"><?php echo $featured->text()->excerpt(150) ?></p>
+        <?php if(!$featured->excerpt()->empty()): ?>
+          <p class="excerpt-lrg"><?php echo $featured->excerpt()->excerpt(150) ?></p>
+        <?php else: ?>
+          <p class="excerpt-lrg"><?php echo $featured->text()->excerpt(150) ?></p>
+        <?php endif ?>
         <button class="btn-more btn-line btn-small">Read more</button>
       </div>
     </div>
@@ -24,9 +28,8 @@
     <?php foreach ($articles as $article): ?>
       <?php $count = 0 ?>
       <a href="<?php echo $article->url() ?>" class="post <?php echo $article->template() ?>">
-        <?php if($image = $article->image('hero.jpg')): ?>
-          <img class="post-img" src="<?php echo thumb($image, array('width' => 715, 'height' => 300, 'quality' => 75, 'crop' => true))->url() ?>" alt="<?php html($article->title()) ?>">
-        <?php endif ?>
+        <?php $file = $article->hero()->toFile() ?>
+        <img class="post-img" src="<?php echo thumb($file, array('width' => 715, 'height' => 300, 'quality' => 75, 'crop' => true))->url() ?>" alt="<?php $article->title()->html() ?>">
         <div class="meta">
           <span class="meta-cat h5"><?php if ($article->template() == 'longread'): ?>Long Read
           <?php elseif ($article->template() == 'news'): ?>News
@@ -35,7 +38,11 @@
           <span class="meta-date"><?php echo html($article->date('j F')) ?></span>
         </div>
         <h3><?php echo html($article->title()) ?></h3>
-        <p><?php echo $article->text()->excerpt(200) ?></p>
+        <?php if(!$article->excerpt()->empty()): ?>
+          <p><?php echo $article->excerpt() ?></p>
+        <?php else: ?>
+          <p><?php echo $article->text()->excerpt(200) ?></p>
+        <?php endif ?>
         <button class="btn-more btn-line btn-small">Read more</button>
       </a>
     <?php endforeach ?>

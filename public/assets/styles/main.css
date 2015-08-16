@@ -445,9 +445,12 @@ img {
     float: right;
     top: -5px; }
 
-@media screen and (max-width: 800px) {
-  .cat-list li, .tag-list li {
-    display: inline-block; } }
+.cat-list li, .tag-list li {
+  list-style: none;
+  margin: 0; }
+  @media screen and (max-width: 800px) {
+    .cat-list li, .tag-list li {
+      display: inline-block; } }
 
 .cat, .links-list .tag, .tag {
   padding: 9px 12px;
@@ -487,6 +490,8 @@ img {
 
 .links-list .tag {
   text-transform: none; }
+.links-list li {
+  display: inline-block; }
 
 .share {
   position: relative; }
@@ -1478,6 +1483,8 @@ a.featured:hover {
       .post-main .post h3 a {
         color: #E30613;
         border-bottom: 3px solid rgba(227, 6, 19, 0.1); }
+        .post-main .post h3 a:hover {
+          border-bottom-color: rgba(227, 6, 19, 0.3); }
       @media screen and (max-width: 800px) {
         .post-main .post h3 {
           font-size: 32px; } }
@@ -1508,6 +1515,8 @@ a.featured:hover {
     content: "";
     display: table;
     clear: both; }
+  .post-actions a:hover {
+    border-bottom-color: #39333F; }
   @media screen and (max-width: 800px) {
     .post-actions {
       padding: 0 0 20px; }
@@ -1543,6 +1552,8 @@ a.featured:hover {
 .news .post-hero-img {
   margin-bottom: 10px;
   display: block; }
+.news figcaption[class*="col-"]:after {
+  left: 6px; }
 
 .longread .gbl-head {
   background-color: rgba(227, 6, 19, 0.85);
