@@ -23,12 +23,9 @@
         <?php if ($page->isHomePage()): ?>
           <?php echo html($site->description()) ?>
         <?php elseif ($page->hasChildren()): ?>
-          <a href="<?php echo $page->url() ?>" title="Visit this page">
-            <?php echo html($page->title()) ?>
-          </a>
+          <?php echo html($page->title()) ?>
         <?php elseif($page->template() == 'who'): ?>
-          <a href="<?php echo $page->url() ?>" title="Visit this page"><?php echo html($page->title()) ?>
-          </a>
+          <?php echo html($page->title()) ?>
         <?php else: ?>
           <a href="<?php echo $page->parent()->url() ?>" title="Back to the parent page">
             <?php echo html($page->parent()->title()) ?>

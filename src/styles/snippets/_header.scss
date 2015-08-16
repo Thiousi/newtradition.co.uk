@@ -218,9 +218,10 @@
       color: white;
       font-family: $sans;
       font-weight: $sans-bold;
+      border-bottom: 5px solid transparent;
 
       &:hover {
-        color: rgba(white, 0.9);
+        border-bottom-color: rgba(white, 0.4);
       }
     }
 

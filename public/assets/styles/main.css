@@ -918,9 +918,10 @@ input, textarea {
     .gbl-head .title a {
       color: white;
       font-family: 'ff-dagny-web-pro', helvetica, sans-serif;
-      font-weight: 700; }
+      font-weight: 700;
+      border-bottom: 5px solid transparent; }
       .gbl-head .title a:hover {
-        color: rgba(255, 255, 255, 0.9); }
+        border-bottom-color: rgba(255, 255, 255, 0.4); }
     .home .gbl-head .title {
       font-size: 36px;
       font-family: 'ff-meta-serif-web-pro', georgia, serif;
@@ -1661,7 +1662,7 @@ a.featured:hover {
     display: inline;
     font-size: 66px;
     line-height: 1.2;
-    border-bottom: 4px solid rgba(227, 6, 19, 0.1); }
+    border-bottom: 5px solid rgba(227, 6, 19, 0.1); }
     @media screen and (max-width: 800px) {
       .comment .post-title h2 {
         font-size: 54px;
