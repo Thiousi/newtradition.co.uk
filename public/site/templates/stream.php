@@ -9,8 +9,10 @@
       $count = $offset;
     foreach($results as $article){
       $html .= '<a href="'. $article->url() . '" class="post ' . $article->template() . '">';
-      $file = $article->hero()->toFile();
-      $html .= '<div class="post-img" style="background-image: url('. $file->url() . ')" title="' . $article->title()->html() . '"></div>';
+      if (!$article->hero()->empty()) {
+        $file = $article->hero()->toFile();
+        $html .= '<div class="post-img" style="background-image: url('. $file->url() . ')" title="' . $article->title()->html() . '"></div>';
+      }
       if ($article->template() == 'longread') {
         $html .= '<h5>Long Read</h5>';
       } elseif ($article->template() == 'news') {

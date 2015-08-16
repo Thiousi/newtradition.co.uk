@@ -58,11 +58,11 @@ It means the appeal communication has been split into two:
 
 ----
 
-Comments: 
+Comments: 1
 
 ----
 
-Nextpost: 
+Nextpost: 1
 
 ----
 

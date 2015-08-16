@@ -52,7 +52,7 @@
     <?php endif ?>
     <?php if(!$page->relatedlinks()->empty()):?>
     <?php $links = yaml($page->relatedlinks()) ?>
-    <div class="col-3-4 col-3-4-offset post-meta sidebar-item">
+    <div class="post-meta sidebar-item">
       <h5>Related Links</h5>
         <ul class="links-list tag-list">
           <?php foreach($links as $link):?>

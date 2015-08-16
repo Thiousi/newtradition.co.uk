@@ -13,7 +13,7 @@ fields:
     label: Title
     type: text
     required: true
-  url:
+  titleurl:
     label: Title URL
     type: url
     required: true

@@ -1,0 +1,85 @@
+Title: To create an online financial advice brand, become a follower of fashion
+
+----
+
+Date: 2014-02-18
+
+----
+
+Author: ian
+
+----
+
+Featured: 
+
+----
+
+Excerpt: 
+
+----
+
+Hero: thread.com.jpg
+
+----
+
+Summary: Having worked — off and on — with a number of UK financial brands in my time, something’s alway perplexed me: the default setting for the design of financial services is based on what other financial brands already do.
+
+----
+
+Text: 
+
+Brands rarely seem to roam beyond the confines of the financial services archipelago for inspiration in service design.
+
+It means that the development of new services is a painfully iterative process; a fact compounded, perhaps understandably, by a stifling regulatory environment.
+
+Most innovation appears evolutionary: Incremental changes in product design, systems and technology that create efficiencies in transactional processes but not necessarily in the way people interact with services.
+
+> It’s all product, product, product rather than experience, experience, experience.
+
+Take the Holy Grail of personal investment advice: the creation of an online end-to-end financial advice process.
+
+There are financial services brands who would be considered pioneers – by the industry itself – of online personal investment.
+
+But, as user experience goes, is there really any stand-out brand? A brand that’s reimagined the online financial planning process from end-to-end? A brand that hasn’t just clunked a superficial front-end on to an existing back-end system but started with a blank sheet and designed a service from scratch? A brand that makes you think ‘Wow!’?
+
+So here’s my tip: If you’re kicking around the idea of establishing a distinct and compelling online advice service in the UK, seek out Thread.com as your inspiration.
+
+With a few tweaks here and there, Thread offers a blueprint for how the potential of the web can be harnessed to deliver enriching advice experiences in an elegantly frictionless way.
+
+I came across it recently while idly listening to one of its founders on Radio 4’s ‘Woman’s Hour’ (well, don’t forget to ‘roam beyond the confines of your archipelago’). And, though not sartorially-inclined but piqued by the idea, I signed up to see how it worked.
+
+Within a minute or two, I’ve been assigned my own stylist — Elle Warren Thomas (no relation) — and make my way through a number of screens to establish my style; the fashion equivalent of ‘risk appetite’.
+
+30 minutes later, I’ve been e-mailed five outfits, with a brief introduction describing why the ‘look’ has been suggested, and the key elements of each outfit itemised with detailed pictures and links to the makers’ sites.
+
+If I message Elle to check sizings and things like that, she takes no longer than 30 minutes to reply — usually within less than five minutes.
+
+Of course people will say: ‘Well it’s much easier to do that when it’s clothes but we’re talking about often complex financial products!’
+
+But that’s codswallop.
+
+That’s what other residents of the archipelago would say.
+
+It’s about advice experience, not products.
+
+And, besides, I’m not saying it’s easy to create a brand of online financial advice that emulates Thread’s service. I’m saying it’s worth putting in the hard work to create service design that’s able to deliver a financial advice experience that is as elegantly frictionless and enriching as Thread.
+
+----
+
+Relatedlinks: 
+
+- 
+  title: Thread.com
+  link: http://thread.com
+
+----
+
+Tags: Service Design,Brand
+
+----
+
+Comments: 
+
+----
+
+Nextpost: 1

@@ -3,8 +3,10 @@
   <div class="grid">
     <?php foreach ($site->find('journal')->children()->filterBy('featured', '1')->visible()->limit(1) as $featured): ?>
       <a href="<?php echo $featured->url() ?>" class="post col-2-3 <?php echo $featured->template() ?>"> 
-        <?php $file = $featured->hero()->toFile() ?>
-        <div class="post-img" style="background-image: url(<?php echo thumb($file, array('width' => 715, 'height' => 300, 'quality' => 75, 'crop' => true))->url() ?>);"></div>
+        <?php if(!$featured->hero()->empty()): ?>
+          <?php $file = $featured->hero()->toFile() ?>
+          <div class="post-img" style="background-image: url(<?php echo thumb($file, array('width' => 715, 'height' => 300, 'quality' => 75, 'crop' => true))->url() ?>);"></div>
+        <?php endif ?>
         <div class="meta">
           <span class="meta-cat h5">
           <?php if ($featured->template() == 'longread'): ?>Long Read
@@ -24,8 +26,10 @@
     <?php endforeach ?>
     <?php foreach ($site->find('work')->children()->filterBy('featured', '1')->visible()->limit(1) as $featured): ?>
       <a href="<?php echo $featured->url() ?>" class="post col-1-3 <?php echo $featured->template() ?>">
+        <?php if(!$featured->hero()->empty()): ?>
         <?php $file = $featured->hero()->toFile() ?>
-        <div class="post-img" style="background-image: url(<?php echo thumb($file, array('width' => 715, 'height' => 260, 'quality' => 75, 'crop' => true))->url() ?>);"></div>
+          <div class="post-img" style="background-image: url(<?php echo thumb($file, array('width' => 715, 'height' => 260, 'quality' => 75, 'crop' => true))->url() ?>);"></div>
+        <?php endif; ?>
         <div class="meta">
           <span class="meta-cat h5">Case Study</span>
           <span class="meta-feat">Featured</span>
@@ -49,8 +53,10 @@
   <?php foreach ($site->find('journal','work')->children()->visible()->sortBy('date', 'desc')->limit(7) as $article): ?>
     <?php $count = 0 ?>
     <a href="<?php echo $article->url() ?>" class="post <?php echo $article->template() ?>">
-      <?php $file = $article->hero()->toFile() ?>
+      <?php if(!$article->hero()->empty()): ?>
+        <?php $file = $article->hero()->toFile() ?>
         <div class="post-img" style="background-image: url(<?php echo thumb($file, array('width' => 650, 'height' => 230, 'quality' => 75, 'crop' => true))->url() ?>);"></div>
+      <?php endif ?>
       <div class="meta">
         <span class="meta-cat h5">
         <?php if ($article->template() == 'longread'): ?>Long Read

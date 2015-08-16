@@ -28,8 +28,10 @@
     <?php foreach ($articles as $article): ?>
       <?php $count = 0 ?>
       <a href="<?php echo $article->url() ?>" class="post <?php echo $article->template() ?>">
-        <?php $file = $article->hero()->toFile() ?>
-        <img class="post-img" src="<?php echo thumb($file, array('width' => 715, 'height' => 300, 'quality' => 75, 'crop' => true))->url() ?>" alt="<?php $article->title()->html() ?>">
+        <?php if(!$article->hero()->empty()): ?>
+          <?php $file = $article->hero()->toFile() ?>
+          <img class="post-img" src="<?php echo thumb($file, array('width' => 715, 'height' => 300, 'quality' => 75, 'crop' => true))->url() ?>" alt="<?php $article->title()->html() ?>">
+        <?php endif; ?>
         <div class="meta">
           <span class="meta-cat h5"><?php if ($article->template() == 'longread'): ?>Long Read
           <?php elseif ($article->template() == 'news'): ?>News

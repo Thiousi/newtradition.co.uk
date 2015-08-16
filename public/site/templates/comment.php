@@ -2,12 +2,13 @@
 <section class="post-main grid" role="main">
   <article class="col-3-4 post">
     <h5>Comment</h5>
-    <a href="" title="<?php echo $page->title()->html() ?>" class="post-title"><h2><?php echo $page->title()->html() ?></h2></a>
-    <?php if($image = $page->image('hero.jpg')): ?>
+    <a href="<?php echo $page->titleurl() ?>" title="<?php echo $page->title()->html() ?>" class="post-title" target="_blank"><h2><?php echo $page->title()->html() ?></h2></a>
+    <?php if(!$page->hero()->empty()): ?>
+      <?php $file = $page->hero()->toFile() ?>
       <figure class="post-hero">
-        <div class="post-hero-img" style="background-image: url(<?php echo thumb($image, array('width' => 1200, 'height' => 600, 'quality' => 85, 'crop' => true))->url() ?>);"></div>
+        <div class="post-hero-img" style="background-image: url(<?php echo thumb($file, array('width' => 1200, 'height' => 600, 'quality' => 85, 'crop' => true))->url() ?>);"></div>
         <div class="grid">
-          <figcaption class="col-3-4 col-3-4-offset"><?php $image->caption()->html() ?> This is caption</figcaption>
+          <figcaption class="col-3-4 col-3-4-offset"><?php echo $file->caption() ?></figcaption>
         </div>
       </figure>
     <?php endif ?>
