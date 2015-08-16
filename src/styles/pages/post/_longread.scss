@@ -114,7 +114,7 @@
       margin-top: 25px;
 
       @media screen and ( max-width: $medium ) {
-        font-size: $beta;
+        font-size: $beta - 4px;
       }
     }
   }

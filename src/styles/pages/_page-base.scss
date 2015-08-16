@@ -1,5 +1,6 @@
 .featured {
   background-color: $slate;
+  border-bottom: none;
   padding-top: 40px;
   padding-bottom: 30px;
   margin-bottom: 20px;
@@ -80,6 +81,7 @@ a.featured:hover {
   padding-bottom: 15px;
   position: relative;
   display: block;
+  border-bottom: none;
 
   * {
     transition: 0.2s;
@@ -106,6 +108,10 @@ a.featured:hover {
     .btn-more {
       transform: scale(0.95);
       opacity: 0;
+    }
+
+    h3 {
+      color: $ink;
     }
 
     &:hover {
@@ -196,8 +202,11 @@ a.featured:hover {
     margin-bottom: 15px;
   }
 
+  p, li, table {
+    color: darken($light-ink, 5);
+  }
+
   p {
-    color: $light-ink;
     margin-bottom: 15px;
   }
 

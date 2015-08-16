@@ -24,7 +24,8 @@
     }
   }
 
-  h2, h5 {
+  h2, 
+  h5 {
     color: white;
   }
 
@@ -68,12 +69,24 @@
     padding-top: 0;
 
     h3 {
-      font-size: $beta + 4px;
+      font-size: $beta + 2px;
       font-family: $sans;
       font-weight: $sans-regular;
       color: $primary;
-      line-height: 1.3;
-      margin-bottom: 25px;
+      line-height: 1.2;
+      margin-top: 35px;
+      margin-bottom: 15px;
+
+      &:first-of-type {
+        line-height: 1.3;
+        margin-top: 0;
+        margin-bottom: 25px;
+      }
+
+      a {
+        color: $primary;
+        border-bottom: 3px solid rgba($primary, 0.1);
+      }
 
       @media screen and ( max-width: $medium ) {
         font-size: $beta;
@@ -85,7 +98,7 @@
       margin: 40px 0 20px;
       font-weight: $sans-bold;
       font-family: $sans;
-      line-height: 1.1;
+      line-height: 1.2;
     }
 
     p, li {

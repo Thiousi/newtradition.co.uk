@@ -81,7 +81,11 @@ ol {
 
 ul {
   padding: 0;
-  list-style: none;
+
+  li {
+    margin-left: 20px;
+    margin-bottom: 30px;
+  }
 
   ul, ul ul {
     margin-bottom: 0;

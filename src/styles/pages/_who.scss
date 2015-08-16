@@ -4,10 +4,6 @@
   padding-bottom: 60px;
   border-bottom: 1px solid darken($slate, 3);
 
-  // &:last-of-type {
-  //   border-bottom: none;
-  // }
-
   @media screen and ( max-width: $medium ) {
     padding-top: 50px;
     padding-bottom: 30px;
@@ -55,6 +51,10 @@
 
   @media screen and ( max-width: $medium ) {
     height: 300px;
+  }
+
+  a {
+    border-bottom: none;
   }
 }
 

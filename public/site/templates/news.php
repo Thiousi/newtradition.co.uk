@@ -5,14 +5,13 @@
     <h2 class="col-3-4"><?php echo $page->title()->html() ?></h2>
   </div>
 </hgroup>
-<?php if($image = $page->image('hero.jpg')): ?>
-  <figure class="post-hero">
-    <div class="post-hero-img" style="background-image: url(<?php echo thumb($image, array('width' => 1200, 'height' => 600, 'quality' => 85, 'crop' => true))->url() ?>);"></div>
-    <div class="grid">
-      <figcaption class="col-3-4 col-3-4-offset"><?php $image->caption()->html() ?> This is caption</figcaption>
-    </div>
-  </figure>
-<?php endif ?>
+<?php $file = $page->hero()->toFile() ?>
+<figure class="post-hero">
+  <div class="post-hero-img" style="background-image: url(<?php echo thumb($file, array('width' => 1200, 'height' => 600, 'quality' => 85, 'crop' => true))->url() ?>);"></div>
+  <div class="grid">
+    <figcaption class="col-3-4 col-3-4-offset"><?php echo $file->caption() ?></figcaption>
+  </div>
+</figure>
 <section class="post-main grid" role="main">
   <article class="col-3-4 post">
     <?php echo $page->text()->kirbytext() ?>

@@ -1,19 +1,11 @@
 a {
-  color: $ink;
+  color: $primary;
+  border-bottom: 3px solid rgba($primary, 0.1);
   text-decoration: none;
   transition: 0.2s;
-
-  &:hover, &.hover {
-    cursor: pointer;
-    color: lighten($ink, 10);
-  }
-
-  &:active, &.active {
-    color: darken($ink, 10);
-  }
-
-  &.visited {
-    color: darken($ink, 15);
+    
+  &:hover {
+    border-bottom-color: rgba($primary, 0.3);
   }
 }
 
