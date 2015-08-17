@@ -294,7 +294,7 @@ h2, .h2, .map-wrap h2 a {
   line-height: 1; }
   @media screen and (max-width: 570px) {
     h2, .h2, .map-wrap h2 a {
-      font-size: 48px; } }
+      font-size: 44px; } }
 
 h3, .h3 {
   font-size: 32px;
@@ -1747,4 +1747,38 @@ a.featured:hover {
     display: table;
     clear: both; }
 .comment .tag-list li {
+  display: inline-block; }
+
+.casestudy .title {
+  display: none; }
+.casestudy .post-head {
+  padding: 70px 0 100px;
+  text-align: center;
+  background-color: #E30613; }
+  @media screen and (max-width: 800px) {
+    .casestudy .post-head h2 {
+      clear: both;
+      line-height: 1.15; }
+      .casestudy .post-head h2:after {
+        content: "";
+        display: table;
+        clear: both; } }
+  .casestudy .post-head h3 {
+    font-size: 36px;
+    color: #80030b; }
+  .casestudy .post-head h5 {
+    margin: 10px auto 70px;
+    color: white;
+    max-width: 500px;
+    border-bottom: 5px solid rgba(255, 255, 255, 0.2);
+    padding: 0 50px 20px;
+    display: table;
+    letter-spacing: 5px; }
+.casestudy .post-meta {
+  border-top: 1px solid #e2e2e2;
+  margin: 30px 0 0;
+  padding: 15px 0 0; }
+  .casestudy .post-meta h5 {
+    margin-bottom: 10px; }
+.casestudy .cat-list li, .casestudy .tag-list li {
   display: inline-block; }

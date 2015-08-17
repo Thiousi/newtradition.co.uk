@@ -9,6 +9,7 @@ password: >
 language: en
 role: admin
 history:
+  - work/axa-wealth
   - >
     journal/executive-pay-excesses-spark-swiss-movement
   - >
@@ -17,4 +18,3 @@ history:
     journal/the-bebanking-talk-i-nearly-gave-at-tedxcheltenham
   - >
     journal/the-kind-of-unspun-papal-spin-that-couldnt-be-spun-by-pr-spinners
-  - journal/monocles-soft-power-survey-2013

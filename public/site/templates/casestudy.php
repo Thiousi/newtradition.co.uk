@@ -1,14 +1,21 @@
 <?php snippet('header') ?>
-
-  <section class="main" role="main">
-
-    <div class="text">
-      <h1><?php echo $page->title()->html() ?></h1>
-      <?php echo $page->text()->kirbytext() ?>
+<header class="post-head">
+  <div class="grid">
+    <h5>Case Study</h5>
+    <h2><?php echo $page->title()->html() ?></h2>
+    <h3><?php echo $page->client()->html() ?></h3>
+  </div>
+</header>
+<?php if(!$page->hero()->empty()): ?>
+  <?php $file = $page->hero()->toFile() ?>
+  <figure class="post-hero">
+    <div class="post-hero-img" style="background-image: url(<?php echo thumb($file, array('width' => 1200, 'height' => 600, 'quality' => 90, 'crop' => true))->url() ?>);"></div>
+    <?php if(!$file->caption()->empty()): ?>
+    <div class="grid">
+      <figcaption class="col-3-4 col-3-4-offset"><?php echo $file->caption() ?></figcaption>
     </div>
-
-    <?php snippet('projects') ?>
-
-  </section>
+    <?php endif ?>
+  </figure>
+<?php endif ?>
 
 <?php snippet('footer') ?>
