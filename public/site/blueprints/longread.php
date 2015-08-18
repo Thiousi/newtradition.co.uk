@@ -46,7 +46,6 @@ fields:
     label: Summary
     type: textarea
     required: true
-    buttons:
   text:
     label: Article
     type:  markdown

@@ -18,7 +18,7 @@
       <?php if(!$page->hero()->empty()): ?>
         <figcaption class="col-3-4 col-3-4-offset"> <?php echo $file->caption() ?></figcaption>
       <?php endif ?>
-      <h3 class="col-3-4 col-3-4-offset"><?php echo $page->summary()->html() ?></h3>
+      <h3 class="col-3-4 col-3-4-offset"><?php echo $page->summary()->kirbytext() ?></h3>
     </div>
   </div>
 </header>

@@ -24,6 +24,7 @@ button {
 
   &:hover {
     opacity: 0.7;
+    border: 1px solid $ink;
   }
 
   &.btn-small {

@@ -11,10 +11,10 @@
   <?php if ($page->isHomePage()): ?>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
   <?php endif ?>
-  <?php if($page->hasTemplate('who')): ?>
+  <?php if($page->template() == 'who'): ?>
     <script src="https://maps.googleapis.com/maps/api/js?v=3.exp"></script>
   <?php endif ?>
-  <?php echo js('assets/js/main.js') ?>
+  <?php echo js('assets/js/main.min.js') ?>
   <?php echo js('@auto') ?>
 </body>
 </html>

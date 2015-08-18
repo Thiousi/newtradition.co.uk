@@ -10,11 +10,12 @@ language: en
 role: admin
 history:
   - >
+    journal/britains-brand-this-frail-travelling-coincidence
+  - >
+    journal/are-trade-unions-the-answer-to-the-economic-crisis
+  - >
     journal/executive-pay-excesses-spark-swiss-movement
   - >
     journal/apples-tim-cook-and-the-distinction-between-brand-and-branding
   - >
     journal/the-bebanking-talk-i-nearly-gave-at-tedxcheltenham
-  - >
-    journal/the-kind-of-unspun-papal-spin-that-couldnt-be-spun-by-pr-spinners
-  - journal/monocles-soft-power-survey-2013

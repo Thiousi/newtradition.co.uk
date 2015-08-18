@@ -545,7 +545,8 @@ input, textarea {
   opacity: 0.3;
   position: relative; }
   .btn-line:hover {
-    opacity: 0.7; }
+    opacity: 0.7;
+    border: 1px solid #39333F; }
   .btn-line.btn-small {
     padding: 10px 17px;
     font-size: 16px; }
@@ -1499,7 +1500,7 @@ a.featured:hover {
       line-height: 1.2; }
     .post-main .post p, .post-main .post li {
       font-size: 20px; }
-    .post-main .post figure {
+    .post-main .post figure, .post-main .post iframe {
       margin: 30px 0; }
     @media screen and (min-width: 800px) {
       .post-main .post blockquote, .post-main .post figure.left {
@@ -1641,8 +1642,7 @@ a.featured:hover {
   clear: both;
   background-color: rgba(234, 234, 234, 0.95);
   color: #E30613;
-  padding-top: 5px;
-  padding-bottom: 20px; }
+  padding-top: 10px; }
   .longread .post-subhead:after {
     content: "";
     display: table;
