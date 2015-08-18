@@ -33,8 +33,8 @@ fields:
   line-a:
     type: line
   text:
-    label: Text
-    type:  textarea
+    label: Comment
+    type:  markdown
   line-b:
     type: line
   tags:

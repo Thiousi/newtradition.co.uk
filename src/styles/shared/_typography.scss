@@ -36,7 +36,7 @@ h2, .h2 {
   line-height: 1;
 
   @media screen and ( max-width: $small ) {
-    font-size: $mega;
+    font-size: $mega - 4px;
   }
 }
 

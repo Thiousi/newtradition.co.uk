@@ -294,7 +294,7 @@ h2, .h2, .map-wrap h2 a {
   line-height: 1; }
   @media screen and (max-width: 570px) {
     h2, .h2, .map-wrap h2 a {
-      font-size: 48px; } }
+      font-size: 44px; } }
 
 h3, .h3 {
   font-size: 32px;
@@ -545,8 +545,7 @@ input, textarea {
   opacity: 0.3;
   position: relative; }
   .btn-line:hover {
-    opacity: 0.7;
-    border: 1px solid #39333F; }
+    opacity: 0.7; }
   .btn-line.btn-small {
     padding: 10px 17px;
     font-size: 16px; }
@@ -1500,7 +1499,7 @@ a.featured:hover {
       line-height: 1.2; }
     .post-main .post p, .post-main .post li {
       font-size: 20px; }
-    .post-main .post figure, .post-main .post iframe {
+    .post-main .post figure {
       margin: 30px 0; }
     @media screen and (min-width: 800px) {
       .post-main .post blockquote, .post-main .post figure.left {
@@ -1642,7 +1641,8 @@ a.featured:hover {
   clear: both;
   background-color: rgba(234, 234, 234, 0.95);
   color: #E30613;
-  padding-top: 10px; }
+  padding-top: 5px;
+  padding-bottom: 20px; }
   .longread .post-subhead:after {
     content: "";
     display: table;
@@ -1747,4 +1747,38 @@ a.featured:hover {
     display: table;
     clear: both; }
 .comment .tag-list li {
+  display: inline-block; }
+
+.casestudy .title {
+  display: none; }
+.casestudy .post-head {
+  padding: 70px 0 100px;
+  text-align: center;
+  background-color: #E30613; }
+  @media screen and (max-width: 800px) {
+    .casestudy .post-head h2 {
+      clear: both;
+      line-height: 1.15; }
+      .casestudy .post-head h2:after {
+        content: "";
+        display: table;
+        clear: both; } }
+  .casestudy .post-head h3 {
+    font-size: 36px;
+    color: #80030b; }
+  .casestudy .post-head h5 {
+    margin: 10px auto 70px;
+    color: white;
+    max-width: 500px;
+    border-bottom: 5px solid rgba(255, 255, 255, 0.2);
+    padding: 0 50px 20px;
+    display: table;
+    letter-spacing: 5px; }
+.casestudy .post-meta {
+  border-top: 1px solid #e2e2e2;
+  margin: 30px 0 0;
+  padding: 15px 0 0; }
+  .casestudy .post-meta h5 {
+    margin-bottom: 10px; }
+.casestudy .cat-list li, .casestudy .tag-list li {
   display: inline-block; }

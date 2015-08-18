@@ -9,6 +9,7 @@ password: >
 language: en
 role: admin
 history:
+  - work/axa-wealth
   - >
     journal/britains-brand-this-frail-travelling-coincidence
   - >
@@ -19,3 +20,5 @@ history:
     journal/apples-tim-cook-and-the-distinction-between-brand-and-branding
   - >
     journal/the-bebanking-talk-i-nearly-gave-at-tedxcheltenham
+  - >
+    journal/the-kind-of-unspun-papal-spin-that-couldnt-be-spun-by-pr-spinners
