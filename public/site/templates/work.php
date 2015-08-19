@@ -7,9 +7,9 @@
         <span class="meta-cat h5">Case Study</span>
       </div>
       <div class="col-3-4">
-        <h2><?php echo $featured->title()->html() ?></h2>
+        <h2><?php echo $featured->client() ?></h2>
         <h3><strong><?php echo $featured->date('F Y') ?></strong></h3>
-        <h3><?php echo $featured->title()->html() ?></h3>
+        <h3><?php echo $featured->title() ?></h3>
       </div>
     </div>
   </a>

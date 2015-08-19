@@ -265,6 +265,7 @@ a.featured:hover {
 
   h3 {
     font-size: $beta + 6px;
+    color: $ink;
 
     @media screen and ( max-width: $small ) {
       font-size: $beta + 2px;

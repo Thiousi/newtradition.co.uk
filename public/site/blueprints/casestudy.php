@@ -11,6 +11,7 @@ fields:
   client:
     label: Client
     type: text
+    required: true
   date:
     label: Date
     type:  date
@@ -32,9 +33,13 @@ fields:
         - image
   line-a:
     type: line
+  summary:
+    label: Summary
+    type: textarea
   text:
-    label: Comment
+    label: Text
     type:  markdown
+    required: true
   line-b:
     type: line
   tags:

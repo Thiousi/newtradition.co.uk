@@ -9,8 +9,11 @@
     text-align: center;
     background-color: $primary;
 
-    h2 {
+    @media screen and ( max-width: $medium ) {
+      padding: 45px 0 30px;
+    }
 
+    h2 {
       @media screen and ( max-width: $medium ) {
         @include clearfix;
         line-height: 1.15;
@@ -30,27 +33,67 @@
       padding: 0 50px 20px;
       display: table;
       letter-spacing: 5px;
+
+      @media screen and ( max-width: $medium ) {
+        margin-bottom: 30px;
+      }
     }
   }
 
-  .post-hero-img {
+  .post-hero-img {}
+
+  .post {
+    margin: 0 auto;
+    max-width: 680px;
+    padding: $gutter * 2 $gutter;
+
+    @media screen and ( max-width: $medium ) {
+      padding: $gutter;
+    }
+
+    p, li {
+      font-size: $delta + 2px;
+    } 
+  }
+
+  .post-summary {
+    background-color: $slate;
+    border-bottom: none;
+    padding: 40px $gutter 30px;
+    margin-bottom: 20px;
+    display: block;
+
+    @media screen and ( max-width: $medium ) {
+      padding: 20px $gutter;
+    }
+
+    .grid {
+      max-width: 700px;
+    }
+  }
+
+  .summary p {
+    font-size: $beta + 4px;
+    font-family: $sans;
+    font-weight: $sans-regular;
+    color: $primary;
+    line-height: 1.3;
+    margin-top: 20px;
+    margin-bottom: 20px;
+
+    @media screen and ( max-width: $medium ) {
+      font-size: $beta - 4px;
+    }
+  }
+
+  .post-actions {
+    padding-top: 20px;
+
+    @media screen and ( min-width: $medium ) {
+      display: table;
+      margin: 0 auto;
+    }
     
   }
 
-  .post-meta {
-    border-top: 1px solid darken($slate, 3);
-    margin: 30px 0 0;
-    padding: 15px 0 0;
-
-    h5 {
-      margin-bottom: 10px;
-    }
-  }
-
-  .cat-list,
-  .tag-list {
-    li {
-      display: inline-block;
-    }
-  }
 }

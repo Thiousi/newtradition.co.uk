@@ -29,26 +29,6 @@
       }
     }
 
-    .post:nth-of-type(7),
-    .post:nth-of-type(14) {
-      width: 66.66%;
-
-      img,
-      .post-img,
-      & + .post .post-img {
-        height: 240px;
-        display: block;
-      }
-
-      & + .post .post-img {
-        height: 240px;
-      }
-
-      & + .post + .post .post-img {
-        display: none;
-      }
-    }
-
     .post:nth-of-type(8) {
       width: 100%;
 
@@ -60,8 +40,11 @@
 
     .post:first-of-type,
     .post:nth-of-type(2),
+    .post:nth-of-type(6),
+    .post:nth-of-type(7),
     .post:nth-of-type(12),
-    .post:nth-of-type(13) {
+    .post:nth-of-type(13),
+    .post:nth-of-type(14) {
       width: 50%;
 
       .post-img {

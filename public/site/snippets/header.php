@@ -6,8 +6,8 @@
   <meta name="viewport" content="width=device-width,initial-scale=1.0">
   <title><?php echo html($site->title()) ?> – <?php if ($page->isHomePage()): ?><?php echo html($site->subtitle()) ?><?php else: ?><?php echo $page->title()->html() ?><?php endif ?></title>
   <meta name="description" content="<?php echo $site->description()->html() ?>">
-  <meta name="keywords" content="<?php echo html($site->keywords()) ?>">
-  <link rel="icon" href="<?php echo $site->image('favicon.ico') ?>" type="image/x-icon">
+  <meta name="keywords" content="<?php echo $site->keywords()->html() ?>">
+  <link rel="icon" href="../assets/images/favicon.ico" type="image/x-icon">
   <script src="//use.typekit.net/gjw4ybb.js"></script>
   <script>try{Typekit.load();}catch(e){}</script>
   <?php echo FTMD::css('main.min'); ?>
