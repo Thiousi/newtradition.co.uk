@@ -10,7 +10,7 @@ Author: ian
 
 ----
 
-Featured: 
+Featured: 1
 
 ----
 
@@ -74,7 +74,7 @@ Relatedlinks:
 
 ----
 
-Tags: Service Design,Brand
+Tags: Brand,Service Design
 
 ----
 

@@ -129,3 +129,9 @@ if (journalStream !== null) {
     }
   }
 }
+
+// If tag contains hyphen, replace with space
+var tagArray = document.getElementsByClassName("tag");
+for(var i = (tagArray.length - 1); i >= 0; i--) {
+  tagArray[i].innerHTML.replace(/-/g, " ");
+}

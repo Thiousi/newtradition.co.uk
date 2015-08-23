@@ -14,15 +14,17 @@
 @import "snippets/footer";
 @import "snippets/stream";
 
-@import "pages/page-base";
+@import "pages/base";
 @import "pages/error";
 @import "pages/home";
 @import "pages/journal";
 @import "pages/work";
 @import "pages/who";
 
-@import "pages/post/post";
+@import "pages/post/base";
 @import "pages/post/news";
 @import "pages/post/longread";
 @import "pages/post/comment";
-@import "pages/post/casestudy";
+
+@import "pages/casestudy/base";
+@import "pages/casestudy/related";

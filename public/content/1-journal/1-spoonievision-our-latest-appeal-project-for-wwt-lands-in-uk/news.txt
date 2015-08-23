@@ -10,7 +10,7 @@ Author: ian
 
 ----
 
-Featured: 1
+Featured: 
 
 ----
 

@@ -62,7 +62,7 @@
       <?php $tags = $page->children()->visible()->pluck('tags', ',', true);?>
       <ul class="tag-list">
         <?php foreach($tags as $tag): ?>
-          <li><a href="<?php echo $page->url() . '/tag:' . $tag ?>" class="tag"><?php echo html($tag) ?></a></li>
+          <li><a href="<?php echo $page->url() . '/tag:' . urlencode($tag) ?>" class="tag"><?php echo html($tag) ?></a></li>
         <?php endforeach ?>
       </ul>
     </div>

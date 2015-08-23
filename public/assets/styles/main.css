@@ -392,15 +392,15 @@ figcaption, figcaption[class*="col-"] {
     opacity: 0.15;
     top: 2px;
     left: -2px; }
-  img + figcaption, .post-head figcaption, .post-hero figcaption, img + figcaption[class*="col-"], .post-head figcaption[class*="col-"], .post-hero figcaption[class*="col-"] {
+  img + figcaption, .post-head figcaption, .news figcaption, .casestudy figcaption, img + figcaption[class*="col-"], .post-head figcaption[class*="col-"], .news figcaption[class*="col-"], .casestudy figcaption[class*="col-"] {
     padding-left: 25px; }
-    img + figcaption:after, .post-head figcaption:after, .post-hero figcaption:after, img + figcaption[class*="col-"]:after, .post-head figcaption[class*="col-"]:after, .post-hero figcaption[class*="col-"]:after {
+    img + figcaption:after, .post-head figcaption:after, .news figcaption:after, .casestudy figcaption:after, img + figcaption[class*="col-"]:after, .post-head figcaption[class*="col-"]:after, .news figcaption[class*="col-"]:after, .casestudy figcaption[class*="col-"]:after {
       width: 21px;
       height: 16px;
       background-repeat: no-repeat;
       background-image: url(../images/sprite.svg);
       background-position: -147px 0px; }
-  .post-head figcaption, .post-hero figcaption, .post-head figcaption[class*="col-"], .post-hero figcaption[class*="col-"] {
+  .post-head figcaption, .news figcaption, .casestudy figcaption, .post-head figcaption[class*="col-"], .news figcaption[class*="col-"], .casestudy figcaption[class*="col-"] {
     padding-left: 35px; }
   .comment figcaption, .comment figcaption[class*="col-"] {
     padding-left: 25px; }
@@ -1444,7 +1444,23 @@ a.featured:hover {
 
 .post-hero {
   margin: 0;
-  width: 100%; }
+  width: 100%;
+  position: relative; }
+  .post-hero:before, .post-hero:after {
+    content: "";
+    overflow: hidden;
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 5px;
+    background: -webkit-linear-gradient(rgba(0, 0, 0, 0.1), transparent);
+    background: linear-gradient(rgba(0, 0, 0, 0.1), transparent);
+    top: 0; }
+  .post-hero:after {
+    top: auto;
+    bottom: 0;
+    background: -webkit-linear-gradient(transparent, rgba(0, 0, 0, 0.1));
+    background: linear-gradient(transparent, rgba(0, 0, 0, 0.1)); }
 
 .post-hero-img {
   height: 400px;
@@ -1490,8 +1506,11 @@ a.featured:hover {
       font-weight: 700;
       font-family: 'ff-dagny-web-pro', helvetica, sans-serif;
       line-height: 1.2; }
+      .post-main .post h4:first-child {
+        margin-top: 0; }
     .post-main .post p, .post-main .post li {
-      font-size: 20px; }
+      font-size: 20px;
+      line-height: 1.45; }
     .post-main .post figure, .post-main .post iframe {
       margin: 30px 0; }
     @media screen and (min-width: 800px) {
@@ -1552,7 +1571,7 @@ a.featured:hover {
   left: 6px; }
 
 .longread .gbl-head {
-  background-color: rgba(227, 6, 19, 0.85);
+  background-color: rgba(227, 6, 19, 0.95);
   position: absolute;
   width: 100%; }
 .longread .post-head {
@@ -1633,6 +1652,8 @@ a.featured:hover {
 .longread .post-subhead {
   clear: both;
   background-color: rgba(234, 234, 234, 0.95);
+  box-shadow: -10px 0 5px -10px black;
+  position: relative;
   color: #E30613;
   padding-top: 10px; }
   .longread .post-subhead:after {
@@ -1665,12 +1686,6 @@ a.featured:hover {
       padding-bottom: 15px; }
       .comment .post .post-actions {
         padding: 20px 0 30px; } }
-  .comment .post p, .comment .post li {
-    font-size: 22px;
-    line-height: 1.5; }
-    @media screen and (max-width: 800px) {
-      .comment .post p, .comment .post li {
-        font-size: 20px; } }
 .comment .post-title {
   display: block;
   margin: 60px 0;
@@ -1772,9 +1787,28 @@ a.featured:hover {
     @media screen and (max-width: 800px) {
       .casestudy .post-head h5 {
         margin-bottom: 30px; } }
+.casestudy .post-hero {
+  position: relative; }
+  .casestudy .post-hero:before, .casestudy .post-hero:after {
+    content: "";
+    overflow: hidden;
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 5px;
+    background: -webkit-linear-gradient(rgba(0, 0, 0, 0.1), transparent);
+    background: linear-gradient(rgba(0, 0, 0, 0.1), transparent);
+    top: 0; }
+  .casestudy .post-hero:after {
+    top: auto;
+    bottom: 0;
+    background: -webkit-linear-gradient(transparent, rgba(0, 0, 0, 0.1));
+    background: linear-gradient(transparent, rgba(0, 0, 0, 0.1)); }
+.casestudy .post-main {
+  margin-bottom: 0; }
 .casestudy .post {
   margin: 0 auto;
-  max-width: 680px;
+  max-width: 700px;
   padding: 20px 10px; }
   @media screen and (max-width: 800px) {
     .casestudy .post {
@@ -1783,8 +1817,9 @@ a.featured:hover {
     font-size: 20px; }
 .casestudy .post-summary {
   background-color: #EAEAEA;
+  background-color: white;
   border-bottom: none;
-  padding: 40px 10px 30px;
+  padding: 30px 10px;
   margin-bottom: 20px;
   display: block; }
   @media screen and (max-width: 800px) {
@@ -1804,8 +1839,21 @@ a.featured:hover {
     .casestudy .summary p {
       font-size: 28px; } }
 .casestudy .post-actions {
-  padding-top: 20px; }
+  padding-top: 10px; }
   @media screen and (min-width: 800px) {
     .casestudy .post-actions {
+      padding-top: 35px;
       display: table;
       margin: 0 auto; } }
+
+.related-casestudy {
+  background-color: #EAEAEA;
+  margin: 30px 0 0;
+  padding-top: 0; }
+  .related-casestudy h2 {
+    top: -35px;
+    margin-left: 7px;
+    margin-bottom: -10px; }
+    @media screen and (max-width: 570px) {
+      .related-casestudy h2 {
+        top: -30px; } }

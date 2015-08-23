@@ -9,12 +9,12 @@ password: >
 language: en
 role: admin
 history:
-  - >
-    journal/executive-pay-excesses-spark-swiss-movement
   - work/axa-wealth
   - >
-    journal/britains-brand-this-frail-travelling-coincidence
+    journal/the-bebanking-talk-i-nearly-gave-at-tedxcheltenham
   - >
-    journal/are-trade-unions-the-answer-to-the-economic-crisis
+    journal/to-create-an-online-financial-advice-brand-become-a-follower-of-fashion
   - >
-    journal/apples-tim-cook-and-the-distinction-between-brand-and-branding
+    journal/spoonievision-our-latest-appeal-project-for-wwt-lands-in-uk
+  - >
+    journal/executive-pay-excesses-spark-swiss-movement

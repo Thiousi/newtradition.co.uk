@@ -1,6 +1,6 @@
 .longread {
   .gbl-head {
-    background-color: rgba($primary, 0.85);
+    background-color: rgba($primary, 0.95);
     position: absolute;
     width: 100%;
   }
@@ -101,6 +101,8 @@
   .post-subhead {
     @include clearfix;
     background-color: rgba($slate, 0.95);
+    box-shadow: -10px 0 5px -10px rgba(black, 1);
+    position: relative;
     color: $primary;
     padding-top: 10px;
 

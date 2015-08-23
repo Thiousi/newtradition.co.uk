@@ -43,6 +43,22 @@
 .post-hero {
   margin: 0;
   width: 100%;
+  position: relative;
+
+  &:before,
+  &:after {
+    @include icon-pseudo;
+    width: 100%;
+    height: 5px;
+    background: linear-gradient(rgba(black, 0.1), transparent);
+    top: 0;
+  }
+
+  &:after {
+    top: auto;
+    bottom: 0;
+    background: linear-gradient(transparent, rgba(black, 0.1));
+  }
 }
 
 .post-hero-img {
@@ -103,10 +119,15 @@
       font-weight: $sans-bold;
       font-family: $sans;
       line-height: 1.2;
+
+      &:first-child {
+        margin-top: 0;
+      }
     }
 
     p, li {
       font-size: $delta + 2px;
+      line-height: 1.45;
     }
 
     figure,

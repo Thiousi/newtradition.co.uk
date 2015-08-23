@@ -29,5 +29,5 @@
     </aside>
   </article>
 </section>
-
+<?php snippet('related-casestudy') ?>
 <?php snippet('footer') ?>

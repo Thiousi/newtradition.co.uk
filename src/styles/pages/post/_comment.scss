@@ -9,15 +9,6 @@
         padding: 20px 0 30px;
       }
     }
-
-    p, li {
-      font-size: $delta + 4px;
-      line-height: 1.5;
-
-      @media screen and ( max-width: $medium ) {
-        font-size: $delta + 2px;
-      }
-    }
   }
 
   .post-title {

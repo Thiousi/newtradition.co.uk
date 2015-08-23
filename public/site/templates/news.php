@@ -9,12 +9,12 @@
   <?php $file = $page->hero()->toFile() ?>
   <figure class="post-hero">
     <div class="post-hero-img" style="background-image: url(<?php echo thumb($file, array('width' => 1200, 'height' => 600, 'quality' => 90, 'crop' => true))->url() ?>);"></div>
-    <?php if(!$file->caption()->empty()): ?>
-    <div class="grid">
-      <figcaption class="col-3-4 col-3-4-offset"><?php echo $file->caption() ?></figcaption>
-    </div>
-    <?php endif ?>
   </figure>
+  <?php if(!$file->caption()->empty()): ?>
+  <div class="grid">
+    <figcaption class="col-3-4 col-3-4-offset"><?php echo $file->caption() ?></figcaption>
+  </div>
+  <?php endif ?>
 <?php endif ?>
 <section class="post-main grid" role="main">
   <article class="col-3-4 post">

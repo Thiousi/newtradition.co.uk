@@ -1,5 +1,4 @@
 .casestudy {
-
   .title {
     display: none;
   }
@@ -40,11 +39,32 @@
     }
   }
 
-  .post-hero-img {}
+  .post-hero {
+    position: relative;
+
+    &:before,
+    &:after {
+      @include icon-pseudo;
+      width: 100%;
+      height: 5px;
+      background: linear-gradient(rgba(black, 0.1), transparent);
+      top: 0;
+    }
+
+    &:after {
+      top: auto;
+      bottom: 0;
+      background: linear-gradient(transparent, rgba(black, 0.1));
+    }
+  }
+
+  .post-main {
+    margin-bottom: 0;
+  }
 
   .post {
     margin: 0 auto;
-    max-width: 680px;
+    max-width: 700px;
     padding: $gutter * 2 $gutter;
 
     @media screen and ( max-width: $medium ) {
@@ -58,8 +78,9 @@
 
   .post-summary {
     background-color: $slate;
+    background-color: white;
     border-bottom: none;
-    padding: 40px $gutter 30px;
+    padding: 30px $gutter;
     margin-bottom: 20px;
     display: block;
 
@@ -87,13 +108,12 @@
   }
 
   .post-actions {
-    padding-top: 20px;
+    padding-top: 10px;
 
     @media screen and ( min-width: $medium ) {
+      padding-top: 35px;
       display: table;
       margin: 0 auto;
-    }
-    
+    } 
   }
-
 }
