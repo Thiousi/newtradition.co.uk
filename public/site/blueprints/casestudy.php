@@ -21,7 +21,6 @@ fields:
     label: Feature Case Study
     type: checkbox
     text: Featured
-    required: true
     width: 1/2
   excerpt:
     label: Excerpt

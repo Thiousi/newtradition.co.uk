@@ -9,6 +9,7 @@ password: >
 language: en
 role: admin
 history:
+  - work/test
   - work/axa-wealth
   - >
     journal/the-bebanking-talk-i-nearly-gave-at-tedxcheltenham
@@ -16,5 +17,3 @@ history:
     journal/to-create-an-online-financial-advice-brand-become-a-follower-of-fashion
   - >
     journal/spoonievision-our-latest-appeal-project-for-wwt-lands-in-uk
-  - >
-    journal/executive-pay-excesses-spark-swiss-movement

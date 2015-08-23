@@ -1688,7 +1688,7 @@ a.featured:hover {
         padding: 20px 0 30px; } }
 .comment .post-title {
   display: block;
-  margin: 60px 0;
+  margin: 30px 0 60px;
   position: relative;
   border-bottom: none; }
   @media screen and (max-width: 800px) {

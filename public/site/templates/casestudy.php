@@ -2,8 +2,8 @@
 <header class="post-head">
   <div class="grid">
     <h5>Case Study</h5>
-    <h2><?php echo $page->title()->html() ?></h2>
-    <h3><?php echo $page->client()->html() ?></h3>
+    <h2><?php echo $page->title() ?></h2>
+    <h3><?php echo $page->client() ?></h3>
   </div>
 </header>
 <?php if(!$page->hero()->empty()): ?>
@@ -29,5 +29,5 @@
     </aside>
   </article>
 </section>
-<?php snippet('related-casestudy') ?>
+<?php snippet('next-casestudy') ?>
 <?php snippet('footer') ?>

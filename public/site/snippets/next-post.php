@@ -16,7 +16,7 @@
       </div>
     </div>
   </a>
-<?php else: ?>
+<?php elseif ($page->hasPrevVisible()): ?>
   <a href="<?php echo $prev->url() ?>" class="featured post-next">
     <div class="grid">
       <h2>Previous post</h2>
@@ -32,4 +32,5 @@
       </div>
     </div>
   </a>
+<?php else: ?>
 <?php endif ?>
