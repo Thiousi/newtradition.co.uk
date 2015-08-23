@@ -202,7 +202,9 @@ a.featured:hover {
     margin-bottom: 15px;
   }
 
-  p, li, table {
+  p, 
+  li, 
+  table {
     color: darken($light-ink, 5);
   }
 

@@ -3,7 +3,8 @@
     display: none;
   }
 
-  .post-head {
+  .post-head,
+  .casestudy-next {
     padding: 70px 0 100px;
     text-align: center;
     background-color: $primary;
@@ -13,10 +14,7 @@
     }
 
     h2 {
-      @media screen and ( max-width: $medium ) {
-        @include clearfix;
-        line-height: 1.15;
-      }
+      line-height: 1.1;
     }
 
     h3 {
@@ -60,20 +58,32 @@
 
   .post-main {
     margin-bottom: 0;
-  }
 
-  .post {
-    margin: 0 auto;
-    max-width: 700px;
-    padding: $gutter * 2 $gutter;
+    .post {
+      margin: 0 auto;
+      max-width: 700px;
+      padding: $gutter * 2 $gutter;
 
-    @media screen and ( max-width: $medium ) {
-      padding: $gutter;
+      @media screen and ( max-width: $medium ) {
+        padding: $gutter;
+      }
+
+      p, li {
+        font-size: $delta + 2px;
+      } 
+
+      blockquote {
+        display: block;
+        margin: 40px;
+        float: none; 
+        padding: 40px 0;
+        max-width: 100%;
+
+        p {
+          font-size: $beta;
+        }
+      }
     }
-
-    p, li {
-      font-size: $delta + 2px;
-    } 
   }
 
   .post-summary {
@@ -115,5 +125,47 @@
       display: table;
       margin: 0 auto;
     } 
+  }
+
+  .casestudy-next {
+    background-color: $slate;
+    padding-top: 40px;
+    padding-bottom: 30px;
+    margin-bottom: 0;
+
+    @media screen and ( max-width: $medium ) {
+      padding: 25px 0 20px;
+    }
+
+    h2 {
+      display: block;
+      color: $ink;
+      font-size: $mega;
+
+      @media screen and ( max-width: $small ) {
+        font-size: $mega - 8px;
+      }
+    }
+
+    h3 {
+      color: $light-ink;
+      font-size: $beta;
+    }
+
+    h5 {
+      color: $primary;
+      border-bottom-color: rgba($light-ink, 0.1); 
+      margin-bottom: 30px;
+    }
+
+    &:hover {
+      h2 {
+        color: $primary;
+      }
+
+      h3 {
+        color: $ink;
+      }
+    }
   }
 }

@@ -9,8 +9,8 @@ password: >
 language: en
 role: admin
 history:
-  - work/test
   - work/axa-wealth
+  - work/test
   - >
     journal/the-bebanking-talk-i-nearly-gave-at-tedxcheltenham
   - >

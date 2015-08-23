@@ -1,20 +1,20 @@
 <?php $next = $page->nextVisible() ?>
 <?php $prev = $page->prevVisible() ?>
 <?php if ($page->hasNextVisible()): ?>
-  <aside class="next-casestudy">
+  <a href="<?php echo $next->url() ?>" class="featured casestudy-next">
     <div class="grid">
-      <h5>Case Study</h5>
-      <h2><?php echo $page->title() ?></h2>
-      <h3><?php echo $page->client() ?></h3>
+      <h5>Next Case Study</h5>
+      <h2><?php echo $next->title() ?></h2>
+      <h3><?php echo $next->client() ?></h3>
     </div>
-  </aside>
+  </a>
 <?php elseif ($page->hasPrevVisible()): ?>
-  <aside class="next-casestudy">
+  <a href="<?php echo $prev->url() ?>" class="featured casestudy-next">
     <div class="grid">
-      <h5>Case Study</h5>
-      <h2><?php echo $page->title() ?></h2>
-      <h3><?php echo $page->client() ?></h3>
+      <h5>Next Case Study</h5>
+      <h2><?php echo $prev->title() ?></h2>
+      <h3><?php echo $prev->client() ?></h3>
     </div>
-  </aside>
+  </a>
 <?php else: ?>
 <?php endif ?>
