@@ -19,6 +19,20 @@
     </div>
   </section>
 <?php endif ?>
+<?php if(!$page->gallery()->empty()): ?>
+  <section class="gallery-wrap">
+    <ul class="gallery">
+      <?php $filenames = $page->gallery()->split(',');
+        if(count($filenames) < 2) $filenames = array_pad($filenames, 2, '');
+        $files = call_user_func_array(array($page->files(), 'find'), $filenames); ?>
+      <?php foreach($files as $image): ?>
+      <li class="gallery-item">
+        <img src="<?php echo $image->url() ?>" alt="">
+      </li>
+      <?php endforeach ?>
+    </ul>
+  </section>
+<?php endif ?>
 <section class="post-main grid" role="main">
   <article class="post">
     <?php echo $page->text()->kirbytext() ?>

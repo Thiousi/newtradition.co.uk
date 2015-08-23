@@ -36,11 +36,19 @@ fields:
   summary:
     label: Summary
     type: textarea
+  gallery:
+    label: Gallery
+    type:  selector
+    mode:  multiple
+    types:
+        - image
+  line-b:
+    type: line
   text:
     label: Text
     type:  markdown
     required: true
-  line-b:
+  line-c:
     type: line
   tags:
     label: Tags

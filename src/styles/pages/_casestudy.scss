@@ -57,6 +57,7 @@
   }
 
   .post-main {
+    padding-top: 20px;
     margin-bottom: 0;
 
     .post {
@@ -91,7 +92,6 @@
     background-color: white;
     border-bottom: none;
     padding: 30px $gutter;
-    margin-bottom: 20px;
     display: block;
 
     @media screen and ( max-width: $medium ) {
