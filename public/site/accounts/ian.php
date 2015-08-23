@@ -5,7 +5,7 @@ firstname: Ian
 lastname: Thomas
 email: contact@petertait.com
 password: >
-  $2a$10$WOEPPwLfpdO48ayHPcFWAejkJmu.E5tICQd6JHsejAFjFPCp0NO3a
+  $2a$10$2gTEYq1qQKIucyFuWsDANuczs3r1w3kTPO6l3mYjaRbpuRqMe4Xu.
 language: en
 role: admin
 history:
