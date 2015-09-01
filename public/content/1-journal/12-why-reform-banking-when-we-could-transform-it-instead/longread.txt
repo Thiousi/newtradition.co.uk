@@ -1,0 +1,89 @@
+Title: Why reform banking when we could transform it instead?
+
+----
+
+Date: 2012-07-10
+
+----
+
+Author: ian
+
+----
+
+Featured: 
+
+----
+
+Excerpt: 
+
+----
+
+Hero: 
+
+----
+
+Summary: Once upon a time — a couple of years ago in fact — I was so alarmed by the high cost of payday loans advertised by brands like (link: http://www.quickquid.co.uk/ text: QuickQuid) and (link: https://www.wonga.com/ text: Wonga), that I started a small campaign called (link: http://www.independent.co.uk/money/loans-credit/should-the-oft-have-allowed-loans-at-rates-of-2500-a-year-2010954.html text: 2356percent).
+
+----
+
+Text: 
+
+One thing led to another and, thanks to (link: http://www.parliament.uk/biographies/commons/greg-mulholland/35617 text: Greg Mulholland MP), an (link: http://www.parliament.uk/edm/2009-10/1194 text: Early Day Motion), signed by about 30 MPs, was tabled in the House of Commons. Because of that campaign, I was invited to meet with (link: https://twitter.com/ed_wonga/ text: Errol Damelin), the chief executive of Wonga. We had a fascinating conversation and the 2356percent campaign has been pretty much dormant since.
+
+That’s not because Wonga persuaded me that their loans were a good thing; instead, I realised that campaigning against behaviour in a financial services ecosystem which spawns brands like Wonga is not the same as campaigning for an alternative kind of financial services industry.
+
+I reached the conclusion that — no matter how persuasive the (link: http://www.workingforwalthamstow.co.uk/category/legal-loan-shark-campaign/ text: calls for the regulation) of people like payday lenders from MPs like (link: https://twitter.com/stellacreasy/ text: Stella Creasy) — the financial services industry is unlikely to up its game until there’s an alternative way of doing things that really challenges the status quo.
+
+And by challenge, I mean really disruptive service design which fundamentally changes the way in which people are able to access financial services: just as iTunes has transformed music or (link: http://unbound.co.uk/ text: Unbound) has transformed publishing or (link: http://www.kickstarter.com/ text: Kickstarter) is transforming investment in ideas.
+
+In other words, I’m asking: how can people transform banking for themselves? Is it possible for people to build their own bank these days? (I’ll come to credit unions in a moment so just hold on for now.)
+
+#### The 'plus CA change plus meme CA change'  problem
+
+I’ve been keeping an eye on initiatives and innovations like (link: https://www.simple.com/ text: Simple) in the US and the work that Barclays has been doing with the (link: http://www.abcul.coop/media-and-research/briefings/generalpolicy text: Association of British Credit Unions Limited) on back office transactional platforms for credit unions (because Barclays do do good things as well).
+
+I have a soft spot for peer-to-peer models like (link: http://www.fairfinance.org.uk/ text: Fair Finance), (link: http://uk.zopa.com/ text: Zopa) and (link: https://www.fundingcircle.com/ text: Funding Circle) too.
+
+Finally, of course, Britain has a fine heritage of mutual building and friendly societies. But the problem is that Simple may be revolutionising the way in which you can bank in the US, but they’re not revolutionising banking.
+
+And brands like Fair Finance cannot hope to compete toe-to-toe with the high street banks because they would need huge capital reserves to even contemplate increasing the scale of their operation — and that’s assuming they would even want to.
+
+Meanwhile, mutuals have no need to revolutionise banking: they’re doing fine as they are.
+
+#### What if a credit union was as easy to create as a Facebook page?
+
+But what if you could take the principles that underpin the idea of credit unions, add a dash of Facebook-style thinking and harness the kind of technology that people like Wonga build? (Did I mention that I, grudgingly, must admit that Wonga’s technology is state-of-the-art?)
+
+Could you create a technology platform which enables anyone who wants to create a local credit union to do so easily? Could you do it in a way in which individual assets are consolidated nationally, enabling local credit unions to compete with the high street thanks to technology with the legal, regulatory and statutory requirements ‘baked in’.
+
+In other words: could people build a bank that isn’t like a bank? Can we all bebanking instead?
+
+#### If there's a way when there's profit, what about a way when there's not?
+
+Of course it sounds idealistic but, where institutional shareholders have a profit motive, I think they’ve already built the kind of service I’m thinking of.
+
+For instance, I’ve worked in the past with a brand called (link: http://www.cofunds.co.uk/ text: Cofunds) which enables investors and their intermediaries, as well as institutions, to access information and funds, and execute transactions despite being geographically and organisationally dispersed. The capacity of their technology is scaleable, enabling consolidation of billions of pounds worth of assets which lead to the ability to operate at a profit.
+
+If you could take the principles of that kind of technology and apply it to — not only lending and saving services– but day-to-day banking services like current accounts as well, could you turn banking inside-out? Could you create a national platform, with all the underlying compliance with legal, regulatory and data protection taken care of? Technology which gives credit unions, nationwide, the capacity to pool their assets in one place and, by doing so, to enable more credit unions to be created as easily as a Facebook page?
+
+That could work. Couldn’t it?
+
+#### So here's what I'm going to do.
+
+The plain fact is, I don’t know. But I’d like to find out. I’d like to find out what it might take for people to transform banking for themselves. I’d like to know what the inherent barriers to real transformation of financial services are: the prudential requirements, the regulatory requirements, the legislative blocks, the technology blocks, consumer sentiment towards adoption of a new model — in fact, the list’s endless. And it intrigues me. So I’m going to find out just how easy it is to start a bank. A bank that isn’t like a bank. The kind of bank where we can all be banking instead.
+
+----
+
+Relatedlinks: 
+
+----
+
+Tags: Banking
+
+----
+
+Comments: 1
+
+----
+
+Nextpost: 1

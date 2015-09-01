@@ -12,7 +12,6 @@ history:
   - >
     work/paraplanners-brand-strategy-naming-and-identity
   - work/axa-wealth
-  - work/test
   - >
     journal/the-bebanking-talk-i-nearly-gave-at-tedxcheltenham
   - >
