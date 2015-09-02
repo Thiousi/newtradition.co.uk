@@ -121,12 +121,20 @@ if (journalStream !== null) {
     }
     var tagTitle = document.querySelector(".tag-title");
     var activeTag = document.querySelector(".sidebar .active");
-    tagTitle.textContent = activeTag.textContent;
-    tagTitle.style.display = 'block';
     if (activeTag !== null) {
+      tagTitle.textContent = activeTag.textContent;
+      tagTitle.style.display = 'block';
       var feature = document.querySelector(".featured");
       feature.style.display = 'none';
     }
+  }
+}
+
+if (journalStream !== null) {
+  if ((window.location.href.indexOf("page:") != -1)) {
+    var feature = document.querySelector(".featured");
+    feature.style.display = 'none';
+    alert("hey");
   }
 }
 

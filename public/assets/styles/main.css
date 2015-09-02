@@ -345,16 +345,16 @@ blockquote, blockquote p, .post-main .post blockquote p {
   color: #E30613;
   font-size: 32px;
   position: relative;
-  margin: 0; }
+  margin: 0;
+  line-height: 1.3; }
 
 blockquote {
   margin-top: 35px;
   margin-bottom: 35px;
-  padding: 35px 60px 35px 0; }
+  padding: 35px 35px 35px 0; }
   @media screen and (max-width: 570px) {
     blockquote {
-      padding-right: 0;
-      line-height: 1.3; } }
+      padding-right: 0; } }
   blockquote:before, blockquote:after {
     content: "";
     position: absolute;
@@ -736,7 +736,8 @@ input, textarea {
   .pagination li {
     display: inline-block;
     vertical-align: middle;
-    padding: 2px; }
+    padding: 2px;
+    margin-left: 0; }
     .pagination li a.active {
       opacity: 1;
       color: white;
