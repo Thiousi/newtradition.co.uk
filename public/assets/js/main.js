@@ -130,6 +130,7 @@ if (journalStream !== null) {
   }
 }
 
+// If isn't page 1 of journal
 if (journalStream !== null) {
   if ((window.location.href.indexOf("page:") != -1)) {
     var feature = document.querySelector(".featured");

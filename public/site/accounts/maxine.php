@@ -10,6 +10,8 @@ language: en
 role: admin
 history:
   - >
+    journal/the-tweeter-the-brand-and-the-reputational-minefield
+  - >
     journal/landor-why-i-want-an-ipad-beats-i-want-an-ipad-xyz
   - >
     journal/why-we-shouldnt-trade-sundays-for-sunday-trading

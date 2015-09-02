@@ -1,0 +1,113 @@
+Title: The tweeter, the brand and the reputational minefield
+
+----
+
+Date: 2011-12-28
+
+----
+
+Author: ian
+
+----
+
+Featured: 
+
+----
+
+Excerpt: 
+
+----
+
+Hero: 
+
+----
+
+Summary: Sooner or later, the consequences of a brand allowing an employee to tweet on their behalf — to the extent that the individual and the brand become interchangeable as brand symbols — was going to (link: http://www.bbc.co.uk/news/technology-16338040 text: wind up in court action).
+
+----
+
+Text: 
+
+In the case of (link: http://twitter.com/#!/noahkravitz text: Noah Kravitz) and his former employer Phonedog — an ‘interactive mobile news and reviews resource’ which claims 2.5 million unique visits to its site each month — the legal principle at stake is whether the followers of a Twitter account, accumulated while an individual was tweeting on behalf of a business, amount to a database of customers and prospective customers that may be considered the property of the company once they’ve left?
+
+The bone of contention between the two parties is whether Mr Kravitz and (link: http://www.phonedog.com/ text: Phonedog) did, in fact, have an agreement in place which entitled Mr Kravitz to effectively inherit followers that were accumulated during his employment with Phonedog, when he changed his Twitter username from @Phonedog_Noah to @noahkravitz.
+
+On the one hand, the case can be regarded simply as a dispute over employment contract law and post-employment agreements. On the other, it raises interesting questions about intellectual property: does a person, who is apparently tweeting on behalf of a business, attract followers because of their association with the business, or because of what they tweet?
+
+Regardless of either, its a helpful case for any business or brand owner contemplating the pros and cons of positioning an employee as the ‘personal’ face of their brand — particularly on Twitter.
+
+Having tried out, in the past, at least one of the options mentioned in a moment, we’ve reached the conclusion that it is hard to imagine a situation in which the placing an individual employee on parity with the brand within a social web platform like Twitter makes any sense at all.
+
+#### The misguided mantra of personalising a brand’s Twitter presence
+On the face of it, the argument for positioning an employee as the ‘face’ of a brand makes apparent sense: the social web enables connections between individuals, so — in order to appear more engaging — put a person in front of its social web presence.
+
+It’s the kind of thinking which leads to the appearance of Twitter usernames in which the brand name is embedded (like @Phonedog_Noah) or brandmarks appearing as components of an avatar (like (link: http://twitter.com/#!/kodakCB text: Kodak)).
+
+(And then there are exceptional examples where the distinction between brands and individuals appear entirely ambiguous: where does Pete Cashmore stop and (link: http://twitter.com/#!/mashable text: @Mashable) start — or vice versa - for instance? We’d argue that the origins of Mashable’s brand help explain the appropriateness of the use of Mr Cashmore’s personal image as its avatar, hence its an exception and not a rule.)
+
+But the effect of that decision is to elevate an individual employee to a position of — arguable — parity with a brand name or brand mark is far more significant than consideration of what is appropriate for a particular medium; it has consequences for the way in which followers — and consumers more widely — regard the brand itself. That’s because there is a distinction between:
+
+1. an individual *as a representative* of the brand; versus
+2. an individual *who is representative* of the brand.
+
+It’s a subtle but important distinction.
+
+#### An individual as a representative of a brand
+For instance, (link: http://twitter.com/#!/VodafoneUK text: Vodafone’s) Twitter presence operates as an extension of its existing customer support operation. Tweets are ‘signed’ by Vodafone’s tweeters but there is no question whatsoever that tweeters are representatives of the Vodafone brand. It is Vodafone who accumulates followers and not the individual employees, and it is able to easily manage the turnover of representatives who tweet on the brand’s behalf.
+
+For Vodafone, an individual *is a representative* of the brand.
+
+#### An individual who is representative of a brand
+In the case of Kodak, (link: http://twitter.com/#!/kodakCB text: Jenny Cisney) was appointed as its first (link: http://1000words.kodak.com/thousandwords/user_profile/?ID=2137800 text: Chief Blogger) in April 2008. Kodak’s Chief Blogger’s Twitter presence was established in the same month. There’s little doubt that the Twitter account — @KodakCB — and role of Chief Blogger were created by Kodak and, we can assume, the individual associated with the role can change.
+
+But by deciding to publish an avatar carrying both an individual’s image and its brandmark, Kodak’s branding performs precisely the same function that it does on its products or the celebrities or entities with which it chooses to align its brand in traditional advertising and promotion.
+
+For Kodak, an individual *is representative* of the brand.
+
+A charitable interpretation of Kodak’s decision is that they are entrusting their brand reputation to the behaviour of an individual employee in order to cultivate a sense of personal engagement with social web followers.
+
+A less charitable perspective — and the one we are inclined towards — is that Kodak are unnecessarily inflating the significance of an individual, placing the brand at unnecessary reputational risk and, by so closely aligning its brand with a person, risk diluting the brand personality itself.
+
+And, if that issue of dilution seems somewhat nebulous, just ask yourself: who stands to gain brand equity by personalising Kodak’s Twitter presence: Kodak or Jenny Cisney?
+
+#### Personal or professional, or both?
+The case of Phonedog versus Mr Kravitz — where a business’s brand name is embedded in a Twitter user’s username — illustrates the risk of ambiguity in the minds of followers over the extent to which an individual is tweeting as a representative of a business, whether their tweets are representative of a business, and the degree to which their tweets are personal i.e. not representative of the views and opinions of the business.
+
+It’s these grey areas that leave both sides of the case feeling aggrieved at the stance of one another.
+
+However, the idea that a user can disclaim tweets as personal and not representative of a brand, when a brand name is embedded in either their username or avatar, or both, is surely preposterous? After all, doesn’t permission to use a business or brand name amounts to copyright consent?
+
+Having tried the route of combining personal and professional tweets under under the auspices of a branded username in the past, we have drawn the conclusion that it is an unhelpful compromise; it limits an individual’s freedom of expression and places the reputation of a business at unnecessary risk.
+
+So businesses need to be clear from the outset about whether an employee is tweeting as a representative of the business (in which case, why not adopt the Vodafone approach?) or representative of the business (in which case, it’s likely to be serving a very specific role in its broader brand communications strategy or, more likely, is an indicative of a significant weakness in it).
+
+Either way, it’s important to be clear that any Twitter account carrying the brand name, which may reasonably be regarded as being the account of an individual representing a brand, or of an individual that is representative of a brand, remains the property of the business which owns the brand.
+
+#### People like you can tell the difference between a person and a business
+We’ve long held the view that the social web is social — as in socialist — because everyone who is able to can participate in a common means of sharing and publication. (See (link: http://www.slideshare.net/NewTradition/the-changing-model-of-promotional-communication/ text: ‘The changing model of promotional communication’).)
+
+The social web has led to a change in how you can engage with other individuals and entities, but has had no effect at all on what you are engaging with.
+
+We’d suggest that, when people deal with a business, they generally understand exactly what they’re dealing with — an organisation. What matters is that that organisation is able to deal fairly and appropriately with people who choose to engage with it, and to do so consistently well.
+
+The idea that, simply by putting a face on a Twitter account ‘personalises’ a brand’s presence, increases the likelihood of this happening is no more true than the idea that applying a go faster stripe to a car makes a car go faster. It doesn’t have any material effect on the outcome.
+
+It’s more likely that consumers enjoy the way in which the social web allows them to deal on equal terms, out in the open, with a brand. It’s an environment in which you are more likely to gain what you seek — materially affecting an outcome.
+
+What lies at the heart of the case of Phonedog versus Mr Kravitz is whether followers can discern which one is the brand on Twitter. All for the sake of asking whether whether an individual was a representative of a brand, or representative of a brand.
+
+----
+
+Relatedlinks: 
+
+----
+
+Tags: Views
+
+----
+
+Comments: 1
+
+----
+
+Nextpost: 1
