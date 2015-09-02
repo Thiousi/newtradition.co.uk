@@ -1,6 +1,6 @@
 <?php snippet('header') ?>
 <?php $file = $page->hero()->toFile() ?>
-<header class="post-head" style="background-image: url(<?php echo thumb($file, array('width' => 1200, 'quality' => 85))->url() ?>);">
+<header class="post-head <?php if($page->hero()->empty()): ?>post-nohero<?php endif ?>" style="background-image: url(<?php echo thumb($file, array('width' => 1200, 'quality' => 85))->url() ?>);">
   <div class="grid">
     <aside class="col-1-4">
       <h5>Long Read</h5>

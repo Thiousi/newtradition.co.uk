@@ -98,6 +98,19 @@
     }
   }
 
+  .post-nohero {
+    padding-top: 400px;
+    background-color: darken($primary, 4);
+
+    @media screen and ( max-width: $medium ) {
+      padding-top: 250px;
+    }
+
+    &:after {
+      display: none;
+    }
+  }
+
   .post-subhead {
     @include clearfix;
     background-color: rgba($slate, 0.95);
@@ -106,7 +119,7 @@
     color: $primary;
     padding-top: 10px;
 
-    .summary {
+    .summary p {
       font-size: $beta + 4px;
       font-family: $sans;
       font-weight: $sans-regular;

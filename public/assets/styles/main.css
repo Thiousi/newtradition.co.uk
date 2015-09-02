@@ -1698,6 +1698,14 @@ a.featured:hover {
         float: left; }
         .longread .post-head .sidebar-item:last-child {
           padding-right: 0; } }
+.longread .post-nohero {
+  padding-top: 400px;
+  background-color: #cf0511; }
+  @media screen and (max-width: 800px) {
+    .longread .post-nohero {
+      padding-top: 250px; } }
+  .longread .post-nohero:after {
+    display: none; }
 .longread .post-subhead {
   clear: both;
   background-color: rgba(234, 234, 234, 0.95);
@@ -1709,7 +1717,7 @@ a.featured:hover {
     content: "";
     display: table;
     clear: both; }
-  .longread .post-subhead .summary {
+  .longread .post-subhead .summary p {
     font-size: 36px;
     font-family: 'ff-dagny-web-pro', helvetica, sans-serif;
     font-weight: 400;
@@ -1717,7 +1725,7 @@ a.featured:hover {
     line-height: 1.3;
     margin-top: 25px; }
     @media screen and (max-width: 800px) {
-      .longread .post-subhead .summary {
+      .longread .post-subhead .summary p {
         font-size: 28px; } }
 .longread .post-meta {
   border-top: 1px solid #e2e2e2;

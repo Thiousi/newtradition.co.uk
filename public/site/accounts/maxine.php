@@ -10,6 +10,8 @@ language: en
 role: admin
 history:
   - >
+    journal/something-of-a-eulogy-for-steve-jobs
+  - >
     journal/the-tweeter-the-brand-and-the-reputational-minefield
   - >
     journal/landor-why-i-want-an-ipad-beats-i-want-an-ipad-xyz
