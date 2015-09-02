@@ -134,7 +134,6 @@ if (journalStream !== null) {
   if ((window.location.href.indexOf("page:") != -1)) {
     var feature = document.querySelector(".featured");
     feature.style.display = 'none';
-    alert("hey");
   }
 }
 
