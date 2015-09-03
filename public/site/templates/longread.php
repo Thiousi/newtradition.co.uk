@@ -16,7 +16,9 @@
   <div class="post-subhead">
     <div class="grid">
       <?php if(!$page->hero()->empty()): ?>
-        <figcaption class="col-3-4 col-3-4-offset"> <?php echo $file->caption() ?></figcaption>
+        <?php if(!$file->caption()->empty()): ?>
+          <figcaption class="col-3-4 col-3-4-offset"> <?php echo $file->caption() ?></figcaption>
+        <?php endif ?>
       <?php endif ?>
       <h3 class="summary col-3-4 col-3-4-offset"><?php echo $page->summary()->kirbytext() ?></h3>
     </div>

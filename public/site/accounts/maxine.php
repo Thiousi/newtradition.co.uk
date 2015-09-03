@@ -10,10 +10,12 @@ language: en
 role: admin
 history:
   - >
+    journal/privacy-and-collective-attention-deficit-disorder
+  - >
+    journal/facebooks-ventures-into-brand-diplomacy
+  - >
+    journal/the-filter-bubble-the-ethics-of-data-and-the-eu
+  - >
     journal/something-of-a-eulogy-for-steve-jobs
   - >
     journal/the-tweeter-the-brand-and-the-reputational-minefield
-  - >
-    journal/landor-why-i-want-an-ipad-beats-i-want-an-ipad-xyz
-  - >
-    journal/why-we-shouldnt-trade-sundays-for-sunday-trading

@@ -1,0 +1,89 @@
+Title: The filter bubble, the ethics of data and the EU
+
+----
+
+Date: 2011-09-09
+
+----
+
+Author: ian
+
+----
+
+Featured: 
+
+----
+
+Excerpt: 
+
+----
+
+Hero: 5107602045_c0b2de16fd.jpg
+
+----
+
+Summary: I drafted this back in June but just didn’t publish it for some reason. A good deal of the content is based on a comment I posted in reply to Prof George Brock’s post (link: http://georgebrock.net/the-filter-bubble-and-public-reason/ text: ‘The filter bubble and public reason’.)
+
+----
+
+Text: 
+
+Do users of the web really have a world of information at their fingertips? Or do recent innovations in search algorithms – in pursuit of ever increasing personal relevancy of results – simply yield an ever decreasing pool of information from which an individual is able to fish for their perspective on the world? And, if so, should we be worried about it?
+
+(link: http://www.thefilterbubble.com/about-eli text: Eli Pariser) has been asking questions like this in recent months and, while Mr Pariser’s name may not be immediately familiar to you, I’d be surprised if the label that he’s used to describe the dilemma hadn’t registered on your radar: the filter bubble.
+
+When Mr Pariser was in London earlier this year to (link: http://www.thersa.org/events/audio-and-past-events/2011/the-filter-bubble-how-the-hidden-web-is-shaping-lives text: deliver a speech) on the idea of the filter bubble at the Royal Society of the Arts (RSA), I went along to listen to him make his case in person.
+
+Mr Pariser argues that, thanks to the latest generation of algorithms and cookies, users of the web are increasingly being presented with information or content which is more closely attuned to the kind of information that your browsing habits suggest are more likely to interest you.
+
+Put another way, you get to see what you like; you don’t get to see what you don’t like.
+
+The consequence, Mr Pariser claims, is that two people who share the same gender, age, geographic area and – perhaps even – lines of work could enter the same search word or phrase in Google but yield contrasting sets of results.
+
+Taken to its logical conclusion, the presumption that tools like Google are free of any kind of bias transforms into a misapprehension.
+
+Given the fact that Google’s appeal lies in the ease with which it’s able to present consumers, in the blink of an eye, with search results spanning the full spectrum of society, the idea that those results are considerably less than impartial begins to feel a little bit, well, Orwellian.
+
+From products to politics to Pokemon, the algorithms are filtering in what you like and filtering out what you don’t like. The effect, says Mr Pariser, is that technology is cocooning consumers in a bubble of information.
+
+And, by presenting results which pander to an individual’s prior preferences or prejudices, their perspective will become skewed and lop-sided; galvanised by the presentation of information about the world in a way which reinforces those personal preferences and prejudices.
+
+> It’s an almighty thin-end-of-the-wedge argument. Or, alternatively, we’re at risk of living in an age where ignorance really is bliss.
+
+In a way, I think Mr Pariser has done his argument a disservice by focusing on the algorithm issue. In fact, I think what he’s really concerned about is a bigger ethical dilemma. The filter bubble’s just a stalking horse for the debate.
+
+In fact, I formed the distinct impression that his motive is really to plead for a pause in the relentless application of new technology just because we’re able to. But a debate about the ethics of innovation is far less likely to influence the right crowd, whereas jamming a spanner in the continuity of the world of code development – by picking on the algorithms of the Big Guns – may have the effect of causing momentum to stutter, if only momentarily.
+
+Judging from the coverage of his argument in both the traditional and online media earlier this summer, he may have had some success. At the very least, he has caused indignant ripples among voices in the developer and wider web community.
+
+So I’ll forgive him the gimmick of casting the algorithms as evil because at least – on the basis of his talk at the RSA – he is willing to raise a fundamental question: what kind of society are we building when we allow technology to determine what we do or don’t see? What checks and balances should be available to consumers to protect their privacy? And to what extent should we actively consent to the use of data in order to enjoy the apparent benefits that personalisation offers?
+
+In that respect, Mr Pariser’s contribution is timely. Heading in to the talk at the RSA, I was sceptical about the EU’s proposals to insist upon explicit disclosure of(link: http://www.ico.gov.uk/news/current_topics/new_pecr_rules.aspx text:  the use of cookies on websites) and the requirement for users to actively opt in to the activation of cookies.
+
+Like many marketing people, I’d instinctively felt that such a move would be counter-intuitive to good user experience. However, I’m rapidly coming round to the point of view – not least because of contributions like Mr Pariser’s – that the EU may be right.
+
+On reflection, brands, charities and whoever else implements cookies (and who doesn’t these days?) are being remarkably presumptuous about their rights to data compared to their users right to privacy; even dismissive of the importance of those rights.
+
+In fact, that feeling has been further underlined by the revelation by the UK’s Information Commissioner’s Office (ironically, thanks to a Freedom of Information request) that, since they implemented a live example of how the EU’s guidelines may be applied at their own (link: http://www.ico.gov.uk/ text: website) – approximately 90% of visitors have (link: http://econsultancy.com/uk/blog/7692-ico-follows-ico-rules-cookie-usage-drops-by-90-percent text: refused to give permission).
+
+That suggests to me that, if a user doesn’t perceive that there is an essential need for a brand or organisation to access personal data, then they won’t give their consent to it.
+
+This conclusion tends to support the view – expressed by fellow RSA audience member George Brock in (link: http://georgebrock.net/the-filter-bubble-and-public-reason/ text: his own post) on the topic – that transparency is essential. If brands or organisations explain precisely how they use cookies and why, then users are likely to be trusting.
+
+Of course this is why the EU’s intended approach is causing such alarm among the SEO and advertising industries. It’s likely that, in most cases, there’s very little consumer benefit at all. Which leads me to conclude that the question that Eli Pariser ought to have asked – and is really asking – is: ‘Who gains most from personalisation and why should we let them?’.
+
+----
+
+Relatedlinks: 
+
+----
+
+Tags: 
+
+----
+
+Comments: 
+
+----
+
+Nextpost: 1
