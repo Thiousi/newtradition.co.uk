@@ -109,6 +109,10 @@
     &:after {
       display: none;
     }
+
+    .post-subhead {
+      background-color: white;
+    }
   }
 
   .post-subhead {
@@ -125,10 +129,12 @@
       font-weight: $sans-regular;
       color: $primary;
       line-height: 1.3;
-      margin-top: 25px;
+      margin-top: 20px;
 
       @media screen and ( max-width: $medium ) {
         font-size: $beta - 4px;
+        margin-top: 12px;
+        margin-bottom: 25px;
       }
     }
   }

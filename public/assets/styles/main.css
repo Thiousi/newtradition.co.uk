@@ -1706,6 +1706,8 @@ a.featured:hover {
       padding-top: 250px; } }
   .longread .post-nohero:after {
     display: none; }
+  .longread .post-nohero .post-subhead {
+    background-color: white; }
 .longread .post-subhead {
   clear: both;
   background-color: rgba(234, 234, 234, 0.95);
@@ -1723,10 +1725,12 @@ a.featured:hover {
     font-weight: 400;
     color: #E30613;
     line-height: 1.3;
-    margin-top: 25px; }
+    margin-top: 20px; }
     @media screen and (max-width: 800px) {
       .longread .post-subhead .summary p {
-        font-size: 28px; } }
+        font-size: 28px;
+        margin-top: 12px;
+        margin-bottom: 25px; } }
 .longread .post-meta {
   border-top: 1px solid #e2e2e2;
   margin: 30px 0 0;
