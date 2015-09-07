@@ -10,12 +10,10 @@ language: en
 role: admin
 history:
   - >
-    journal/privacy-and-collective-attention-deficit-disorder
+    journal/quickquid-co-uks-2-356-typical-apr-is-wrong
+  - journal/whats-eating-leroy-stick
+  - journal/bp-and-you
   - >
-    journal/facebooks-ventures-into-brand-diplomacy
+    journal/are-corporate-social-responsibility-programmes-defunct
   - >
-    journal/the-filter-bubble-the-ethics-of-data-and-the-eu
-  - >
-    journal/something-of-a-eulogy-for-steve-jobs
-  - >
-    journal/the-tweeter-the-brand-and-the-reputational-minefield
+    journal/why-the-social-webs-good-for-financial-advisers

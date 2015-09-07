@@ -1,0 +1,147 @@
+Title: Why the social web’s good for financial advisers
+
+----
+
+Date: 2010-07-05
+
+----
+
+Author: ian
+
+----
+
+Featured: 
+
+----
+
+Excerpt: 
+
+----
+
+Hero: 
+
+----
+
+Summary: This is one for any small business owner operating in the UK’s financial services industry — or any industry, for that matter — where the regulator is at risk of getting the application of social media wrong.
+
+----
+
+Text: 
+
+This is a post  that’s been published as an article in this month’s FS Focus — a publication produced by the (link: http://www.icaew.com/index.cfm/route/158423/icaew_ga/en/Home/Institute_of_Chartered_Accountants_in_England_and_Wales text: Institute of Chartered Accountants in England and Wales).
+
+I’ll warn you now, it’s fairly lengthy, and was written prior to the (link: http://www.fsa.gov.uk/pages/Doing/Regulated/Promo/pdf/new_media.pdf text: recent guidance) (<- this link will download a PDF, by the way) issued by the (link: http://www.fsa.gov.uk/ text: Financial Services Authority) (FSA). I hope it provides an interesting contribution to the debate swirling around financial services at the moment in light of that guidance.
+
+So here goes…
+
+Let’s forget the hyperbole surrounding Twitter or Facebook or YouTube for a moment and, instead, meet a financial services professional whose use of the social web has had a profound effect on the profitability and operation of his business – all without the slightest hint of a ‘tweet’.
+
+Over the past three years, (link: http://www.twitter.com/TheParaplanner text: Richard Allum)’s outsourced paraplanning service business, (link: http://www.paraplanplus.com/ text: ParaPlanPlus), has grown its volume of new business, increased its annual revenues and raised its profitability by 25 per cent while it has reduced its headcount requirement.
+
+Richard, along with his Abingdon-based team of two paraplanners and one part-time administrator, handles the gathering, analysis and production of reports for clients of their 40 IFA customers, as well as three product providers who also contract the services of Richard’s team each year.
+
+Good for Richard, then.
+
+But the expansion of ParaPlanPlus is remarkable for two reasons: First, it has grown despite an apparent reduction in the scale of it. (Compared to 2007, he has smaller premises, considerably less computer hardware and he has reduced his administrative support by the equivalent of one full-time employee.)
+
+Second, Richard is a nice guy. He does not run a penny-pinching operation in tandem with a task management style that pre-dates the (link: http://en.wikipedia.org/wiki/Factory_Acts text: Factory Acts).
+
+So if he has fewer people, less space, considerably less IT paraphernalia and is not prone to bouts of Dickensian whip-cracking, how has his small business grown bigger by becoming smaller?
+
+He attributes a good deal of the improved business performance to just one thing: the social web.
+
+And – while he’s prone to tweet personally – he expressly does not use social web applications to promote himself or his business; at least, not intentionally.
+
+Instead, when Richard talks about the social web, what he is really talking about is the application of new web-based tools which offer his team easily accessible and secure ways to share information, create schedules and undertake day-to-day work.
+
+These are tools which take the management out of operational management, the technology out of IT and the admin out of administration.
+
+For small businesses like Richard’s, the social web, far from simply being just another means of promoting business , offers entirely new ways of doing things which make a tangible difference to their profitability as well as alleviating the daily pressure of working life.
+
+We will return to Richard shortly, but my purpose in teasing you with his example is two-fold: First, to encourage you to make it all the way through this article but second, and more seriously, to seek to reverse an emerging and widespread misapprehension about exactly what social media actually is.
+
+In fact, this misapprehension is hardly surprising. The preoccupation of both mainstream media and self-appointed social web gurus with web applications like Twitter is Titantically skewing general understanding of the medium. (It is ‘Titanically’ because Twitter is just the visible tip of the iceberg.)
+
+> These are tools which take the management out of operational management, the technology out of IT and the admin out of administration.
+
+Coverage tends to characterise users of social media as somewhere between opinionated publishers of tweets and blogs, on the one hand, and socially voracious Facebook friend-seekers who need to get out more, on the other.
+
+So the language surrounding use of the social web tends to focus upon publishing and self promotion, whereas many people may use web tools that they would not even consider to be neither part of the social web nor self-publishing , even though they are.
+
+For instance, checking TripAdvisor for the opinions or pictures posted by previous travellers to a destination before you book a weekend away, or storing and sharing your digital photos at Flickr, have nothing whatsoever to do with making friends or influencing people. They are, however, social web tools that are practical, help you save money and are remarkably useful.
+
+But for many advice professionals – and that includes organisations that provide regulatory and operational services to them – the popular media depiction of Twitter and Facebook has coloured perception of the medium to such an extent, that there is a substantial population of advisers who are reluctant to embrace social media at all.
+
+According to recent research by the NMG Group’s (link: http://www.bakehousecommunications.com/en/noise/article/Social_Media_in_FS.php text: Bakehouse Communications) business, the advice population is divided over the social web with 51 per cent of advisers either considering all already using social media for client communication and 41 per cent who would never consider using it.
+
+But with Facebook expected to announce at some point in 2010 that 40 per cent of the world’s online population has an account with them, the pressure on use of the medium by advice professionals as a means of communicating with consumers is only likely to increase.
+
+And, of course, that represents a challenge to conventional regulatory compliance that is designed with traditional media in mind.
+
+In fact, IFA networks and service providers are already wrestling with the challenges posed by social media by seeking to apply – for the time being at least – existing financial promotions rules to consumer communication.
+
+Earlier this year national IFA firm, (link: http://www.thinkpositive.com/ text: Positive Solutions), was the subject of media interest when it was reported to be considering advising its members to avoid the use of Twitter for client contact because of the regulatory implications.
+
+According to Positive Solutions marketing director, Keith Gilmour: “There was some speculation in the press that Positive Solutions was preparing to ban the use of blogging on websites or the use of sites such as Facebook, but this was not the case.
+
+“As part of the preparations for the forthcoming launch of our new websites, we have been investigating how best to ensure our Partners are aware of their wider responsibilities regarding the use of the web, as well as the opportunities and potential pitfalls of using social media.”
+
+No doubt Positive Solutions is contemplating the kind of regulatory guidance occupying other IFA service providers. An IFA network that I spoke to while researching this article suggested that the biggest challenge facing networks and directly authorised businesses will be adequate monitoring of content published on behalf of a business given the ease and immediacy of the medium – whether that is ‘blogs, tweets or Facebook status messages’.
+
+Inevitably the Financial Services Authority (FSA) is likely to consider setting out guidance on the application of social media in regulated businesses.
+
+But, with a medium where no one ‘sends’ or ‘receives’ and, instead, ‘shares’ content, commonsense suggests that the FSA will be hard-pressed to make a case that regulated businesses have any sort of control over consumption of content it shares in good faith.
+
+Nor can the FSA easily apply guidelines to a medium like a Facebook page which can simultaneously enable an IFA and client to maintain contact with each other, while offering a means for the IFA to share news about a new service.
+
+While the social web is likely to challenge the presumed model of communications upon which an initiative like Treating Customers Fairly (TCF) has been built it may, ironically, increase the importance of application of the TCF principle as a compliance tool. Successful use of social media, in particular, will demand robust systems and controls.
+
+And it is the systems and controls of social web tools which brings us neatly back to Richard Allum and ParaPlanPlus.
+
+Because Richard modestly admits that he was not, in fact, seeking the reduced costs of operation and resulting profitably that he has subsequently enjoyed; he was looking for an easier life.
+
+He explains: “The steps that we go through are generally quite repetitive so, if you are able to establish strong processes and a means of sticking to them then you have pretty much won the battle.
+
+“Three years ago the variety of processes we used meant that work felt like a chore. We were running servers for e-mail and files that needed regular maintenance and replacement. Client records could comprise a combination of things – Post It notes, spreadsheets and e-mails. It was pretty messy.
+
+“I just knew that there had to be a better way of doing things and I wanted to find it. I spent a long time on Google researching what might be available and then I discovered (link: http://basecamphq.com/?source=37signals+home text: Basecamp).”
+
+Described as ‘the leading web-based project collaboration tool’, Basecamp is the brainchild of a US-based business called (link: http://www.37signals.com/ text: 37Signals) who started life as a web design agency but – faced with precisely the same headaches that Richard was experiencing – decided to build a means of sharing information between themselves and their clients.
+
+Like all really good ideas, the idea behind Basecamp is simple: If you give your team and their clients the ability to gather together and pool their resources at a single point online, then they will be able to collaboratively set tasks, agree project schedules, track progress and – generally – get things done.
+
+Even better, if you can host all the items associated with a client case – like e-mails, documents, presentations, images and spreadsheets – on the web, then your team and clients have the ability to access what they want, when they want, wherever they are in the world.
+
+There are two critical insights here which led Richard Allum to adopt Basecamp in the first place and – coincidentally – make his business more profitable: Web-hosted applications like Basecamp are colloquially described as being in the ‘cloud’; in other words, the servers that hold all your data are hosted elsewhere in the world and not on your premises.
+
+> “I just knew that there had to be a better way of doing things and I wanted to find it. I spent a long time on Google researching what might be available and then I discovered (link: http://basecamphq.com/?source=37signals+home text: Basecamp).”
+
+In Richard’s own words: “The data issue was very important. Basecamp provides secure, encrypted, storage that is probably as good as the UK’s banks and meets data protection rules.
+
+“The back-up and maintenance of the servers for Basecamp were far better than anything that we could have afforded ourselves, and it meant we didn’t need the space for a server in our own offices any more. That meant we could almost entirely cut out IT hardware and maintenance costs and actually gain more reliable technology. We’ve probably saved as much as £15,000 over the past three years as a result.”
+
+The second insight demonstrates the reduced administrative pressure on small businesses that social web tools like Basecamp can provide. Richard explains: “Because we allow clients to access the cases that we are working on in Basecamp, they have the ability to track progress of their case and keep informed whenever they want.”
+
+The net effect of this accessibility is fewer e-mails and phone-calls from clients chasing the status of their cases. The reduced to-ing and fro-ing led to far less administrative demand, which enabled Richard to reduce the requirement for administrative support from 60 hours a week to just 20 hours – a saving of approximately £30,000 per year in employment costs.
+
+And what started out as a single simple tool for 37Signals, has expanded into a range of social web-based tools which now have more than 3 million worldwide subscribers. Richard Allum subscribes to three of them: Basecamp for project management, Highrise for customer and supplier contact management, and Backpack as a business intranet.
+
+Exponential adoption of 37Signals’s applications – especially among small enterprises in the professional services sector like ParaPlanPlus – is largely due to the fact that it is incredibly useful, easily accessible and, frankly, helps people run things the way people like to run things.
+
+In 37Signals’s case – and ParaPlanPlus’s – it is a social web tool that helps run day-to-day business more easily. Perhaps it could help make the same difference to yours?
+
+----
+
+Relatedlinks: 
+
+----
+
+Tags: Views
+
+----
+
+Comments: 1
+
+----
+
+Nextpost: 1

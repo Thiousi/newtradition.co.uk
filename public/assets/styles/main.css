@@ -1529,6 +1529,7 @@ a.featured:hover {
         margin-bottom: 25px; }
       .post-main .post h3 a {
         color: #E30613;
+        font-family: 'ff-dagny-web-pro', helvetica, sans-serif;
         border-bottom: 3px solid rgba(227, 6, 19, 0.1); }
         .post-main .post h3 a:hover {
           border-bottom-color: rgba(227, 6, 19, 0.3); }
@@ -1676,7 +1677,8 @@ a.featured:hover {
         padding-bottom: 10px;
         border-bottom: 1px solid rgba(255, 255, 255, 0.2); } }
   .longread .post-head .col-1-4 {
-    padding-right: 20px; }
+    padding-right: 20px;
+    padding-bottom: 20px; }
     @media screen and (max-width: 800px) {
       .longread .post-head .col-1-4 {
         padding-right: 10px; } }
@@ -1721,12 +1723,13 @@ a.featured:hover {
     content: "";
     display: table;
     clear: both; }
-  .longread .post-subhead .summary p {
+  .longread .post-subhead .summary * {
     font-size: 36px;
     font-family: 'ff-dagny-web-pro', helvetica, sans-serif;
     font-weight: 400;
     color: #E30613;
-    line-height: 1.3;
+    line-height: 1.3; }
+  .longread .post-subhead .summary p {
     margin-top: 20px; }
     @media screen and (max-width: 800px) {
       .longread .post-subhead .summary p {
