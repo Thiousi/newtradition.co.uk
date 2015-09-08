@@ -10,11 +10,11 @@ language: en
 role: admin
 history:
   - >
+    journal/how-to-build-an-ifa-brand-these-days
+  - >
+    journal/why-the-aol-rebrand-is-absolutely-fine-by-me
+  - >
+    journal/johnston-press-and-the-plucky-pay-wall-pilot
+  - >
     journal/google-china-and-my-i-told-you-so-moment
   - journal/ikeler-on-advertising-trends
-  - >
-    journal/bud-caddell-who-says-the-future-needs-ad-agencies
-  - >
-    journal/wheres-the-proof-google-the-luge-and-the-reliability-of-online-news-sources
-  - >
-    journal/quickquid-co-uks-2-356-typical-apr-is-wrong
