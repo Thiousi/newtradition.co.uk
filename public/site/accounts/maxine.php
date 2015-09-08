@@ -10,10 +10,11 @@ language: en
 role: admin
 history:
   - >
+    journal/google-china-and-my-i-told-you-so-moment
+  - journal/ikeler-on-advertising-trends
+  - >
+    journal/bud-caddell-who-says-the-future-needs-ad-agencies
+  - >
+    journal/wheres-the-proof-google-the-luge-and-the-reliability-of-online-news-sources
+  - >
     journal/quickquid-co-uks-2-356-typical-apr-is-wrong
-  - journal/whats-eating-leroy-stick
-  - journal/bp-and-you
-  - >
-    journal/are-corporate-social-responsibility-programmes-defunct
-  - >
-    journal/why-the-social-webs-good-for-financial-advisers

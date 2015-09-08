@@ -1,0 +1,77 @@
+Title: Where’s the proof? Google, the luge and the reliability of online news sources
+
+----
+
+Date: 2010-02-15
+
+----
+
+Author: ian
+
+----
+
+Featured: 
+
+----
+
+Excerpt: 
+
+----
+
+Hero: 
+
+----
+
+Text: 
+
+### Over the weekend, the social web has been rife with news that Google decided to withdraw a homepage illustration depicting a luge competitor, which was published within hours of the tragic death of Georgian luge athlete, Nodar Kumaritashvili, during training for the (link: http://www.vancouver2010.com/ text: Vancouver 2010 Winter Olympic Games).
+
+According to the (link: http://www.nydailynews.com/sports/more_sports/winter_olympics_2010/2010/02/13/2010-02-13_web_users_cry_foul_on_googles_lugetheme_search_page_day_after_luge_athletes_deat.htmltext: New York Daily News), Google made the decision following a ‘torrent of slams’ from Twitter users while (link: http://mashable.com/2010/02/13/google-luge-olympics// text: Mashable) published its own post citing the NY Daily News’ story - ‘Google Pulls Olympic Luge Logo After Backlash’. So far, Mashable’s post has been retweeted almost 1,000 times.
+
+To a less sensationalist extent, (link: http://blogs.zdnet.com/Google/?p=1725 text: ZDNet) was also in on the act.
+
+The problem is, I am not convinced that the story is true.
+
+By coincidence, I’d planned to write a post about the fine editorial line between what public taste considers ‘OK’ and ‘Not so OK’ based on the alleged ‘backlash’ against Google’s choice of homepage image.
+
+So I was scouring web tools like  (link: http://www.socialmention.com/ text: Social Mention), (link: http://www.topsy.com/ text: Topsy), (link: http://www.tweetmeme.com/ text: Tweetmeme), (link: http://www.bing.com/ text: Bing) and (link: http:// text: Google) to trace the timeline of the story.
+
+Having tried to discover all the tweets I can — and I admit that I’m not necessarily using all-singing-all-dancing analytics applications here — there is precious little evidence of an alleged  ‘backlash’ against the Google homepage at all; certainly not enough to claim Google had cracked under pressure.
+
+Yes there were plenty of exclamations of surprise at the choice of illustration, but retweets of Mashable’s story outstrips these relatively neutral mentions by at least 10 to 1.
+
+So I am not convinced that Google did make a decision to withdraw the image as the NY Daily News — and subsequently Mashable — claim in their headlines.
+
+I am all the more uncertain because of the final paragraph in the New York Daily News article which reads:
+
+> “Google did not respond to an e-mail about the logo on Saturday, when the search engine turned up 121,000 matches for the late luger’s name.”
+
+Put that statement at the top of the story and the story should fall flat on its face.
+
+So this appears to be a claim by the New York Daily News citing a handful of tweets and with no statement from Google to either confirm or deny that they made a decision to withdraw the homepage image. The claim has been repeated by Mashable and — subesequently — by close to 1,000 people on Twitter.
+
+Why am I so bothered about it?
+
+Just imagine if it was an individual’s reputation — your reputation — that was subject to the same experience rather than a huge brand like Google.
+
+Maybe Google did make a decision. But where is evidence?
+
+I’ve no idea about the reputation of New York Daily News, but Mashable — which is generally good at labelling rumours rumours — is an important source of news for the social web community. It is important that editorial brands like these safeguard their own reputations by respecting the reputation of others — no matter how newsworthy.
+
+Both should forfeit the clicks by sticking to the principle that comment is free, but facts are sacred.
+
+----
+
+Relatedlinks: 
+
+----
+
+Tags: Views
+
+----
+
+Comments: 
+
+----
+
+Nextpost: 1
