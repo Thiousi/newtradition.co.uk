@@ -1,0 +1,61 @@
+Title: Waving not drowning (and other cliches)
+
+----
+
+Date: 2009-06-15
+
+----
+
+Author: ian
+
+----
+
+Featured: 
+
+----
+
+Excerpt: 
+
+----
+
+Hero: 
+
+----
+
+Summary: No doubt about it, Google Wave has the potential to reinvent the art of electronic conversation.
+
+----
+
+Text: 
+
+In fact, at the risk of peaking in admiration too soon, I’d suggest that Wave is at least as significant as the printing press.
+
+That’s because Google has not just created a whizz-bang application here, but an entirely new medium. By asking themselves the question: ‘What would email look like if we invented it today?’, they have redefined the way in which web conversations can occur in the future. (And they do occur, they’re not conducted.)
+
+It’s that difference which leads me to think that Wave is at least as significant as the printing press. It marks a shift from publication (which is, after all, what email is) to conversational collaboration; Wave captures the essence of real-life conversation as though you are ‘writing out loud’.
+
+You can see the fingerprints of sources of inspiration that have been captured and transformed by the imagination of Google’s team: The crowdsourced content applications like (link: http://www.wikipedia.org/ text: Wikipedia) and (link: http://www.tripadvisor.com/ text: TripAdvisor), and collaborative productivity applications like (link: http://www.basecamphq.com/text: Basecamp) and (link: http://www.30boxes.com/welcome.php text: 30boxes); the combined potential of instant messaging services like (link: http://dashboard.aim.com/aim text: AIM) with social media tools like (link: http://www.twitter.com/ text: Twitter), (link: http://www.facebook.com/ text: Facebook) and (link: http://www.friendfeed.com/ text: Friendfeed), and they’re just some of the existing examples that spring to mind.
+
+So Google has adapted existing technologies and applied them in new ways to create the prospect of a new tradition emerging from the wings. (You’ll have to forgive me for repetition of that mantra!)
+
+Just on the basis of the presentation by the team behind Google Wave (above), I can see the potential death knell for email trails (no doubt you’ll ‘catch a wave’ in future and not go email trawling), intranets (why not aggregate and publish Waves instead?), and sweeping changes to the way in which customers engage in online support (each wave is unique but can build on a previous wave — perfect for ‘living’ FAQs, for instance).
+
+But that’s just a flavour of its potential. Google Wave is open source, which means that developers across the globe are already feverishly playing with the beta version of Wave in order to release rafts of applications when the application launches later this year.
+
+It’s a longish presentation — well, 1 hour and 20 minutes — but it’s worth it.
+
+----
+
+Relatedlinks: 
+
+----
+
+Tags: Views,Culture
+
+----
+
+Comments: 1
+
+----
+
+Nextpost: 1

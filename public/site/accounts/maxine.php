@@ -9,11 +9,11 @@ password: >
 language: en
 role: admin
 history:
-  - journal/anyone-for-pogo
   - >
-    journal/consumers-0-1-financial-services-industry-ft
+    journal/nostalgia-and-the-brand-consequences-of-blitz-spirit
   - >
-    journal/the-reality-that-shocked-the-city-there-are-teenagers
-  - journal/one-small-tweet-for-man
+    journal/being-on-the-cusp-of-a-new-tradition
+  - journal/man-bites-dogma
   - >
-    journal/and-now-for-something-completely-different
+    journal/waving-not-drowning-and-other-cliches
+  - journal/just-one-quick-question
