@@ -9,12 +9,11 @@ password: >
 language: en
 role: admin
 history:
-  - journal/whos-afraid-of-barbra-streisand
+  - journal/anyone-for-pogo
   - >
-    journal/how-to-build-an-ifa-brand-these-days
+    journal/consumers-0-1-financial-services-industry-ft
   - >
-    journal/why-the-aol-rebrand-is-absolutely-fine-by-me
+    journal/the-reality-that-shocked-the-city-there-are-teenagers
+  - journal/one-small-tweet-for-man
   - >
-    journal/johnston-press-and-the-plucky-pay-wall-pilot
-  - >
-    journal/google-china-and-my-i-told-you-so-moment
+    journal/and-now-for-something-completely-different

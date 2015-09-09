@@ -1,0 +1,55 @@
+Title: Animating the issues of US healthcare reform
+
+----
+
+Titleurl: https://www.youtube.com/watch?feature=player_embedded&v=svCQJvP1S8g
+
+----
+
+Date: 2009-09-10
+
+----
+
+Author: ian
+
+----
+
+Featured: 
+
+----
+
+Excerpt: 
+
+----
+
+Hero: 
+
+----
+
+Text: 
+
+<iframe width="640" height="360" src="https://www.youtube.com/embed/svCQJvP1S8g?feature=player_embedded" frameborder="0" allowfullscreen></iframe>
+
+From this side of the pond, it’s been quite tricky keeping tabs on what exactly is at the heart of the US healthcare reform debate that’s raging in the United States.
+
+So, if you take the prose of award-winning author (link: http://youtu.be/svCQJvP1S8g text: John Green) and the creative talent of the people at (link: http://thoughtbubble.org/ text: Thought Bubble), and mix it together, the result is a succinct, serious but engaging analysis of the issues up for grabs.
+
+This video does what good communication design always does: it makes the apparently complex more easy to understand and engage with.
+
+The issues — at least from Mr Green’s perspective — were much clearer once I viewed this. I wonder if you’ll think the same?
+
+----
+
+Relatedlinks: 
+
+----
+
+Tags: Views,Design
+
+----
+
+Comments: 
+
+----
+
+Nextpost: 1
