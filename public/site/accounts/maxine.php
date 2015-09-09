@@ -9,6 +9,7 @@ password: >
 language: en
 role: admin
 history:
+  - journal/whos-afraid-of-barbra-streisand
   - >
     journal/how-to-build-an-ifa-brand-these-days
   - >
@@ -17,4 +18,3 @@ history:
     journal/johnston-press-and-the-plucky-pay-wall-pilot
   - >
     journal/google-china-and-my-i-told-you-so-moment
-  - journal/ikeler-on-advertising-trends
