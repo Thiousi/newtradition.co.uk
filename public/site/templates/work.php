@@ -7,9 +7,8 @@
         <span class="meta-cat h5">Case Study</span>
       </div>
       <div class="col-3-4">
-        <h2><?php echo $featured->client() ?></h2>
-        <h3><strong><?php echo $featured->date('F Y') ?></strong></h3>
-        <h3><?php echo $featured->title() ?></h3>
+        <h2><?php echo $featured->title() ?></h2>
+        <h3><strong><?php echo $featured->project() ?></strong></h3>
       </div>
     </div>
   </a>
@@ -23,7 +22,7 @@
         <?php foreach($uris as $uri): ?>
         <?php $post = $pages->find($uri); ?>
           <a href="<?php echo $post->url() ?>" class="post <?php echo $post->template() ?>">
-            <h3><strong><?php echo $post->client() ?></strong><?php echo $post->title()->html() ?></h3>
+            <h3><strong><?php echo $post->title() ?></strong><?php echo $post->project() ?></h3>
           </a>
         <?php endforeach; ?>
       </div>

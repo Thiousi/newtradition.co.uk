@@ -169,3 +169,38 @@
     }
   }
 }
+
+.skills-table-wrap {
+  padding-top: 70px;
+  border-top: 1px solid darken($slate, 3);
+  display: block;
+  margin: 70px auto 30px;
+  text-align: center;
+
+  @media screen and ( max-width: $medium ) {
+    padding-top: 35px;
+    margin: 30px 0 20px;
+    text-align: left;
+  }
+}
+
+.skills-table {
+  li {
+    margin: 4px auto 0;
+    padding: 10px 30px;
+    border-radius: 2px;
+    display: inline-block;
+    border: 1px solid darken($slate, 3);
+    font-size: $epsilon !important;
+    font-family: $sans;
+
+    @media screen and ( max-width: $medium ) {
+      margin: 5px 0 0;
+      padding: 7px 15px;
+    }
+
+    &:first-child {
+      border-top-width: 1px;
+    }
+  }
+}

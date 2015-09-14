@@ -9,11 +9,8 @@ password: >
 language: en
 role: admin
 history:
-  - >
-    journal/nostalgia-and-the-brand-consequences-of-blitz-spirit
-  - >
-    journal/being-on-the-cusp-of-a-new-tradition
-  - journal/man-bites-dogma
-  - >
-    journal/waving-not-drowning-and-other-cliches
-  - journal/just-one-quick-question
+  - work/thames-valley-police
+  - work/paraplanners-powwow
+  - work/the-home-office
+  - work/moneyscope
+  - work/openwork

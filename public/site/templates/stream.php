@@ -26,7 +26,7 @@
       if (!$article->excerpt()->empty()) {
         $html .= '<p>' . $article->excerpt() . '</p>';
       } else {
-        $html .= '<p>' . $article->text()->excerpt(300) . '</p>';
+        $html .= '<p>' . $article->text()->excerpt(200) . '</p>';
       }
       if ($article->client() != '') {
        $html .= '<span class="client">Client: ' . $article->client()->html() . '</span>';

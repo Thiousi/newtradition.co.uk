@@ -3,7 +3,7 @@
   <div class="grid">
     <h5>Case Study</h5>
     <h2><?php echo $page->title() ?></h2>
-    <h3><?php echo $page->client() ?></h3>
+    <h3><?php echo $page->project() ?></h3>
   </div>
 </header>
 <?php if(!$page->hero()->empty()): ?>
@@ -36,6 +36,21 @@
 <section class="post-main grid" role="main">
   <article class="post">
     <?php echo $page->text()->kirbytext() ?>
+    <?php 
+      $disciplines = ($page->disciplines());
+      $disciplines = explode(',',$disciplines);
+      $disciplines = array_map('trim',$disciplines);
+    ?> 
+    <?php if(!$page->disciplines()->empty()):?>
+    <aside class="skills-table-wrap">
+      <h5>Disciplines</h5>
+      <ul class="skills-table">
+        <?php foreach($disciplines as $discipline):?>
+        <li><?php echo $discipline ?></li>
+        <?php endforeach ?>
+      </ul>
+    </aside>
+    <?php endif ?>
     <aside class="post-actions">
       <?php snippet('share') ?>
     </aside>

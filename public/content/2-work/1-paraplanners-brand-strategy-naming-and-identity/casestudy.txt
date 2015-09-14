@@ -1,12 +1,8 @@
-Title: Brand Strategy, Naming and Identity
+Title: The Paraplanners
 
 ----
 
-Client: The Paraplanners
-
-----
-
-Date: 2015-08-23
+Date: 2013-08-31
 
 ----
 
@@ -39,4 +35,8 @@ Doing so established greater clarity in the relationship between the two brands,
 
 ----
 
-Tags: 
+Disciplines: Brand Strategy,Naming and Identity,Project Management,Web Development,Communications
+
+----
+
+Project: Brand Strategy, Naming and Identity

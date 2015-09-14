@@ -6,10 +6,10 @@ files:
   sortable: true
 fields:
   title:
-    label: Project Title
-    type:  text
-  client:
     label: Client
+    type:  text
+  project:
+    label: Project Title
     type: text
     required: true
   date:
@@ -50,6 +50,6 @@ fields:
     required: true
   line-c:
     type: line
-  tags:
-    label: Tags
+  disciplines:
+    label: Disciplines
     type:  tags
