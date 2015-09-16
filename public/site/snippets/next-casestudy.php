@@ -5,7 +5,7 @@
     <div class="grid">
       <h5>Next Case Study</h5>
       <h2><?php echo $next->title() ?></h2>
-      <h3><?php echo $next->client() ?></h3>
+      <h3><?php echo $next->project() ?></h3>
     </div>
   </a>
 <?php elseif ($page->hasPrevVisible()): ?>
@@ -13,7 +13,7 @@
     <div class="grid">
       <h5>Next Case Study</h5>
       <h2><?php echo $prev->title() ?></h2>
-      <h3><?php echo $prev->client() ?></h3>
+      <h3><?php echo $prev->project() ?></h3>
     </div>
   </a>
 <?php else: ?>
