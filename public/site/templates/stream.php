@@ -13,7 +13,7 @@
         $file = $article->hero()->toFile();
         $html .= '<div class="post-img" style="background-image: url('. $file->url() . ')" title="' . $article->title()->html() . '"></div>';
       } else {
-        $html .= '<div class="post-img post-img-empty"></div>';
+        $html .= '<span class="post-img post-img-empty"></span>';
       }
       if ($article->template() == 'longread') {
         $html .= '<h5>Long Read</h5>';
