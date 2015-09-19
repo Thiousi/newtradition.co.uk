@@ -56,6 +56,8 @@
       <?php if(!$article->hero()->empty()): ?>
         <?php $file = $article->hero()->toFile() ?>
         <div class="post-img" style="background-image: url(<?php echo thumb($file, array('width' => 650, 'height' => 230, 'quality' => 75, 'crop' => true))->url() ?>);"></div>
+      <?php else: ?>
+        <div class="post-img post-img-empty"></div>
       <?php endif ?>
       <div class="meta">
         <span class="meta-cat h5">

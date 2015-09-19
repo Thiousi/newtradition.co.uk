@@ -29,12 +29,18 @@
       }
     }
 
+    .post-img {
+      background-color: $slate;
+    }
+
     .post:nth-of-type(8) {
       width: 100%;
 
       .post-img {
         display: block;
-        height: 200px;
+        height: 250px;
+
+        &.post-img-empty { display: none; }
       }
     }
 
@@ -60,8 +66,7 @@
       clear: both;
     }
 
-    .post:nth-of-type(6),
-    .post:nth-of-type(14) {
+    .post:nth-of-type(6) {
       img,
       .post-img {
         display: block;

@@ -155,3 +155,29 @@ img {
     }
   }
 }
+
+.post-img-empty {
+  position: relative;
+  overflow: hidden;
+  
+  &:after { 
+    @include icon-pseudo; 
+    opacity: 0.2;
+    top: 50%;
+    right: 50px;
+    transform: translateY(-50%) scale(2.5);
+  }
+
+  .comment &:after {
+    @include sprite($link-grey-lrg);
+  }
+
+  .news &:after {
+    @include sprite($news-grey-lrg);
+    transform: translateY(-50%) scale(2.2);
+  }
+
+  .longread &:after {
+    @include sprite($pen-grey-lrg);
+  }
+}

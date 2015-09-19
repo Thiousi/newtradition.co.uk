@@ -516,6 +516,40 @@ img {
     .share:not(.active) .btn-facebook {
       left: 150px; } }
 
+.post-img-empty {
+  position: relative;
+  overflow: hidden; }
+  .post-img-empty:after {
+    content: "";
+    overflow: hidden;
+    display: block;
+    position: absolute;
+    opacity: 0.2;
+    top: 50%;
+    right: 50px;
+    -webkit-transform: translateY(-50%) scale(2.5);
+    transform: translateY(-50%) scale(2.5); }
+  .comment .post-img-empty:after {
+    width: 100px;
+    height: 100px;
+    background-repeat: no-repeat;
+    background-image: url(../images/sprite.svg);
+    background-position: -213px -20px; }
+  .news .post-img-empty:after {
+    width: 121px;
+    height: 100px;
+    background-repeat: no-repeat;
+    background-image: url(../images/sprite.svg);
+    background-position: -68px -125px;
+    -webkit-transform: translateY(-50%) scale(2.2);
+    transform: translateY(-50%) scale(2.2); }
+  .longread .post-img-empty:after {
+    width: 62px;
+    height: 100px;
+    background-repeat: no-repeat;
+    background-image: url(../images/sprite.svg);
+    background-position: 0px -40px; }
+
 input, textarea {
   padding: 10px;
   display: block;
@@ -1047,11 +1081,15 @@ input, textarea {
     width: 33.33%; }
     .stream .post img, .stream .post .post-img {
       display: none; }
+  .stream .post-img {
+    background-color: #EAEAEA; }
   .stream .post:nth-of-type(8) {
     width: 100%; }
     .stream .post:nth-of-type(8) .post-img {
       display: block;
-      height: 200px; }
+      height: 250px; }
+      .stream .post:nth-of-type(8) .post-img.post-img-empty {
+        display: none; }
   .stream .post:first-of-type, .stream .post:nth-of-type(2), .stream .post:nth-of-type(6), .stream .post:nth-of-type(7), .stream .post:nth-of-type(12), .stream .post:nth-of-type(13) {
     width: 50%; }
     .stream .post:first-of-type .post-img, .stream .post:nth-of-type(2) .post-img, .stream .post:nth-of-type(6) .post-img, .stream .post:nth-of-type(7) .post-img, .stream .post:nth-of-type(12) .post-img, .stream .post:nth-of-type(13) .post-img {
@@ -1059,7 +1097,7 @@ input, textarea {
       height: 240px; }
   .stream .post:nth-of-type(3), .stream .post:nth-of-type(6), .stream .post:nth-of-type(12), .stream .post:nth-of-type(14), .stream .post:nth-of-type(3n+17) {
     clear: both; }
-  .stream .post:nth-of-type(6) img, .stream .post:nth-of-type(6) .post-img, .stream .post:nth-of-type(14) img, .stream .post:nth-of-type(14) .post-img {
+  .stream .post:nth-of-type(6) img, .stream .post:nth-of-type(6) .post-img {
     display: block; }
   .stream .post:nth-of-type(1n+17) .post-img {
     display: none; } }
@@ -1392,14 +1430,14 @@ a.featured:hover {
     .work-stream:first-of-type:before {
       display: none; }
   .work-stream .post {
-    padding: 0 0 30px;
+    padding: 0 0 10px;
     margin-top: 0;
     margin-bottom: 20px;
     border-bottom: 1px solid #e2e2e2; }
     .work-stream .post:before {
       display: none; }
     .work-stream .post:last-child {
-      margin-bottom: 80px;
+      margin-bottom: 60px;
       border-bottom: none; }
     .work-stream .post:hover h3 {
       color: rgba(227, 6, 19, 0.3); }
