@@ -5,7 +5,7 @@
     line-height: 1;
 
     @media screen and ( max-width: $small ) {
-      
+      font-size: $gamma
     }
 
     strong {
@@ -16,7 +16,7 @@
       margin-bottom: 5px;
 
       @media screen and ( max-width: $small ) {
-        font-size: $beta + 4px;
+        font-size: $beta;
       }
     }
   }

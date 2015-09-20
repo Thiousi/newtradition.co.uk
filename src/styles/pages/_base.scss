@@ -170,6 +170,8 @@ a.featured:hover {
     }
   }
 
+  .featured & .meta { margin-bottom: 0; }
+
   img, {
     margin-bottom: 15px;
   }
