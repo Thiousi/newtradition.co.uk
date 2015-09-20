@@ -24,7 +24,7 @@
 <?php endforeach ?>
 <section class="grid journal-stream" role="main">
   <div class="col-3-4">
-    <h2 class="tag-title"><?php echo $tag ?></h2>
+    <h2 class="tag-title tag"><?php echo $tag ?></h2>
     <?php foreach ($articles as $article): ?>
       <?php $count = 0 ?>
       <a href="<?php echo $article->url() ?>" class="post <?php echo $article->template() ?>">
@@ -62,7 +62,7 @@
       <?php $tags = $page->children()->visible()->pluck('tags', ',', true);?>
       <ul class="tag-list">
         <?php foreach($tags as $tag): ?>
-          <li><a href="<?php echo $page->url() . '/tag:' . urlencode($tag) ?>" class="tag"><?php echo html($tag) ?></a></li>
+          <li><a href="<?php echo $page->url() . '/tag:' . $tag ?>" class="tag"><?php echo html($tag) ?></a></li>
         <?php endforeach ?>
       </ul>
     </div>

@@ -65,6 +65,7 @@ fields:
   tags:
     label: Tags
     type:  tags
+    help: Use hyphens for multi-worded tags
   comments:
     label: Comments
     type: checkbox

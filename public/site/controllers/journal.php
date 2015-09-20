@@ -1,7 +1,7 @@
 <?php return function($site, $pages, $page) {
 
   $articles = $site->find('journal')->children()->visible()->sortBy('date', 'desc');
-
+  
   if ($tag = param('tag')) {
     $articles = $articles->filterBy('tags', $tag, ',');
   }
