@@ -8,7 +8,7 @@
       </div>
       <div class="col-3-4">
         <h2><?php echo $featured->title() ?></h2>
-        <h3><strong><?php echo $featured->project() ?></strong></h3>
+        <h3><strong><?php echo $featured->project() ?></strong> <?php echo $featured->date('Y') ?></h3>
       </div>
     </div>
   </a>
