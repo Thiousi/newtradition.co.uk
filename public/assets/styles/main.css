@@ -1138,6 +1138,9 @@ input, textarea {
   .gallery-item img {
     width: auto;
     height: 340px; }
+    @media screen and (max-width: 800px) {
+      .gallery-item img {
+        height: 250px; } }
 
 .featured {
   background-color: #EAEAEA;
@@ -1885,7 +1888,7 @@ a.featured:hover {
   background-color: #E30613; }
   @media screen and (max-width: 800px) {
     .casestudy .post-head, .casestudy .casestudy-next {
-      padding: 45px 10px 30px;
+      padding: 45px 10px 15px;
       text-align: left; } }
   .casestudy .post-head h2, .casestudy .casestudy-next h2 {
     line-height: 1.1; }
@@ -1949,6 +1952,8 @@ a.featured:hover {
   border-bottom: none;
   padding: 30px 10px;
   display: block; }
+  .casestudy .post-summary .summary * {
+    font-family: 'ff-dagny-web-pro', helvetica, sans-serif; }
   @media screen and (max-width: 800px) {
     .casestudy .post-summary {
       padding: 20px 10px; } }

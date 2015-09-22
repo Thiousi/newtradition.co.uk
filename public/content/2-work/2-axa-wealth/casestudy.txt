@@ -33,7 +33,7 @@ Summary: (link: http://www.axawealth.co.uk/ text: AXA Wealth)  asked New Traditi
 
 ----
 
-Gallery: axa-1.jpg,axa-2.jpg,axa-3.jpg,axa-4.jpg,axa-logo.jpg,axa-wealth.jpg
+Gallery: axa-logo.jpg,axa-wealth.jpg
 
 ----
 

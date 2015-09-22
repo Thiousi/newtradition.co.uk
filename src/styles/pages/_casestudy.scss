@@ -10,7 +10,7 @@
     background-color: $primary;
 
     @media screen and ( max-width: $medium ) {
-      padding: 45px 10px 30px;
+      padding: 45px 10px 15px;
       text-align: left;
     }
 
@@ -97,6 +97,10 @@
     border-bottom: none;
     padding: 30px $gutter;
     display: block;
+
+    .summary * {
+      font-family: $sans;
+    }
 
     @media screen and ( max-width: $medium ) {
       padding: 20px $gutter;

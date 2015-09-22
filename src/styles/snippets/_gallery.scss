@@ -46,5 +46,9 @@
 	img {
     width: auto;
     height: 340px;
+
+    @media screen and ( max-width: $medium ) {
+      height: 250px;
+    }
 	}
 }
