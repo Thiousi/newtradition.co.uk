@@ -82,6 +82,10 @@ a.featured:hover {
   position: relative;
   display: block;
   border-bottom: none;
+  width: 100%;
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+  hyphens: auto;
 
   * {
     transition: 0.2s;
@@ -246,10 +250,6 @@ a.featured:hover {
 
   h5 {
     margin-bottom: 12px;
-
-    @media screen and ( max-width: $small ) {
-      margin-bottom: 0;
-    }
   }
 }
 

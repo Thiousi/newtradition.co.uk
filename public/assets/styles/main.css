@@ -1198,7 +1198,14 @@ a.featured:hover {
   padding-bottom: 15px;
   position: relative;
   display: block;
-  border-bottom: none; }
+  border-bottom: none;
+  width: 100%;
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+  -webkit-hyphens: auto;
+  -moz-hyphens: auto;
+  -ms-hyphens: auto;
+  hyphens: auto; }
   .post * {
     -webkit-transition: 0.2s;
     transition: 0.2s; }
@@ -1301,9 +1308,6 @@ a.featured:hover {
     border-top: none; }
   .sidebar-item h5 {
     margin-bottom: 12px; }
-    @media screen and (max-width: 570px) {
-      .sidebar-item h5 {
-        margin-bottom: 0; } }
 
 .post-next {
   margin: 30px 0 0;
@@ -1876,12 +1880,13 @@ a.featured:hover {
 .casestudy .title {
   display: none; }
 .casestudy .post-head, .casestudy .casestudy-next {
-  padding: 70px 0 100px;
+  padding: 70px 10px 100px;
   text-align: center;
   background-color: #E30613; }
   @media screen and (max-width: 800px) {
     .casestudy .post-head, .casestudy .casestudy-next {
-      padding: 45px 0 30px; } }
+      padding: 45px 10px 30px;
+      text-align: left; } }
   .casestudy .post-head h2, .casestudy .casestudy-next h2 {
     line-height: 1.1; }
   .casestudy .post-head h3, .casestudy .casestudy-next h3 {
@@ -1897,7 +1902,10 @@ a.featured:hover {
     letter-spacing: 5px; }
     @media screen and (max-width: 800px) {
       .casestudy .post-head h5, .casestudy .casestudy-next h5 {
-        margin-bottom: 30px; } }
+        margin-bottom: 30px;
+        text-align: left;
+        margin-left: 0;
+        padding-left: 0; } }
 .casestudy .post-hero {
   position: relative; }
   .casestudy .post-hero:before, .casestudy .post-hero:after {
@@ -1971,7 +1979,7 @@ a.featured:hover {
   margin-bottom: 0; }
   @media screen and (max-width: 800px) {
     .casestudy .casestudy-next {
-      padding: 25px 0 20px; } }
+      padding: 25px 10px 20px; } }
   .casestudy .casestudy-next h2 {
     display: block;
     color: #39333F;

@@ -5,12 +5,13 @@
 
   .post-head,
   .casestudy-next {
-    padding: 70px 0 100px;
+    padding: 70px 10px 100px;
     text-align: center;
     background-color: $primary;
 
     @media screen and ( max-width: $medium ) {
-      padding: 45px 0 30px;
+      padding: 45px 10px 30px;
+      text-align: left;
     }
 
     h2 {
@@ -33,6 +34,9 @@
 
       @media screen and ( max-width: $medium ) {
         margin-bottom: 30px;
+        text-align: left;
+        margin-left: 0;
+        padding-left: 0;
       }
     }
   }
@@ -134,7 +138,7 @@
     margin-bottom: 0;
 
     @media screen and ( max-width: $medium ) {
-      padding: 25px 0 20px;
+      padding: 25px 10px 20px;
     }
 
     h2 {
