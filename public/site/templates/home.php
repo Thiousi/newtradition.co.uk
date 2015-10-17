@@ -50,7 +50,7 @@
   </div>
 </section>
 <section class="stream grid" role="main">
-  <?php foreach ($site->find('journal','work')->children()->visible()->sortBy('date', 'desc')->limit(7) as $article): ?>
+  <?php foreach ($site->find('journal','blog','work')->children()->visible()->sortBy('date', 'desc')->limit(7) as $article): ?>
     <?php $count = 0 ?>
     <a href="<?php echo $article->url() ?>" class="post <?php echo $article->template() ?>">
       <?php if(!$article->hero()->empty()): ?>

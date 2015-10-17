@@ -159,12 +159,13 @@
       width: 100%;
     }
 
-    @media screen and ( min-width: $medium ) {
+    @media screen and ( min-width: $medium + 100px ) {
       blockquote,
       figure.left {
-        max-width: calc(75% - 30px);
+        max-width: calc(65% - 30px);
+        padding-right: 20px;
         float: left;
-        margin: 20px 30px 20px -25%;
+        margin: 20px 0 20px -25%;
       }
     }
   }
