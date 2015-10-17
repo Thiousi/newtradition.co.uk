@@ -1,5 +1,5 @@
 <?php snippet('header') ?>
-<?php foreach($site->find('journal')->children()->filterBy('featured', '1')->visible()->sortBy('date', 'desc')->limit(1) as $featured): ?>
+<?php foreach($page->children()->filterBy('featured', '1')->visible()->sortBy('date', 'desc')->limit(1) as $featured): ?>
   <a href="<?php echo $featured->url() ?>" title="<?php echo html($featured->title()) ?>" class="featured">
     <div class="grid">
       <div class="meta col-1-4">

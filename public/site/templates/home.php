@@ -1,7 +1,7 @@
 <?php snippet('header') ?>
 <section class="featured">
   <div class="grid">
-    <?php foreach ($site->find('journal')->children()->filterBy('featured', '1')->visible()->limit(1) as $featured): ?>
+    <?php foreach ($site->find('blog', 'journal')->children()->filterBy('featured', '1')->visible()->limit(1) as $featured): ?>
       <a href="<?php echo $featured->url() ?>" class="post col-2-3 <?php echo $featured->template() ?>"> 
         <?php if(!$featured->hero()->empty()): ?>
           <?php $file = $featured->hero()->toFile() ?>
@@ -21,7 +21,7 @@
         <?php else: ?>
           <p><?php echo $featured->text()->excerpt(300) ?></p>
         <?php endif ?>
-        <button class="btn-more btn-line b5tn-small">Read more</button>
+        <button class="btn-more btn-line btn-small">Read more</button>
       </a>
     <?php endforeach ?>
     <?php foreach ($site->find('work')->children()->filterBy('featured', '1')->visible()->limit(1) as $featured): ?>

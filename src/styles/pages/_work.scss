@@ -27,6 +27,7 @@
 
   .featured {
     padding-bottom: 60px;
+    margin-bottom: 0;
 
     h2 {
       margin-bottom: 15px;
@@ -58,8 +59,6 @@
   }
 
   &:first-of-type {
-    padding-top: 10px;
-
     &:before {
       display: none;
     }

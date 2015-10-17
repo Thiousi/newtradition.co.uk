@@ -1428,7 +1428,8 @@ a.featured:hover {
 .work h5 {
   margin-bottom: 30px; }
 .work .featured {
-  padding-bottom: 60px; }
+  padding-bottom: 60px;
+  margin-bottom: 0; }
   .work .featured h2 {
     margin-bottom: 15px; }
   .work .featured h3 {
@@ -1448,10 +1449,8 @@ a.featured:hover {
     height: 1px;
     width: calc(100% - 40px);
     left: 20px; }
-  .work-stream:first-of-type {
-    padding-top: 10px; }
-    .work-stream:first-of-type:before {
-      display: none; }
+  .work-stream:first-of-type:before {
+    display: none; }
   .work-stream .post {
     padding: 0 0 10px;
     margin-top: 0;

@@ -1,4 +1,4 @@
-Title: Who
+Title: About
 
 ----
 
@@ -7,14 +7,6 @@ Title: Who
 ----
 
 2: 
-
-----
-
-3: 
-
-----
-
-Name: maxine
 
 ----
 
@@ -37,10 +29,6 @@ Linkedin: https://www.linkedin.com/pub/maxine-cameron/8/169/77
 ----
 
 Quora: 
-
-----
-
-Name2: ian
 
 ----
 

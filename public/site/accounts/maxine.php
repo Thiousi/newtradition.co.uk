@@ -9,10 +9,9 @@ password: >
 language: en
 role: admin
 history:
-  - home
+  - >
+    blog/to-create-an-online-financial-advice-brand-become-a-follower-of-fashion
   - work/axa-wealth
-  - >
-    journal/the-bebanking-talk-i-nearly-gave-at-tedxcheltenham
-  - >
-    journal/to-create-an-online-financial-advice-brand-become-a-follower-of-fashion
-  - work/thames-valley-police
+  - blog
+  - about
+  - home
