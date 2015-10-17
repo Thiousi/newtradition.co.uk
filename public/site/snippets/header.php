@@ -22,7 +22,7 @@
       </div>
       <h1 class="title col-3-4">
         <?php if ($page->isHomePage()): ?>
-          <?php echo html($site->description()) ?>
+          <?php echo html($page->description()) ?>
         <?php elseif ($page->hasChildren()): ?>
           <?php echo html($page->title()) ?>
         <?php elseif($page->template() == 'who'): ?>

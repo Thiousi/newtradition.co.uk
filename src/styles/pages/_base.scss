@@ -82,10 +82,12 @@ a.featured:hover {
   position: relative;
   display: block;
   border-bottom: none;
-  width: 100%;
   overflow-wrap: break-word;
   word-wrap: break-word;
-  hyphens: auto;
+
+  p {
+    hyphens: auto;
+  }
 
   * {
     transition: 0.2s;

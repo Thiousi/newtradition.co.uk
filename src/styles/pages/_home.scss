@@ -1,6 +1,11 @@
 .home {
   .featured {
+    padding-top: 0;
     padding-bottom: 0;
+
+    .grid {
+      padding: 0;
+    }
 
     .col-2-3 {
       .post-img {
@@ -10,6 +15,10 @@
           height: 170px;
         }
       }
+    }
+
+    .post {
+      padding: 40px 20px 30px;
     }
   }
 }
