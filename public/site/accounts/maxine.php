@@ -9,9 +9,9 @@ password: >
 language: en
 role: admin
 history:
+  - blog/mr-milibands-big-moment
   - >
     blog/to-create-an-online-financial-advice-brand-become-a-follower-of-fashion
   - work/axa-wealth
   - blog
   - about
-  - home

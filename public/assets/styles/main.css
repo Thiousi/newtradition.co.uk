@@ -373,6 +373,21 @@ figure {
   figure img {
     margin-bottom: 8px;
     width: 100%; }
+  @media screen and (min-width: 770px) {
+    figure.left-offset {
+      max-width: calc(65% - 30px);
+      padding-right: 20px;
+      float: left;
+      margin: 20px 0 20px -25%; }
+    figure.right, figure.left {
+      width: 50%;
+      margin: 10px 0; }
+    figure.right {
+      float: right;
+      padding-left: 20px; }
+    figure.left {
+      float: left;
+      padding-right: 20px; } }
 
 figcaption, figcaption[class*="col-"] {
   color: #c0bdc3;
@@ -1613,7 +1628,7 @@ a.featured:hover {
       line-height: 1.5; }
     .post-main .post hr {
       margin: 30px 0; }
-    .post-main .post figure, .post-main .post iframe {
+    .post-main .post iframe {
       margin: 30px 0; }
     .post-main .post .video {
       position: relative;
@@ -1630,7 +1645,7 @@ a.featured:hover {
     .post-main .post iframe {
       width: 100%; }
     @media screen and (min-width: 900px) {
-      .post-main .post blockquote, .post-main .post figure.left {
+      .post-main .post blockquote {
         max-width: calc(65% - 30px);
         padding-right: 20px;
         float: left;
