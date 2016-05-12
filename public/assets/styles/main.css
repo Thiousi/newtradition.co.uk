@@ -1224,7 +1224,6 @@ a.featured:hover {
   word-wrap: break-word; }
   .post p {
     -webkit-hyphens: auto;
-    -moz-hyphens: auto;
     -ms-hyphens: auto;
     hyphens: auto; }
   .post * {
@@ -1906,7 +1905,7 @@ a.featured:hover {
 .casestudy .title {
   display: none; }
 .casestudy .post-head, .casestudy .casestudy-next {
-  padding: 70px 10px 100px;
+  padding: 70px 10px;
   text-align: center;
   background-color: #E30613; }
   @media screen and (max-width: 800px) {
@@ -1916,7 +1915,8 @@ a.featured:hover {
   .casestudy .post-head h2, .casestudy .casestudy-next h2 {
     line-height: 1.1; }
   .casestudy .post-head h3, .casestudy .casestudy-next h3 {
-    font-size: 36px;
+    font-family: 'ff-dagny-web-pro', helvetica, sans-serif;
+    font-weight: 400;
     color: #80030b; }
   .casestudy .post-head h5, .casestudy .casestudy-next h5 {
     margin: 10px auto 70px;
@@ -2003,7 +2003,7 @@ a.featured:hover {
 .casestudy .casestudy-next {
   background-color: #EAEAEA;
   padding-top: 40px;
-  padding-bottom: 30px;
+  padding-bottom: 40px;
   margin-bottom: 0; }
   @media screen and (max-width: 800px) {
     .casestudy .casestudy-next {

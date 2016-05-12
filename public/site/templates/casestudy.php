@@ -1,7 +1,6 @@
 <?php snippet('header') ?>
 <header class="post-head">
   <div class="grid">
-    <h5>Case Study</h5>
     <h2><?php echo $page->title() ?></h2>
     <h3><?php echo $page->project() ?></h3>
   </div>
@@ -36,11 +35,11 @@
 <section class="post-main grid" role="main">
   <article class="post">
     <?php echo $page->text()->kirbytext() ?>
-    <?php 
+    <?php
       $disciplines = ($page->disciplines());
       $disciplines = explode(',',$disciplines);
       $disciplines = array_map('trim',$disciplines);
-    ?> 
+    ?>
     <?php if(!$page->disciplines()->empty()):?>
     <aside class="skills-table-wrap">
       <h5>Disciplines</h5>

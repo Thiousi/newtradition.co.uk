@@ -5,7 +5,7 @@
 
   .post-head,
   .casestudy-next {
-    padding: 70px 10px 100px;
+    padding: 70px 10px;
     text-align: center;
     background-color: $primary;
 
@@ -19,7 +19,9 @@
     }
 
     h3 {
-      font-size: $alpha;
+
+      font-family: $sans;
+      font-weight: $sans-regular;
       color: darken($primary, 20);
     }
 
@@ -75,12 +77,12 @@
 
       p, li {
         font-size: $delta + 2px;
-      } 
+      }
 
       blockquote {
         display: block;
         margin: 40px;
-        float: none; 
+        float: none;
         padding: 40px 0;
         max-width: 100%;
 
@@ -132,13 +134,13 @@
       padding-top: 35px;
       display: table;
       margin: 0 auto;
-    } 
+    }
   }
 
   .casestudy-next {
     background-color: $slate;
     padding-top: 40px;
-    padding-bottom: 30px;
+    padding-bottom: 40px;
     margin-bottom: 0;
 
     @media screen and ( max-width: $medium ) {
@@ -162,7 +164,7 @@
 
     h5 {
       color: $primary;
-      border-bottom-color: rgba($light-ink, 0.1); 
+      border-bottom-color: rgba($light-ink, 0.1);
       margin-bottom: 30px;
     }
 
