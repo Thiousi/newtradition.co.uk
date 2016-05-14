@@ -1,0 +1,17 @@
+@font-face {
+  font-family: 'merlo';
+  src: url('../fonts/merlo-reg.woff2') format('woff2'),
+       url('../fonts/merlo-reg.woff') format('woff'),
+       url('../fonts/merlo-reg.eot') format('eot');
+  font-weight: $serif-regular;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'merlo';
+  src: url('../fonts/merlo-it.woff2') format('woff2'),
+       url('../fonts/merlo-it.woff') format('woff'),
+       url('../fonts/merlo-it.eot') format('eot');
+  font-weight: $serif-regular;
+  font-style: italic;
+}

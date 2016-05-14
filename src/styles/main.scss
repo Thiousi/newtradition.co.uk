@@ -1,8 +1,11 @@
+// Abstracts
+@import "abstracts/variables";
+@import "abstracts/mixins";
+@import "abstracts/sprite";
+
 // Shared
-@import "shared/variables";
 @import "shared/normalize";
-@import "shared/mixins";
-@import "shared/sprite";
+@import "shared/fonts";
 @import "shared/layout";
 @import "shared/typography";
 @import "shared/elements";

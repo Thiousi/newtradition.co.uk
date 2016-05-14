@@ -67,10 +67,6 @@ h6, .h6 {
   color: lighten($light-ink, 20);
 }
 
-strong {
-  font-weight: $serif-bold;
-}
-
 ol {
   padding-left: 1.4em;
 
@@ -92,16 +88,8 @@ ul {
   }
 }
 
-dt {
-  font-weight: $serif-bold;
-}
-
-dd {
-  margin-left: 1.4em;
-}
-
-blockquote, 
-blockquote p, 
+blockquote,
+blockquote p,
 .post-main .post blockquote p {
   color: $primary;
   font-size: $beta;
@@ -119,7 +107,7 @@ blockquote {
     padding-right: 0;
   }
 
-  &:before, 
+  &:before,
   &:after {
     content: "";
     position: absolute;

@@ -32,7 +32,7 @@ abbr[title] {
   border-bottom: 1px dotted; }
 
 b, strong {
-  font-weight: 700; }
+  font-weight: bold; }
 
 dfn {
   font-style: italic; }
@@ -134,7 +134,7 @@ textarea {
   overflow: auto; }
 
 optgroup {
-  font-weight: 700; }
+  font-weight: bold; }
 
 table {
   border-collapse: collapse;
@@ -143,10 +143,22 @@ table {
 td, th {
   padding: 0; }
 
+@font-face {
+  font-family: 'merlo';
+  src: url('../fonts/merlo-reg.woff2') format('woff2'), url('../fonts/merlo-reg.woff') format('woff'), url('../fonts/merlo-reg.eot') format('eot');
+  font-weight: 400;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'merlo';
+  src: url('../fonts/merlo-it.woff2') format('woff2'), url('../fonts/merlo-it.woff') format('woff'), url('../fonts/merlo-it.eot') format('eot');
+  font-weight: 400;
+  font-style: italic; }
+
 *, *::before, *:after {
   box-sizing: border-box;
-  font-family: 'ff-meta-serif-web-pro', georgia, serif;
-  font-weight: 500;
+  font-family: 'merlo', arial, serif;
+  font-weight: 400;
   text-rendering: optimizeSpeed;
   padding: 0;
   margin: 0; }
@@ -298,7 +310,7 @@ h2, .h2, .map-wrap h2 a {
 
 h3, .h3 {
   font-size: 32px;
-  font-weight: 500;
+  font-weight: 400;
   line-height: 1.15; }
 
 h4, .h4 {
@@ -319,9 +331,6 @@ h6, .h6 {
   font-weight: 400;
   color: #9a959e; }
 
-strong {
-  font-weight: 700; }
-
 ol {
   padding-left: 1.4em; }
   ol ol, ol ol ol {
@@ -334,12 +343,6 @@ ul {
     margin-bottom: 30px; }
   ul ul, ul ul ul {
     margin-bottom: 0; }
-
-dt {
-  font-weight: 700; }
-
-dd {
-  margin-left: 1.4em; }
 
 blockquote, blockquote p, .post-main .post blockquote p {
   color: #E30613;
@@ -950,8 +953,8 @@ input, textarea {
         border-bottom-color: rgba(255, 255, 255, 0.4); }
     .home .gbl-head .title {
       font-size: 36px;
-      font-family: 'ff-meta-serif-web-pro', georgia, serif;
-      font-weight: 500;
+      font-family: 'merlo', arial, serif;
+      font-weight: 400;
       padding: 80px 10px 80px 0;
       line-height: 1.4;
       max-width: 700px; }
@@ -1046,7 +1049,7 @@ input, textarea {
     display: table; }
   .gbl-foot .copyright {
     padding: 0 10px 40px;
-    max-width: 700px; }
+    max-width: 800px; }
 
 .stream {
   padding-left: 0;
@@ -1434,7 +1437,7 @@ a.featured:hover {
     font-size: 36px;
     display: block;
     color: #39333F;
-    font-weight: 500;
+    font-weight: 400;
     margin-bottom: 5px; }
     @media screen and (max-width: 570px) {
       .work h3 strong {
@@ -1916,7 +1919,6 @@ a.featured:hover {
     line-height: 1.1; }
   .casestudy .post-head h3, .casestudy .casestudy-next h3 {
     font-family: 'ff-dagny-web-pro', helvetica, sans-serif;
-    font-weight: 400;
     color: #80030b; }
   .casestudy .post-head h5, .casestudy .casestudy-next h5 {
     margin: 10px auto 70px;
@@ -2016,8 +2018,7 @@ a.featured:hover {
       .casestudy .casestudy-next h2 {
         font-size: 40px; } }
   .casestudy .casestudy-next h3 {
-    color: #67626B;
-    font-size: 32px; }
+    color: #67626B; }
   .casestudy .casestudy-next h5 {
     color: #E30613;
     border-bottom-color: rgba(103, 98, 107, 0.1);

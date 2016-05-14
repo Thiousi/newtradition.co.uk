@@ -36,6 +36,11 @@ module.exports = {
     dest: dist+'assets/images/'
   },
 
+  fonts: {
+    source: src+'fonts/**/*',
+    dest: dist+'assets/fonts/'
+  },
+
   wiredep: {
     source: vendor+'**/*.js',
     dest: dist+'assets/js/'
@@ -55,6 +60,7 @@ module.exports = {
       dist+'assets/images/*',
       dist+'assets/js/*',
       dist+'assets/styles/*',
+      dist+'assets/fonts/*',
     ]
   },
 
