@@ -14,9 +14,6 @@ logs
 npm-debug.log
 /node_modules
 
-# SublimeText project files
-*.sublime-workspace
-
 # Textmate
 *.tmproj
 *.tmproject
@@ -37,3 +34,6 @@ Icon
 
 # Sass
 .sass-cache
+
+# Kirby
+/public
