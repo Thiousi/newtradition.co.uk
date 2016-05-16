@@ -5,7 +5,7 @@ window.onload = function(){
     document.getElementsByTagName("body")[0].className.replace( /(?:^|\s)preload(?!\S)/ , '' );
 
   // Pagination
-  var pagination = document.querySelector(".pagination"); 
+  var pagination = document.querySelector(".pagination");
   if (pagination !== null) {
     var paginationLinks = pagination.getElementsByTagName("a"),
       i=0, len=paginationLinks.length,
@@ -79,9 +79,9 @@ var loader = function() {
 loadMore();
   return false;
 };
-   
+
 var btnLoad = document.querySelector(".btn-load");
-if (btnLoad !== null) { 
+if (btnLoad !== null) {
   $(btnLoad).bind('click', loader);
     var amount = 2;
     var offset = (amount * 3) + 1;
@@ -104,6 +104,12 @@ if (btnLoad !== null) {
   }
 }
 
+// If tag contains hyphen, replace with space
+var tagArray = document.getElementsByClassName("tag");
+for(var i = (tagArray.length - 1); i >= 0; i--) {
+  tagArray[i].innerHTML = tagArray[i].innerHTML.replace(/-/g,' ');
+}
+
 // Hide features on tag specific layouts
 var journalStream = document.querySelector(".journal-stream");
 if (journalStream !== null) {
@@ -121,11 +127,13 @@ if (journalStream !== null) {
     }
     var tagTitle = document.querySelector(".tag-title");
     var activeTag = document.querySelector(".sidebar .active");
-    if (activeTag !== null) {
-      tagTitle.textContent = activeTag.textContent;
-      tagTitle.style.display = 'block';
-      var feature = document.querySelector(".featured");
-      feature.style.display = 'none';
+    if (tagTitle !== null) {
+      if (activeTag !== null) {
+        tagTitle.textContent = activeTag.textContent;
+        tagTitle.style.display = 'block';
+        var feature = document.querySelector(".featured");
+        feature.style.display = 'none';
+      }
     }
   }
 }
@@ -136,10 +144,4 @@ if (journalStream !== null) {
     var feature = document.querySelector(".featured");
     feature.style.display = 'none';
   }
-}
-
-// If tag contains hyphen, replace with space
-var tagArray = document.getElementsByClassName("tag");
-for(var i = (tagArray.length - 1); i >= 0; i--) {
-  tagArray[i].innerHTML = tagArray[i].innerHTML.replace(/-/g,' ');
 }
