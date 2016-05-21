@@ -157,7 +157,7 @@ td, th {
 
 *, *::before, *:after {
   box-sizing: border-box;
-  font-family: 'merlo', arial, serif;
+  font-family: 'merlo', georgia, serif;
   font-weight: 400;
   text-rendering: optimizeSpeed;
   padding: 0;
@@ -953,7 +953,7 @@ input, textarea {
         border-bottom-color: rgba(255, 255, 255, 0.4); }
     .home .gbl-head .title {
       font-size: 36px;
-      font-family: 'merlo', arial, serif;
+      font-family: 'merlo', georgia, serif;
       font-weight: 400;
       padding: 80px 10px 80px 0;
       line-height: 1.4;
