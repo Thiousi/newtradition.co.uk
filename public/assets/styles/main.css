@@ -1235,9 +1235,9 @@ a.featured:hover {
   @media screen and (max-width: 570px) {
     .post {
       padding-bottom: 20px; } }
-  .home .post, .journal .post {
+  .home .post, .blog .post {
     overflow: hidden; }
-    .home .post:before, .journal .post:before {
+    .home .post:before, .blog .post:before {
       content: "";
       position: absolute;
       top: 0;
@@ -1245,27 +1245,27 @@ a.featured:hover {
       background-color: #e2e2e2;
       height: 1px;
       width: 100%; }
-    .home .post .btn-more, .journal .post .btn-more {
+    .home .post .btn-more, .blog .post .btn-more {
       -webkit-transform: scale(0.95);
       transform: scale(0.95);
       opacity: 0; }
-    .home .post h3, .journal .post h3 {
+    .home .post h3, .blog .post h3 {
       color: #39333F; }
-    .home .post:hover img, .home .post:hover .post-img, .journal .post:hover img, .journal .post:hover .post-img {
+    .home .post:hover img, .home .post:hover .post-img, .blog .post:hover img, .blog .post:hover .post-img {
       opacity: 0.85; }
-    .home .post:hover h3, .journal .post:hover h3 {
+    .home .post:hover h3, .blog .post:hover h3 {
       color: #E30613; }
-    .home .post:hover p, .journal .post:hover p {
+    .home .post:hover p, .blog .post:hover p {
       color: #39333F; }
-    .home .post:hover .btn-more, .journal .post:hover .btn-more {
+    .home .post:hover .btn-more, .blog .post:hover .btn-more {
       opacity: 0.3;
       -webkit-transform: scale(1);
       transform: scale(1); }
-      .home .post:hover .btn-more:hover, .journal .post:hover .btn-more:hover {
+      .home .post:hover .btn-more:hover, .blog .post:hover .btn-more:hover {
         opacity: 1; }
-  .home .featured .post, .journal .featured .post {
+  .home .featured .post, .blog .featured .post {
     padding-bottom: 20px; }
-    .home .featured .post:before, .journal .featured .post:before {
+    .home .featured .post:before, .blog .featured .post:before {
       display: none; }
   @media screen and (max-width: 800px) {
     .home .featured .post.col-1-3:before {
@@ -1324,7 +1324,7 @@ a.featured:hover {
   padding-bottom: 30px;
   display: block; }
   @media screen and (max-width: 570px) {
-    .journal .sidebar-item {
+    .blog .sidebar-item {
       padding-bottom: 0; } }
   .sidebar-item:first-child {
     padding-top: 5px;
@@ -1401,28 +1401,28 @@ a.featured:hover {
   .home .featured .post {
     padding: 40px 20px 30px; }
 
-.journal-stream {
+.blog-stream {
   padding-top: 40px; }
   @media screen and (max-width: 570px) {
-    .journal-stream {
+    .blog-stream {
       padding-top: 30px; } }
-  .journal-stream .col-3-4 {
+  .blog-stream .col-3-4 {
     padding-bottom: 60px; }
     @media screen and (min-width: 570px) {
-      .journal-stream .col-3-4 {
+      .blog-stream .col-3-4 {
         float: right; } }
-    .journal-stream .col-3-4 .post:first-of-type {
+    .blog-stream .col-3-4 .post:first-of-type {
       padding-top: 0; }
-      .journal-stream .col-3-4 .post:first-of-type:before {
+      .blog-stream .col-3-4 .post:first-of-type:before {
         display: none; }
-    .journal-stream .col-3-4 .post:last-of-type {
+    .blog-stream .col-3-4 .post:last-of-type {
       padding-bottom: 0; }
-  .journal-stream h3 {
+  .blog-stream h3 {
     font-size: 38px; }
     @media screen and (max-width: 570px) {
-      .journal-stream h3 {
+      .blog-stream h3 {
         font-size: 34px; } }
-  .journal-stream p {
+  .blog-stream p {
     font-size: 20px;
     margin-bottom: 10px; }
 

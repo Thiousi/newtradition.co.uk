@@ -1,6 +1,6 @@
 <?php if(!defined('KIRBY')) exit ?>
 
-title: Journal
+title: Blog
 files: false
 deletable: false
 pages:

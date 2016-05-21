@@ -73,7 +73,7 @@ if (disqusThread !== null) {
 }
 
 // Load more posts
-var journal = document.querySelector(".journal");
+var blog = document.querySelector(".blog");
 var home = document.querySelector(".home");
 var loader = function() {
 loadMore();
@@ -111,8 +111,8 @@ for(var i = (tagArray.length - 1); i >= 0; i--) {
 }
 
 // Hide features on tag specific layouts
-var journalStream = document.querySelector(".journal-stream");
-if (journalStream !== null) {
+var blogStream = document.querySelector(".blog-stream");
+if (blogStream !== null) {
   if ((window.location.href.indexOf("tag:") != -1) || (window.location.href.indexOf("category:"))) {
     if (window.location.href.indexOf("tag:") != -1) {
       var tagBtn = document.querySelectorAll(".tag");
@@ -132,14 +132,16 @@ if (journalStream !== null) {
         tagTitle.textContent = activeTag.textContent;
         tagTitle.style.display = 'block';
         var feature = document.querySelector(".featured");
-        feature.style.display = 'none';
+        if (feature !== null) {
+          feature.style.display = 'none';
+        }
       }
     }
   }
 }
 
-// If isn't page 1 of journal
-if (journalStream !== null) {
+// If isn't page 1 of blog
+if (blogStream !== null) {
   if ((window.location.href.indexOf("page:") != -1)) {
     var feature = document.querySelector(".featured");
     feature.style.display = 'none';

@@ -1,7 +1,7 @@
 <?php snippet('header') ?>
 <section class="featured">
   <div class="grid">
-    <?php foreach ($site->find('blog', 'journal')->children()->filterBy('featured', '1')->visible()->limit(1) as $featured): ?>
+    <?php foreach ($site->find('blog', 'blog')->children()->filterBy('featured', '1')->visible()->limit(1) as $featured): ?>
       <a href="<?php echo $featured->url() ?>" class="post col-2-3 <?php echo $featured->template() ?>"> 
         <?php if(!$featured->hero()->empty()): ?>
           <?php $file = $featured->hero()->toFile() ?>
@@ -50,7 +50,7 @@
   </div>
 </section>
 <section class="stream grid" role="main">
-  <?php foreach ($site->find('journal','blog','work')->children()->visible()->sortBy('date', 'desc')->limit(7) as $article): ?>
+  <?php foreach ($site->find('blog','blog','work')->children()->visible()->sortBy('date', 'desc')->limit(7) as $article): ?>
     <?php $count = 0 ?>
     <a href="<?php echo $article->url() ?>" class="post <?php echo $article->template() ?>">
       <?php if(!$article->hero()->empty()): ?>

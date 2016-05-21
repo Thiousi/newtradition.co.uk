@@ -13,6 +13,6 @@ history:
     work/paraplanners-brand-strategy-naming-and-identity
   - work/axa-wealth
   - >
-    journal/the-bebanking-talk-i-nearly-gave-at-tedxcheltenham
+    blog/the-bebanking-talk-i-nearly-gave-at-tedxcheltenham
   - >
-    journal/to-create-an-online-financial-advice-brand-become-a-follower-of-fashion
+    blog/to-create-an-online-financial-advice-brand-become-a-follower-of-fashion

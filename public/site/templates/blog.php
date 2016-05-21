@@ -22,7 +22,7 @@
     </div>
   </a>
 <?php endforeach ?>
-<section class="grid journal-stream" role="main">
+<section class="grid blog-stream" role="main">
   <div class="col-3-4">
     <h2 class="tag-title tag"><?php echo $tag ?></h2>
     <?php foreach ($articles as $article): ?>

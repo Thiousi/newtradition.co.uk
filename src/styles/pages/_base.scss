@@ -98,7 +98,7 @@ a.featured:hover {
   }
 
   .home &,
-  .journal & {
+  .blog & {
     overflow: hidden;
 
     &:before {
@@ -146,7 +146,7 @@ a.featured:hover {
   }
 
   .home .featured &,
-  .journal .featured & {
+  .blog .featured & {
     padding-bottom: 20px;
 
     &:before {
@@ -240,7 +240,7 @@ a.featured:hover {
   display: block;
 
   @media screen and ( max-width: $small ) {
-    .journal & {
+    .blog & {
       padding-bottom: 0;
     }
   }

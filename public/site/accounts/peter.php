@@ -9,12 +9,12 @@ password: >
 language: en
 role: admin
 history:
-  - journal/mr-milibands-big-moment
+  - blog/mr-milibands-big-moment
   - >
-    journal/time-to-cut-the-facebook-and-twitter-clutter
+    blog/time-to-cut-the-facebook-and-twitter-clutter
   - >
-    journal/the-great-british-brand-identity-crisis
+    blog/the-great-british-brand-identity-crisis
   - >
-    journal/why-reform-banking-when-we-could-transform-it-instead
+    blog/why-reform-banking-when-we-could-transform-it-instead
   - >
-    journal/the-case-for-a-chief-philosophy-officer
+    blog/the-case-for-a-chief-philosophy-officer
